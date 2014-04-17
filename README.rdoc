@@ -1,0 +1,20 @@
+== Welcome!
+
+Is that any good? is my attempt at recreating Yelp.
+
+
+== Getting Started
+
+You may sign up using your email, Facebook, or Twitter account (using Omniauth)! You may also sign in with these credentials or your username. Don't forget to upload a photo of your awesome self (unless you like the default happy cat photo!).
+
+== Browsing a city
+
+When you hit a city's index page, you will see the top rated places for that city, as well as the most recent reviews. Recent reviews are updated in real-time using the Pusher API, so whenever another user writes a review for a place in that city, it will automatically be prepended to the list (only reviews for that city are shown).
+
+The search bar in the top nav uses pg-search to look through the ITAG database. It will first try to match a category, which would bring up search results with places tagged with that, and then try to find places with names that match the query ('japanese' vs 'per se').
+
+== Writing a review
+
+Just had dinner at this awesome place? Ready to write a review? Awesome. Just find the place you're looking for (or add it yourself!) and hit that review button. I used a little JQuery and Rails UJS to let all the magic happen on the page.
+
+== To be continued...

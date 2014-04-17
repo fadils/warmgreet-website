@@ -1,0 +1,50 @@
+<div class="left group">
+  <div class="social">
+    <h1>Use social!</h1>
+    <a id="facebook" href="/auth/facebook"><img src="http://i.imgur.com/UIbkQV6.png"></a>
+
+    <p>or</p>
+
+    <a id="twitter" href="/auth/twitter"><img src="http://i.imgur.com/JzFd7Qi.png"></a>
+  </div>
+</div>
+
+<div class="right group">
+
+<form class="form" action="<%= session_url %>" method="post">
+
+  <h1>Sign in!</h1>
+
+  <input
+     name="authenticity_token"
+     type="hidden"
+     value="<%= form_authenticity_token %>">
+
+  <div class="input">
+    <label for="user_username">Username or Email</label>
+    <input id="user_username" name="user[username]" type="text">
+  </div>
+
+  <div class="input">
+    <label for="user_password">Password</label>
+    <input id="user_password" name="user[password]" type="password">
+  </div>
+
+  <div class="submit">
+    <input class type="submit" value="Log in">
+  </div>
+
+  <button class="submit" id="guest">Sign in as guest</button>
+</form>
+
+</div>
+
+<script>
+
+  $("#guest").on("click", function(event){
+    document.getElementById('user_username').value="guest"
+    document.getElementById('user_password').value="123123"
+    document.forms[0].submit()
+  });
+
+</script>

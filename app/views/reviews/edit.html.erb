@@ -1,0 +1,11 @@
+<%= render "form", :review => @review %>
+
+<br><br>
+
+<div class="delete-button">
+  <%= button_to "Delete Review", review_url(@review), method: :delete, form_class: "delete grad_button" %>
+</div>
+
+<div class="back-button">
+  <%= link_to "Back", user_url(current_user), method: :get, class: "back grad_button" %>
+</div>

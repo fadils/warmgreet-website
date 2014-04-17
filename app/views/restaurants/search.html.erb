@@ -1,0 +1,25 @@
+<div class="content group">
+  <h1>SEARCH RESULTS!</h1>
+
+  <% if (!@category.nil? || !@restaurants.nil?) %>
+
+    <ol class="group">
+    <% @restaurants.each_with_index do |restaurant, i| %>
+      <% if restaurant.photo.file? %>
+        <%= image_tag restaurant.photo.url(:medium) %>
+      <% end %>
+      <li class="search_results">
+        <%= (10*(@restaurants.current_page-1))+i+1 %>.
+        <a href="<%= restaurant_url(restaurant) %>">
+        <%= restaurant.name %>
+        </a>
+        (Average Rating: <%= restaurant.average_rating %>)
+      </li>
+    <% end %>
+    </ol>
+    <%= paginate @restaurants %>
+
+  <% else %>
+    <%= "No results found!" %>
+  <% end %>
+</div>

@@ -1,0 +1,69 @@
+<!--div class="city-switch">
+  <form id="page-changer" action="" method="post">
+    <select onChange="window.location.replace(this.options[this.selectedIndex].value)">
+      <option value="">Go to city...</option>
+      <% Country.all.each do |country| %>
+        <option value="<%= country_merchants_url(country) %>">
+          <%= country.name %>
+        </option>
+      <% end %>
+    </select>
+  </form>
+</div-->
+
+<div class="content group">
+
+  <%#<h2>Whats's Popular in <%= @city.name %> <%#= @city.state.name %><%#/h2%>
+  <h2>Your Popular Merchants</h2>
+  <%= link_to "Add a new merchant", new_country_merchant_url(@country) %>
+
+  <ol class="group">
+  <% @merchants.each_with_index do |merchant, i| %>
+
+  <a href="<%= merchant_url(merchant) %>">
+    <% if merchant.photo.file? %>
+      <%= image_tag merchant.photo.url(:small) %>
+    <% else %>
+      <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "60x60" %>
+    <% end %>
+  </a>
+
+    <li class="results">
+      <%= (5*(@merchants.current_page-1))+i+1 %>.
+      <a href="<%= merchant_url(merchant) %>">
+        <%= merchant.name %>
+      </a>
+      (Average Rating: <%= merchant.avg_rating.to_f.round(1) %>)
+    </li>
+
+  <% end %>
+  </ol>
+
+  <%= paginate @merchants %>
+
+  <hr>
+
+  <h2>Recent Stories</h2>
+  <ul class="recent-reviews-<%= @country.id %> group">
+    <% @reviews.each do |review| %>
+     <li class="recent-<%= @country.id %>">
+      <%= render partial: "reviews/pusherform", locals: {review: review} %>
+    </li>
+    <% end %>
+  </ul>
+
+</div>
+
+<script src="http://js.pusher.com/2.1/pusher.min.js"></script>
+<script>
+  var pusher = new Pusher('<%= ENV["PUSHER_KEY"] %>');
+
+  var channel = pusher.subscribe('reviews');
+
+  channel.bind('new-review', function(data) {
+    var city = $(data).attr('data-id');
+ $(data).hide().prependTo(".recent-reviews-"+city).slideDown("slow");
+
+    $(".recent-"+city).last().remove();
+  });
+</script>

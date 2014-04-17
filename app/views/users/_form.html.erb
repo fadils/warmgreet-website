@@ -1,0 +1,93 @@
+<% action = (user.persisted? ? user_url(user) : users_url) %>
+<% method = (user.persisted? ? "put" : "post") %>
+<% message = (user.persisted? ? "Update!" : "Sign up!") %>
+
+<form class="form" action="<%= action %>" method="post" enctype="multipart/form-data">
+  <input
+     name="_method"
+     type="hidden"
+     value="<%= method %>">
+  <input
+     name="authenticity_token"
+     type="hidden"
+     value="<%= form_authenticity_token %>">
+
+  <h1><%= message %></h1>
+
+  <div class="input">
+    <label for="user_username">Username</label>
+    <input
+       id="user_username"
+       name="user[username]"
+       type="text"
+       value="<%= @user.username %>">
+
+  </div>
+
+  <div class="input">
+  <label for="user_email">Email</label>
+  <input
+     id="user_email"
+     name="user[email]"
+     type="email"
+     value="<%= @user.email %>">
+  </div>
+
+  <div class="input">
+    <label for="user_password">Password</label>
+    <input
+       id="user_password"
+       name="user[password]"
+       type="password">
+   </div>
+
+  <div class="input">
+    <label for="user_bio">Biography</label><br>
+<textarea id="user_bio" name="user[biography]"><%= @user.biography %></textarea>
+  </div>
+
+  <div class="input">
+  <label for="user_location">Location</label>
+  <input
+     id="user_location"
+     name="user[location]"
+     type="text"
+     value="<%= @user.location %>">
+  </div>
+
+  <div class="input">
+  <label for="user_age">Age</label>
+  <input
+     id="user_age"
+     name="user[age]"
+     type="text"
+     value="<%= @user.age %>">
+  </div>
+
+  <div class="input">
+  <label for="user_gender">Gender</label>
+  <input
+     id="user_gender"
+     name="user[gender]"
+     type="radio"
+     value="M" <%= "checked" if @user.gender == "M" %> >M</input>
+
+   <input
+      id="user_gender"
+      name="user[gender]"
+      type="radio"
+      value="F">F</input>
+  </div>
+
+  <div class="input">
+    <label for="user_photo">Upload a photo!</label>
+    <input
+        id="user_photo"
+        name="user[photo]"
+        type="file">
+  </div>
+
+  <div class="submit">
+    <input type="submit" value="<%= message %>">
+  </div>
+</form>

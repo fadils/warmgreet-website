@@ -1,0 +1,2 @@
+class UsermerchantsController < ApplicationController
+end

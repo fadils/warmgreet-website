@@ -1,0 +1,41 @@
+<% merchant.reviews.sort_by{ |rev| rev.created_at }.reverse!.each do |review| %>
+
+<div class="review">
+
+  <strong>"<%= review.title %>"</strong> by <%= link_to review.user.username, user_url(review.user) %> <div class="review-date"><% if review.created_at > Time.now.beginning_of_day %>
+        <%="(written #{time_ago_in_words(review.created_at)} ago)"%>
+    <% else %>
+        <%= review.created_at.strftime("(%m/%d/%Y)") %>
+    <% end %></div>
+
+  <br>
+  Rating: <%= review.rating %>
+  <br>
+  <div class="review-body">
+  <%= review.body %>
+  </div>
+
+  <% unless current_user == review.user %>
+    <% if current_user.voted_reviews.include?(review) %>
+      <%= button_to "Uncool...", review_vote_tag_url(review), method: :delete, form_class: "cool-button" %>
+    <% else %>
+      <%= button_to "Cool review!", review_vote_tags_url(review), method: :post, form_class: "cool-button" %>
+    <% end %>
+  <% else %>
+  cool votes
+  <% end %>
+
+    <% if review.vote_tags.empty? %>
+    <strong class="badge">0</strong>
+    <% else %>
+    <strong class="badge"><%= review.vote_tags.count %></strong>
+    <% end %>
+
+    <br><br>
+
+    <% if current_user && current_user.admin == true %>
+      <%= button_to "Delete Review", review_url(review), method: :delete, form_class: "delete-review" %>
+    <% end %>
+
+</div>
+<% end %>

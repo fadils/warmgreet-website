@@ -1,0 +1,1528 @@
+# Logfile created on 2014-04-07 14:27:08 +0700 by logger.rb/44203
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Enabling the Request Sampler.
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Environment: development
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Dispatcher: webrick
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Application: My Application
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] WARN : Agent configured not to send data in this environment.
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Installing Net instrumentation
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Installing deferred Rack instrumentation
+[04/07/14 14:27:08 +0700 Pr0ducer.local (4635)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 14:27:09 +0700 Pr0ducer.local (4635)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 14:27:09 +0700 Pr0ducer.local (4635)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 14:27:09 +0700 Pr0ducer.local (4635)] INFO : Finished instrumentation
+[04/07/14 14:27:12 +0700 Pr0ducer.local (4635)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Enabling the Request Sampler.
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Environment: development
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Dispatcher: webrick
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Application: My Application
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Installing Net instrumentation
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:29:46 +0700 Pr0ducer.local (2493)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:29:47 +0700 Pr0ducer.local (2493)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:29:47 +0700 Pr0ducer.local (2493)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:29:47 +0700 Pr0ducer.local (2493)] INFO : Finished instrumentation
+[04/07/14 22:29:49 +0700 Pr0ducer.local (2493)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Enabling the Request Sampler.
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Environment: development
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Dispatcher: webrick
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Application: My Application
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Installing Net instrumentation
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:30:28 +0700 Pr0ducer.local (2535)] INFO : Finished instrumentation
+[04/07/14 22:30:29 +0700 Pr0ducer.local (2535)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Enabling the Request Sampler.
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Environment: development
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Dispatcher: webrick
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Application: My Application
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Installing Net instrumentation
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:38:15 +0700 Pr0ducer.local (2661)] INFO : Finished instrumentation
+[04/07/14 22:38:16 +0700 Pr0ducer.local (2661)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Enabling the Request Sampler.
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Environment: development
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Dispatcher: webrick
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Application: My Application
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Installing Net instrumentation
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:40:43 +0700 Pr0ducer.local (2792)] INFO : Finished instrumentation
+[04/07/14 22:40:44 +0700 Pr0ducer.local (2792)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Enabling the Request Sampler.
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Environment: development
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Dispatcher: webrick
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Application: My Application
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Installing Net instrumentation
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:43:25 +0700 Pr0ducer.local (2879)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:43:26 +0700 Pr0ducer.local (2879)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:43:26 +0700 Pr0ducer.local (2879)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:43:26 +0700 Pr0ducer.local (2879)] INFO : Finished instrumentation
+[04/07/14 22:43:26 +0700 Pr0ducer.local (2879)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Enabling the Request Sampler.
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Environment: development
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Dispatcher: webrick
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Application: My Application
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Installing Net instrumentation
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:44:56 +0700 Pr0ducer.local (2937)] INFO : Finished instrumentation
+[04/07/14 22:44:57 +0700 Pr0ducer.local (2937)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Enabling the Request Sampler.
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Environment: development
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Dispatcher: webrick
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Application: My Application
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Installing Net instrumentation
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:46:38 +0700 Pr0ducer.local (2978)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:46:39 +0700 Pr0ducer.local (2978)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:46:39 +0700 Pr0ducer.local (2978)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:46:39 +0700 Pr0ducer.local (2978)] INFO : Finished instrumentation
+[04/07/14 22:46:39 +0700 Pr0ducer.local (2978)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Enabling the Request Sampler.
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Environment: development
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Dispatcher: webrick
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Application: My Application
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Installing Net instrumentation
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:47:38 +0700 Pr0ducer.local (3015)] INFO : Finished instrumentation
+[04/07/14 22:47:39 +0700 Pr0ducer.local (3015)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Enabling the Request Sampler.
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Environment: development
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Dispatcher: webrick
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Application: My Application
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Installing Net instrumentation
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:49:05 +0700 Pr0ducer.local (3054)] INFO : Finished instrumentation
+[04/07/14 22:49:06 +0700 Pr0ducer.local (3054)] INFO : Doing deferred dependency-detection before Rack startup
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : Enabling the Request Sampler.
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : Environment: development
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : No known dispatcher detected.
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : Application: My Application
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : Installing Net instrumentation
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:59:36 +0700 Pr0ducer.local (3188)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:59:37 +0700 Pr0ducer.local (3188)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:59:37 +0700 Pr0ducer.local (3188)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:59:37 +0700 Pr0ducer.local (3188)] INFO : Finished instrumentation
+[04/07/14 22:59:48 +0700 Pr0ducer.local (3216)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 22:59:48 +0700 Pr0ducer.local (3216)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 22:59:48 +0700 Pr0ducer.local (3216)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 22:59:48 +0700 Pr0ducer.local (3216)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 22:59:48 +0700 Pr0ducer.local (3216)] INFO : Enabling the Request Sampler.
+[04/07/14 22:59:48 +0700 Pr0ducer.local (3216)] INFO : Environment: development
+[04/07/14 22:59:48 +0700 Pr0ducer.local (3216)] INFO : No known dispatcher detected.
+[04/07/14 22:59:48 +0700 Pr0ducer.local (3216)] INFO : Application: My Application
+[04/07/14 22:59:48 +0700 Pr0ducer.local (3216)] WARN : Agent configured not to send data in this environment.
+[04/07/14 22:59:49 +0700 Pr0ducer.local (3216)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 22:59:49 +0700 Pr0ducer.local (3216)] INFO : Installing Net instrumentation
+[04/07/14 22:59:49 +0700 Pr0ducer.local (3216)] INFO : Installing deferred Rack instrumentation
+[04/07/14 22:59:49 +0700 Pr0ducer.local (3216)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 22:59:49 +0700 Pr0ducer.local (3216)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 22:59:49 +0700 Pr0ducer.local (3216)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 22:59:49 +0700 Pr0ducer.local (3216)] INFO : Finished instrumentation
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Starting the New Relic agent in "development" environment.
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Reading configuration from config/newrelic.yml
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : New Relic Agent Developer Mode enabled.
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Enabling the Request Sampler.
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Environment: development
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Dispatcher: webrick
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Application: My Application
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] WARN : Agent configured not to send data in this environment.
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Installing ActiveRecord instrumentation
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Installing Net instrumentation
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Installing deferred Rack instrumentation
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Installing Rails 3 Controller instrumentation
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Installing Rails3 Error instrumentation
+[04/07/14 23:00:12 +0700 Pr0ducer.local (3246)] INFO : Finished instrumentation
+[04/07/14 23:00:13 +0700 Pr0ducer.local (3246)] INFO : Doing deferred dependency-detection before Rack startup
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : Starting the New Relic agent in "development" environment.
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : Reading configuration from config/newrelic.yml
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : New Relic Agent Developer Mode enabled.
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : Enabling the Request Sampler.
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : Environment: development
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : No known dispatcher detected.
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : Application: My Application
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] WARN : Agent configured not to send data in this environment.
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : Installing ActiveRecord instrumentation
+[04/08/14 12:50:48 +0700 Pr0ducer.local (5511)] INFO : Installing Net instrumentation
+[04/08/14 12:50:49 +0700 Pr0ducer.local (5511)] INFO : Installing deferred Rack instrumentation
+[04/08/14 12:50:49 +0700 Pr0ducer.local (5511)] INFO : Installing Rails 3 Controller instrumentation
+[04/08/14 12:50:50 +0700 Pr0ducer.local (5511)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/08/14 12:50:50 +0700 Pr0ducer.local (5511)] INFO : Installing Rails3 Error instrumentation
+[04/08/14 12:50:50 +0700 Pr0ducer.local (5511)] INFO : Finished instrumentation
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : Starting the New Relic agent in "development" environment.
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : Reading configuration from config/newrelic.yml
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : New Relic Agent Developer Mode enabled.
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : Enabling the Request Sampler.
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : Environment: development
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : No known dispatcher detected.
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : Application: My Application
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] WARN : Agent configured not to send data in this environment.
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : Installing ActiveRecord instrumentation
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : Installing Net instrumentation
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : Installing deferred Rack instrumentation
+[04/08/14 12:52:48 +0700 Pr0ducer.local (5569)] INFO : Installing Rails 3 Controller instrumentation
+[04/08/14 12:52:49 +0700 Pr0ducer.local (5569)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/08/14 12:52:50 +0700 Pr0ducer.local (5569)] INFO : Installing Rails3 Error instrumentation
+[04/08/14 12:52:50 +0700 Pr0ducer.local (5569)] INFO : Finished instrumentation
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : Starting the New Relic agent in "development" environment.
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : Reading configuration from config/newrelic.yml
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : New Relic Agent Developer Mode enabled.
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : Enabling the Request Sampler.
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : Environment: development
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : Dispatcher: webrick
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : Application: My Application
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] WARN : Agent configured not to send data in this environment.
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : Installing ActiveRecord instrumentation
+[04/08/14 12:55:53 +0700 Pr0ducer.local (5631)] INFO : Installing Net instrumentation
+[04/08/14 12:55:54 +0700 Pr0ducer.local (5631)] INFO : Installing deferred Rack instrumentation
+[04/08/14 12:55:54 +0700 Pr0ducer.local (5631)] INFO : Installing Rails 3 Controller instrumentation
+[04/08/14 12:55:55 +0700 Pr0ducer.local (5631)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/08/14 12:55:55 +0700 Pr0ducer.local (5631)] INFO : Installing Rails3 Error instrumentation
+[04/08/14 12:55:55 +0700 Pr0ducer.local (5631)] INFO : Finished instrumentation
+[04/08/14 12:55:57 +0700 Pr0ducer.local (5631)] INFO : Doing deferred dependency-detection before Rack startup
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Starting the New Relic agent in "development" environment.
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Reading configuration from config/newrelic.yml
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : New Relic Agent Developer Mode enabled.
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Enabling the Request Sampler.
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Environment: development
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Dispatcher: webrick
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Application: My Application
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] WARN : Agent configured not to send data in this environment.
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Installing ActiveRecord instrumentation
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Installing Net instrumentation
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Installing deferred Rack instrumentation
+[04/09/14 23:53:02 +0700 Pr0ducer.local (65350)] INFO : Installing Rails 3 Controller instrumentation
+[04/09/14 23:53:03 +0700 Pr0ducer.local (65350)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/09/14 23:53:03 +0700 Pr0ducer.local (65350)] INFO : Installing Rails3 Error instrumentation
+[04/09/14 23:53:03 +0700 Pr0ducer.local (65350)] INFO : Finished instrumentation
+[04/09/14 23:53:04 +0700 Pr0ducer.local (65350)] INFO : Doing deferred dependency-detection before Rack startup
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Enabling the Request Sampler.
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Environment: development
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Dispatcher: webrick
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Application: My Application
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] WARN : Agent configured not to send data in this environment.
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Installing Net instrumentation
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Installing deferred Rack instrumentation
+[04/10/14 00:19:14 +0700 Pr0ducer.local (65978)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 00:19:15 +0700 Pr0ducer.local (65978)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 00:19:15 +0700 Pr0ducer.local (65978)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 00:19:15 +0700 Pr0ducer.local (65978)] INFO : Finished instrumentation
+[04/10/14 00:19:17 +0700 Pr0ducer.local (65978)] INFO : Doing deferred dependency-detection before Rack startup
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : Enabling the Request Sampler.
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : Environment: development
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : No known dispatcher detected.
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : Application: My Application
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] WARN : Agent configured not to send data in this environment.
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 11:46:54 +0700 Pr0ducer.local (68325)] INFO : Installing Net instrumentation
+[04/10/14 11:46:55 +0700 Pr0ducer.local (68325)] INFO : Installing deferred Rack instrumentation
+[04/10/14 11:46:55 +0700 Pr0ducer.local (68325)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 11:46:55 +0700 Pr0ducer.local (68325)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 11:46:55 +0700 Pr0ducer.local (68325)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 11:46:55 +0700 Pr0ducer.local (68325)] INFO : Finished instrumentation
+[04/10/14 11:49:55 +0700 Pr0ducer.local (68391)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 11:49:55 +0700 Pr0ducer.local (68391)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 11:49:55 +0700 Pr0ducer.local (68391)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 11:49:55 +0700 Pr0ducer.local (68391)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 11:49:55 +0700 Pr0ducer.local (68391)] INFO : Enabling the Request Sampler.
+[04/10/14 11:49:55 +0700 Pr0ducer.local (68391)] INFO : Environment: development
+[04/10/14 11:49:55 +0700 Pr0ducer.local (68391)] INFO : No known dispatcher detected.
+[04/10/14 11:49:55 +0700 Pr0ducer.local (68391)] INFO : Application: My Application
+[04/10/14 11:49:55 +0700 Pr0ducer.local (68391)] WARN : Agent configured not to send data in this environment.
+[04/10/14 11:49:56 +0700 Pr0ducer.local (68391)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 11:49:56 +0700 Pr0ducer.local (68391)] INFO : Installing Net instrumentation
+[04/10/14 11:49:56 +0700 Pr0ducer.local (68391)] INFO : Installing deferred Rack instrumentation
+[04/10/14 11:49:56 +0700 Pr0ducer.local (68391)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 11:49:57 +0700 Pr0ducer.local (68391)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 11:49:57 +0700 Pr0ducer.local (68391)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 11:49:57 +0700 Pr0ducer.local (68391)] INFO : Finished instrumentation
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : Enabling the Request Sampler.
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : Environment: development
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : No known dispatcher detected.
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : Application: My Application
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] WARN : Agent configured not to send data in this environment.
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : Installing Net instrumentation
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : Installing deferred Rack instrumentation
+[04/10/14 11:51:45 +0700 Pr0ducer.local (68438)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 11:51:46 +0700 Pr0ducer.local (68438)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 11:51:46 +0700 Pr0ducer.local (68438)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 11:51:46 +0700 Pr0ducer.local (68438)] INFO : Finished instrumentation
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : Enabling the Request Sampler.
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : Environment: development
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : No known dispatcher detected.
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : Application: My Application
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] WARN : Agent configured not to send data in this environment.
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : Installing Net instrumentation
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : Installing deferred Rack instrumentation
+[04/10/14 12:02:14 +0700 Pr0ducer.local (68614)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 12:02:15 +0700 Pr0ducer.local (68614)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 12:02:15 +0700 Pr0ducer.local (68614)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 12:02:15 +0700 Pr0ducer.local (68614)] INFO : Finished instrumentation
+[04/10/14 13:33:14 +0700 Pr0ducer.local (70148)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 13:33:14 +0700 Pr0ducer.local (70148)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 13:33:14 +0700 Pr0ducer.local (70148)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 13:33:14 +0700 Pr0ducer.local (70148)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 13:33:14 +0700 Pr0ducer.local (70148)] INFO : Enabling the Request Sampler.
+[04/10/14 13:33:14 +0700 Pr0ducer.local (70148)] INFO : Environment: development
+[04/10/14 13:33:14 +0700 Pr0ducer.local (70148)] INFO : Dispatcher: webrick
+[04/10/14 13:33:14 +0700 Pr0ducer.local (70148)] INFO : Application: My Application
+[04/10/14 13:33:14 +0700 Pr0ducer.local (70148)] WARN : Agent configured not to send data in this environment.
+[04/10/14 13:33:15 +0700 Pr0ducer.local (70148)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 13:33:15 +0700 Pr0ducer.local (70148)] INFO : Installing Net instrumentation
+[04/10/14 13:33:15 +0700 Pr0ducer.local (70148)] INFO : Installing deferred Rack instrumentation
+[04/10/14 13:33:15 +0700 Pr0ducer.local (70148)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 13:33:15 +0700 Pr0ducer.local (70148)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 13:33:15 +0700 Pr0ducer.local (70148)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 13:33:15 +0700 Pr0ducer.local (70148)] INFO : Finished instrumentation
+[04/10/14 13:33:17 +0700 Pr0ducer.local (70148)] INFO : Doing deferred dependency-detection before Rack startup
+[04/10/14 16:08:28 +0700 Pr0ducer.local (72591)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 16:08:28 +0700 Pr0ducer.local (72591)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 16:08:28 +0700 Pr0ducer.local (72591)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Enabling the Request Sampler.
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Environment: development
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : No known dispatcher detected.
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Application: My Application
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] WARN : Agent configured not to send data in this environment.
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Installing Net instrumentation
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Installing deferred Rack instrumentation
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 16:08:29 +0700 Pr0ducer.local (72591)] INFO : Finished instrumentation
+[04/10/14 16:39:42 +0700 Pr0ducer.local (73153)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 16:39:42 +0700 Pr0ducer.local (73153)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 16:39:42 +0700 Pr0ducer.local (73153)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 16:39:42 +0700 Pr0ducer.local (73153)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 16:39:42 +0700 Pr0ducer.local (73153)] INFO : Enabling the Request Sampler.
+[04/10/14 16:39:42 +0700 Pr0ducer.local (73153)] INFO : Environment: development
+[04/10/14 16:39:42 +0700 Pr0ducer.local (73153)] INFO : No known dispatcher detected.
+[04/10/14 16:39:42 +0700 Pr0ducer.local (73153)] INFO : Application: My Application
+[04/10/14 16:39:42 +0700 Pr0ducer.local (73153)] WARN : Agent configured not to send data in this environment.
+[04/10/14 16:39:43 +0700 Pr0ducer.local (73153)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 16:39:43 +0700 Pr0ducer.local (73153)] INFO : Installing Net instrumentation
+[04/10/14 16:39:43 +0700 Pr0ducer.local (73153)] INFO : Installing deferred Rack instrumentation
+[04/10/14 16:39:43 +0700 Pr0ducer.local (73153)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 16:39:43 +0700 Pr0ducer.local (73153)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 16:39:43 +0700 Pr0ducer.local (73153)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 16:39:43 +0700 Pr0ducer.local (73153)] INFO : Finished instrumentation
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : Enabling the Request Sampler.
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : Environment: development
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : No known dispatcher detected.
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : Application: My Application
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] WARN : Agent configured not to send data in this environment.
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : Installing Net instrumentation
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : Installing deferred Rack instrumentation
+[04/10/14 16:43:47 +0700 Pr0ducer.local (73253)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 16:43:48 +0700 Pr0ducer.local (73253)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 16:43:48 +0700 Pr0ducer.local (73253)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 16:43:48 +0700 Pr0ducer.local (73253)] INFO : Finished instrumentation
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : Enabling the Request Sampler.
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : Environment: development
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : No known dispatcher detected.
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : Application: My Application
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : Installing Net instrumentation
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:07:44 +0700 Pr0ducer.local (73741)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:07:45 +0700 Pr0ducer.local (73741)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:07:45 +0700 Pr0ducer.local (73741)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:07:45 +0700 Pr0ducer.local (73741)] INFO : Finished instrumentation
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : Enabling the Request Sampler.
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : Environment: development
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : No known dispatcher detected.
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : Application: My Application
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : Installing Net instrumentation
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:17:30 +0700 Pr0ducer.local (74015)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:17:31 +0700 Pr0ducer.local (74015)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:17:31 +0700 Pr0ducer.local (74015)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:17:31 +0700 Pr0ducer.local (74015)] INFO : Finished instrumentation
+[04/10/14 17:26:02 +0700 Pr0ducer.local (74221)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:26:02 +0700 Pr0ducer.local (74221)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:26:02 +0700 Pr0ducer.local (74221)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:26:02 +0700 Pr0ducer.local (74221)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:26:02 +0700 Pr0ducer.local (74221)] INFO : Enabling the Request Sampler.
+[04/10/14 17:26:02 +0700 Pr0ducer.local (74221)] INFO : Environment: development
+[04/10/14 17:26:02 +0700 Pr0ducer.local (74221)] INFO : No known dispatcher detected.
+[04/10/14 17:26:02 +0700 Pr0ducer.local (74221)] INFO : Application: My Application
+[04/10/14 17:26:02 +0700 Pr0ducer.local (74221)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:26:03 +0700 Pr0ducer.local (74221)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:26:03 +0700 Pr0ducer.local (74221)] INFO : Installing Net instrumentation
+[04/10/14 17:26:03 +0700 Pr0ducer.local (74221)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:26:03 +0700 Pr0ducer.local (74221)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:26:04 +0700 Pr0ducer.local (74221)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:26:04 +0700 Pr0ducer.local (74221)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:26:04 +0700 Pr0ducer.local (74221)] INFO : Finished instrumentation
+[04/10/14 17:38:53 +0700 Pr0ducer.local (74542)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:38:53 +0700 Pr0ducer.local (74542)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:38:53 +0700 Pr0ducer.local (74542)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Enabling the Request Sampler.
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Environment: development
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : No known dispatcher detected.
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Application: My Application
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Installing Net instrumentation
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:38:54 +0700 Pr0ducer.local (74542)] INFO : Finished instrumentation
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Enabling the Request Sampler.
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Environment: development
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : No known dispatcher detected.
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Application: My Application
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Installing Net instrumentation
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:39:41 +0700 Pr0ducer.local (74581)] INFO : Finished instrumentation
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Enabling the Request Sampler.
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Environment: development
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Dispatcher: webrick
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Application: My Application
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Installing Net instrumentation
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:40:02 +0700 Pr0ducer.local (74637)] INFO : Finished instrumentation
+[04/10/14 17:40:03 +0700 Pr0ducer.local (74637)] INFO : Doing deferred dependency-detection before Rack startup
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Enabling the Request Sampler.
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Environment: development
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : No known dispatcher detected.
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Application: My Application
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Installing Net instrumentation
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:44:49 +0700 Pr0ducer.local (74720)] INFO : Finished instrumentation
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Enabling the Request Sampler.
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Environment: development
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Dispatcher: webrick
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Application: My Application
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Installing Net instrumentation
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:45:16 +0700 Pr0ducer.local (74755)] INFO : Finished instrumentation
+[04/10/14 17:45:17 +0700 Pr0ducer.local (74755)] INFO : Doing deferred dependency-detection before Rack startup
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Enabling the Request Sampler.
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Environment: development
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : No known dispatcher detected.
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Application: My Application
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Installing Net instrumentation
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:51:15 +0700 Pr0ducer.local (74852)] INFO : Finished instrumentation
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Enabling the Request Sampler.
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Environment: development
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : No known dispatcher detected.
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Application: My Application
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Installing Net instrumentation
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:52:33 +0700 Pr0ducer.local (74899)] INFO : Finished instrumentation
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Enabling the Request Sampler.
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Environment: development
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Dispatcher: webrick
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Application: My Application
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] WARN : Agent configured not to send data in this environment.
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Installing Net instrumentation
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Installing deferred Rack instrumentation
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 17:54:17 +0700 Pr0ducer.local (74953)] INFO : Finished instrumentation
+[04/10/14 17:54:18 +0700 Pr0ducer.local (74953)] INFO : Doing deferred dependency-detection before Rack startup
+[04/10/14 22:41:19 +0700 Pr0ducer.local (75432)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 22:41:19 +0700 Pr0ducer.local (75432)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 22:41:19 +0700 Pr0ducer.local (75432)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 22:41:19 +0700 Pr0ducer.local (75432)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 22:41:19 +0700 Pr0ducer.local (75432)] INFO : Enabling the Request Sampler.
+[04/10/14 22:41:19 +0700 Pr0ducer.local (75432)] INFO : Environment: development
+[04/10/14 22:41:19 +0700 Pr0ducer.local (75432)] INFO : No known dispatcher detected.
+[04/10/14 22:41:19 +0700 Pr0ducer.local (75432)] INFO : Application: My Application
+[04/10/14 22:41:19 +0700 Pr0ducer.local (75432)] WARN : Agent configured not to send data in this environment.
+[04/10/14 22:41:20 +0700 Pr0ducer.local (75432)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 22:41:20 +0700 Pr0ducer.local (75432)] INFO : Installing Net instrumentation
+[04/10/14 22:41:20 +0700 Pr0ducer.local (75432)] INFO : Installing deferred Rack instrumentation
+[04/10/14 22:41:20 +0700 Pr0ducer.local (75432)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 22:41:20 +0700 Pr0ducer.local (75432)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 22:41:20 +0700 Pr0ducer.local (75432)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 22:41:20 +0700 Pr0ducer.local (75432)] INFO : Finished instrumentation
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : Enabling the Request Sampler.
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : Environment: development
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : No known dispatcher detected.
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : Application: My Application
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] WARN : Agent configured not to send data in this environment.
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : Installing Net instrumentation
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : Installing deferred Rack instrumentation
+[04/10/14 22:57:44 +0700 Pr0ducer.local (75732)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 22:57:45 +0700 Pr0ducer.local (75732)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 22:57:45 +0700 Pr0ducer.local (75732)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 22:57:45 +0700 Pr0ducer.local (75732)] INFO : Finished instrumentation
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Enabling the Request Sampler.
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Environment: development
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : No known dispatcher detected.
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Application: My Application
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] WARN : Agent configured not to send data in this environment.
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Installing Net instrumentation
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Installing deferred Rack instrumentation
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 23:00:44 +0700 Pr0ducer.local (75809)] INFO : Finished instrumentation
+[04/10/14 23:07:51 +0700 Pr0ducer.local (75958)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/14 23:07:51 +0700 Pr0ducer.local (75958)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/14 23:07:51 +0700 Pr0ducer.local (75958)] INFO : Reading configuration from config/newrelic.yml
+[04/10/14 23:07:51 +0700 Pr0ducer.local (75958)] INFO : New Relic Agent Developer Mode enabled.
+[04/10/14 23:07:51 +0700 Pr0ducer.local (75958)] INFO : Enabling the Request Sampler.
+[04/10/14 23:07:51 +0700 Pr0ducer.local (75958)] INFO : Environment: development
+[04/10/14 23:07:51 +0700 Pr0ducer.local (75958)] INFO : No known dispatcher detected.
+[04/10/14 23:07:51 +0700 Pr0ducer.local (75958)] INFO : Application: My Application
+[04/10/14 23:07:51 +0700 Pr0ducer.local (75958)] WARN : Agent configured not to send data in this environment.
+[04/10/14 23:07:52 +0700 Pr0ducer.local (75958)] INFO : Installing ActiveRecord instrumentation
+[04/10/14 23:07:52 +0700 Pr0ducer.local (75958)] INFO : Installing Net instrumentation
+[04/10/14 23:07:52 +0700 Pr0ducer.local (75958)] INFO : Installing deferred Rack instrumentation
+[04/10/14 23:07:52 +0700 Pr0ducer.local (75958)] INFO : Installing Rails 3 Controller instrumentation
+[04/10/14 23:07:52 +0700 Pr0ducer.local (75958)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/10/14 23:07:52 +0700 Pr0ducer.local (75958)] INFO : Installing Rails3 Error instrumentation
+[04/10/14 23:07:52 +0700 Pr0ducer.local (75958)] INFO : Finished instrumentation
+[04/11/14 13:12:32 +0700 Pr0ducer.local (77710)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 13:12:32 +0700 Pr0ducer.local (77710)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 13:12:32 +0700 Pr0ducer.local (77710)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Enabling the Request Sampler.
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Environment: development
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : No known dispatcher detected.
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Application: My Application
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] WARN : Agent configured not to send data in this environment.
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Installing Net instrumentation
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Installing deferred Rack instrumentation
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 13:12:33 +0700 Pr0ducer.local (77710)] INFO : Finished instrumentation
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : Enabling the Request Sampler.
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : Environment: development
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : No known dispatcher detected.
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : Application: My Application
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] WARN : Agent configured not to send data in this environment.
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : Installing Net instrumentation
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : Installing deferred Rack instrumentation
+[04/11/14 13:38:20 +0700 Pr0ducer.local (78121)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 13:38:21 +0700 Pr0ducer.local (78121)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 13:38:21 +0700 Pr0ducer.local (78121)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 13:38:21 +0700 Pr0ducer.local (78121)] INFO : Finished instrumentation
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : Enabling the Request Sampler.
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : Environment: development
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : No known dispatcher detected.
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : Application: My Application
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] WARN : Agent configured not to send data in this environment.
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : Installing Net instrumentation
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : Installing deferred Rack instrumentation
+[04/11/14 15:45:36 +0700 Pr0ducer.local (79940)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 15:45:37 +0700 Pr0ducer.local (79940)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 15:45:37 +0700 Pr0ducer.local (79940)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 15:45:37 +0700 Pr0ducer.local (79940)] INFO : Finished instrumentation
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : Enabling the Request Sampler.
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : Environment: development
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : No known dispatcher detected.
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : Application: My Application
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] WARN : Agent configured not to send data in this environment.
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : Installing Net instrumentation
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : Installing deferred Rack instrumentation
+[04/11/14 15:48:13 +0700 Pr0ducer.local (80014)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 15:48:14 +0700 Pr0ducer.local (80014)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 15:48:14 +0700 Pr0ducer.local (80014)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 15:48:14 +0700 Pr0ducer.local (80014)] INFO : Finished instrumentation
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : Enabling the Request Sampler.
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : Environment: development
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : No known dispatcher detected.
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : Application: My Application
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] WARN : Agent configured not to send data in this environment.
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : Installing Net instrumentation
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : Installing deferred Rack instrumentation
+[04/11/14 15:53:45 +0700 Pr0ducer.local (80118)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 15:53:46 +0700 Pr0ducer.local (80118)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 15:53:46 +0700 Pr0ducer.local (80118)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 15:53:46 +0700 Pr0ducer.local (80118)] INFO : Finished instrumentation
+[04/11/14 15:58:59 +0700 Pr0ducer.local (80212)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 15:58:59 +0700 Pr0ducer.local (80212)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 15:58:59 +0700 Pr0ducer.local (80212)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 15:58:59 +0700 Pr0ducer.local (80212)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 15:58:59 +0700 Pr0ducer.local (80212)] INFO : Enabling the Request Sampler.
+[04/11/14 15:58:59 +0700 Pr0ducer.local (80212)] INFO : Environment: development
+[04/11/14 15:58:59 +0700 Pr0ducer.local (80212)] INFO : No known dispatcher detected.
+[04/11/14 15:58:59 +0700 Pr0ducer.local (80212)] INFO : Application: My Application
+[04/11/14 15:58:59 +0700 Pr0ducer.local (80212)] WARN : Agent configured not to send data in this environment.
+[04/11/14 15:59:00 +0700 Pr0ducer.local (80212)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 15:59:00 +0700 Pr0ducer.local (80212)] INFO : Installing Net instrumentation
+[04/11/14 15:59:00 +0700 Pr0ducer.local (80212)] INFO : Installing deferred Rack instrumentation
+[04/11/14 15:59:00 +0700 Pr0ducer.local (80212)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 15:59:00 +0700 Pr0ducer.local (80212)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 15:59:00 +0700 Pr0ducer.local (80212)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 15:59:00 +0700 Pr0ducer.local (80212)] INFO : Finished instrumentation
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : Enabling the Request Sampler.
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : Environment: development
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : No known dispatcher detected.
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : Application: My Application
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] WARN : Agent configured not to send data in this environment.
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : Installing Net instrumentation
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : Installing deferred Rack instrumentation
+[04/11/14 16:02:16 +0700 Pr0ducer.local (80293)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 16:02:18 +0700 Pr0ducer.local (80293)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 16:02:18 +0700 Pr0ducer.local (80293)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 16:02:18 +0700 Pr0ducer.local (80293)] INFO : Finished instrumentation
+[04/11/14 16:07:44 +0700 Pr0ducer.local (80398)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 16:07:44 +0700 Pr0ducer.local (80398)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 16:07:44 +0700 Pr0ducer.local (80398)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 16:07:44 +0700 Pr0ducer.local (80398)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 16:07:44 +0700 Pr0ducer.local (80398)] INFO : Enabling the Request Sampler.
+[04/11/14 16:07:44 +0700 Pr0ducer.local (80398)] INFO : Environment: development
+[04/11/14 16:07:44 +0700 Pr0ducer.local (80398)] INFO : No known dispatcher detected.
+[04/11/14 16:07:44 +0700 Pr0ducer.local (80398)] INFO : Application: My Application
+[04/11/14 16:07:44 +0700 Pr0ducer.local (80398)] WARN : Agent configured not to send data in this environment.
+[04/11/14 16:07:45 +0700 Pr0ducer.local (80398)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 16:07:45 +0700 Pr0ducer.local (80398)] INFO : Installing Net instrumentation
+[04/11/14 16:07:45 +0700 Pr0ducer.local (80398)] INFO : Installing deferred Rack instrumentation
+[04/11/14 16:07:45 +0700 Pr0ducer.local (80398)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 16:07:45 +0700 Pr0ducer.local (80398)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 16:07:45 +0700 Pr0ducer.local (80398)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 16:07:45 +0700 Pr0ducer.local (80398)] INFO : Finished instrumentation
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Enabling the Request Sampler.
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Environment: development
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : No known dispatcher detected.
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Application: My Application
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] WARN : Agent configured not to send data in this environment.
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Installing Net instrumentation
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Installing deferred Rack instrumentation
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 16:09:40 +0700 Pr0ducer.local (80459)] INFO : Finished instrumentation
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : Enabling the Request Sampler.
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : Environment: development
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : No known dispatcher detected.
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : Application: My Application
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] WARN : Agent configured not to send data in this environment.
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : Installing Net instrumentation
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : Installing deferred Rack instrumentation
+[04/11/14 16:13:48 +0700 Pr0ducer.local (80540)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 16:13:49 +0700 Pr0ducer.local (80540)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 16:13:49 +0700 Pr0ducer.local (80540)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 16:13:49 +0700 Pr0ducer.local (80540)] INFO : Finished instrumentation
+[04/11/14 16:15:25 +0700 Pr0ducer.local (80588)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 16:15:25 +0700 Pr0ducer.local (80588)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 16:15:25 +0700 Pr0ducer.local (80588)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 16:15:25 +0700 Pr0ducer.local (80588)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 16:15:25 +0700 Pr0ducer.local (80588)] INFO : Enabling the Request Sampler.
+[04/11/14 16:15:25 +0700 Pr0ducer.local (80588)] INFO : Environment: development
+[04/11/14 16:15:25 +0700 Pr0ducer.local (80588)] INFO : No known dispatcher detected.
+[04/11/14 16:15:25 +0700 Pr0ducer.local (80588)] INFO : Application: My Application
+[04/11/14 16:15:25 +0700 Pr0ducer.local (80588)] WARN : Agent configured not to send data in this environment.
+[04/11/14 16:15:26 +0700 Pr0ducer.local (80588)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 16:15:26 +0700 Pr0ducer.local (80588)] INFO : Installing Net instrumentation
+[04/11/14 16:15:26 +0700 Pr0ducer.local (80588)] INFO : Installing deferred Rack instrumentation
+[04/11/14 16:15:26 +0700 Pr0ducer.local (80588)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 16:15:26 +0700 Pr0ducer.local (80588)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 16:15:26 +0700 Pr0ducer.local (80588)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 16:15:26 +0700 Pr0ducer.local (80588)] INFO : Finished instrumentation
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Enabling the Request Sampler.
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Environment: development
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : No known dispatcher detected.
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Application: My Application
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] WARN : Agent configured not to send data in this environment.
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Installing Net instrumentation
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Installing deferred Rack instrumentation
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 16:16:48 +0700 Pr0ducer.local (80637)] INFO : Finished instrumentation
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : Enabling the Request Sampler.
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : Environment: development
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : No known dispatcher detected.
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : Application: My Application
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] WARN : Agent configured not to send data in this environment.
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : Installing Net instrumentation
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : Installing deferred Rack instrumentation
+[04/11/14 16:19:00 +0700 Pr0ducer.local (80694)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 16:19:01 +0700 Pr0ducer.local (80694)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 16:19:01 +0700 Pr0ducer.local (80694)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 16:19:01 +0700 Pr0ducer.local (80694)] INFO : Finished instrumentation
+[04/11/14 16:28:16 +0700 Pr0ducer.local (80841)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 16:28:16 +0700 Pr0ducer.local (80841)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 16:28:16 +0700 Pr0ducer.local (80841)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Enabling the Request Sampler.
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Environment: development
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : No known dispatcher detected.
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Application: My Application
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] WARN : Agent configured not to send data in this environment.
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Installing Net instrumentation
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Installing deferred Rack instrumentation
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 16:28:17 +0700 Pr0ducer.local (80841)] INFO : Finished instrumentation
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Enabling the Request Sampler.
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Environment: development
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Dispatcher: webrick
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Application: My Application
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] WARN : Agent configured not to send data in this environment.
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Installing Net instrumentation
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Installing deferred Rack instrumentation
+[04/11/14 16:40:41 +0700 Pr0ducer.local (81090)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 16:40:43 +0700 Pr0ducer.local (81090)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 16:40:43 +0700 Pr0ducer.local (81090)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 16:40:43 +0700 Pr0ducer.local (81090)] INFO : Finished instrumentation
+[04/11/14 16:40:45 +0700 Pr0ducer.local (81090)] INFO : Doing deferred dependency-detection before Rack startup
+[04/11/14 17:51:34 +0700 Pr0ducer.local (82070)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 17:51:34 +0700 Pr0ducer.local (82070)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 17:51:34 +0700 Pr0ducer.local (82070)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] INFO : Enabling the Request Sampler.
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] INFO : Environment: development
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] INFO : No known dispatcher detected.
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] INFO : Application: My Application
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] WARN : Agent configured not to send data in this environment.
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] INFO : Installing Net instrumentation
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] INFO : Installing deferred Rack instrumentation
+[04/11/14 17:51:35 +0700 Pr0ducer.local (82070)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 17:51:37 +0700 Pr0ducer.local (82070)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 17:51:37 +0700 Pr0ducer.local (82070)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 17:51:37 +0700 Pr0ducer.local (82070)] INFO : Finished instrumentation
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : Enabling the Request Sampler.
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : Environment: development
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : No known dispatcher detected.
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : Application: My Application
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] WARN : Agent configured not to send data in this environment.
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : Installing Net instrumentation
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : Installing deferred Rack instrumentation
+[04/11/14 17:52:53 +0700 Pr0ducer.local (82122)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 17:52:54 +0700 Pr0ducer.local (82122)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 17:52:54 +0700 Pr0ducer.local (82122)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 17:52:54 +0700 Pr0ducer.local (82122)] INFO : Finished instrumentation
+[04/11/14 17:59:05 +0700 Pr0ducer.local (82237)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 17:59:05 +0700 Pr0ducer.local (82237)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 17:59:05 +0700 Pr0ducer.local (82237)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 17:59:05 +0700 Pr0ducer.local (82237)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 17:59:05 +0700 Pr0ducer.local (82237)] INFO : Enabling the Request Sampler.
+[04/11/14 17:59:05 +0700 Pr0ducer.local (82237)] INFO : Environment: development
+[04/11/14 17:59:05 +0700 Pr0ducer.local (82237)] INFO : No known dispatcher detected.
+[04/11/14 17:59:05 +0700 Pr0ducer.local (82237)] INFO : Application: My Application
+[04/11/14 17:59:05 +0700 Pr0ducer.local (82237)] WARN : Agent configured not to send data in this environment.
+[04/11/14 17:59:06 +0700 Pr0ducer.local (82237)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 17:59:06 +0700 Pr0ducer.local (82237)] INFO : Installing Net instrumentation
+[04/11/14 17:59:06 +0700 Pr0ducer.local (82237)] INFO : Installing deferred Rack instrumentation
+[04/11/14 17:59:06 +0700 Pr0ducer.local (82237)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 17:59:06 +0700 Pr0ducer.local (82237)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 17:59:06 +0700 Pr0ducer.local (82237)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 17:59:06 +0700 Pr0ducer.local (82237)] INFO : Finished instrumentation
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : Enabling the Request Sampler.
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : Environment: development
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : No known dispatcher detected.
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : Application: My Application
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] WARN : Agent configured not to send data in this environment.
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : Installing Net instrumentation
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : Installing deferred Rack instrumentation
+[04/11/14 18:00:26 +0700 Pr0ducer.local (82288)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 18:00:27 +0700 Pr0ducer.local (82288)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 18:00:27 +0700 Pr0ducer.local (82288)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 18:00:27 +0700 Pr0ducer.local (82288)] INFO : Finished instrumentation
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : Enabling the Request Sampler.
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : Environment: development
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : No known dispatcher detected.
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : Application: My Application
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] WARN : Agent configured not to send data in this environment.
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : Installing Net instrumentation
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : Installing deferred Rack instrumentation
+[04/11/14 18:06:39 +0700 Pr0ducer.local (82403)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 18:06:40 +0700 Pr0ducer.local (82403)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 18:06:40 +0700 Pr0ducer.local (82403)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 18:06:40 +0700 Pr0ducer.local (82403)] INFO : Finished instrumentation
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : Enabling the Request Sampler.
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : Environment: development
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : No known dispatcher detected.
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : Application: My Application
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] WARN : Agent configured not to send data in this environment.
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : Installing Net instrumentation
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : Installing deferred Rack instrumentation
+[04/11/14 18:07:45 +0700 Pr0ducer.local (82446)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 18:07:46 +0700 Pr0ducer.local (82446)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 18:07:46 +0700 Pr0ducer.local (82446)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 18:07:46 +0700 Pr0ducer.local (82446)] INFO : Finished instrumentation
+[04/11/14 18:23:17 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 18:23:32 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Restaurant with id=berrybenka
+[04/11/14 18:23:32 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Restaurant with id=berrybenka
+[04/11/14 18:33:33 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 18:33:33 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 18:40:08 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `create_country_merchant_url' for #<#<Class:0x007f9c382c6ba0>:0x007f9c34120d90>
+[04/11/14 18:40:08 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `create_country_merchant_url' for #<#<Class:0x007f9c382c6ba0>:0x007f9c34120d90>
+[04/11/14 18:46:31 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::UndefinedColumn: ERROR:  column reviews.restaurant_id does not exist
+LINE 1: ...LECT reviews.* FROM "reviews" JOIN restaurants ON reviews.re...
+                                                             ^
+: SELECT reviews.* FROM "reviews" JOIN restaurants ON reviews.restaurant_id = restaurants.id JOIN cities ON cities.id = restaurants.city_id WHERE (cities.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at
+[04/11/14 18:46:31 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::UndefinedColumn: ERROR:  column reviews.restaurant_id does not exist
+LINE 1: ...LECT reviews.* FROM "reviews" JOIN restaurants ON reviews.re...
+                                                             ^
+: SELECT reviews.* FROM "reviews" JOIN restaurants ON reviews.restaurant_id = restaurants.id JOIN cities ON cities.id = restaurants.city_id WHERE (cities.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at
+[04/11/14 19:43:18 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 19:43:18 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 19:52:19 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 19:52:19 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:28:18 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:28:18 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:32:44 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:32:44 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:33:53 +0700 Pr0ducer.local (85245)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Enabling the Request Sampler.
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Environment: development
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : No known dispatcher detected.
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Application: My Application
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] WARN : Agent configured not to send data in this environment.
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Installing Net instrumentation
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Installing deferred Rack instrumentation
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 22:33:54 +0700 Pr0ducer.local (85245)] INFO : Finished instrumentation
+[04/11/14 22:41:30 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:41:30 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:41:51 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:41:51 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:47:15 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:47:15 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:54:59 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:54:59 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:55:57 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 22:55:57 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Enabling the Request Sampler.
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Environment: development
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : No known dispatcher detected.
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Application: My Application
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] WARN : Agent configured not to send data in this environment.
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Installing Net instrumentation
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Installing deferred Rack instrumentation
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 23:00:04 +0700 Pr0ducer.local (85721)] INFO : Finished instrumentation
+[04/11/14 23:05:50 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:05:50 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:06:21 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:06:21 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:06:31 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:06:31 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:08:48 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:08:48 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:18:35 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:18:35 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:20:10 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:20:10 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:20:34 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:20:34 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:24:56 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:24:56 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:25:40 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:25:40 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:28:07 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:28:07 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:28:21 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:28:21 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:29:15 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:29:15 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:29:19 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:29:19 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:29:23 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:29:23 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:29:33 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:29:33 +0700 Pr0ducer.local (81090)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/models/favorite.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  validates :user_id, :merchant_id presence: true
+                                           ^
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Starting the New Relic agent in "development" environment.
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Reading configuration from config/newrelic.yml
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : New Relic Agent Developer Mode enabled.
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Enabling the Request Sampler.
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Environment: development
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Dispatcher: webrick
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Application: My Application
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] WARN : Agent configured not to send data in this environment.
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Installing ActiveRecord instrumentation
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Installing Net instrumentation
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Installing deferred Rack instrumentation
+[04/11/14 23:30:07 +0700 Pr0ducer.local (86186)] INFO : Installing Rails 3 Controller instrumentation
+[04/11/14 23:30:08 +0700 Pr0ducer.local (86186)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/11/14 23:30:08 +0700 Pr0ducer.local (86186)] INFO : Installing Rails3 Error instrumentation
+[04/11/14 23:30:08 +0700 Pr0ducer.local (86186)] INFO : Finished instrumentation
+[04/11/14 23:30:10 +0700 Pr0ducer.local (86186)] INFO : Doing deferred dependency-detection before Rack startup
+[04/12/14 00:13:21 +0700 Pr0ducer.local (86870)] INFO : Starting the New Relic agent in "development" environment.
+[04/12/14 00:13:21 +0700 Pr0ducer.local (86870)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/12/14 00:13:21 +0700 Pr0ducer.local (86870)] INFO : Reading configuration from config/newrelic.yml
+[04/12/14 00:13:21 +0700 Pr0ducer.local (86870)] INFO : New Relic Agent Developer Mode enabled.
+[04/12/14 00:13:21 +0700 Pr0ducer.local (86870)] INFO : Enabling the Request Sampler.
+[04/12/14 00:13:21 +0700 Pr0ducer.local (86870)] INFO : Environment: development
+[04/12/14 00:13:21 +0700 Pr0ducer.local (86870)] INFO : Dispatcher: webrick
+[04/12/14 00:13:21 +0700 Pr0ducer.local (86870)] INFO : Application: My Application
+[04/12/14 00:13:21 +0700 Pr0ducer.local (86870)] WARN : Agent configured not to send data in this environment.
+[04/12/14 00:13:22 +0700 Pr0ducer.local (86870)] INFO : Installing ActiveRecord instrumentation
+[04/12/14 00:13:22 +0700 Pr0ducer.local (86870)] INFO : Installing Net instrumentation
+[04/12/14 00:13:22 +0700 Pr0ducer.local (86870)] INFO : Installing deferred Rack instrumentation
+[04/12/14 00:13:22 +0700 Pr0ducer.local (86870)] INFO : Installing Rails 3 Controller instrumentation
+[04/12/14 00:13:22 +0700 Pr0ducer.local (86870)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/12/14 00:13:22 +0700 Pr0ducer.local (86870)] INFO : Installing Rails3 Error instrumentation
+[04/12/14 00:13:22 +0700 Pr0ducer.local (86870)] INFO : Finished instrumentation
+[04/12/14 00:13:25 +0700 Pr0ducer.local (86870)] INFO : Doing deferred dependency-detection before Rack startup
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Starting the New Relic agent in "development" environment.
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Reading configuration from config/newrelic.yml
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : New Relic Agent Developer Mode enabled.
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Enabling the Request Sampler.
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Environment: development
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : No known dispatcher detected.
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Application: My Application
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] WARN : Agent configured not to send data in this environment.
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Installing ActiveRecord instrumentation
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Installing Net instrumentation
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Installing deferred Rack instrumentation
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Installing Rails 3 Controller instrumentation
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Installing Rails3 Error instrumentation
+[04/12/14 10:20:09 +0700 Pr0ducer.local (88329)] INFO : Finished instrumentation
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Starting the New Relic agent in "development" environment.
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Reading configuration from config/newrelic.yml
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : New Relic Agent Developer Mode enabled.
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Enabling the Request Sampler.
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Environment: development
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Dispatcher: webrick
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Application: My Application
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] WARN : Agent configured not to send data in this environment.
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Installing ActiveRecord instrumentation
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Installing Net instrumentation
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Installing deferred Rack instrumentation
+[04/12/14 10:42:14 +0700 Pr0ducer.local (88642)] INFO : Installing Rails 3 Controller instrumentation
+[04/12/14 10:42:15 +0700 Pr0ducer.local (88642)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/12/14 10:42:15 +0700 Pr0ducer.local (88642)] INFO : Installing Rails3 Error instrumentation
+[04/12/14 10:42:15 +0700 Pr0ducer.local (88642)] INFO : Finished instrumentation
+[04/12/14 10:42:16 +0700 Pr0ducer.local (88642)] INFO : Doing deferred dependency-detection before Rack startup
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Starting the New Relic agent in "development" environment.
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Reading configuration from config/newrelic.yml
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : New Relic Agent Developer Mode enabled.
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Enabling the Request Sampler.
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Environment: development
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Dispatcher: webrick
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Application: My Application
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] WARN : Agent configured not to send data in this environment.
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Installing ActiveRecord instrumentation
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Installing Net instrumentation
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Installing deferred Rack instrumentation
+[04/12/14 13:22:23 +0700 Pr0ducer.local (90763)] INFO : Installing Rails 3 Controller instrumentation
+[04/12/14 13:22:24 +0700 Pr0ducer.local (90763)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/12/14 13:22:24 +0700 Pr0ducer.local (90763)] INFO : Installing Rails3 Error instrumentation
+[04/12/14 13:22:24 +0700 Pr0ducer.local (90763)] INFO : Finished instrumentation
+[04/12/14 13:22:26 +0700 Pr0ducer.local (90763)] INFO : Doing deferred dependency-detection before Rack startup
+[04/14/14 06:27:42 +0700 Pr0ducer.local (93833)] INFO : Starting the New Relic agent in "development" environment.
+[04/14/14 06:27:42 +0700 Pr0ducer.local (93833)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/14/14 06:27:42 +0700 Pr0ducer.local (93833)] INFO : Reading configuration from config/newrelic.yml
+[04/14/14 06:27:42 +0700 Pr0ducer.local (93833)] INFO : New Relic Agent Developer Mode enabled.
+[04/14/14 06:27:42 +0700 Pr0ducer.local (93833)] INFO : Enabling the Request Sampler.
+[04/14/14 06:27:42 +0700 Pr0ducer.local (93833)] INFO : Environment: development
+[04/14/14 06:27:42 +0700 Pr0ducer.local (93833)] INFO : No known dispatcher detected.
+[04/14/14 06:27:42 +0700 Pr0ducer.local (93833)] INFO : Application: My Application
+[04/14/14 06:27:42 +0700 Pr0ducer.local (93833)] WARN : Agent configured not to send data in this environment.
+[04/14/14 06:27:43 +0700 Pr0ducer.local (93833)] INFO : Installing ActiveRecord instrumentation
+[04/14/14 06:27:43 +0700 Pr0ducer.local (93833)] INFO : Installing Net instrumentation
+[04/14/14 06:27:43 +0700 Pr0ducer.local (93833)] INFO : Installing deferred Rack instrumentation
+[04/14/14 06:27:43 +0700 Pr0ducer.local (93833)] INFO : Installing Rails 3 Controller instrumentation
+[04/14/14 06:27:43 +0700 Pr0ducer.local (93833)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/14/14 06:27:43 +0700 Pr0ducer.local (93833)] INFO : Installing Rails3 Error instrumentation
+[04/14/14 06:27:43 +0700 Pr0ducer.local (93833)] INFO : Finished instrumentation
+[04/14/14 06:37:38 +0700 Pr0ducer.local (93983)] INFO : Starting the New Relic agent in "development" environment.
+[04/14/14 06:37:38 +0700 Pr0ducer.local (93983)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/14/14 06:37:38 +0700 Pr0ducer.local (93983)] INFO : Reading configuration from config/newrelic.yml
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : New Relic Agent Developer Mode enabled.
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : Enabling the Request Sampler.
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : Environment: development
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : No known dispatcher detected.
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : Application: My Application
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] WARN : Agent configured not to send data in this environment.
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : Installing ActiveRecord instrumentation
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : Installing Net instrumentation
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : Installing deferred Rack instrumentation
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : Installing Rails 3 Controller instrumentation
+[04/14/14 06:37:39 +0700 Pr0ducer.local (93983)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/14/14 06:37:40 +0700 Pr0ducer.local (93983)] INFO : Installing Rails3 Error instrumentation
+[04/14/14 06:37:40 +0700 Pr0ducer.local (93983)] INFO : Finished instrumentation
+[04/14/14 06:44:29 +0700 Pr0ducer.local (94173)] INFO : Starting the New Relic agent in "development" environment.
+[04/14/14 06:44:29 +0700 Pr0ducer.local (94173)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/14/14 06:44:29 +0700 Pr0ducer.local (94173)] INFO : Reading configuration from config/newrelic.yml
+[04/14/14 06:44:29 +0700 Pr0ducer.local (94173)] INFO : New Relic Agent Developer Mode enabled.
+[04/14/14 06:44:29 +0700 Pr0ducer.local (94173)] INFO : Enabling the Request Sampler.
+[04/14/14 06:44:29 +0700 Pr0ducer.local (94173)] INFO : Environment: development
+[04/14/14 06:44:29 +0700 Pr0ducer.local (94173)] INFO : No known dispatcher detected.
+[04/14/14 06:44:29 +0700 Pr0ducer.local (94173)] INFO : Application: My Application
+[04/14/14 06:44:29 +0700 Pr0ducer.local (94173)] WARN : Agent configured not to send data in this environment.
+[04/14/14 06:44:30 +0700 Pr0ducer.local (94173)] INFO : Installing ActiveRecord instrumentation
+[04/14/14 06:44:30 +0700 Pr0ducer.local (94173)] INFO : Installing Net instrumentation
+[04/14/14 06:44:30 +0700 Pr0ducer.local (94173)] INFO : Installing deferred Rack instrumentation
+[04/14/14 06:44:30 +0700 Pr0ducer.local (94173)] INFO : Installing Rails 3 Controller instrumentation
+[04/14/14 06:44:31 +0700 Pr0ducer.local (94173)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/14/14 06:44:31 +0700 Pr0ducer.local (94173)] INFO : Installing Rails3 Error instrumentation
+[04/14/14 06:44:31 +0700 Pr0ducer.local (94173)] INFO : Finished instrumentation
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : Starting the New Relic agent in "development" environment.
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : Reading configuration from config/newrelic.yml
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : New Relic Agent Developer Mode enabled.
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : Enabling the Request Sampler.
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : Environment: development
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : No known dispatcher detected.
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : Application: My Application
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] WARN : Agent configured not to send data in this environment.
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : Installing ActiveRecord instrumentation
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : Installing Net instrumentation
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : Installing deferred Rack instrumentation
+[04/14/14 08:02:19 +0700 Pr0ducer.local (95235)] INFO : Installing Rails 3 Controller instrumentation
+[04/14/14 08:02:20 +0700 Pr0ducer.local (95235)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/14/14 08:02:20 +0700 Pr0ducer.local (95235)] INFO : Installing Rails3 Error instrumentation
+[04/14/14 08:02:20 +0700 Pr0ducer.local (95235)] INFO : Finished instrumentation
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Starting the New Relic agent in "development" environment.
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Reading configuration from config/newrelic.yml
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : New Relic Agent Developer Mode enabled.
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Enabling the Request Sampler.
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Environment: development
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : No known dispatcher detected.
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Application: My Application
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] WARN : Agent configured not to send data in this environment.
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Installing ActiveRecord instrumentation
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Installing Net instrumentation
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Installing deferred Rack instrumentation
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Installing Rails 3 Controller instrumentation
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Installing Rails3 Error instrumentation
+[04/14/14 08:04:03 +0700 Pr0ducer.local (95282)] INFO : Finished instrumentation
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : Starting the New Relic agent in "development" environment.
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : Reading configuration from config/newrelic.yml
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : New Relic Agent Developer Mode enabled.
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : Enabling the Request Sampler.
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : Environment: development
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : No known dispatcher detected.
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : Application: My Application
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] WARN : Agent configured not to send data in this environment.
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : Installing ActiveRecord instrumentation
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : Installing Net instrumentation
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : Installing deferred Rack instrumentation
+[04/14/14 11:31:04 +0700 Pr0ducer.local (97986)] INFO : Installing Rails 3 Controller instrumentation
+[04/14/14 11:31:05 +0700 Pr0ducer.local (97986)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/14/14 11:31:05 +0700 Pr0ducer.local (97986)] INFO : Installing Rails3 Error instrumentation
+[04/14/14 11:31:05 +0700 Pr0ducer.local (97986)] INFO : Finished instrumentation
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : Starting the New Relic agent in "development" environment.
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : Reading configuration from config/newrelic.yml
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : New Relic Agent Developer Mode enabled.
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : Enabling the Request Sampler.
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : Environment: development
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : No known dispatcher detected.
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : Application: My Application
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] WARN : Agent configured not to send data in this environment.
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : Installing ActiveRecord instrumentation
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : Installing Net instrumentation
+[04/14/14 11:36:46 +0700 Pr0ducer.local (98076)] INFO : Installing deferred Rack instrumentation
+[04/14/14 11:36:47 +0700 Pr0ducer.local (98076)] INFO : Installing Rails 3 Controller instrumentation
+[04/14/14 11:36:48 +0700 Pr0ducer.local (98076)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/14/14 11:36:48 +0700 Pr0ducer.local (98076)] INFO : Installing Rails3 Error instrumentation
+[04/14/14 11:36:48 +0700 Pr0ducer.local (98076)] INFO : Finished instrumentation
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : Starting the New Relic agent in "development" environment.
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : Reading configuration from config/newrelic.yml
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : New Relic Agent Developer Mode enabled.
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : Enabling the Request Sampler.
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : Environment: development
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : No known dispatcher detected.
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : Application: My Application
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] WARN : Agent configured not to send data in this environment.
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : Installing ActiveRecord instrumentation
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : Installing Net instrumentation
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : Installing deferred Rack instrumentation
+[04/15/14 11:17:38 +0700 Pr0ducer.local (8556)] INFO : Installing Rails 3 Controller instrumentation
+[04/15/14 11:17:40 +0700 Pr0ducer.local (8556)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/15/14 11:17:40 +0700 Pr0ducer.local (8556)] INFO : Installing Rails3 Error instrumentation
+[04/15/14 11:17:40 +0700 Pr0ducer.local (8556)] INFO : Finished instrumentation
+[04/15/14 22:43:37 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews", :merchant_id=>nil}
+[04/15/14 22:44:26 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews", :merchant_id=>nil}
+[04/15/14 22:44:26 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews", :merchant_id=>nil}
+[04/15/14 22:44:50 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews", :merchant_id=>nil}
+[04/15/14 22:44:50 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews", :merchant_id=>nil}
+[04/15/14 22:51:32 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews"}
+[04/15/14 22:51:32 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews"}
+[04/15/14 22:56:22 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/views/layouts/application.html.erb:111: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet2/app/views/layouts/application.html.erb:113: syntax error, unexpected end-of-input, expecting keyword_end
+[04/15/14 22:56:22 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet2/app/views/layouts/application.html.erb:111: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet2/app/views/layouts/application.html.erb:113: syntax error, unexpected end-of-input, expecting keyword_end
+[04/15/14 23:17:57 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:17:57 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:18:26 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:18:27 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:19:37 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:19:38 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:21:37 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:21:37 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:21:51 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:21:51 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:22:15 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:22:15 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:22:36 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:22:36 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:22:46 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:22:46 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:22:57 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:22:57 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:23:17 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:23:17 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:23:25 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:23:25 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:25:27 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:25:27 +0700 Pr0ducer.local (90763)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Starting the New Relic agent in "development" environment.
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Reading configuration from config/newrelic.yml
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : New Relic Agent Developer Mode enabled.
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Enabling the Request Sampler.
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Environment: development
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Dispatcher: webrick
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Application: My Application
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] WARN : Agent configured not to send data in this environment.
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Installing ActiveRecord instrumentation
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Installing Net instrumentation
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Installing deferred Rack instrumentation
+[04/15/14 23:27:39 +0700 Pr0ducer.local (14314)] INFO : Installing Rails 3 Controller instrumentation
+[04/15/14 23:27:40 +0700 Pr0ducer.local (14314)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/15/14 23:27:40 +0700 Pr0ducer.local (14314)] INFO : Installing Rails3 Error instrumentation
+[04/15/14 23:27:40 +0700 Pr0ducer.local (14314)] INFO : Finished instrumentation
+[04/15/14 23:27:41 +0700 Pr0ducer.local (14314)] INFO : Doing deferred dependency-detection before Rack startup
+[04/16/14 12:20:27 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/16/14 13:20:36 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/16/14 13:20:36 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/16/14 14:36:36 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews"}
+[04/16/14 14:36:36 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews"}
+[04/16/14 14:38:04 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews", :merchant_id=>nil}
+[04/16/14 14:38:04 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews", :merchant_id=>nil}
+[04/16/14 14:38:14 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews", :merchant_id=>nil}
+[04/16/14 14:38:14 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"new", :controller=>"reviews", :merchant_id=>nil}
+[04/16/14 15:00:31 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: missing required :bucket option
+[04/16/14 15:00:31 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: missing required :bucket option
+[04/16/14 15:02:42 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: can't dup NilClass
+[04/16/14 15:02:42 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: can't dup NilClass
+[04/16/14 15:16:11 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `paginate' for #<ActiveRecord::Relation:0x007fa68c3e4e70>
+[04/16/14 15:16:11 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `paginate' for #<ActiveRecord::Relation:0x007fa68c3e4e70>
+[04/16/14 15:17:09 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `paginate' for #<ActiveRecord::Relation:0x007fa69362acf0>
+[04/16/14 15:17:09 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `paginate' for #<ActiveRecord::Relation:0x007fa69362acf0>
+[04/17/14 09:18:30 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `paginate' for #<ActiveRecord::Relation:0x007fa67c6cd9f8>
+[04/17/14 09:18:30 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `paginate' for #<ActiveRecord::Relation:0x007fa67c6cd9f8>
+[04/17/14 09:25:02 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `paginate' for #<ActiveRecord::Relation:0x007fa68bcff7e0>
+[04/17/14 09:25:02 +0700 Pr0ducer.local (14314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `paginate' for #<ActiveRecord::Relation:0x007fa68bcff7e0>
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Starting the New Relic agent in "development" environment.
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Reading configuration from config/newrelic.yml
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : New Relic Agent Developer Mode enabled.
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Enabling the Request Sampler.
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Environment: development
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Dispatcher: webrick
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Application: My Application
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] WARN : Agent configured not to send data in this environment.
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Installing ActiveRecord instrumentation
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Installing Net instrumentation
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Installing deferred Rack instrumentation
+[04/17/14 09:31:10 +0700 Pr0ducer.local (24338)] INFO : Installing Rails 3 Controller instrumentation
+[04/17/14 09:31:11 +0700 Pr0ducer.local (24338)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/17/14 09:31:11 +0700 Pr0ducer.local (24338)] INFO : Installing Rails3 Error instrumentation
+[04/17/14 09:31:11 +0700 Pr0ducer.local (24338)] INFO : Finished instrumentation
+[04/17/14 09:31:14 +0700 Pr0ducer.local (24338)] INFO : Doing deferred dependency-detection before Rack startup
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Starting the New Relic agent in "development" environment.
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Reading configuration from config/newrelic.yml
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : New Relic Agent Developer Mode enabled.
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Enabling the Request Sampler.
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Environment: development
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Dispatcher: webrick
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Application: My Application
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] WARN : Agent configured not to send data in this environment.
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Installing ActiveRecord instrumentation
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Installing Net instrumentation
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Installing deferred Rack instrumentation
+[04/17/14 11:59:35 +0700 Pr0ducer.local (26265)] INFO : Installing Rails 3 Controller instrumentation
+[04/17/14 11:59:36 +0700 Pr0ducer.local (26265)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/17/14 11:59:36 +0700 Pr0ducer.local (26265)] INFO : Installing Rails3 Error instrumentation
+[04/17/14 11:59:36 +0700 Pr0ducer.local (26265)] INFO : Finished instrumentation
+[04/17/14 11:59:37 +0700 Pr0ducer.local (26265)] INFO : Doing deferred dependency-detection before Rack startup

@@ -1,0 +1,69 @@
+<% action = (merchant.persisted? ? merchant_url(merchant) : country_merchants_url) %>
+<% method = (merchant.persisted? ? "put" : "post") %>
+<% message = (merchant.persisted? ? "Update merchant" : "Add merchant") %>
+
+<form class="form" action="<%= action %>" method="post" enctype="multipart/form-data">
+  <input
+     name="_method"
+     type="hidden"
+     value="<%= method %>">
+  <input
+     name="authenticity_token"
+     type="hidden"
+     value="<%= form_authenticity_token %>">
+
+ <h1><%= message %></h1>
+
+  <div class="input">
+    <label for="merchant_name">Merchant Name</label>
+    <input
+       id="merchant_name"
+       name="merchant[name]"
+       type="text"
+       value="<%= @merchant.name %>">
+  </div>
+
+  <div class="input">
+    <label for="merchant_category">Industry</label>
+
+    <% Category.all.each do |category| %>
+  <ul class="category group">
+     <li><input id="merchant_category" name="merchant[category_ids][]" type="checkbox" value="<%= category.id %>" <%= "checked" if @merchant.categories.include?(category) %>><%= category.name %></option></li>
+  </ul>
+    <% end %>
+    <input type="hidden" name="merchant[category_ids][]" value="">
+  </div>
+
+  <br><br>
+
+  <div class="input">
+    <label for="merchant_website">Website</label>
+    <input
+       id="merchant_website"
+       name="merchant[website]"
+       type="url"
+       value="<%= @merchant.website %>">
+  </div>
+
+  <div class="input">
+    <label for="merchant_phone">Phone Number</label>
+    <input
+       id="merchant_phone"
+       name="merchant[phone]"
+       type="text"
+       value="<%= @merchant.phone %>">
+  </div>
+
+  <div class="input">
+    <label for="merchant_photo">Add a photo for this merchant!</label>
+    <input
+        id="merchant_photo"
+        name="merchant[photo]"
+        type="file">
+  </div>
+
+  <div class="submit">
+    <input type="submit" value="<%= message %>">
+  </div>
+</form>
+<br>

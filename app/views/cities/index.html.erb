@@ -1,0 +1,14 @@
+<div class="content group">
+
+  <h1 id="city-index">Location?</h1>
+
+  <div class="cities group">
+    <ul>
+    <% @cities.each do |city| %>
+
+    <li class="city-tile" id="<%= city.state.name %>"><a href="<%= city_restaurants_url(city) %>"><label class="special-text"><%= city.name %></label></a></li>
+
+    <% end %>
+    </ul>
+  </div>
+</div>

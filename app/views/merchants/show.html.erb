@@ -1,0 +1,212 @@
+<div class="rest-content group">
+
+  <section class="modal">
+    <article class="modal-box">
+      <span class="modal-close-button">&times;</span>
+      <div id="modal-container">
+
+        <form class="form" action="<%= merchant_reviews_url(@merchant) %>" method="post" data-remote="true" id="jsform">
+          <input
+             name="authenticity_token"
+             type="hidden"
+             value="<%= form_authenticity_token %>">
+
+         <h1>New Story!</h1>
+
+         <div class="input">
+          <label for="review_rating">Rating</label>
+          <select id="review_rating" name="review[rating]">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+         </div>
+
+         <div class="input">
+          <label for="review_email">Story Title</label>
+          <input id="review_title" name="review[title]" type="text" value="">
+          <br>
+        </div>
+
+        <div class="input">
+          <label for="review_body">Story Body</label><br>
+        <textarea id="review_body" name="review[body]"></textarea>
+        </div>
+
+         <div class="submit">
+          <input id="submit" type="submit" value="Create review!">
+         </div>
+        </form>
+
+      </div>
+    </article>
+  </section>
+
+  <div class="rest-left group">
+    <div class="rest-info">
+
+      <div class="rest-photo">
+      <% if @merchant.photo.file? %>
+        <%= image_tag @merchant.photo.url(:big) %>
+      <% else %>
+        <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "100x100" %>
+      <% end %>
+      </div>
+
+
+    <h2>
+      <%= @merchant.name %>
+      <%= "(CLOSED)" if @merchant.open == false %>
+    </h2>
+
+    <% if current_user && current_user.admin == true %>
+      (<%= link_to "Edit Listing", edit_merchant_url(@merchant) %>)
+    <% end %>
+    <br>
+
+    <div class="favs">
+      <%#="is-favorite" if current_user.favorite_places.include?(@merchant) %>
+      <%= button_to "FAVORITE", merchant_favorites_url(@merchant), method: :post, form_class: "favorite-button grad_button", remote: true %>
+      <%= button_to "UNFAVORITE", merchant_favorite_url(@merchant), method: :delete, form_class: "unfavorite-button grad_button", remote: true %>
+    </div>
+
+  <br>
+
+  Average Rating: <%= @merchant.average_rating %> (<%= @merchant.reviews.count %> reviews)
+
+  <br>
+
+  Categories:
+  <br>
+  <ul>
+  <% @merchant.categories.each do |category| %>
+    <li><%= category.name %></li>
+  <% end %>
+  </ul>
+
+  <!-- merchant INFO -->
+
+  <h3>merchant Info</h3>
+  <ul>
+    <% unless @merchant.website.empty? %>
+      <li><%= link_to @merchant.website, @merchant.website %> </li>
+    <% end %>
+    <% unless @merchant.phone.empty? %>
+      <li> <%= @merchant.phone %> </li>
+    <% end %>
+    <li id="address"><%= @merchant.country.name %></li>
+  </ul>
+
+  <!-- REVIEWS -->
+  <h3>Reviews</h3>
+
+  <% if current_user && @merchant.open == true %>
+    <%= link_to "Write a story!", new_merchant_review_url(@merchant), class: "new-review" %>
+  <% end %>
+
+
+  <br>
+<div class="reviews">
+  <%= render "reviews/index", :merchant => @merchant %>
+</div>
+    </div>
+  </div>
+
+
+  <!-- MAPS IMAGE -->
+
+  <div class="rest-right group">
+
+    <div id="map-canvas">
+
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1vzTzS0JGhNkO2rWAopHhtIrFZBImTZ4&sensor=false">
+</script>
+
+<script>
+
+// NEW REVIEW MODAL
+
+$(document).ready(function(){
+
+  window.modal = {
+    show: function(){
+      $("body").addClass("has-active-modal");
+    },
+    hide: function(){
+      $("body").removeClass("has-active-modal");
+    }
+  };
+
+  $("body").on("click", ".show-modal", function(event){
+    event.preventDefault();
+    window.modal.show();
+  });
+
+  $(".modal").on("click", function(event){
+
+    $target = $(event.target);
+
+    if($target.is(".modal") || $target.is(".modal-close-button")){
+      event.preventDefault();
+      window.modal.hide();
+    }
+  });
+
+  $("#jsform").on("ajax:send", function(event){
+    $("#submit").attr('disabled', 'true');
+  });
+
+  $("#jsform").on("ajax:success", function(event, data){
+    window.modal.hide();
+    $(".reviews").prepend(data);
+    $(".show-modal").remove();
+  });
+
+});
+
+// GOOGLE MAPS
+
+  function initialize() {
+    var address = $('#address').html();
+    var geocoder = new google.maps.Geocoder();
+
+    geocoder.geocode({address: address}, function(results, status) {
+      var mapOptions = {
+        center: new google.maps.LatLng(results[0].geometry.location['e'], results[0].geometry.location['d']),
+        zoom: 16
+      };
+
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location
+      });
+
+      var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+      map.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+        map: map,
+        position: results[0].geometry.location
+      });
+
+    });
+  };
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+  // FAVORITES
+  $('.favorite-button').on('ajax:send', function(event){
+    $('.favs').toggleClass('is-favorite');
+  });
+
+  $('.unfavorite-button').on('ajax:send', function(event){
+    $('.favs').toggleClass('is-favorite');
+  });
+</script>

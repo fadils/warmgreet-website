@@ -1,0 +1,14 @@
+<div class="content group">
+
+  <h1 id="city-index">Location?</h1>
+
+  <div class="cities group">
+    <ul>
+    <% @countries.each do |country| %>
+
+    <li class="city-tile" id="<%= country.name %>"><a href="<%= country_merchants_url(country) %>"><label class="special-text"><%= country.name %></label></a></li>
+
+    <% end %>
+    </ul>
+  </div>
+</div>
