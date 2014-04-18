@@ -1,7 +1,7 @@
 class FavoritesController < ApplicationController
 
   def create
-    @merchant = Merchant.find(params[:restaurant_id])
+    @merchant = Merchant.find(params[:merchant_id])
     @favorite = current_user.favorites.new
     @favorite.merchant_id = @merchant.id
     @favorite.save

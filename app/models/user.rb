@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
   has_attached_file :photo, :styles => {
     :big => "100x100#",
     :small => "60x60#",
-    :bucket => nil
+    :bucket => 'localhost:3000',
   }
 
   has_many :reviews,
