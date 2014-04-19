@@ -1,0 +1,424 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-19 15:10:41 +0700
+Processing by MerchantsController#index as HTML
+  [1m[36mCountry Load (112.8ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (273.9ms)[0m  SELECT reviews.* FROM "reviews" JOIN merchants ON reviews.merchant_id = merchants.id JOIN countries ON countries.id = merchants.country_id WHERE (countries.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at
+  [1m[36mCountry Load (0.4ms)[0m  [1mSELECT "countries".* FROM "countries" [0m
+  [1m[35mMerchant Load (12.1ms)[0m  SELECT merchants.*, AVG(reviews.rating) AS avg_rating FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id ORDER BY avg_rating DESC NULLS LAST LIMIT 5 OFFSET 0
+  [1m[36m (14.2ms)[0m  [1mSHOW max_identifier_length[0m
+  [1m[35m (3.0ms)[0m  SELECT COUNT(*) AS count_all, merchants.id AS merchants_id FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 6 LIMIT 1[0m
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (87.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (250.0ms)
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 109 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1
+  Rendered reviews/_pusherform.erb (6.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 109 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (60.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 109 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  Rendered reviews/_pusherform.erb (8.2ms)
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 70 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 47 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (7.1ms)
+  Rendered merchants/index.html.erb within layouts/application (1273.5ms)
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'EZRsooXuuhUMqBbnwPgDyA' LIMIT 1
+Completed 200 OK in 3897.8ms (Views: 1918.3ms | ActiveRecord: 1348.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:46 +0700
+Served asset /cities.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:46 +0700
+Served asset /merchants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:46 +0700
+Served asset /follows.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:46 +0700
+Served asset /countries.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /favorites.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /restaurants.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /reviews.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /usercategories.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /usermerchants.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /backbone.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /itag.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /vote_tags.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /underscore.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /restaurants/index.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /models/restaurant.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /countries.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /cities.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /follows.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /favorites.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /merchants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /restaurants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /reviews.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /sessions.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /usercategories.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /application.js - 304 Not Modified (65ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /vote_tags.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:47 +0700
+Served asset /usermerchants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-19 15:10:48 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (21ms)
+
+
+Started DELETE "/session" for 127.0.0.1 at 2014-04-19 15:10:53 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lkAET7B8rYqd/An09SxMsB40/EE+aITPgCJBeyPexTo="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'EZRsooXuuhUMqBbnwPgDyA' LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'fadils' AND "users"."id" != 102) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'fadil@warmgreet.com' AND "users"."id" != 102) LIMIT 1
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."session_token" = 'XDSy8O0LhAWYV-Hk0nIokA' AND "users"."id" != 102) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'fadils' AND "users"."id" != 102) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."email" = 'fadil@warmgreet.com' AND "users"."id" != 102) LIMIT 1[0m
+  [1m[35m (23.2ms)[0m  UPDATE "users" SET "session_token" = 'XDSy8O0LhAWYV-Hk0nIokA', "updated_at" = '2014-04-19 08:10:53.656805' WHERE "users"."id" = 102
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 260.9ms (ActiveRecord: 29.5ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-04-19 15:10:53 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45.9ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:53 +0700
+Served asset /cities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:53 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:53 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /restaurants/index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /models/restaurant.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /cities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /usercategories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-19 15:10:54 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2014-04-19 15:10:56 +0700
+
+OAuth::Unauthorized - 401 Unauthorized:
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.0.1) lib/omniauth/strategies/oauth.rb:29:in `request_phase'
+  omniauth-twitter (1.0.1) lib/omniauth/strategies/twitter.rb:60:in `request_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/error_collector.rb:55:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/agent_hooks.rb:32:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/browser_monitoring.rb:27:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/developer_mode.rb:45:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__1191935274601552097__call__2752644676127915409__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70139292731180/variables" for 127.0.0.1 at 2014-04-19 15:10:58 +0700

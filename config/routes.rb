@@ -1,4 +1,4 @@
-Itag::Application.routes.draw do
+WarmGreet::Application.routes.draw do
   get "merchants/index"
 
   get "reviews/story"

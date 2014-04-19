@@ -2,7 +2,7 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-Itag::Application.initialize!
+WarmGreet::Application.initialize!
 
 if Rails.env.production?
   # only send real emails in production; use Sengrid
