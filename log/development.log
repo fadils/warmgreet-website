@@ -422,3 +422,395 @@ OAuth::Unauthorized - 401 Unauthorized:
 
 
 Started POST "/__better_errors/70139292731180/variables" for 127.0.0.1 at 2014-04-19 15:10:58 +0700
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2014-04-19 15:14:32 +0700
+
+OAuth::Unauthorized - 401 Unauthorized:
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.0.1) lib/omniauth/strategies/oauth.rb:29:in `request_phase'
+  omniauth-twitter (1.0.1) lib/omniauth/strategies/twitter.rb:60:in `request_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/error_collector.rb:55:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/agent_hooks.rb:32:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/browser_monitoring.rb:27:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/developer_mode.rb:45:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__1191935274601552097__call__2752644676127915409__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70139260959320/variables" for 127.0.0.1 at 2014-04-19 15:14:34 +0700
+Connecting to database specified by database.yml
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2014-04-19 15:15:47 +0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=bODpWGzXgDSq9POj8OBsrB2FnmKFCtw6nEy6IRwhFmI&oauth_verifier=gvLLSYI4JtNDDodTIkb6gpKqZOItBcE0SmFYcRfGy4" for 127.0.0.1 at 2014-04-19 15:15:52 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"bODpWGzXgDSq9POj8OBsrB2FnmKFCtw6nEy6IRwhFmI", "oauth_verifier"=>"gvLLSYI4JtNDDodTIkb6gpKqZOItBcE0SmFYcRfGy4", "provider"=>"twitter"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '21083191' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (21.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("slug" = 'fadils' OR "slug" LIKE 'fadils--%') ORDER BY LENGTH("slug") DESC, "slug" DESC LIMIT 1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'fadils' LIMIT 1
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'fillmein@right.meow' LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."session_token" = 'ap-rODkQGKEDFa491h9t0g' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'fadils' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'fillmein@right.meow' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 422 Unprocessable Entity in 1029.6ms
+
+ActiveRecord::RecordInvalid - Validation failed: Username has already been taken, Username has already been taken:
+  activerecord (3.2.16) lib/active_record/validations.rb:56:in `save!'
+  activerecord (3.2.16) lib/active_record/attribute_methods/dirty.rb:33:in `save!'
+  activerecord (3.2.16) lib/active_record/transactions.rb:264:in `block in save!'
+  activerecord (3.2.16) lib/active_record/transactions.rb:313:in `block in with_transaction_returning_status'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+  activerecord (3.2.16) lib/active_record/transactions.rb:208:in `transaction'
+  newrelic_rpm (3.7.2.195) lib/new_relic/agent/method_tracer.rb:549:in `block in transaction_with_trace_ActiveRecord_self_name_transaction'
+  newrelic_rpm (3.7.2.195) lib/new_relic/agent/method_tracer.rb:281:in `trace_execution_scoped'
+  newrelic_rpm (3.7.2.195) lib/new_relic/agent/method_tracer.rb:544:in `transaction_with_trace_ActiveRecord_self_name_transaction'
+  activerecord (3.2.16) lib/active_record/transactions.rb:311:in `with_transaction_returning_status'
+  activerecord (3.2.16) lib/active_record/transactions.rb:264:in `save!'
+  activerecord (3.2.16) lib/active_record/validations.rb:41:in `create!'
+  app/models/user.rb:84:in `find_uid_or_create'
+  app/controllers/sessions_controller.rb:11:in `create'
+  actionpack (3.2.16) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:425:in `_run__3835172528183070563__process_action__436949393434448265__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.16) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.16) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.16) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.16) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.16) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  newrelic_rpm (3.7.2.195) lib/new_relic/agent/instrumentation/rails3/action_controller.rb:38:in `block in process_action'
+  newrelic_rpm (3.7.2.195) lib/new_relic/agent/instrumentation/controller_instrumentation.rb:339:in `perform_action_with_newrelic_trace'
+  newrelic_rpm (3.7.2.195) lib/new_relic/agent/instrumentation/rails3/action_controller.rb:37:in `process_action'
+  actionpack (3.2.16) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.16) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.16) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.16) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:404:in `call_app!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth (1.0.1) lib/omniauth/strategies/oauth.rb:58:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/error_collector.rb:55:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/agent_hooks.rb:32:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/browser_monitoring.rb:27:in `call'
+  newrelic_rpm (3.7.2.195) lib/new_relic/rack/developer_mode.rb:45:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__2535033240144563247__call__2525929766595574668__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70100769975000/variables" for 127.0.0.1 at 2014-04-19 15:15:55 +0700
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" 
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-04-19 16:18:21 +0700
+Connecting to database specified by database.yml
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-04-19 17:02:35 +0700
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-04-19 17:12:35 +0700
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-04-19 17:18:22 +0700
+
+
+Started GET "/auth/facebook/callback?code=AQAGmlzZVBMbRI6yLMkQGoLBK9D_yQHzMqu5nXBOgc9_4vjzoraO3DcgaS3n761SQPfYfuM75Twm6K2vKaQAfEOJ8FWcy3n0g523otAA0SQH0BKVojdnW2NWjxLWLkM6H5w_93USATwhe3YnbIIWu_Ud8R1dTvUzTKIM2EFeNEZYHfrCXZVix8KpGkSeK6ye-NBsP_wYUa8JpFhTrXzFiZWAX8YEbl3yq61HuAca4EN-_PpRC4tnb4ewMwbgR1mGJRy-_3BOQg0H8GkFmPWRq1qHJcaJQKSNP5Lb36zOJcin_Ua_s31W_jzD01vAv14Jn6Y&state=4de1ca8346ce788cd448618b4eca4d2770c0b39adc2de347" for 127.0.0.1 at 2014-04-19 17:18:22 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAGmlzZVBMbRI6yLMkQGoLBK9D_yQHzMqu5nXBOgc9_4vjzoraO3DcgaS3n761SQPfYfuM75Twm6K2vKaQAfEOJ8FWcy3n0g523otAA0SQH0BKVojdnW2NWjxLWLkM6H5w_93USATwhe3YnbIIWu_Ud8R1dTvUzTKIM2EFeNEZYHfrCXZVix8KpGkSeK6ye-NBsP_wYUa8JpFhTrXzFiZWAX8YEbl3yq61HuAca4EN-_PpRC4tnb4ewMwbgR1mGJRy-_3BOQg0H8GkFmPWRq1qHJcaJQKSNP5Lb36zOJcin_Ua_s31W_jzD01vAv14Jn6Y", "state"=>"4de1ca8346ce788cd448618b4eca4d2770c0b39adc2de347", "provider"=>"facebook"}
+  [1m[36mUser Load (32.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '100003605061577' LIMIT 1[0m
+  [1m[35m (26.6ms)[0m  BEGIN
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("slug" = 'fadil-sutomo' OR "slug" LIKE 'fadil-sutomo--%') ORDER BY LENGTH("slug") DESC, "slug" DESC LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'fadil.sutomo' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'fsutomo@gmail.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."session_token" = 'K1ow_T0joptFHpRXNqxq7Q' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'fadil.sutomo' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'fsutomo@gmail.com' LIMIT 1
+  [1m[36mSQL (282.1ms)[0m  [1mINSERT INTO "users" ("activated", "admin", "age", "auth_token", "biography", "created_at", "email", "gender", "image", "location", "password_digest", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "provider", "session_token", "slug", "uid", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["activated", false], ["admin", false], ["age", nil], ["auth_token", "vFOOcivBifjFRAoobPldTA"], ["biography", nil], ["created_at", Sat, 19 Apr 2014 10:18:28 UTC +00:00], ["email", "fsutomo@gmail.com"], ["gender", nil], ["image", "http://graph.facebook.com/100003605061577/picture?type=large"], ["location", nil], ["password_digest", "$2a$10$brqtR5.fXmo9Z6cvIhrZz.QmZaODT9v0bdTL8Et4u8mWILHV.klrS"], ["photo_content_type", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["photo_updated_at", nil], ["provider", "facebook"], ["session_token", "K1ow_T0joptFHpRXNqxq7Q"], ["slug", "fadil-sutomo"], ["uid", "100003605061577"], ["updated_at", Sat, 19 Apr 2014 10:18:28 UTC +00:00], ["username", "fadil.sutomo"]]
+  [1m[35m (32.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (26.2ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'fadil.sutomo' AND "users"."id" != 104) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."email" = 'fsutomo@gmail.com' AND "users"."id" != 104) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."session_token" = 'MTUHtGjWieK5BwhkGGn-Fw' AND "users"."id" != 104) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'fadil.sutomo' AND "users"."id" != 104) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'fsutomo@gmail.com' AND "users"."id" != 104) LIMIT 1
+  [1m[36m (32.4ms)[0m  [1mUPDATE "users" SET "session_token" = 'MTUHtGjWieK5BwhkGGn-Fw', "updated_at" = '2014-04-19 10:18:29.235707' WHERE "users"."id" = 104[0m
+  [1m[35m (22.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/fadil-sutomo
+Completed 302 Found in 2887.5ms (ActiveRecord: 1105.2ms)
+
+
+Started GET "/users/fadil-sutomo" for 127.0.0.1 at 2014-04-19 17:18:29 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"fadil-sutomo"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'MTUHtGjWieK5BwhkGGn-Fw' LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."slug" = 'fadil-sutomo' LIMIT 1
+  [1m[36mReview Load (53.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE (user_id IN (SELECT followed_id FROM follows
+ WHERE follower_id = 104) OR user_id = 104)[0m
+  Rendered reviews/_user.html.erb (90.7ms)
+  Rendered favorites/_user.html.erb (0.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followed_id" WHERE "follows"."follower_id" = 104
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."follower_id" WHERE "follows"."followed_id" = 104[0m
+  Rendered follows/_user.html.erb (83.5ms)
+  Rendered users/show.html.erb within layouts/application (236.6ms)
+Completed 200 OK in 833.7ms (Views: 761.7ms | ActiveRecord: 67.4ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /favorites.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /follows.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /merchants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /vote_tags.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /countries.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /usermerchants.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /usercategories.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /cities.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /reviews.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /restaurants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /underscore.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /backbone.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /itag.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /restaurants/index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /models/restaurant.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /countries.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /favorites.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /cities.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /merchants.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /restaurants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /follows.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /reviews.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:30 +0700
+Served asset /usermerchants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:31 +0700
+Served asset /usercategories.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:31 +0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:31 +0700
+Served asset /vote_tags.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-19 17:18:31 +0700
+Served asset /application.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-19 17:18:31 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (40ms)
