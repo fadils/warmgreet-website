@@ -101,9 +101,8 @@
   <!-- REVIEWS -->
   <h3>Reviews</h3>
 
-  <% if current_user && @merchant.open == true && !current_user.rated_merchants.include?(@merchant) %>
-    <a href="#" class="show-modal">Write a new review!</a>
-    <%#= link_to "Write a review!", new_merchant_review_url(@merchant), class: "new-review" %>
+  <% if current_user && @merchant.open == true %>
+    <%= link_to "Write a story!", new_merchant_review_url(@merchant), class: "new-review" %>
   <% end %>
 
 
