@@ -1,6 +1,6 @@
 <% action = (review.persisted? ? review_url(review) : merchant_reviews_url(merchant)) %>
 <% method = (review.persisted? ? "put" : "post") %>
-<% message = (review.persisted? ? "Update Review!" : "Create Review!") %>
+<% message = (review.persisted? ? "Update Story!" : "Create Story!") %>
 
 <form class="form" action="<%= action %>" method="post">
   <input
@@ -12,7 +12,7 @@
      type="hidden"
      value="<%= form_authenticity_token %>">
 
- <h1><%= message %></h1>
+ <h4><%= message %></h4>
 
  <div class="input">
   <label for="review_rating">Rating</label>
@@ -26,7 +26,7 @@
  </div>
 
  <div class="input">
-  <label for="review_email">Review Title</label>
+  <label for="review_email">Story Title</label>
   <input
      id="review_title"
      name="review[title]"
@@ -36,7 +36,7 @@
 </div>
 
 <div class="input">
-  <label for="review_body">Review Body</label><br>
+  <label for="review_body">Story Body</label><br>
 <textarea rows="4"
           cols="50"
           id="review_body"
