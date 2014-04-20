@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   extend FriendlyId
   friendly_id :username, :use => :slugged
 
-  attr_accessible :username, :password, :email, :biography, :age, :gender, :location, :admin, :session_token, :photo, :uid, :provider, :image, :auth_token, :activated
+  attr_accessible :username, :password, :email, :biography, :age, :merchantnumber, :gender, :location, :admin, :session_token, :photo, :uid, :provider, :image, :auth_token, :activated
   attr_reader :password
 
   before_validation :ensure_session_token
@@ -64,7 +64,10 @@ class User < ActiveRecord::Base
   def feed
     Review.from_users_followed_by(self)
   end
-  
+
+  def is_merchant?
+    age == 0
+  end
 
   def self.find_uid_or_create(auth)
 
