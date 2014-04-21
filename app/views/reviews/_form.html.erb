@@ -2,7 +2,7 @@
 <% method = (review.persisted? ? "put" : "post") %>
 <% message = (review.persisted? ? "Update Story!" : "Create Story!") %>
 
-<form class="form" action="<%= action %>" method="post">
+<form class="form" action="<%= action %>" method="<%=method%>">
   <input
      name="_method"
      type="hidden"

@@ -39,7 +39,8 @@ class ApplicationController < ActionController::Base
 
    def push_review(review)
      html = render_to_string(partial: "reviews/pusherform", locals: {review: review})
-     Pusher.trigger("reviews", "new-review", html)
+     puts html
+     #Pusher.trigger("reviews", "new-review", html)
    end
 
 end
