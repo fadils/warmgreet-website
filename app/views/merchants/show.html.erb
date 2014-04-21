@@ -57,7 +57,7 @@
 
 
     <h2>
-      <%= @merchant.name %>
+      <%= @merchant.name %> (<%= link_to "Claim Now!", edit_merchant_url(@merchant) %>)
       <%= "(CLOSED)" if @merchant.open == false %>
     </h2>
 

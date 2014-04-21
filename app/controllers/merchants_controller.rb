@@ -1,5 +1,5 @@
 class MerchantsController < ApplicationController
-  #before_filter :require_signed_in!, :except => [:index]
+  before_filter :require_signed_in!, :only => [:new]
 
   def new
     @country = Country.find(params[:country_id])
