@@ -1,5 +1,5 @@
 class MerchantsController < ApplicationController
-  before_filter :require_signed_in!, :except => [:index]
+  #before_filter :require_signed_in!, :except => [:index]
 
   def new
     @country = Country.find(params[:country_id])
@@ -72,7 +72,7 @@ class MerchantsController < ApplicationController
       return []
     elsif Category.all.include?(@results.first.searchable)
       @category = @results.first.searchable
-        .merchants.where("country_id = ?", params[:country_id])
+        .merchants.where("country_id = 1")
         .sort!{ |a, b| a.average_rating <=> b.average_rating }
         .reverse!
 

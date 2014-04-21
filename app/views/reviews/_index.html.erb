@@ -15,6 +15,7 @@
   <%= review.body %>
   </div>
 
+  <% if signed_in? %>
   <% unless current_user == review.user %>
     <% if current_user.voted_reviews.include?(review) %>
       <%= button_to "Uncool...", review_vote_tag_url(review), method: :delete, form_class: "cool-button" %>
@@ -24,6 +25,7 @@
   <% else %>
   cool votes
   <% end %>
+
 
     <% if review.vote_tags.empty? %>
     <strong class="badge">0</strong>
@@ -36,6 +38,6 @@
     <% if current_user && current_user.admin == true %>
       <%= button_to "Delete Review", review_url(review), method: :delete, form_class: "delete-review" %>
     <% end %>
-
+  <% end %>
 </div>
 <% end %>
