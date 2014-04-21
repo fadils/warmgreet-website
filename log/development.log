@@ -22268,3 +22268,157 @@ Served asset /application.js - 304 Not Modified (2ms)
 
 Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:40:10 +0700
 Served asset /wg_logo_2.png - 304 Not Modified (26ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-04-21 17:42:29 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 63.5ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /merchants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /cities.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /reviews.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /models/restaurant.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /restaurants/index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /cities.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /usercategories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (21ms)
