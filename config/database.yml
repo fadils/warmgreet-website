@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: itag_development
+  database: wg2_development
   pool: 5
   username: rails_pg_admin
   password:
@@ -41,7 +41,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: itag_test
+  database: wg2_test
   pool: 5
   username: rails_pg_admin
   password:
@@ -49,7 +49,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: itag_production
+  database: wg2_production
   pool: 5
   username: rails_pg_admin
   password:

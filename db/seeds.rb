@@ -89,7 +89,7 @@ User.create({username: 'ant', password: '123123', email: 'liangtfm@gmail.com', b
   {username: 'guest', password: '123123', email: 'guest@example.com', biography: "Hello, I'm a guest!"})
 
 
-10.times do
+100.times do
   Merchant.create({
     name: Faker::Company.name,
     website: "http://"+Faker::Internet.domain_name,
@@ -99,7 +99,7 @@ User.create({username: 'ant', password: '123123', email: 'liangtfm@gmail.com', b
   })
 end
 
-10.times do
+100.times do
   User.create({
     username: Faker::Internet.user_name + rand(1..1000).to_s,
     password: '123123',
@@ -112,7 +112,7 @@ end
 end
 
 
-10.times do
+100.times do
   Review.create({
     title: Faker::Lorem.sentence,
     body: Faker::Lorem.paragraphs.join(" "),

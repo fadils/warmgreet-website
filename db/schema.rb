@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140410094350) do
+ActiveRecord::Schema.define(:version => 20140415041747) do
+
+  create_table "activity_items", :force => true do |t|
+    t.integer  "performer_id"
+    t.string   "performer_type"
+    t.string   "event"
+    t.integer  "target_id"
+    t.string   "target_type"
+    t.integer  "owner_id"
+    t.string   "owner_type"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "activity_items", ["owner_id", "owner_type", "created_at"], :name => "index_activity_items_on_owner_id_and_owner_type_and_created_at"
 
   create_table "categories", :force => true do |t|
     t.string   "name",       :null => false
@@ -29,6 +43,17 @@ ActiveRecord::Schema.define(:version => 20140410094350) do
 
   add_index "cities", ["slug"], :name => "index_cities_on_slug", :unique => true
   add_index "cities", ["state_id"], :name => "index_cities_on_state_id"
+
+  create_table "connections", :force => true do |t|
+    t.integer  "subscriber_id"
+    t.string   "subscriber_type"
+    t.integer  "publisher_id"
+    t.string   "publisher_type"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "connections", ["publisher_id", "publisher_type"], :name => "index_connections_on_publisher_id_and_publisher_type"
 
   create_table "countries", :force => true do |t|
     t.string   "name",       :null => false
@@ -66,7 +91,7 @@ ActiveRecord::Schema.define(:version => 20140410094350) do
     t.string   "website"
     t.string   "price"
     t.string   "phone"
-    t.string   "street"                               
+    t.string   "street"
     t.string   "zip"
     t.boolean  "open",               :default => true
     t.datetime "created_at",                           :null => false
@@ -139,6 +164,16 @@ ActiveRecord::Schema.define(:version => 20140410094350) do
 
   add_index "tags", ["category_id"], :name => "index_tags_on_category_id"
   add_index "tags", ["merchant_id"], :name => "index_tags_on_merchant_id"
+
+  create_table "usercategories", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "usermerchants", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username",                              :null => false

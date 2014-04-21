@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Itag::Application.load_tasks
+WarmGreet::Application.load_tasks
