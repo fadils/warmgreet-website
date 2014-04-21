@@ -22422,3 +22422,1582 @@ Served asset /vote_tags.js - 304 Not Modified (0ms)
 
 Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:42:30 +0700
 Served asset /wg_logo_2.png - 304 Not Modified (21ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-21 17:43:07 +0700
+Processing by MerchantsController#index as HTML
+  [1m[35mCountry Load (10.7ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (70.1ms)[0m  [1mSELECT reviews.* FROM "reviews" JOIN merchants ON reviews.merchant_id = merchants.id JOIN countries ON countries.id = merchants.country_id WHERE (countries.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36mMerchant Load (37.3ms)[0m  [1mSELECT merchants.*, AVG(reviews.rating) AS avg_rating FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id ORDER BY avg_rating DESC NULLS LAST LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) AS count_all, merchants.id AS merchants_id FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id
+  [1m[36mMerchant Load (0.5ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (9.3ms)
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (7.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (4.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (5.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (4.7ms)
+  Rendered merchants/index.html.erb within layouts/application (160.0ms)
+Completed 200 OK in 286.8ms (Views: 158.5ms | ActiveRecord: 121.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /cities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /restaurants/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /models/restaurant.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /cities.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /favorites.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /usercategories.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:43:08 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (14ms)
+
+
+Started GET "/merchants/index?page=2" for 127.0.0.1 at 2014-04-21 17:43:36 +0700
+Processing by MerchantsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mCountry Load (0.6ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (1.3ms)[0m  [1mSELECT reviews.* FROM "reviews" JOIN merchants ON reviews.merchant_id = merchants.id JOIN countries ON countries.id = merchants.country_id WHERE (countries.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36mMerchant Load (0.9ms)[0m  [1mSELECT merchants.*, AVG(reviews.rating) AS avg_rating FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id ORDER BY avg_rating DESC NULLS LAST LIMIT 5 OFFSET 5[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) AS count_all, merchants.id AS merchants_id FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (8.1ms)
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (6.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (4.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (4.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (4.5ms)
+  Rendered merchants/index.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 131.1ms (Views: 119.6ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /cities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /restaurants/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /models/restaurant.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /cities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /favorites.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /usercategories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:43:37 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-21 17:43:54 +0700
+Processing by MerchantsController#index as HTML
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1mSELECT reviews.* FROM "reviews" JOIN merchants ON reviews.merchant_id = merchants.id JOIN countries ON countries.id = merchants.country_id WHERE (countries.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36mMerchant Load (1.4ms)[0m  [1mSELECT merchants.*, AVG(reviews.rating) AS avg_rating FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id ORDER BY avg_rating DESC NULLS LAST LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) AS count_all, merchants.id AS merchants_id FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (8.2ms)
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (7.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (4.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (6.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (5.2ms)
+  Rendered merchants/index.html.erb within layouts/application (137.6ms)
+Completed 200 OK in 166.4ms (Views: 154.0ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /cities.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /restaurants/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /models/restaurant.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /cities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /favorites.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /usercategories.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:43:55 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-21 17:52:28 +0700
+Processing by MerchantsController#index as HTML
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1mSELECT reviews.* FROM "reviews" JOIN merchants ON reviews.merchant_id = merchants.id JOIN countries ON countries.id = merchants.country_id WHERE (countries.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at[0m
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36mMerchant Load (1.2ms)[0m  [1mSELECT merchants.*, AVG(reviews.rating) AS avg_rating FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id ORDER BY avg_rating DESC NULLS LAST LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) AS count_all, merchants.id AS merchants_id FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (8.8ms)
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (5.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (4.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (5.3ms)
+  Rendered merchants/index.html.erb within layouts/application (108.1ms)
+Completed 200 OK in 190.6ms (Views: 178.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:28 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:28 +0700
+Served asset /cities.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:28 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:28 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:28 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:28 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /usercategories.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /restaurants/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /models/restaurant.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /cities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /countries.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /reviews.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /restaurants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /usercategories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:52:29 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (17ms)
+
+
+Started GET "/merchants/village-yokocho" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Processing by MerchantsController#show as HTML
+  Parameters: {"id"=>"village-yokocho"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :require_signed_in! rendered or redirected
+Completed 302 Found in 0.5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 94.7ms (Views: 94.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /cities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /restaurants/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /models/restaurant.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /cities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /follows.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /restaurants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /usercategories.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:27 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:28 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:28 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:53:28 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Processing by MerchantsController#index as HTML
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1mSELECT reviews.* FROM "reviews" JOIN merchants ON reviews.merchant_id = merchants.id JOIN countries ON countries.id = merchants.country_id WHERE (countries.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at[0m
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36mMerchant Load (1.0ms)[0m  [1mSELECT merchants.*, AVG(reviews.rating) AS avg_rating FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id ORDER BY avg_rating DESC NULLS LAST LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) AS count_all, merchants.id AS merchants_id FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (8.3ms)
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (8.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (5.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (5.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (5.1ms)
+  Rendered merchants/index.html.erb within layouts/application (70.4ms)
+Completed 200 OK in 98.2ms (Views: 86.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /cities.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /models/restaurant.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /restaurants/index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /cities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:30 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /usercategories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:53:31 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (0ms)
+
+
+Started GET "/merchants/tremblay-and-sons" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Processing by MerchantsController#show as HTML
+  Parameters: {"id"=>"tremblay-and-sons"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :require_signed_in! rendered or redirected
+Completed 302 Found in 0.5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20.6ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /cities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /vote_tags.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /restaurants/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:04 +0700
+Served asset /models/restaurant.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /cities.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /reviews.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /usercategories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:56:05 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Processing by MerchantsController#index as HTML
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1mSELECT reviews.* FROM "reviews" JOIN merchants ON reviews.merchant_id = merchants.id JOIN countries ON countries.id = merchants.country_id WHERE (countries.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36mMerchant Load (1.0ms)[0m  [1mSELECT merchants.*, AVG(reviews.rating) AS avg_rating FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id ORDER BY avg_rating DESC NULLS LAST LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) AS count_all, merchants.id AS merchants_id FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (8.3ms)
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (7.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (72.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (4.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (4.9ms)
+  Rendered merchants/index.html.erb within layouts/application (134.4ms)
+Completed 200 OK in 161.3ms (Views: 150.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /cities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /restaurants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:07 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /itag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /restaurants/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /models/restaurant.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /cities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /merchants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /usercategories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 17:56:08 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-21 18:26:29 +0700
+Processing by MerchantsController#index as HTML
+  [1m[35mCountry Load (0.4ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1mSELECT reviews.* FROM "reviews" JOIN merchants ON reviews.merchant_id = merchants.id JOIN countries ON countries.id = merchants.country_id WHERE (countries.id = 1) GROUP BY reviews.id ORDER BY reviews.created_at[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36mMerchant Load (1.1ms)[0m  [1mSELECT merchants.*, AVG(reviews.rating) AS avg_rating FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id ORDER BY avg_rating DESC NULLS LAST LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) AS count_all, merchants.id AS merchants_id FROM "merchants" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "merchants"."country_id" = 1 GROUP BY merchants.id
+  [1m[36mMerchant Load (0.4ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (8.9ms)
+  [1m[35mMerchant Load (0.4ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (7.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (5.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1
+  Rendered reviews/_pusherform.erb (4.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 103 LIMIT 1[0m
+  Rendered reviews/_pusherform.erb (4.5ms)
+  Rendered merchants/index.html.erb within layouts/application (109.1ms)
+Completed 200 OK in 200.3ms (Views: 188.7ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/usermerchants.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /usermerchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /restaurants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /countries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /cities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /favorites.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /follows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /vote_tags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.css?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /usercategories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /follows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/countries.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /countries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/itag.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /itag.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurants/index.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /restaurants/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/restaurant_index_view.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /views/restaurant_index_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/restaurant.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /models/restaurant.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/restaurants.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /collections/restaurants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /cities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/restaurants_router.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /routers/restaurants_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote_tags.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /vote_tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usermerchants.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /usermerchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/usercategories.js?body=1" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /usercategories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wg_logo_2.png" for 127.0.0.1 at 2014-04-21 18:26:30 +0700
+Served asset /wg_logo_2.png - 304 Not Modified (25ms)

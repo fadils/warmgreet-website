@@ -61,9 +61,9 @@
   var channel = pusher.subscribe('reviews');
 
   channel.bind('new-review', function(data) {
-    var city = $(data).attr('data-id');
- $(data).hide().prependTo(".recent-reviews-"+city).slideDown("slow");
+    var country = $(data).attr('data-id');
+ $(data).hide().prependTo(".recent-reviews-"+country).slideDown("slow");
 
-    $(".recent-"+city).last().remove();
+    $(".recent-"+country).last().remove();
   });
 </script>
