@@ -67,7 +67,11 @@
     <br>
 
     <% if signed_in?%>
-    <div class="favs <%#="is-favorite" if current_user.favorite_places.include?(@merchant)%>">
+    <% testClass = '' %>
+    <% if current_user.favorite_places.include?(@merchant) %>
+      <% testClass += 'is-favorite' %>
+    <% end %>
+    <div class="favs <%=testClass%>">
       <%= button_to "FAVORITE", merchant_favorites_url(@merchant), method: :post, form_class: "favorite-button grad_button", remote: true %>
       <%= button_to "UNFAVORITE", merchant_favorite_url(@merchant), method: :delete, form_class: "unfavorite-button grad_button", remote: true %>
     </div>

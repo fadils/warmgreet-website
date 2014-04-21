@@ -33,6 +33,11 @@ class MerchantsController < ApplicationController
 
   def show
     @merchant = Merchant.find(params[:id])
+    puts '#' * 2000
+    puts @merchant.nil?
+    # puts current_user.favorite_places.empty?
+    #@fav = Favorite.find_by_user_id(current_user.id)
+    #puts @fav.empty?
     # merchant.includes(:reviews, :categories, :city, :state, :users_who_favorited).find(params[:id])
   end
 
