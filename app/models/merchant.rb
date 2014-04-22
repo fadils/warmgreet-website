@@ -19,6 +19,8 @@ class Merchant < ActiveRecord::Base
   include PgSearch
     multisearchable :against => [:name]
 
+  has_one :customer
+
   has_many :tags
 
   has_many :categories,

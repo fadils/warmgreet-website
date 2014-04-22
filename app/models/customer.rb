@@ -2,7 +2,7 @@ class Customer < ActiveRecord::Base
   extend FriendlyId
   friendly_id :username, :use => :slugged
 
-  attr_accessible :username, :password, :email, :biography, :age, :merchantnumber, :gender, :location, :admin, :session_token, :photo, :uid, :provider, :image, :auth_token, :activated
+  attr_accessible :username, :password, :email, :biography, :age, :merchant_number, :gender, :location, :admin, :session_token, :photo, :uid, :provider, :image, :auth_token, :activated
   attr_reader :password
 
   before_validation :ensure_session_token
@@ -19,63 +19,26 @@ class Customer < ActiveRecord::Base
     :bucket => 'nil'
   }
 
-  has_many :reviews,
+  has_one :merchant
+
+  has_many :posts,
   dependent: :destroy
 
-  has_many :rated_merchants,
-  through: :reviews,
-  source: :merchant
-
-  has_many :favorites,
+  has_many :favorited_by,
   dependent: :destroy
 
-  has_many :favorite_places,
-  through: :favorites,
-  source: :merchant
-
-  has_many :follows,
-  class_name: "Follow",
-  foreign_key: :followed_id,
-  primary_key: :id,
-  dependent: :destroy
-
-  has_many :followed,
-  class_name: "Follow",
-  foreign_key: :follower_id,
-  primary_key: :id,
-  dependent: :destroy
-
-  has_many :followers,
-  through: :follows,
-  source: :follower
-
-  has_many :followed_users,
-  through: :followed,
-  source: :followed
-
-  has_many :vote_tags,
-  dependent: :destroy
-
-  has_many :voted_reviews,
-  through: :vote_tags,
-  source: :review
-
-
+  #not yet modified
   def feed
     Review.from_users_followed_by(self)
   end
 
-  def is_merchant?
-    age == 0
-  end
-
   def self.find_uid_or_create(auth)
 
-    user = User.find_by_uid(auth[:uid])
+    customer = Customer.find_by_uid(auth[:uid])
 
-    unless user
+    unless customer
       if auth[:provider] == 'facebook'
-        user = User.create!(
+        customer = Customer.create!(
                  uid: auth[:uid],
                  provider: auth[:provider],
                  username: (auth[:info][:nickname] || auth[:info][:first_name]+rand(1..1000).to_s),
@@ -84,7 +47,7 @@ class Customer < ActiveRecord::Base
                  password: SecureRandom::urlsafe_base64(16)
                )
       elsif auth[:provider] == 'twitter'
-        user = User.create!(
+        customer = Customer.create!(
                  uid: auth[:uid],
                  provider: auth[:provider],
                  username: auth[:info][:nickname],
@@ -97,13 +60,13 @@ class Customer < ActiveRecord::Base
       end
     end
 
-    return user
+    return customer
   end
 
 
-  def self.find_by_credentials(username, password)
-    user = (User.find_by_username(username) || User.find_by_email(username))
-    user.try(:is_password?, password) ? user : nil
+  def self.find_by_credentials(username, merchant_number, password)
+    customer = (Customer.find_by_username(username) || Customer.find_by_email(username) && Customer.find_by_merchant_number(merchant_number))
+    customer.try(:is_password?, password) ? customer : nil
   end
 
   def self.generate_session_token

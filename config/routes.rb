@@ -8,6 +8,11 @@ WarmGreet::Application.routes.draw do
     get 'activate'
   end
 
+  resources :customers, :only => [:create, :new, :show, :edit, :update, :index] do
+    #resources :follows, :only => [:create, :destroy]
+    get 'activate'
+  end
+
   resource :session, :only => [:create, :destroy, :new]
 
   resources :restaurants, :except => [:index, :new, :create] do
@@ -22,9 +27,9 @@ WarmGreet::Application.routes.draw do
 
   get 'search' => "merchants#search"
 
-  resources :cities, :only => [:show, :index] do
-    resources :restaurants, :only => [:index, :new, :create]
-  end
+  #resources :cities, :only => [:show, :index] do
+   # resources :restaurants, :only => [:index, :new, :create]
+  #end
 
   resources :countries, :only => [:show, :index] do
     resources :merchants, :only => [:index, :new, :create]
