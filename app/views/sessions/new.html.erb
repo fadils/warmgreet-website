@@ -23,7 +23,7 @@
   </div>
 
   <div class="input">
-    <label for="user_username">Merchant Number</label>
+    <label for="user_merchant_number">Merchant Number</label>
     <input id="user_merchant_number" name="user[merchant_number]" type="text">
   </div>
 
@@ -34,6 +34,10 @@
 
   <div class="submit">
     <input class type="submit" value="Log in">
+  </div>
+
+  <div>
+    <h5>No credentials yet? <%= link_to "Sign Up Now", new_user_url %></h5>
   </div>
 </form>
 
