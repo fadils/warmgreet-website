@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140415041747) do
+ActiveRecord::Schema.define(:version => 20140422055625) do
 
   create_table "activity_items", :force => true do |t|
     t.integer  "performer_id"
@@ -66,6 +66,11 @@ ActiveRecord::Schema.define(:version => 20140415041747) do
   add_index "countries", ["slug"], :name => "index_countries_on_slug", :unique => true
   add_index "countries", ["state_id"], :name => "index_countries_on_state_id"
 
+  create_table "customers", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "favorites", :force => true do |t|
     t.integer  "user_id",     :null => false
     t.integer  "merchant_id", :null => false
@@ -113,6 +118,16 @@ ActiveRecord::Schema.define(:version => 20140415041747) do
     t.string   "searchable_type"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "posts", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "replies", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "restaurants", :force => true do |t|
@@ -206,39 +221,6 @@ ActiveRecord::Schema.define(:version => 20140415041747) do
   add_index "users", ["slug"], :name => "index_users_on_slug", :unique => true
   add_index "users", ["uid"], :name => "index_users_on_uid"
   add_index "users", ["username"], :name => "index_users_on_username", :unique => true
-
-  create_table "customers", :force => true do |t|
-    t.string   "username",                              :null => false
-    t.string   "password_digest",                       :null => false
-    t.string   "email",                                 :null => false
-    t.text     "biography"
-    t.integer  "age"
-    t.string   "gender"
-    t.string   "location"
-    t.boolean  "admin",              :default => false
-    t.string   "session_token",                         :null => false
-    t.datetime "created_at",                            :null => false
-    t.datetime "updated_at",                            :null => false
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "photo_updated_at"
-    t.string   "provider"
-    t.string   "uid"
-    t.string   "image"
-    t.string   "slug"
-    t.boolean  "activated",          :default => false
-    t.string   "auth_token"
-  end
-
-  add_index "customers", ["auth_token"], :name => "index_customers_on_auth_token"
-  add_index "customers", ["email"], :name => "index_customers_on_email", :unique => true
-  add_index "customers", ["provider"], :name => "index_customers_on_provider"
-  add_index "customers", ["session_token"], :name => "index_customers_on_session_token"
-  add_index "customers", ["slug"], :name => "index_customers_on_slug", :unique => true
-  add_index "customers", ["uid"], :name => "index_customers_on_uid"
-  add_index "customers", ["username"], :name => "index_customers_on_username", :unique => true
-
 
   create_table "vote_tags", :force => true do |t|
     t.integer  "vote_id",    :null => false

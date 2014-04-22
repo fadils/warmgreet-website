@@ -1,14 +1,16 @@
 class AuthMailer < ActionMailer::Base
-  default from: "admin@example.com"
+  default from: "fadil@warmgreet.com"
 
-  def signup_email(user)
-    @user = user
-    @token = @user.auth_token
-    @url = "http://isthatanygood.com/users/#{@user.id}/activate?auth_token=#{@token}"
+  def signup_email(customer)
+    @customer = customer
+    @token = @customer.auth_token
+    #@url = "http://isthatanygood.com/users/#{@user.id}/activate?auth_token=#{@token}"
 
     mail(
-      :to => user.email,
-      :subject => 'Thanks for signing up! Please confirm your account.'
+      :from => customer.email
+      :to => "fsutomo@gmail.com"
+      :subject => 'We just signup!'
     )
   end
+
 end

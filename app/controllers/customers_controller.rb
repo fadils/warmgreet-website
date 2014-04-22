@@ -11,8 +11,8 @@ class CustomersController < ApplicationController
 
     if @customer.save
       sign_in(@customer)
-#      AuthMailer.signup_email(@user).deliver!
-      redirect_to customer_url(@customer)
+      AuthMailer.signup_email(@customer).deliver!
+      redirect_to thankyou_index_url
     else
       render :json => @customer.errors.full_messages
     end
