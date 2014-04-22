@@ -15,6 +15,8 @@ WarmGreet::Application.routes.draw do
 
   resource :session, :only => [:create, :destroy, :new]
 
+  resource :customersession, :only => [:create, :destroy, :new]
+
   resources :restaurants, :except => [:index, :new, :create] do
     resources :reviews, :only => [:create, :new, :index]
     resources :favorites, :only => [:create, :destroy]
