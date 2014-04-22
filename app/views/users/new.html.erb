@@ -1,14 +1,14 @@
 <div class="left group">
   <div class="social">
-    <h1>Use social!</h1>
+    <h4>For Shopper</h4>
     <a id="facebook" href="/auth/facebook"><img src="http://i.imgur.com/UIbkQV6.png"></a>
-
-    <p>or</p>
-
-    <a id="twitter" href="/auth/twitter"><img src="http://i.imgur.com/JzFd7Qi.png"></a>
   </div>
 </div>
 
 <div class="right group">
-  <%= render "form", :user => @user %>
+	<br><br><br>
+  <div>
+    <h4>Are you a merchant? <%= link_to "Sign Up Here", new_customer_url %></h4>
+  </div>
+  <%#= render "form", :user => @user %>
 </div>

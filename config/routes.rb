@@ -1,4 +1,6 @@
 WarmGreet::Application.routes.draw do
+  get "thankyou/index"
+
   get "merchants/index"
 
   get "reviews/story"
