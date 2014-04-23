@@ -1,14 +1,17 @@
 WarmGreet::Application.routes.draw do
+  get "profile/index"
+
   get "thankyou/index"
 
   get "merchants/index"
 
   get "reviews/story"
 
-  resources :users, :only => [:create, :new, :show, :edit, :update, :index] do
+  resources :users, :only => [:create, :new, :show, :edit, :update, :index, :profile] do
     resources :follows, :only => [:create, :destroy]
     get 'activate'
   end
+
 
   resources :customers, :only => [:create, :new, :show, :edit, :update, :index] do
     #resources :follows, :only => [:create, :destroy]

@@ -26,6 +26,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def showprofile
+    if params.include?(:id)
+      @user = User.find(params[:id])
+    else
+      redirect_to profile_index_url(current_user)
+    end
+  end
+
   def edit
     @user = current_user
   end

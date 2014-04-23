@@ -32,7 +32,9 @@
           <% if signed_in? %>
             <%#if current_user = shopper%>
             <li>Shopper:
-              <%= link_to current_user.username, user_url(current_user) %>
+              <%#= link_to current_user.username, user_url(current_user) %>
+              <%= link_to current_user.username, profile_index_url(current_user) %>
+              
               <%= "(admin)" if current_user.admin == true %>
             </li>
             <li><%= link_to "Sign Out", session_url, :method => :delete %></li>
