@@ -18,5 +18,15 @@ if Rails.env.production?
 elsif Rails.env.development?
   # Remember the letter_opener gem? It won't send real emails; it
   # just opens them in another tab.
-  ActionMailer::Base.delivery_method = :letter_opener
+  #ActionMailer::Base.delivery_method = :letter_opener
+  ActionMailer::Base.smtp_settings = {
+    :address        => 'smtp.sendgrid.net',
+    :port           => '587',
+    :authentication => :plain,
+    :user_name      => 'fadils',
+    :password       => 'sendgrid@021103F',
+    :domain         => 'sendgrid.com'
+  }
+  ActionMailer::Base.delivery_method ||= :smtp
+
 end

@@ -7,6 +7,7 @@ class AuthMailer < ActionMailer::Base
     #@url = "http://isthatanygood.com/users/#{@user.id}/activate?auth_token=#{@token}"
 
     mail(
+      from: customer.email,
       to: "fsutomo@gmail.com",
       subject:'We just signup!'
     )
