@@ -1,0 +1,37 @@
+<% action = (customer.persisted? ? customer_url(customer) : customers_url) %>
+<% method = (customer.persisted? ? "put" : "post") %>
+<% message = (customer.persisted? ? "Update!" : "Sign up!") %>
+
+<form class="form" action="<%= action %>" method="<%= method %>" enctype="multipart/form-data">
+  <input
+     name="_method"
+     type="hidden"
+     value="<%= method %>">
+  <input
+     name="authenticity_token"
+     type="hidden"
+     value="<%= form_authenticity_token %>">
+
+  <h1><%= message %></h1>
+
+  <div class="input">
+  <label for="customer_email">Email</label>
+  <input
+     id="customer_email"
+     name="customer[email]"
+     type="email"
+     >
+  </div>
+
+  <div class="input">
+    <label for="customer_password">Password</label>
+    <input
+       id="customer_password"
+       name="customer[password]"
+       type="password">
+   </div>
+  
+  <div class="submit">
+    <input type="submit" value="<%= message %>">
+  </div>
+</form>

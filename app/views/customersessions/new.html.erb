@@ -1,0 +1,46 @@
+<div class="right group">
+
+<form class="form" action="<%= session_url %>" method="post">
+
+  <h4>For Merchant</h4>
+
+  <input
+     name="authenticity_token"
+     type="hidden"
+     value="<%= form_authenticity_token %>">
+
+  <div class="input">
+    <label for="user_username">Username or Email</label>
+    <input id="user_username" name="user[username]" type="text">
+  </div>
+
+  <div class="input">
+    <label for="user_merchant_number">Merchant Number</label>
+    <input id="user_merchant_number" name="user[merchant_number]" type="text">
+  </div>
+
+  <div class="input">
+    <label for="user_password">Password</label>
+    <input id="user_password" name="user[password]" type="password">
+  </div>
+
+  <div class="submit">
+    <input class type="submit" value="Log in">
+  </div>
+
+  <div>
+    <h5>No credentials yet? <%= link_to "Sign Up Now", new_user_url %></h5>
+  </div>
+</form>
+
+</div>
+
+<script>
+
+  $("#guest").on("click", function(event){
+    document.getElementById('user_username').value="guest"
+    document.getElementById('user_password').value="123123"
+    document.forms[0].submit()
+  });
+
+</script>
