@@ -8,10 +8,10 @@ class Customer < ActiveRecord::Base
   before_validation :ensure_session_token
   before_validation(:ensure_auth_token, on: :create)
 
-  validates :username, :email, :session_token, presence: true, uniqueness: true
+  validates :email, :session_token, presence: true, uniqueness: true
   validates :password, length: { minimum: 6, :allow_nil => true }
   validates :password_digest, presence: true
-  validates :username, :email, uniqueness: true
+  validates :email, uniqueness: true
 
   has_attached_file :photo, :styles => {
     :big => "100x100#",

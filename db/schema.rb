@@ -67,8 +67,27 @@ ActiveRecord::Schema.define(:version => 20140422055625) do
   add_index "countries", ["state_id"], :name => "index_countries_on_state_id"
 
   create_table "customers", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "username" #,                            :null => false
+    t.string   "password_digest",                       :null => false
+    t.string   "email",                                 :null => false
+    t.text     "biography"
+    t.integer  "merchant_number"#,                       :null => false
+    t.string   "gender"
+    t.string   "location"
+    t.boolean  "admin",              :default => false
+    t.string   "session_token",                         :null => false
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "image"
+    t.string   "slug"
+    t.boolean  "activated",          :default => false
+    t.string   "auth_token"
   end
 
   create_table "favorites", :force => true do |t|

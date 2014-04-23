@@ -3,11 +3,14 @@ class CustomersController < ApplicationController
   before_filter :require_signed_out!, :only => [:create, :new]
 
   def new
+    puts "***************************************************************"
+    
     @customer = Customer.new
   end
 
   def create
-    @customer = Customer.new(params[:user])
+    puts "***************************************************************"
+    @customer = Customer.new(params[:customer])
 
     if @customer.save
       sign_in(@customer)
