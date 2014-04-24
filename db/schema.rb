@@ -120,6 +120,7 @@ ActiveRecord::Schema.define(:version => 20140424040024) do
     t.boolean  "open",               :default => true
     t.datetime "created_at",                           :null => false
     t.datetime "updated_at",                           :null => false
+    t.integer  "avg_rating"
     t.integer  "country_id"
     t.string   "photo_file_name"
     t.string   "photo_content_type"

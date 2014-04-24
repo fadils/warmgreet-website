@@ -233,6 +233,8 @@ GEM
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     rake (10.2.2)
+    ranked-model (0.3)
+      activerecord (>= 3.1.12)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
@@ -313,6 +315,7 @@ DEPENDENCIES
   pg_search
   pusher
   rails (= 3.2.16)
+  ranked-model
   rspec-rails
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

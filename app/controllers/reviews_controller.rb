@@ -15,6 +15,9 @@ class ReviewsController < ApplicationController
     @review.merchant_id = @merchant.id
     @review.save
 
+    @merchant.average_rating
+    @merchant.update_attributes(params[:merchant])
+
     push_review(@review)
 
     if request.xhr?
