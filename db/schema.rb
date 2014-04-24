@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140422055625) do
+ActiveRecord::Schema.define(:version => 20140424040024) do
 
   create_table "activity_items", :force => true do |t|
     t.integer  "performer_id"
@@ -67,11 +67,11 @@ ActiveRecord::Schema.define(:version => 20140422055625) do
   add_index "countries", ["state_id"], :name => "index_countries_on_state_id"
 
   create_table "customers", :force => true do |t|
-    t.string   "username" #,                            :null => false
+    t.string   "username"
     t.string   "password_digest",                       :null => false
     t.string   "email",                                 :null => false
     t.text     "biography"
-    t.integer  "merchant_number"#,                       :null => false
+    t.integer  "merchant_number"
     t.string   "gender"
     t.string   "location"
     t.boolean  "admin",              :default => false
@@ -171,13 +171,21 @@ ActiveRecord::Schema.define(:version => 20140422055625) do
   add_index "restaurants", ["slug"], :name => "index_restaurants_on_slug", :unique => true
 
   create_table "reviews", :force => true do |t|
-    t.string   "title",       :null => false
-    t.text     "body",        :null => false
-    t.integer  "user_id",     :null => false
-    t.integer  "merchant_id", :null => false
-    t.integer  "rating",      :null => false
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.string   "title",                 :null => false
+    t.text     "body",                  :null => false
+    t.integer  "user_id",               :null => false
+    t.integer  "merchant_id",           :null => false
+    t.integer  "rating",                :null => false
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+    t.string   "storypic_file_name"
+    t.string   "storypic_content_type"
+    t.integer  "storypic_file_size"
+    t.datetime "storypic_updated_at"
+    t.string   "pic_file_name"
+    t.string   "pic_content_type"
+    t.integer  "pic_file_size"
+    t.datetime "pic_updated_at"
   end
 
   add_index "reviews", ["merchant_id"], :name => "index_reviews_on_merchant_id"

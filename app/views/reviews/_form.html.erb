@@ -2,7 +2,7 @@
 <% method = (review.persisted? ? "put" : "post") %>
 <% message = (review.persisted? ? "Update Story!" : "Create Story!") %>
 
-<form class="form" action="<%= action %>" method="<%=method%>">
+<form class="form" action="<%= action %>" method="<%=method%>" enctype="multipart/form-data">
   <input
      name="_method"
      type="hidden"
@@ -43,11 +43,17 @@
           name="review[body]"><%= @review.body %></textarea>
 </div>
 
+<%#= form_for @review, :url => users_path, :html => { :multipart => true } do |form| %>
+  <%#= form.label "A pic is worth thousand words:" %>
+  
+  <%#= form.file_field :pic %>
+<%# end %>
+
 <div class="input">
-    <label for="story_photo">A pic is worth thousand words. Upload now:</label>
+    <label for="review_pic">A pic is worth thousand words. Upload now:</label>
     <input
-        id="user_photo"
-        name="user[photo]"
+        id="review_pic"
+        name="review[pic]"
         type="file">
   </div>
 

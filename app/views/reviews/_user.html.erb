@@ -18,6 +18,10 @@
   <div class="review-body">
   <%= review.body %>
 
+  <% if review.pic.file? %>
+    <%= image_tag review.pic.url(:big) %>"
+  <% end %>
+
   <% if review.created_at > Time.now.beginning_of_day %>
       <br><%="Written #{time_ago_in_words(review.created_at)} ago"%>
   <% else %>
