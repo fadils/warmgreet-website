@@ -19,7 +19,7 @@
   <%= review.body %>
 
   <% if review.pic.file? %>
-    <%= image_tag review.pic.url(:big) %>"
+      <%= image_tag review.pic.url(:big) %>
   <% end %>
 
   <% if review.created_at > Time.now.beginning_of_day %>

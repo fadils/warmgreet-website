@@ -13,6 +13,10 @@
   <br>
   <div class="review-body">
   <%= review.body %>
+
+  <% if review.pic.file? %>
+    <%= image_tag review.pic.url(:big) %>
+  <% end %>
   </div>
 
   <% if signed_in? %>

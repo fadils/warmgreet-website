@@ -8,7 +8,7 @@ class Review < ActiveRecord::Base
 
   has_attached_file :pic, 
                 :styles => {
-                  :big => "100x100#",
+                  :big => "450x150#",
                   :small => "60x60#"
                 }
 
