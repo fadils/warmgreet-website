@@ -1,0 +1,64 @@
+<div class="prof-content group">
+
+  <% @user = current_user %>
+  <h2><%= @user.username %>'s story</h2>
+  <br>
+
+
+  <div class="prof-left group">
+
+    <% if @user.photo.file? %>
+      <%= image_tag @user.photo.url(:big) %>
+    <% elsif @user.image? %>
+      <%= image_tag @user.image, size: "100x100" %>
+    <% else %>
+      <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "100x100" %>
+    <% end %>
+
+    <br>
+
+    <% if current_user == @user %>
+      <%= link_to "Edit Profile", edit_user_url(@user) %>
+    <% end %>
+
+    <% unless current_user == @user %>
+      <div class="foll <%="is-followed" if current_user.followed_users.include?(@user) %>">
+        <%= button_to "FOLLOW", user_follows_url(@user), method: :post, form_class: "follow-button grad_button", remote: true %>
+        <%= button_to "UNFOLLOW", user_follow_url(@user), method: :delete, form_class: "unfollow-button grad_button", remote: true %>
+      </div>
+    <% end %>
+
+    <ul>
+      <li>Hometown: <%= @user.location %></li>
+      <li>Age: <%= @user.age %></li>
+      <li>Gender: <%= @user.gender %></li>
+    </ul>
+
+    <h3>Biography:</h3>
+    <p><%= @user.biography %></p>
+
+  </div>
+
+  <div class="prof-mid group">
+    <h3>Stories:</h3>
+    <%= render "reviews/profile", :user => @user %>
+  </div>
+
+  <div class="prof-right group">
+    <h3>Favorite Merchants:</h3>
+    <%= render "favorites/user", :user => @user %>
+
+    <%= render "follows/user", :user => @user %>
+  </div>
+</div>
+
+<script>
+  // FOLLOWS
+  $('.follow-button').on('ajax:send', function(event){
+    $('.foll').toggleClass('is-followed');
+  });
+
+  $('.unfollow-button').on('ajax:send', function(event){
+    $('.foll').toggleClass('is-followed');
+  });
+</script>
