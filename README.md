@@ -5,7 +5,7 @@ TODO:
 - Shopper's page only shows self stories to the visitors. (With replies from the merchants) - DONE!!
 - Upload picture in create story. - Add photo in story DB - DONE!!
 - Show the picture uploaded randomly in merchant page.
-- "Detail is alwasys good" in creating story
+- "Detail is alwasys good" in creating story - DONE!!
 - Other stories about this merchant. See more stories.
 - change "merchant" to "online store"
 - Ranking mechanism (important!!!)

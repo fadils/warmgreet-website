@@ -16,7 +16,7 @@ class ReviewsController < ApplicationController
     @review.save
 
     @merchant.average_rating
-    @merchant.update_attributes(params[:merchant])
+    @merchant.update_attributes(params[:merchant_avg_rtg])
 
     push_review(@review)
 

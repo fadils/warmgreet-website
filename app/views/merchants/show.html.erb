@@ -78,7 +78,7 @@
     <% end %>
 
   <br>
-  Ranked: ? of <%= Merchant.all.count %> online stores
+  Ranked: <%= @merchant.ranking(@merchant) %> of <%= Merchant.all.count %> online stores
   <br>
   Average Rating: <%= @merchant.average_rating %> (<%= @merchant.reviews.count %> reviews)
 

@@ -2,7 +2,7 @@ class Merchant < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, :use => :slugged
 
-  attr_accessible :name, :website, :phone, :country_id, :category_ids, :photo, :avg_rating
+  attr_accessible :name, :website, :phone, :country_id, :category_ids, :photo, :avg_rtg
 
   validates :name, :country_id, presence: true
 
@@ -48,7 +48,7 @@ class Merchant < ActiveRecord::Base
   source: :user
 
   after_create do
-    avg_rating = average_rating
+    avg_rtg = average_rating
   end
 
   def average_rating
@@ -62,15 +62,29 @@ class Merchant < ActiveRecord::Base
         total += review.rating
       end
 
-      avg_rating = (total.to_f / count).round(1)
-      return avg_rating
+      avg_rtg = (total.to_f / count).round(1)
+      return avg_rtg
     end
   end
   
 
-  def ranking()
+  def ranking(merchant)
     #@merchants.each_with_index do |merchant, i|
-    return  Merchant.count(:conditions => ['merchant.average_rating > ?', self.average_rating])
+    @country = Country.find(1)
+    @merchants = @country.merchants.select("merchants.*, AVG(reviews.rating) AS avg_rating")
+                        .joins("LEFT JOIN reviews ON reviews.merchant_id = merchants.id")
+                        .group("merchants.id")
+                        .order("avg_rating DESC NULLS LAST")
+                        
+    
+    @merchants.each_with_index do |m, i|
+      if m.id == merchant.id
+        @result = i + 1
+      end
+    end 
+
+    return @result
+    #return @merchants.count(:conditions => ['avg_rating > ?', self.avg_rtg])
     
   end
 
