@@ -12,13 +12,14 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 6, :allow_nil => true }
   validates :password_digest, presence: true
   validates :username, :email, uniqueness: true
+                                    
 
-  has_attached_file :photo, :styles => {
-    :big => "100x100#",
-    :small => "60x60#",
-    :bucket => 'nil'
-  }
-
+  has_attached_file :photo, 
+                :styles => {
+                  :big => "100x100#",
+                  :small => "60x60#"
+                }
+                
   has_many :reviews,
   dependent: :destroy
 

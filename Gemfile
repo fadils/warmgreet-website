@@ -7,6 +7,8 @@ gem 'rails', '3.2.16'
 
 gem 'pg'
 
+gem 'fog'
+
 gem 'chalk_dust'
 
 gem 'jquery-rails'

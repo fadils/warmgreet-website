@@ -11,7 +11,7 @@ class Customer < ActiveRecord::Base
   validates :email, :session_token, presence: true, uniqueness: true
   validates :password, length: { minimum: 6, :allow_nil => true }
   validates :password_digest, presence: true
-  validates :email, uniqueness: true
+  validates :merchant_number, :email, uniqueness: true
 
   has_attached_file :photo, :styles => {
     :big => "100x100#",

@@ -879,6 +879,20 @@ main {
   border: 1px solid #999;
 }
 
+.story-pic-container{
+  width: 120px;
+  min-height: 120px;
+  max-height: auto;
+  float: left;
+  margin: 3px;
+  padding: 3px;
+}
+
+.story-pic{
+  max-width: 100%;
+  height: auto;
+}
+
 #NY {
   background: url(http://i.imgur.com/CFFK6AX.jpg);
   background-size: 150%;

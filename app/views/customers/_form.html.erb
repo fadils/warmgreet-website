@@ -1,6 +1,6 @@
 <% action = (customer.persisted? ? customer_url(customer) : customers_url) %>
 <% method = (customer.persisted? ? "put" : "post") %>
-<% message = (customer.persisted? ? "Update!" : "Sign up!") %>
+<% message = (customer.persisted? ? "Update!" : "Sign up now!") %>
 
 <form class="form" action="<%= action %>" method="<%= method %>" enctype="multipart/form-data">
   <input
@@ -12,7 +12,7 @@
      type="hidden"
      value="<%= form_authenticity_token %>">
 
-  <h1><%= message %></h1>
+  <h4><%= message %></h4>
 
   <div class="input">
   <label for="customer_email">Email</label>

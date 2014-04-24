@@ -18,6 +18,10 @@
   <div class="review-body">
   <%= review.body %>
 
+  <div class="story-pic-container">
+    <img class="story-pic" src="<%#=review.pic%>" >
+ </div>
+
   <% if review.created_at > Time.now.beginning_of_day %>
       <br><%="Written #{time_ago_in_words(review.created_at)} ago"%>
   <% else %>

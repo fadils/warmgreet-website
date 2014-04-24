@@ -3,7 +3,8 @@ warmgreet-website
 TODO:
 - Merchant can claim the business through credentials given by WarmGreet.
 - Shopper's page only shows self stories to the visitors. (With replies from the merchants) - DONE!!
-- Upload picture in create story. - Add photo in story DB. Show it randomly in merchant page.
+- Upload picture in create story. - Add photo in story DB. 
+- Show the picture uploaded randomly in merchant page.
 - "Detail is alwasys good" in creating story
 - Other stories about this merchant. See more stories.
 - change "merchant" to "online store"
@@ -16,3 +17,6 @@ TODO:
 - Tambahin ranking dan category untuk tiap listing merchant
 - Page untuk followed merchants
 - NewsFeed dan own story pisah. NewsFeed di Feed. Own Story di profile. - DONE!!
+
+>> u = User.create :userid => "myuserid", :password => "mypasswd", :user_first_name => "test", :user_last_name => "testovich", :user_status => "mystatus", :user_type => "mytype"
+

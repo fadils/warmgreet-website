@@ -76,13 +76,44 @@ module WarmGreet
 
     config.assets.initialize_on_precompile = false
 
-    config.paperclip_defaults = {
-      :storage => :s3,
-      :s3_credentials => {
-        :bucket => ENV["S3_BUCKET"],
-        :access_key_id => ENV["S3_KEY"],
-        :secret_access_key => ENV["S3_SECRET_KEY"]
-      }
+
+    #Paperclip::Attachment.default_options.update(
+    #    {
+    #config.paperclip_defaults = {
+    #      :path => "images/:class/:id/:attachment/:style/img_:fingerprint",
+    #      :storage => :fog,
+    #      :fog_credentials => {
+    #        :provider           => 'Rackspace',
+    #        :rackspace_username => 'warmgreet',
+    #        :rackspace_api_key  => 'd0f2437c65b60ab667554faf72de62a4',
+    #        :persistent => false
+    #     },
+    #      :fog_directory => 'FileContainer',
+    #      :fog_public => true,
+    #      :fog_host => 'http://d244634bf2efee36e235-75ffd89d3a83d2b8612a1221255c308b.r99.cf2.rackcdn.com'
+    #    }
+
+    #)
+
+    #config.paperclip_defaults = 
+    {
+        :storage => :fog, 
+        :fog_credentials => {
+            :provider => 'Local', 
+            :local_root => '/Users/fadilsutomo/RailsProject/warmgreet-website/public'
+            }, 
+        :fog_directory => '', 
+        :fog_host => 'localhost'
     }
+  
+
+    #config.paperclip_defaults = {
+     # :storage => :s3,
+      #:s3_credentials => {
+       # :bucket => ENV["S3_BUCKET"],
+        #:access_key_id => ENV["S3_KEY"],
+        #:secret_access_key => ENV["S3_SECRET_KEY"]
+      #}
+    #}
   end
 end

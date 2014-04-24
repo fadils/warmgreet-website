@@ -1,5 +1,5 @@
 class Review < ActiveRecord::Base
-  attr_accessible :title, :body, :rating, :user_id, :merchant_id
+  attr_accessible :title, :body, :pic, :rating, :user_id, :merchant_id
 
   validates :title, :body, :rating, :user_id, :merchant_id, presence: true
   #validates :merchant_id, uniqueness: { :scope => :user_id, :message => "You already wrote a review for this place!" }
