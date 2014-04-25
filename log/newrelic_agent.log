@@ -2922,3 +2922,106 @@ LINE 5:              WHERE a.attrelid = '"customers"'::regclass
 [04/24/14 20:01:35 +0700 Pr0ducer.local (24861)] INFO : Installing Rails3 Error instrumentation
 [04/24/14 20:01:35 +0700 Pr0ducer.local (24861)] INFO : Finished instrumentation
 [04/24/14 20:01:35 +0700 Pr0ducer.local (24861)] INFO : Doing deferred dependency-detection before Rack startup
+[04/25/14 21:58:50 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[04/25/14 22:04:50 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:59: unknown regexp option - r
+unmatched close parenthesis: /h4>, favorites_show_url(@user) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( render "favorites/
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:59: syntax error, unexpected tSTRING_BEG, expecting ')'
+...pend= ( render "favorites/user", :user => @user );@output_bu...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:61: syntax error, unexpected tIDENTIFIER, expecting ')'
+...uffer.append= ( render "follows/user", :user => @user );@out...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:61: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...append= ( render "follows/user", :user => @user );@output_bu...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:61: unterminated string meets end of file
+[04/25/14 22:04:50 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:59: unknown regexp option - r
+unmatched close parenthesis: /h4>, favorites_show_url(@user) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( render "favorites/
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:59: syntax error, unexpected tSTRING_BEG, expecting ')'
+...pend= ( render "favorites/user", :user => @user );@output_bu...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:61: syntax error, unexpected tIDENTIFIER, expecting ')'
+...uffer.append= ( render "follows/user", :user => @user );@out...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:61: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...append= ( render "follows/user", :user => @user );@output_bu...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/profile/index.html.erb:61: unterminated string meets end of file
+[04/25/14 22:40:51 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"follows", :user_id=>#<User id: 2, username: "allene799", password_digest: "$2a$10$3JhlUGw/7dKTWK3Mr5W.COGSP6hWsl6L00y6liKMLdZt...", email: "rebecca149kiley@rodrigueznikolaus.com", biography: "Minus quia numquam aliquam ea doloremque. Ab perfer...", age: 39, gender: "M", location: "Phillipines", admin: false, session_token: "hsJKz1GPyyjK5KZQAd-AVQ", created_at: "2014-04-24 13:01:02", updated_at: "2014-04-24 13:01:02", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, provider: nil, uid: nil, image: nil, slug: "allene799", activated: false, auth_token: "gdB-jGbJV0fqAhDzcXQxVA">}
+[04/25/14 22:40:51 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"follows", :user_id=>#<User id: 2, username: "allene799", password_digest: "$2a$10$3JhlUGw/7dKTWK3Mr5W.COGSP6hWsl6L00y6liKMLdZt...", email: "rebecca149kiley@rodrigueznikolaus.com", biography: "Minus quia numquam aliquam ea doloremque. Ab perfer...", age: 39, gender: "M", location: "Phillipines", admin: false, session_token: "hsJKz1GPyyjK5KZQAd-AVQ", created_at: "2014-04-24 13:01:02", updated_at: "2014-04-24 13:01:02", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, provider: nil, uid: nil, image: nil, slug: "allene799", activated: false, auth_token: "gdB-jGbJV0fqAhDzcXQxVA">}
+[04/25/14 22:42:19 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 22:42:19 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 22:43:11 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"follows", :user_id=>#<User id: 3, username: "perry75", password_digest: "$2a$10$m8ABOJzpVoKVDrK10Ye36.iFwBiAUJk7XsX0eCS854GT...", email: "nolan106clare@schamberger.info", biography: "Mollitia fuga harum qui facilis aut. Asperiores aut...", age: 20, gender: "M", location: "Vietnam", admin: false, session_token: "NvvTeVDOYojmy6dI10VJJg", created_at: "2014-04-24 13:01:02", updated_at: "2014-04-24 13:01:02", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, provider: nil, uid: nil, image: nil, slug: "perry75", activated: false, auth_token: "cHRiJbrxRGan1J3kKLxhkg">}
+[04/25/14 22:43:11 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"follows", :user_id=>#<User id: 3, username: "perry75", password_digest: "$2a$10$m8ABOJzpVoKVDrK10Ye36.iFwBiAUJk7XsX0eCS854GT...", email: "nolan106clare@schamberger.info", biography: "Mollitia fuga harum qui facilis aut. Asperiores aut...", age: 20, gender: "M", location: "Vietnam", admin: false, session_token: "NvvTeVDOYojmy6dI10VJJg", created_at: "2014-04-24 13:01:02", updated_at: "2014-04-24 13:01:02", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, provider: nil, uid: nil, image: nil, slug: "perry75", activated: false, auth_token: "cHRiJbrxRGan1J3kKLxhkg">}
+[04/25/14 22:43:17 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"follows", :user_id=>#<User id: 6, username: "jaclyn469", password_digest: "$2a$10$74bHPDL5IOnMPxtGNt8T1ujcOJbM46iEIZ.kpMqzsd7Z...", email: "xzavier657emmie_cormier@wunsch.biz", biography: "Velit fugiat voluptatem quia. Et qui harum sit veli...", age: 39, gender: "M", location: "Indonesia", admin: false, session_token: "l5uxm0Mltiz2ZHrvkG9sHA", created_at: "2014-04-24 13:01:03", updated_at: "2014-04-24 13:01:03", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, provider: nil, uid: nil, image: nil, slug: "jaclyn469", activated: false, auth_token: "ahxYXRkPr-5cIw_vqWJZOQ">}
+[04/25/14 22:43:17 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"follows", :user_id=>#<User id: 6, username: "jaclyn469", password_digest: "$2a$10$74bHPDL5IOnMPxtGNt8T1ujcOJbM46iEIZ.kpMqzsd7Z...", email: "xzavier657emmie_cormier@wunsch.biz", biography: "Velit fugiat voluptatem quia. Et qui harum sit veli...", age: 39, gender: "M", location: "Indonesia", admin: false, session_token: "l5uxm0Mltiz2ZHrvkG9sHA", created_at: "2014-04-24 13:01:03", updated_at: "2014-04-24 13:01:03", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, provider: nil, uid: nil, image: nil, slug: "jaclyn469", activated: false, auth_token: "ahxYXRkPr-5cIw_vqWJZOQ">}
+[04/25/14 22:43:53 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<#<Class:0x007fea707ae970>:0x007fea73d75108>
+[04/25/14 22:43:53 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<#<Class:0x007fea707ae970>:0x007fea73d75108>
+[04/25/14 22:45:46 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 22:45:46 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 22:54:15 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing partial follows/folloing_result, application/folloing_result with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fadilsutomo/RailsProject/warmgreet-website/app/views"
+  * "/Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views"
+
+[04/25/14 22:54:15 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing partial follows/folloing_result, application/folloing_result with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fadilsutomo/RailsProject/warmgreet-website/app/views"
+  * "/Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views"
+
+[04/25/14 22:55:02 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 22:55:02 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 22:55:16 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 22:55:16 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 22:56:26 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 22:56:26 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 23:03:48 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 23:03:48 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `followed_users' for nil:NilClass
+[04/25/14 23:06:11 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:06:11 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:06:25 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:06:25 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:10:39 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:10:39 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:10:41 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:10:41 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:13:59 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:13:59 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:19:38 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:19:38 +0700 Pr0ducer.local (24861)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] INFO : Starting the New Relic agent in "development" environment.
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] INFO : Reading configuration from config/newrelic.yml
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] INFO : New Relic Agent Developer Mode enabled.
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] INFO : Enabling the Request Sampler.
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] INFO : Environment: development
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] INFO : Dispatcher: webrick
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] INFO : Application: My Application
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] WARN : Agent configured not to send data in this environment.
+[04/25/14 23:26:28 +0700 Pr0ducer.local (37737)] INFO : Installing ActiveRecord instrumentation
+[04/25/14 23:26:29 +0700 Pr0ducer.local (37737)] INFO : Installing middleware-based Excon instrumentation
+[04/25/14 23:26:29 +0700 Pr0ducer.local (37737)] INFO : Installing Net instrumentation
+[04/25/14 23:26:29 +0700 Pr0ducer.local (37737)] INFO : Installing deferred Rack instrumentation
+[04/25/14 23:26:29 +0700 Pr0ducer.local (37737)] INFO : Installing Rails 3 Controller instrumentation
+[04/25/14 23:26:29 +0700 Pr0ducer.local (37737)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/25/14 23:26:29 +0700 Pr0ducer.local (37737)] INFO : Installing Rails3 Error instrumentation
+[04/25/14 23:26:29 +0700 Pr0ducer.local (37737)] INFO : Finished instrumentation
+[04/25/14 23:26:32 +0700 Pr0ducer.local (37737)] INFO : Doing deferred dependency-detection before Rack startup
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Starting the New Relic agent in "development" environment.
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Reading configuration from config/newrelic.yml
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : New Relic Agent Developer Mode enabled.
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Enabling the Request Sampler.
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Environment: development
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Dispatcher: webrick
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Application: My Application
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] WARN : Agent configured not to send data in this environment.
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Installing ActiveRecord instrumentation
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Installing middleware-based Excon instrumentation
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Installing Net instrumentation
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Installing deferred Rack instrumentation
+[04/25/14 23:47:43 +0700 Pr0ducer.local (38164)] INFO : Installing Rails 3 Controller instrumentation
+[04/25/14 23:47:44 +0700 Pr0ducer.local (38164)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/25/14 23:47:44 +0700 Pr0ducer.local (38164)] INFO : Installing Rails3 Error instrumentation
+[04/25/14 23:47:44 +0700 Pr0ducer.local (38164)] INFO : Finished instrumentation
+[04/25/14 23:47:45 +0700 Pr0ducer.local (38164)] INFO : Doing deferred dependency-detection before Rack startup

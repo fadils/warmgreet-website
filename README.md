@@ -11,7 +11,7 @@ TODO:
 - Ranking mechanism (important!!!) - DONE!! Should update the algorithm, though.
 - add country to merchant
 - Offers from merchants, uploaded thru dashbord (Optional)
-- Change "cool review" to "helpful"
+- Change "cool review" to "helpful" - DONE!!
 - shoppers also view di halaman merchant
 - Category
 - Tambahin ranking dan category untuk tiap listing merchant

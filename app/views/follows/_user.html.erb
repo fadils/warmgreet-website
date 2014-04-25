@@ -1,13 +1,7 @@
 <h3>Following</h3>
-<ul>
-<% user.followed_users.each do |user| %>
-  <li><%= link_to user.username, user_url(user) %></li>
-<% end %>
-</ul>
+<h3><%= link_to user.followed_users.count, follows_following_url(user) %></h3>
+
 
 <h3>Followers</h3>
-<ul>
-<% user.followers.each do |follower| %>
-  <li><%= link_to follower.username, user_url(follower) %></li>
-<% end %>
-</ul>
+<h3><%= link_to user.followers.count, follows_followers_url(user) %></h3>
+

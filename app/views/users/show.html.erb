@@ -34,6 +34,16 @@
     <h3>Biography:</h3>
     <p><%= @user.biography %></p>
 
+     <h3>Thumbs Given:</h3>
+    <strong class="badge">
+      <%= @user.vote_tags.count %>
+    </strong>
+
+    <h3>Thumbs Received:</h3>
+    <strong class="badge">
+      <%= @user.count_thumbs_up %>
+    </strong>
+
   </div>
 
   <div class="prof-mid group">

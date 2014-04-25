@@ -7,6 +7,13 @@ WarmGreet::Application.routes.draw do
 
   get "reviews/story"
 
+  get "favorites/show"
+
+  get "follows/following"
+
+
+  get "follows/followers"
+
   resources :users, :only => [:create, :new, :show, :edit, :update, :index, :profile] do
     resources :follows, :only => [:create, :destroy]
     get 'activate'
