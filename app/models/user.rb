@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
                   :big => "100x100#",
                   :small => "60x60#"
                 }
-                
+
   has_many :reviews,
   dependent: :destroy
 
@@ -68,6 +68,23 @@ class User < ActiveRecord::Base
 
   def is_merchant?
     age == 0
+  end
+
+  def count_thumbs_up
+    total = 0
+    count = self.reviews.count
+
+    if count == 0
+      return 0
+    else
+      self.reviews.each_with_index do |r, i|
+        if r.user_id == self.id #review by this user
+          total += r.vote_tags.count
+        end
+      end
+    end 
+
+    return total
   end
 
   def self.find_uid_or_create(auth)

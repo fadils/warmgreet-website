@@ -21,11 +21,11 @@
 
   <% if signed_in? %>
   <% unless current_user == review.user %>
-    <% if current_user.voted_reviews.include?(review) %>
-      <%= button_to "Uncool...", review_vote_tag_url(review), method: :delete, form_class: "cool-button" %>
-    <% else %>
-      <%= button_to "Cool review!", review_vote_tags_url(review), method: :post, form_class: "cool-button" %>
-    <% end %>
+    <%# if current_user.voted_reviews.include?(review) %>
+      <%= button_to "Not Helpful", review_vote_tag_url(review), method: :delete, form_class: "cool-button" %>
+    <%# else %> 
+      <%= button_to "Helpful", review_vote_tags_url(review), method: :post, form_class: "cool-button" %>
+    <%# end %>
   <% else %>
   cool votes
   <% end %>

@@ -21,6 +21,9 @@ class Review < ActiveRecord::Base
   has_many :users_who_voted,
   through: :vote_tags,
   source: :user
+
+  def count_vote_tags_for(user)
+  end
   
   # Returns microposts from the users being followed by the given user.
   def self.from_users_followed_by(user)

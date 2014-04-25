@@ -37,6 +37,16 @@
     <h3>Biography:</h3>
     <p><%= @user.biography %></p>
 
+    <h3>Thumbs Given:</h3>
+    <strong class="badge">
+      <%= @user.vote_tags.count %>
+    </strong>
+
+    <h3>Thumbs Received:</h3>
+    <strong class="badge">
+      <%= @user.count_thumbs_up %>
+    </strong>
+
   </div>
 
   <div class="prof-mid group">
@@ -45,7 +55,7 @@
   </div>
 
   <div class="prof-right group">
-    <h3>Favorite Merchants:</h3>
+    <h3>Favorite Online Stores:</h3>
     <%= render "favorites/user", :user => @user %>
 
     <%= render "follows/user", :user => @user %>
