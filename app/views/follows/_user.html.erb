@@ -1,7 +1,7 @@
 <h3>Following</h3>
-<h3><%= link_to user.followed_users.count, follows_following_url(user) %></h3>
+<h3><%= link_to user.followed_users.count, follows_following_url(user.followed_users) %></h3>
 
 
 <h3>Followers</h3>
-<h3><%= link_to user.followers.count, follows_followers_url(user) %></h3>
+<h3><%= link_to user.followers.count, follows_followers_url(user.followers) %></h3>
 

@@ -9,10 +9,6 @@ gem 'pg'
 
 gem 'fog'
 
-gem 'chalk_dust'
-
-gem 'ranked-model'
-
 gem 'jquery-rails'
 gem 'backbone-on-rails'
 gem 'bcrypt-ruby', :require => 'bcrypt'
