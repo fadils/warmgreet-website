@@ -9,11 +9,11 @@ TODO:
 - Other stories about this merchant. See more stories. - DONE!!
 - change "merchant" to "online store" - DONE!!
 - Ranking mechanism (important!!!) - DONE!! Should update the algorithm, though.
-- add country to merchant
+- add country to merchant - DONE!!
 - Offers from merchants, uploaded thru dashbord (Optional)
 - Change "cool review" to "helpful" - DONE!!
 - shoppers also view di halaman merchant
 - Category
-- Tambahin ranking dan category untuk tiap listing merchant
+- Tambahin ranking dan category untuk tiap listing merchant. - DONE!!
 - Page untuk followed merchants
 - NewsFeed dan own story pisah. NewsFeed di Feed. Own Story di profile. - DONE!!

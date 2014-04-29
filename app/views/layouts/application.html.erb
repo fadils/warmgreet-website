@@ -9,6 +9,24 @@
 </head>
 <body>
 
+  <div class = "write_story">
+      <% if signed_in? %>
+        <%= link_to "What's your story".html_safe, user_url(current_user) %>
+      <%# else %>
+        <%#= link_to "<li>Home</li>".html_safe, new_session_url %>
+      <% end %>
+  </div>
+
+  <div class = "category">
+      <%= link_to "Discover".html_safe, "/" %>
+  </div>
+
+  <div class = "find_friends">
+      <%= link_to "Find Friends".html_safe, users_url %>
+  </div>
+
+        
+
 <header>
   <nav class="top-nav group">
 
@@ -31,7 +49,7 @@
           <strong>
           <% if signed_in? %>
             <%#if current_user = shopper%>
-            <li>Shopper:
+            <li>Hi,
               <%#= link_to current_user.username, user_url(current_user) %>
               <%= link_to current_user.username, profile_index_url(current_user) %>
               
@@ -46,14 +64,8 @@
         </ul>
       </div>
 
-      <div class="search group">
-        <form class="group" action="<%= search_url %>" method="get">
-          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-
-        <div class="search-box group">
-          <label>Find</label>
-          <input type="text" name="query" value="">
-        </div>
+      
+        
 
 <%#
         <div class="search-box group">
@@ -68,23 +80,13 @@
 <%#          </select>
         </div%>
 
-        <div class="search-submit group">
-          <input id="find" type="submit" value="">
-        </div>
-        </form>
+       
 
-         <ul class="mini-nav group">
-          
-          <% if signed_in? %>
-            <%= link_to "<li>What's your story</li>".html_safe, user_url(current_user) %>
-          <%# else %>
-            <%#= link_to "<li>Home</li>".html_safe, new_session_url %>
-          <% end %>
-            <%= link_to "<li>Discover</li>".html_safe, "/" %>
-            <%= link_to "<li>Find Friends</li>".html_safe, users_url %>
+         
+        
+      
 
-        </ul>
-      </div>
+      
 
     </div>
   </nav>

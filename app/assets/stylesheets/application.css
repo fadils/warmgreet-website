@@ -29,6 +29,41 @@ html, body, form, h1, div, label, ul {
   CLEAR FIX!
 */
 
+.find_friends {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 464.844px;
+  top: 38.862px;
+  z-index: 2868;
+}
+
+
+.category {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 329.844px;
+  top: 38.832px;
+  z-index: 2867;
+}
+
+.write_story {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 166.52px;
+  top: 38.772px;
+  z-index: 2866;
+}
+
+
 .group:after {
   display: block;
   clear: both;
@@ -171,9 +206,11 @@ nav form {
 .search-box {
   -webkit-appearance: none;
   background: #F5F5F1;
-  float: left;
+  position: absolute;
   border: 2px solid #000;
-  width: 350px;
+  top: 5px;
+  left: 400px;
+  width: 400px;
   height: 30px;
   border-radius: 5px;
   margin-right: 15px;
@@ -213,7 +250,9 @@ nav form {
 .search-submit {
   position: relative;
   display: block;
-  float: left;
+  position: absolute;
+  top: 5px;
+  left: 785px;
   background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);
   border: 1px solid black;
   border-radius: 5px;
@@ -346,7 +385,7 @@ textarea {
   border: none;
 }
 
-.category {
+.category_box {
   list-style: none;
   float: left;
   margin: 5px;
@@ -503,7 +542,8 @@ textarea:focus {
 
 body {
   font-family: sans-serif;
-  background: #F5F5F1;
+  
+  background-color: rgb( 247, 247, 247 );
 }
 
 body a {
@@ -520,10 +560,8 @@ main {
   width: 1000px;
   height: 100%;
   margin: auto;
-  background: white;
-  border-left: 1px solid #CCCCC8;
-  border-right: 1px solid #CCCCC8;
-  border-bottom: 1px solid #CCCCC8;
+  
+  
 }
 
 .city-switch {

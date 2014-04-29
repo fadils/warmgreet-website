@@ -3115,3 +3115,12 @@ unmatched close parenthesis: /h4>, favorites_show_url(@user) );@output_buffer.sa
 [04/28/14 14:39:31 +0700 Pr0ducer.local (940)] INFO : Installing Rails3 Error instrumentation
 [04/28/14 14:39:31 +0700 Pr0ducer.local (940)] INFO : Finished instrumentation
 [04/28/14 14:39:32 +0700 Pr0ducer.local (940)] INFO : Doing deferred dependency-detection before Rack startup
+[04/29/14 17:37:57 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 0)
+[04/29/14 17:45:11 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 0)
+[04/29/14 17:45:11 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 0)
+[04/29/14 18:11:25 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+...link_to "<h5 class="write_story">What's your story</h5>".htm...
+...                               ^
+[04/29/14 18:11:25 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+...link_to "<h5 class="write_story">What's your story</h5>".htm...
+...                               ^

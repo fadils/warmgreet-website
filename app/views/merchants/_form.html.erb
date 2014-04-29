@@ -1,6 +1,6 @@
 <% action = (merchant.persisted? ? merchant_url(merchant) : country_merchants_url) %>
 <% method = (merchant.persisted? ? "put" : "post") %>
-<% message = (merchant.persisted? ? "Update merchant" : "Add merchant") %>
+<% message = (merchant.persisted? ? "Update merchant" : "Add online store") %>
 
 <form class="form" action="<%= action %>" method="post" enctype="multipart/form-data">
   <input
@@ -12,7 +12,7 @@
      type="hidden"
      value="<%= form_authenticity_token %>">
 
- <h1><%= message %></h1>
+ <h4><%= message %></h4>
 
   <div class="input">
     <label for="merchant_name">Merchant Name</label>
@@ -35,6 +35,17 @@
   </div>
 
   <br><br>
+
+  <div class="city-switch">
+    <select onChange="window.location.replace(this.options[this.selectedIndex].value)">
+      <option value="">Country</option>
+      <% Country.all.each do |country| %>
+        <option value="<%= country_merchants_url(country) %>">
+          <%= country.name %>
+        </option>
+      <% end %>
+    </select>
+  </div>
 
   <div class="input">
     <label for="merchant_website">Website</label>
