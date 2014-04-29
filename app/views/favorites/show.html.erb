@@ -1,0 +1,7 @@
+<div class="prof-content group">
+  <% @user = current_user %>
+  <h2><%= @user.username %>'s favorite online stores</h2>
+  <%= render "favorites/user", :user => @user %>
+  <br>
+
+</div>

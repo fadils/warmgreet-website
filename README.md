@@ -6,7 +6,7 @@ TODO:
 - Upload picture in create story. - Add photo in story DB - DONE!!
 - Show the picture uploaded randomly in merchant page. - DONE!!
 - "Detail is alwasys good" in creating story - DONE!!
-- Other stories about this merchant. See more stories.
+- Other stories about this merchant. See more stories. - DONE!!
 - change "merchant" to "online store" - DONE!!
 - Ranking mechanism (important!!!) - DONE!! Should update the algorithm, though.
 - add country to merchant

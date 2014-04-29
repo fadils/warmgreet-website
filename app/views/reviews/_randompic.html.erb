@@ -1,0 +1,17 @@
+<%#user.feed.sort_by{ |rev| rev.created_at }.reverse!.each do |review| %>
+<% merchant.reviews.order("RANDOM()").limit(8).each do |review| %>
+
+<div class="prof-review group">
+
+  <div class="review-body">
+    <% if review.pic.file? %>
+      <%= image_tag review.pic.url(:small) %>
+    <% end %>
+
+  </div>
+
+</div>
+<br>
+
+<% end %>
+

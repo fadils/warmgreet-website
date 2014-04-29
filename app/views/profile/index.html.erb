@@ -55,9 +55,10 @@
   </div>
 
   <div class="prof-right group">
-    <h4>
-      <%= link_to "Favorite online stores:", favorites_show_url(@user) %>
-    </h4>
+    
+      <h3>Favorite Online Stores</h3>
+      <%#= link_to "Favorite online stores:", favorites_show_url(@user) %>
+    
     <%= render "favorites/user", :user => @user %>
 
     <%= render "follows/user", :user => @user %>

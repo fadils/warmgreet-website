@@ -55,7 +55,27 @@
     <h3>Favorite Online Stores</h3>
     <%= render "favorites/user", :user => @user %>
 
-    <%= render "follows/user", :user => @user %>
+    <%#= render "follows/user", :user => @user %>
+    <h3>Following</h3>
+<%# @userf = user %>
+<h3><%= link_to @user.followed_users.count, follows_following_url(@user) %></h3>
+<ul>
+<% @user.followed_users.each do |followed| %>
+  <li><%= link_to followed.username, user_url(followed) %></li>
+<% end %>
+</ul>
+
+
+<h3>Followers</h3>
+<h3><%= link_to @user.followers.count, follows_followers_url(@user) %></h3>
+<ul>
+<% @user.followers.each do |follower| %>
+  <li><%= link_to follower.username, user_url(follower) %></li>
+<% end %>
+</ul>
+
+
+
   </div>
 </div>
 

@@ -12,6 +12,13 @@
      type="hidden"
      value="<%= form_authenticity_token %>">
 
+  <h4> Other stories about <%= @merchant.name %> </h4>
+  <% @merchant.reviews.each_with_index do |story, i| %>
+    <% if i < 5%>
+      <%= render partial: "reviews/pusherform", locals: {review: story} %>
+    <% end %>
+  <% end %>
+
  <h4><%= message %></h4>
 
  <div class="input">
