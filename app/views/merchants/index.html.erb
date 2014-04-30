@@ -12,19 +12,19 @@
 </div-->
  <div class="content-header">
       
-  <h3 class="search-box-title">What's your online shopping story?</h3>
+  <h2 class="search-box-title">What's your online shopping story?</h2>
 
   <form class="group" action="<%= search_url %>" method="get">
           <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
 
         <div class="search-box">
 
-          <label>Find</label>
+          
           <input type="text" name="query" value="">
         </div>
 
        <div class="search-submit group">
-          <input id="find" type="submit" value="">
+          <input class="button-writing" type="submit" value="Create Story">
         </div>
       </form>
   </div>
@@ -33,7 +33,10 @@
  
 
   <%#<h2>Whats's Popular in <%= @city.name %> <%#= @city.state.name %><%#/h2%>
-  <label>Your Popular Online Stores</label>
+  <div class="category-separator">
+    <label>CATEGORY</label> 
+    <%= image_tag "WGSlice/stripe_repeat.png" %> 
+  </div>
   <br>
   <%= link_to "Add a new online store", new_country_merchant_url(@country) %>
 

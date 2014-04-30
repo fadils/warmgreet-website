@@ -25,6 +25,12 @@ html, body, form, h1, div, label, ul {
   vertical-align: baseline;
 }
 
+@font-face
+{
+  font-family: Bariol;
+  src: url(/assets/sansation_light.woff);
+}
+
 /*
   CLEAR FIX!
 */
@@ -35,9 +41,18 @@ html, body, form, h1, div, label, ul {
   font-family: "Bariol";
   font-color: white;
   position: absolute;
-  left: 464.844px;
-  top: 38.862px;
-  z-index: 2868;
+  left: 415px;
+  top: 25px;
+}
+
+.WG-mainlogo {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 35px;
+  top: 90px;
 }
 
 
@@ -47,9 +62,8 @@ html, body, form, h1, div, label, ul {
   font-family: "Bariol";
   font-color: white;
   position: absolute;
-  left: 329.844px;
-  top: 38.832px;
-  z-index: 2867;
+  left: 295px;
+  top: 25px;
 }
 
 .write_story {
@@ -58,9 +72,8 @@ html, body, form, h1, div, label, ul {
   font-family: "Bariol";
   font-color: white;
   position: absolute;
-  left: 166.52px;
-  top: 38.772px;
-  z-index: 2866;
+  left: 125px;
+  top: 25px;
 }
 
 
@@ -178,9 +191,9 @@ header a {
   width: 100%;
   height: 750px;
   margin: auto;
-  border-bottom: 1px solid black;
+  
   box-shadow: 1px 1px 3px gray;
-  background-image: url("/assets/WGSlice/Banner_1440.png"); 
+  background-image: url("/assets/WGSlice/Banner_1440_r.png"); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -192,6 +205,7 @@ header a {
   display: block;
   float: right;
   padding: 20px;
+  color: white;
   /*background: #F0F3F8;*/
   border-radius: 3px;
   height: 23px;
@@ -202,7 +216,7 @@ nav ul {
 }
 
 nav .container {
-  width: 1000px;
+  width: 1024px;
   height: 80px;
   margin: 0 auto;
 }
@@ -235,21 +249,25 @@ nav form {
 
 .search-box-title{
   font-weight: bold;
-  line-height: 30px;
-  margin-left: 0px;
+  line-height: 43pt;
+  font-family: "Novecento"
+  margin-left: -55px;
 }
 
 .search-box {
   -webkit-appearance: none;
   background: #F5F5F1;
   position: absolute;
-  border: 2px solid #000;
+  border: 1px solid #000;
   margin-top: 0px;
-  left: 400px;
-  width: 500px;
-  height: 30px;
-  border-radius: 5px;
+  left: 300px;
+  width: 434px;
+  height: 57px;
   margin-right: 15px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 30px;
 }
 
 .search-box label {
@@ -288,18 +306,31 @@ nav form {
   display: block;
   position: absolute;
   margin-top: 15px;
-  left: 785px;
-  background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);
-  border: 1px solid black;
+  left: 755px;
+  background-color: rgb(255,234,71);
+  /*background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);*/
+  /*border: 1px solid black;
   border-radius: 5px;
-  padding: 0;
+  */
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
   margin: 0;
-  width: 40px;
-  height: 32px;
+  width: 283px;
+  height: 50px;
+  -moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
 }
 
 .search-submit:hover {
-  background: -webkit-linear-gradient(top, rgba(107,0,0,1) 0%,rgba(194,17,1,1) 100%);
+  background-color: rgb(255,234,71);
+  opacity: 0.75;
+}
+
+.button-writing{
+  font-family: 'trebuchet';
+  font-size: 30pt;
 }
 
 #find {
@@ -442,7 +473,8 @@ textarea:focus {
 .submit > input {
   position: relative;
   float: right;
-  background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);
+  width: 150px;
+  background: -webkit-linear-gradient(top, rgba(255,234,71,1) 0%,rgba(107,0,0,1) 100%);
   color: #fff;
   padding: 10px 15px;
   margin-right: 125px;
