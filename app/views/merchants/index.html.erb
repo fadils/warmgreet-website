@@ -10,13 +10,15 @@
     </select>
   </form>
 </div-->
-
-<div class="content group">
+ <div class="content-header">
+      
+  <h3 class="search-box-title">What's your online shopping story?</h3>
 
   <form class="group" action="<%= search_url %>" method="get">
           <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
 
         <div class="search-box">
+
           <label>Find</label>
           <input type="text" name="query" value="">
         </div>
@@ -25,9 +27,14 @@
           <input id="find" type="submit" value="">
         </div>
       </form>
+  </div>
+
+<div class="content group">
+ 
 
   <%#<h2>Whats's Popular in <%= @city.name %> <%#= @city.state.name %><%#/h2%>
-  <h2>Your Popular Online Stores</h2>
+  <label>Your Popular Online Stores</label>
+  <br>
   <%= link_to "Add a new online store", new_country_merchant_url(@country) %>
 
   <ol class="group">
@@ -39,6 +46,7 @@
     <% else %>
       <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "60x60" %>
     <% end %>
+    
   </a>
 
     <li class="results">
@@ -47,6 +55,19 @@
         <%= merchant.name %>
       </a>
       (Average Rating: <%= merchant.avg_rating.to_f.round(1) %>)
+      <br>
+
+      <h3>
+        <%= merchant.reviews.first.title %> by <a href="<%= user_url(merchant.reviews.first.user) %>">
+        <%= merchant.reviews.first.user.username %>
+      </a>
+      </h3>
+
+    
+      <% if merchant.reviews.first.user.photo.file? %>
+        <%= image_tag merchant.reviews.first.user.photo.url(:small) %>
+      <%end%>
+      <%= merchant.reviews.first.body %>
     </li>
 
   <% end %>

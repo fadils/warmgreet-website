@@ -3124,3 +3124,27 @@ unmatched close parenthesis: /h4>, favorites_show_url(@user) );@output_buffer.sa
 [04/29/14 18:11:25 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
 ...link_to "<h5 class="write_story">What's your story</h5>".htm...
 ...                               ^
+[04/30/14 16:14:32 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:61: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...eviews.first.user.photo.file? );@output_buffer.safe_concat('
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:63: syntax error, unexpected keyword_end, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+');   end 
+         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:97: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:99: syntax error, unexpected keyword_end, expecting ')'
+[04/30/14 16:14:32 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:61: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...eviews.first.user.photo.file? );@output_buffer.safe_concat('
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:63: syntax error, unexpected keyword_end, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+');   end 
+         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:97: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/index.html.erb:99: syntax error, unexpected keyword_end, expecting ')'
+[04/30/14 16:27:15 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `file?' for nil:NilClass
+[04/30/14 16:27:15 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `file?' for nil:NilClass
+[04/30/14 16:30:20 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `file?' for nil:NilClass
+[04/30/14 16:30:20 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `file?' for nil:NilClass
+[04/30/14 16:34:32 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for #<User:0x007f9e913f3310>
+[04/30/14 16:34:32 +0700 Pr0ducer.local (940)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for #<User:0x007f9e913f3310>

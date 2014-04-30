@@ -64,6 +64,21 @@ html, body, form, h1, div, label, ul {
 }
 
 
+.fashion {
+  font-size: 34.454px;
+  font-family: "Novecento wide";
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  text-shadow: 1px 1.732px 4px rgb( 0, 0, 0 );
+  -moz-transform: matrix( 5.74321817524648,0,0,5.74321817524648,0,0);
+  -webkit-transform: matrix( 5.74321817524648,0,0,5.74321817524648,0,0);
+  -ms-transform: matrix( 5.74321817524648,0,0,5.74321817524648,0,0);
+  position: absolute;
+  left: 619.593px;
+  top: 464.214px;
+  /*z-index: 1731;*/
+}
+
 .group:after {
   display: block;
   clear: both;
@@ -140,7 +155,9 @@ html, body, form, h1, div, label, ul {
 header {
   /*background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(185,12,3,1) 44%,rgba(176,7,6,1) 100%);
   */
-  background: -webkit-linear-gradient( 90deg, rgb(255,213,62) 9%, rgb(255,200,1) 24%, rgb(241,189,2) 46%, rgb(241,189,2) 55%, rgb(255,200,1) 100%);
+  /*background: -webkit-linear-gradient( 90deg, rgb(255,213,62) 9%, rgb(255,200,1) 24%, rgb(241,189,2) 46%, rgb(241,189,2) 55%, rgb(255,200,1) 100%);
+  
+  /*background: url("/Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/images/WGSlice/Banner_1440.png");*/
 }
 
 header a {
@@ -148,14 +165,26 @@ header a {
   text-decoration: none;
 }
 
+.top-nav-header
+{
+  background-color: rgb(35,31,32);
+  opacity: 0.75;
+  border-bottom: 1px solid black;
+  height: 64px;
+}
+
 .top-nav {
   position: relative;
   width: 100%;
-  height: 80px;
+  height: 750px;
   margin: auto;
   border-bottom: 1px solid black;
   box-shadow: 1px 1px 3px gray;
-  background-image: url("http://s3-media1.ak.yelpcdn.com/assets/2/www/img/7ccfbbb81622/structural/header_stars.png");
+  background-image: url("/assets/WGSlice/Banner_1440.png"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
 }
 
 .info {
@@ -163,9 +192,9 @@ header a {
   display: block;
   float: right;
   padding: 20px;
-  background: #F0F3F8;
+  /*background: #F0F3F8;*/
   border-radius: 3px;
-  height: 40px;
+  height: 23px;
 }
 
 nav ul {
@@ -203,14 +232,21 @@ nav form {
   margin-left: 20px;
 }
 
+
+.search-box-title{
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 0px;
+}
+
 .search-box {
   -webkit-appearance: none;
   background: #F5F5F1;
   position: absolute;
   border: 2px solid #000;
-  top: 5px;
+  margin-top: 0px;
   left: 400px;
-  width: 400px;
+  width: 500px;
   height: 30px;
   border-radius: 5px;
   margin-right: 15px;
@@ -251,7 +287,7 @@ nav form {
   position: relative;
   display: block;
   position: absolute;
-  top: 5px;
+  margin-top: 15px;
   left: 785px;
   background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);
   border: 1px solid black;
@@ -559,9 +595,9 @@ main {
 .main {
   width: 1000px;
   height: 100%;
-  margin: auto;
   
-  
+  top: 50px;
+  position: absolute;
 }
 
 .city-switch {
@@ -570,8 +606,16 @@ main {
 }
 
 .content {
-  margin: 0 auto;
-  padding: 25px 100px;
+  width: 900px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 150px;
+  margin-left: 130px;
+}
+
+.content-header {
+  margin-top: 0px;
+  margin-left: 500px;
 }
 
 .content > h1 {
