@@ -27,8 +27,8 @@ html, body, form, h1, div, label, ul {
 
 @font-face
 {
-  font-family: Bariol;
-  src: url(/assets/sansation_light.woff);
+  font-family: "Bariol";
+  src: url("BARIOL_REGULAR.OTF");
 }
 
 /*

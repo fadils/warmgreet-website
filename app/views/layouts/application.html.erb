@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<link rel="icon" type="image/png" href="http://i.imgur.com/QwzZ4bE.png">
 <html>
 <head>
   <title>WarmGreet</title>
@@ -10,12 +9,18 @@
 <body>
 
   
-
-        
+<% env = Rails.env %>
+<%#puts Rails.env + "ADFADFADFA"%>
+<% if env == "development" %>
+  <% home = "http://localhost:3000" %> 
+<% else %>
+  <% home = "http://www.warmgreet.com"%>
+<% end %>     
 
 <header>
   <nav class="top-nav group">
 
+  <% if request.original_url == "#{home}/merchants/index.html" %>
     <div class="top-nav-header">
       <div class="logo">
       <% if signed_in? %>
@@ -28,6 +33,12 @@
         </a>
       <% end %>
     </div>
+  <% else %>
+    <div class="top-nav-header">
+      
+    </div>
+
+  <% end %>
 
     <div class="WG-mainlogo">
         <%= image_tag("WGSlice/mainlogo.png", height: '80%', width: '80%')%>

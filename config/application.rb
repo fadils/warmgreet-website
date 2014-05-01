@@ -13,6 +13,8 @@ module WarmGreet
   class Application < Rails::Application
     config.autoload_paths += %W(#{config.root}/lib)
 
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
+
     config.generators do |g|
       g.test_framework :rspec,
         :fixtures => true,
