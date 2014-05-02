@@ -1,0 +1,65 @@
+.search_btn {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 1363px;
+  top: 17px;
+  width: 59px;
+  height: 59px;
+  z-index: 2848;
+}
+.Find_Friends {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 464.844px;
+  top: 38.862px;
+  z-index: 2847;
+}
+.Category {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 329.844px;
+  top: 38.832px;
+  z-index: 2846;
+}
+.Write_a_Story {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 166.52px;
+  top: 38.772px;
+  z-index: 2845;
+}
+.Type_your_search_ {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 217, 217, 217 );
+  position: absolute;
+  left: 717.908px;
+  top: 37.862px;
+  z-index: 2844;
+}
+.search_bg {
+  background-color: rgb( 35, 31, 32 );
+  opacity: 0.749;
+  position: absolute;
+  left: 677px;
+  top: 0px;
+  width: 763px;
+  height: 94px;
+  z-index: 2843;
+}
+.Head_menu_bar {
+  background-color: rgb( 35, 31, 32 );
+  opacity: 0.749;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 94px;
+  z-index: 2842;
+}

@@ -1,0 +1,513 @@
+. Profile_Edit
+.save_btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 2636;
+}
+.btn_text_1440 {
+  font-size: 34.454px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 0.67189371083252,0,0,0.66871555306231,0,0);
+  -webkit-transform: matrix( 0.67189371083252,0,0,0.66871555306231,0,0);
+  -ms-transform: matrix( 0.67189371083252,0,0,0.66871555306231,0,0);
+  position: absolute;
+  left: 1124.949px;
+  top: 133.456px;
+  z-index: 2635;
+}
+.btn_base_1440 {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 1090px;
+  top: 132px;
+  width: 132px;
+  height: 38px;
+  z-index: 2634;
+}
+. Profile_Picture
+.Avatar {
+  background-image: url("images/Avatar.png");
+  position: absolute;
+  left: 227px;
+  top: 135px;
+  width: 183px;
+  height: 183px;
+  z-index: 2631;
+}
+.Change_Photo_btn {
+  background-image: url("images/change-pic-btn.png");
+  position: absolute;
+  left: 227px;
+  top: 135px;
+  width: 183px;
+  height: 183px;
+  z-index: 2631;
+}
+.Long_Line_2 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 207px;
+  top: 345px;
+  width: 1025px;
+  height: 2px;
+  z-index: 2625;
+}
+.Profile_Details_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 239.583px;
+  top: 354.319px;
+  z-index: 2623;
+}
+.Line_2 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 386px;
+  width: 973px;
+  height: 3px;
+  z-index: 2622;
+}
+.Real_Name_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 241.014px;
+  top: 408.319px;
+  z-index: 2621;
+}
+.Bhisma_Al {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 472.799px;
+  top: 408.541px;
+  z-index: 2620;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 433px;
+  width: 973px;
+  height: 1px;
+  z-index: 2619;
+}
+.Alias_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 238.978px;
+  top: 448.319px;
+  z-index: 2618;
+}
+.balispore {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 471.218px;
+  top: 448.819px;
+  z-index: 2617;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 471px;
+  width: 973px;
+  height: 2px;
+  z-index: 2616;
+}
+.Gender_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 239.258px;
+  top: 487.319px;
+  z-index: 2615;
+}
+.Male {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 469.708px;
+  top: 487.319px;
+  z-index: 2614;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 510px;
+  width: 973px;
+  height: 2px;
+  z-index: 2613;
+}
+.Date_of_Birth_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 241.611px;
+  top: 526.541px;
+  z-index: 2612;
+}
+.30_Mar_1986 {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 474.66px;
+  top: 526.319px;
+  z-index: 2611;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 550px;
+  width: 973px;
+  height: 2px;
+  z-index: 2610;
+}
+.Country_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 239.691px;
+  top: 565.819px;
+  z-index: 2609;
+}
+.Indonesia {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 472.083px;
+  top: 565.319px;
+  z-index: 2608;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 589px;
+  width: 973px;
+  height: 2px;
+  z-index: 2607;
+}
+.Province_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 239.895px;
+  top: 604.319px;
+  z-index: 2606;
+}
+.DKI_Jakarta {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 472.559px;
+  top: 604.319px;
+  z-index: 2605;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 628px;
+  width: 973px;
+  height: 2px;
+  z-index: 2604;
+}
+.City_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 237.853px;
+  top: 643.819px;
+  z-index: 2603;
+}
+.Jakarta {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 472.895px;
+  top: 643.319px;
+  z-index: 2602;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 671px;
+  width: 973px;
+  height: 2px;
+  z-index: 2601;
+}
+.Long_Line_2 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 207px;
+  top: 693px;
+  width: 1025px;
+  height: 2px;
+  z-index: 2599;
+}
+.Login_Info {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 2598;
+}
+.Login_Info_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 238.664px;
+  top: 702.819px;
+  z-index: 2597;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 735px;
+  width: 973px;
+  height: 2px;
+  z-index: 2596;
+}
+.Email_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 239.023px;
+  top: 756.319px;
+  z-index: 2595;
+}
+.bhisma_al_gmail_com {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 476.101px;
+  top: 756.978px;
+  z-index: 2594;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 781px;
+  width: 973px;
+  height: 1px;
+  z-index: 2593;
+}
+.Password_Text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 240.622px;
+  top: 796.319px;
+  z-index: 2592;
+}
+.***** {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 473.818px;
+  top: 795.83px;
+  z-index: 2591;
+}
+.Line_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 819px;
+  width: 973px;
+  height: 2px;
+  z-index: 2590;
+}
+.Long_Line_White_2 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 207px;
+  top: 843px;
+  width: 1025px;
+  height: 2px;
+  z-index: 2588;
+}
+.Privacy_Settings {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 2587;
+}
+.Line_White_2 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 891px;
+  width: 973px;
+  height: 3px;
+  z-index: 2586;
+}
+.Privacy_Settings {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 240.473px;
+  top: 859.819px;
+  z-index: 2585;
+}
+.Show_Bagdes {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 241.713px;
+  top: 912.041px;
+  z-index: 2584;
+}
+.Line_White_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 937px;
+  width: 973px;
+  height: 2px;
+  z-index: 2583;
+}
+.Show_Following {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 242.203px;
+  top: 951.041px;
+  z-index: 2582;
+}
+.Line_White_1 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 226px;
+  top: 976px;
+  width: 973px;
+  height: 1px;
+  z-index: 2581;
+}
+.Toggle_off {
+  background-image: url("images/toggle-off.png");
+  position: absolute;
+  left: 227px;
+  top: 135px;
+  width: 57px;
+  height: 43px;
+  z-index: 2631;
+}
+.Toggle_on {
+  background-image: url("images/toggle-on.png");
+  position: absolute;
+  left: 227px;
+  top: 135px;
+  width: 57px;
+  height: 43px;
+  z-index: 2631;
+}

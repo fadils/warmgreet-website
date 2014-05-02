@@ -1,0 +1,83 @@
+.WG_Logogram {
+  background-image: url("images/WG Logogram.png");
+  position: absolute;
+  left: 52px;
+  top: 20px;
+  width: 70px;
+  height: 62px;
+  z-index: 2870;
+}
+.search_btn {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 1363px;
+  top: 17px;
+  width: 59px;
+  height: 59px;
+  z-index: 2869;
+}
+.Find_Friends {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 464.844px;
+  top: 38.862px;
+  z-index: 2868;
+}
+.Category {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 329.844px;
+  top: 38.832px;
+  z-index: 2867;
+}
+.Write_a_Story {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 166.52px;
+  top: 38.772px;
+  z-index: 2866;
+}
+.Polygon_2 {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 1280px;
+  top: 41px;
+  width: 20px;
+  height: 18px;
+  z-index: 2865;
+}
+.Hi__Bhisma_ {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 1157.844px;
+  top: 38.366px;
+  z-index: 2864;
+}
+.search_bg {
+  background-color: rgb( 35, 31, 32 );
+  opacity: 0.749;
+  position: absolute;
+  left: 1345px;
+  top: 0px;
+  width: 95px;
+  height: 94px;
+  z-index: 2863;
+}
+.Head_menu_bar {
+  background-color: rgb( 35, 31, 32 );
+  opacity: 0.749;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 94px;
+  z-index: 2862;
+}

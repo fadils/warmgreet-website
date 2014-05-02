@@ -1,0 +1,17 @@
+<%user.feed.sort_by{ |rev| rev.created_at }.reverse!.each do |review| %>
+
+    <% if review.user.photo.file? %>
+      <%= image_tag review.user.photo.url(:big) %>
+    <% elsif review.user.image? %>
+      <%= image_tag review.user.image, size: "100x100" %>
+    <% else %>
+      <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "100x100" %>
+    <% end %>
+
+    <br>
+    
+    <%= image_tag review.merchant.photo %>
+
+    <br>
+</div>
+<% end %>

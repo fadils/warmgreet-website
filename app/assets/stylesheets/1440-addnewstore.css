@@ -1,0 +1,160 @@
+. Add_new_store
+.head_text {
+  font-size: 27.944px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -webkit-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -ms-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  position: absolute;
+  left: 549.026px;
+  top: 160.217px;
+  z-index: 915;
+}
+.Share_Your_Online_Story_copy {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 914;
+}
+.prologue_text {
+  font-size: 48px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 0.64,0,0,0.63984594103382,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.63984594103382,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.63984594103382,0,0);
+  position: absolute;
+  left: 222.372px;
+  top: 231.04px;
+  width: 935.976px;
+  height: 92.6px;
+  z-index: 913;
+}
+.Type {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 136, 136, 136 );
+  text-align: left;
+  -moz-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  position: absolute;
+  left: 509.076px;
+  top: 368.041px;
+  z-index: 912;
+}
+.Textbox {
+  border-width: 0.64px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  position: absolute;
+  left: 485px;
+  top: 354px;
+  width: 472px;
+  height: 49px;
+  z-index: 911;
+}
+.Type {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 136, 136, 136 );
+  text-align: left;
+  -moz-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  position: absolute;
+  left: 501.713px;
+  top: 427.541px;
+  z-index: 910;
+}
+.Textbox {
+  border-width: 0.64px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  position: absolute;
+  left: 485px;
+  top: 414px;
+  width: 472px;
+  height: 49px;
+  z-index: 909;
+}
+.Dropdown_text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  position: absolute;
+  left: 507.792px;
+  top: 488.041px;
+  z-index: 908;
+}
+.Dropdown {
+  background-image: url("images/Dropdown.png");
+  position: absolute;
+  left: 485px;
+  top: 474px;
+  width: 472px;
+  height: 49px;
+  z-index: 907;
+}
+.Dropdown_text {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  position: absolute;
+  left: 503.808px;
+  top: 550.041px;
+  z-index: 906;
+}
+.Dropdown {
+  background-image: url("images/Dropdown.png");
+  position: absolute;
+  left: 485px;
+  top: 536px;
+  width: 472px;
+  height: 49px;
+  z-index: 905;
+}
+.Submit_create_btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 904;
+}
+.Create_btn_text {
+  font-size: 28.182px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-transform: uppercase;
+  text-align: left;
+  -moz-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.08979601086699,0,0);
+  position: absolute;
+  left: 566.258px;
+  top: 646.834px;
+  z-index: 903;
+}
+.Create_story_btn_base {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 485px;
+  top: 636px;
+  width: 471px;
+  height: 49px;
+  z-index: 902;
+}

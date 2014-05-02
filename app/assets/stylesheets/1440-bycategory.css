@@ -1,0 +1,296 @@
+. by_Category_All_Merchant
+._1440_category_banner_image {
+  background-image: url("images/1440-feed-banner image.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 900px;
+  z-index: 2837;
+}
+. merchant_list_left
+._1440_merchantphoto_big {
+  background-color: rgb( 253, 16, 122 );
+  opacity: 0.439;
+  position: absolute;
+  left: 228px;
+  top: 268px;
+  width: 135px;
+  height: 135px;
+  z-index: 2007;
+}
+.Merchant_Name {
+  font-size: 34.862px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-transform: uppercase;
+  text-align: left;
+  -moz-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -webkit-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -ms-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  position: absolute;
+  left: 380.182px;
+  top: 280.565px;
+  z-index: 2005;
+}
+.Ranked_number_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 327.073px;
+  top: 322.62px;
+  z-index: 2004;
+}
+.on_Category_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 320.148px;
+  top: 350.624px;
+  z-index: 2003;
+}
+.country_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 352.2px;
+  top: 377.624px;
+  z-index: 2002;
+}
+.based_on_story_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 326.18px;
+  top: 410.62px;
+  z-index: 2001;
+}
+. Ratings
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 336px;
+  top: 418px;
+  width: 19.44px;
+  height: 19.44px;
+  z-index: 1999;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 311px;
+  top: 418px;
+  width: 22px;
+  height: 22px;
+  z-index: 1998;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 285px;
+  top: 418px;
+  width: 22px;
+  height: 22px;
+  z-index: 1997;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 260px;
+  top: 418px;
+  width: 22px;
+  height: 22px;
+  z-index: 1996;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 235px;
+  top: 418px;
+  width: 22px;
+  height: 22px;
+  z-index: 1995;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 228px;
+  top: 453px;
+  width: 472px;
+  height: 2px;
+  z-index: 1993;
+}
+
+. merchant_list_right
+._1440_merchantphoto_big {
+  background-color: rgb( 253, 16, 122 );
+  opacity: 0.439;
+  position: absolute;
+  left: 740px;
+  top: 268px;
+  width: 135px;
+  height: 135px;
+  z-index: 1990;
+}
+.Ranked_number_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 838.074px;
+  top: 322.62px;
+  z-index: 1988;
+}
+.on_Category_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 831.148px;
+  top: 350.624px;
+  z-index: 1987;
+}
+.country_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 863.2px;
+  top: 377.624px;
+  z-index: 1986;
+}
+.Merchant_Name {
+  font-size: 34.862px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-transform: uppercase;
+  text-align: left;
+  -moz-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -webkit-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -ms-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  position: absolute;
+  left: 893.507px;
+  top: 279.594px;
+  z-index: 1985;
+}
+.based_on_story_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 841.32px;
+  top: 410.62px;
+  z-index: 1984;
+}
+.Ratings {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 1983;
+}
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 848px;
+  top: 418px;
+  width: 19.44px;
+  height: 19.44px;
+  z-index: 1982;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 823px;
+  top: 418px;
+  width: 22px;
+  height: 22px;
+  z-index: 1981;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 797px;
+  top: 418px;
+  width: 22px;
+  height: 22px;
+  z-index: 1980;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 772px;
+  top: 418px;
+  width: 22px;
+  height: 22px;
+  z-index: 1979;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 747px;
+  top: 418px;
+  width: 22px;
+  height: 22px;
+  z-index: 1978;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 740px;
+  top: 453px;
+  width: 472px;
+  height: 2px;
+  z-index: 1976;
+}

@@ -1,0 +1,59 @@
+.Footer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 927;
+}
+.Copyrights_2014___warmgreet {
+  font-size: 1.263px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 245, 246, 248 );
+  text-transform: uppercase;
+  line-height: 21.378;
+  text-align: center;
+  -moz-transform: matrix( 14.2314595458221,0,0,14.2543993232809,0,0);
+  -webkit-transform: matrix( 14.2314595458221,0,0,14.2543993232809,0,0);
+  -ms-transform: matrix( 14.2314595458221,0,0,14.2543993232809,0,0);
+  position: absolute;
+  left: 1095.669px;
+  top: 3681.904px;
+  z-index: 926;
+}
+.twitter {
+  background-image: url("images/WGv5_social_tw.png");
+  position: absolute;
+  left: 468px;
+  top: 5212px;
+  width: 56px;
+  height: 56px;
+  z-index: 9;
+}
+.facebook {
+  background-image: url("images/WGv5_social_fb.png");
+  position: absolute;
+  left: 468px;
+  top: 5212px;
+  width: 56px;
+  height: 56px;
+  z-index: 9;
+}
+.linkedin {
+  background-image: url("images/WGv5_social_in.png");
+  position: absolute;
+  left: 468px;
+  top: 5212px;
+  width: 56px;
+  height: 56px;
+  z-index: 9;
+}
+.Body_Footer {
+  background-color: rgb( 229, 229, 229 );
+  position: absolute;
+  left: 0px;
+  top: 3582px;
+  width: 1440px;
+  height: 108px;
+  z-index: 919;
+}

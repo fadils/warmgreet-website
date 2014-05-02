@@ -1,0 +1,902 @@
+. Type_story
+.head_text {
+  font-size: 27.944px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -webkit-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -ms-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  position: absolute;
+  left: 582.243px;
+  top: 160.248px;
+  z-index: 897;
+}
+._1440_merchantphoto_big {
+  background-color: rgb( 18, 18, 18 );
+  opacity: 0.38;
+  position: absolute;
+  left: 214px;
+  top: 260px;
+  width: 140px;
+  height: 140px;
+  z-index: 896;
+}
+.Merchant_Name {
+  font-size: 34.862px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-transform: uppercase;
+  text-align: center;
+  -moz-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -webkit-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -ms-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  position: absolute;
+  left: 374.592px;
+  top: 309.594px;
+  z-index: 894;
+}
+.Followers_Number {
+  font-size: 48.006px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 342.039px;
+  top: 361.655px;
+  z-index: 893;
+}
+.FOLLOWERS {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 423.493px;
+  top: 370.62px;
+  z-index: 892;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 850px;
+  top: 406px;
+  width: 2px;
+  height: 2535px;
+  z-index: 891;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 213px;
+  top: 405px;
+  width: 1001px;
+  height: 2px;
+  z-index: 890;
+}
+.prologue_text {
+  font-size: 48px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 40.394px;
+  top: 401.04px;
+  width: 965.211px;
+  height: 102.6px;
+  z-index: 889;
+}
+. Overall_experience_rating
+.question_title_text {
+  font-size: 40px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 108.682px;
+  top: 514px;
+  z-index: 887;
+}
+. Ratings_dots
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 387px;
+  top: 557px;
+  width: 34.44px;
+  height: 33.44px;
+  z-index: 884;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 344px;
+  top: 557px;
+  width: 37px;
+  height: 36px;
+  z-index: 883;
+}
+
+. Story_Title
+.question_title_text {
+  font-size: 40px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 138.561px;
+  top: 627.5px;
+  z-index: 876;
+}
+.Type {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 141, 141, 141 );
+  text-align: left;
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 233.921px;
+  top: 677.502px;
+  z-index: 875;
+}
+.Textbox {
+  border-width: 0.64px;
+  border-color: rgb( 194, 194, 194 );
+  border-style: solid;
+  position: absolute;
+  left: 213px;
+  top: 673px;
+  width: 623px;
+  height: 35px;
+  z-index: 874;
+}
+
+. The_Story
+.question_title_text {
+  font-size: 40px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 170.88px;
+  top: 736.5px;
+  z-index: 871;
+}
+.Type {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 141, 141, 141 );
+  text-align: left;
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 232.855px;
+  top: 790.041px;
+  z-index: 870;
+}
+.Textbox {
+  border-width: 0.64px;
+  border-color: rgb( 194, 194, 194 );
+  border-style: solid;
+  position: absolute;
+  left: 213px;
+  top: 781px;
+  width: 623px;
+  height: 264px;
+  z-index: 869;
+}
+
+. Details_good
+.question_title_text {
+  font-size: 40px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 97.154px;
+  top: 1091.88px;
+  z-index: 866;
+}
+. Web
+.question_subtitle_text {
+  font-size: 48px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 187.548px;
+  top: 1141.817px;
+  z-index: 864;
+}
+.subtitle_desc_text {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 53.449px;
+  top: 1169.953px;
+  width: 890.062px;
+  height: 62.781px;
+  z-index: 863;
+}
+. Ratings_dots
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 387px;
+  top: 1241px;
+  width: 34.44px;
+  height: 33.44px;
+  z-index: 861;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 344px;
+  top: 1241px;
+  width: 37px;
+  height: 36px;
+  z-index: 860;
+}
+
+. Shopping_Exp
+.question_subtitle_text {
+  font-size: 48px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 143.264px;
+  top: 1289.869px;
+  z-index: 853;
+}
+.subtitle_desc_text {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 50.933px;
+  top: 1319.906px;
+  width: 904.011px;
+  height: 62.875px;
+  z-index: 852;
+}
+. Ratings_dots
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 387px;
+  top: 1241px;
+  width: 34.44px;
+  height: 33.44px;
+  z-index: 861;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 344px;
+  top: 1241px;
+  width: 37px;
+  height: 36px;
+  z-index: 860;
+}
+
+. Transac_Proc
+.question_subtitle_text {
+  font-size: 48px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 147.319px;
+  top: 1444.317px;
+  z-index: 842;
+}
+.subtitle_desc_text {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 39.621px;
+  top: 1465.406px;
+  width: 965.633px;
+  height: 98.875px;
+  z-index: 841;
+}
+. Ratings_dots
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 387px;
+  top: 1241px;
+  width: 34.44px;
+  height: 33.44px;
+  z-index: 861;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 344px;
+  top: 1241px;
+  width: 37px;
+  height: 36px;
+  z-index: 860;
+}
+
+. Products_Q
+.question_subtitle_text {
+  font-size: 48px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 158.023px;
+  top: 1633.348px;
+  z-index: 831;
+}
+.subtitle_desc_text {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 44.964px;
+  top: 1662.906px;
+  width: 937.032px;
+  height: 62.875px;
+  z-index: 830;
+}
+. Ratings_dots
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 387px;
+  top: 1241px;
+  width: 34.44px;
+  height: 33.44px;
+  z-index: 861;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 344px;
+  top: 1241px;
+  width: 37px;
+  height: 36px;
+  z-index: 860;
+}
+
+. Cust_Care___After_Sales
+.question_subtitle_text {
+  font-size: 48px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 88.395px;
+  top: 1803.817px;
+  z-index: 820;
+}
+.subtitle_desc_text {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 57.738px;
+  top: 1837.406px;
+  width: 863.483px;
+  height: 26.875px;
+  z-index: 819;
+}
+. Ratings_dots
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 387px;
+  top: 1241px;
+  width: 34.44px;
+  height: 33.44px;
+  z-index: 861;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 344px;
+  top: 1241px;
+  width: 37px;
+  height: 36px;
+  z-index: 860;
+}
+
+. Mobile_Friendly
+.question_subtitle_text {
+  font-size: 48px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 162.862px;
+  top: 1950.348px;
+  z-index: 809;
+}
+.subtitle_desc_text {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 40.784px;
+  top: 1985.406px;
+  width: 962.752px;
+  height: 26.875px;
+  z-index: 808;
+}
+. Ratings_dots
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 387px;
+  top: 1241px;
+  width: 34.44px;
+  height: 33.44px;
+  z-index: 861;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 344px;
+  top: 1241px;
+  width: 37px;
+  height: 36px;
+  z-index: 860;
+}
+
+. Share_pic
+.question_title_text {
+  font-size: 40px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 133.842px;
+  top: 2103.5px;
+  z-index: 797;
+}
+.Add_Picture_btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 796;
+}
+.btn_text {
+  font-size: 34.454px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-transform: uppercase;
+  text-align: left;
+  -moz-transform: matrix( 0.67189365014699,0,0,0.66871695720221,0,0);
+  -webkit-transform: matrix( 0.67189365014699,0,0,0.66871695720221,0,0);
+  -ms-transform: matrix( 0.67189365014699,0,0,0.66871695720221,0,0);
+  position: absolute;
+  left: 196.435px;
+  top: 2258.723px;
+  z-index: 795;
+}
+.btn_base {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 214px;
+  top: 2259px;
+  width: 279px;
+  height: 37px;
+  z-index: 794;
+}
+.close_btn {
+  background-image: url("images/close-btn.png");
+  position: absolute;
+  left: 649px;
+  top: 2149px;
+  width: 36px;
+  height: 37px;
+  z-index: 792;
+}
+.Rotate_pic_btn {
+  background-image: url("images/Rotate-pic-btn.png");
+  position: absolute;
+  left: 649px;
+  top: 2205px;
+  width: 36px;
+  height: 37px;
+  z-index: 791;
+}
+.preview_uploaded_photo {
+  background-image: url("images/preview uploaded photo.png");
+  position: absolute;
+  left: 214px;
+  top: 2152px;
+  width: 135px;
+  height: 84px;
+  z-index: 790;
+}
+.photo_filename_text {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 326.902px;
+  top: 2196.405px;
+  z-index: 789;
+}
+.date_time_res_filesize_text {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 129, 129, 129 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 298.49px;
+  top: 2219.424px;
+  z-index: 788;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 214px;
+  top: 2243px;
+  width: 472px;
+  height: 2px;
+  z-index: 787;
+}
+
+. Account_Validation
+.question_title_text {
+  font-size: 40px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 134.322px;
+  top: 2341.5px;
+  z-index: 784;
+}
+.title_desc_text {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 37.758px;
+  top: 2368.874px;
+  width: 977.361px;
+  height: 56.938px;
+  z-index: 783;
+}
+.Type {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 141, 141, 141 );
+  text-align: left;
+  -moz-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.09005840660324,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 242.498px;
+  top: 2442.04px;
+  z-index: 782;
+}
+.Textbox {
+  border-width: 0.64px;
+  border-color: rgb( 194, 194, 194 );
+  border-style: solid;
+  position: absolute;
+  left: 214px;
+  top: 2436px;
+  width: 472px;
+  height: 35px;
+  z-index: 781;
+}
+
+. We_are_set
+.question_title_text {
+  font-size: 40px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 142.823px;
+  top: 2506.12px;
+  z-index: 778;
+}
+
+. Tick_box
+.Ticked {
+  background-image: url("images/Ticked.png");
+  position: absolute;
+  left: 214px;
+  top: 2552px;
+  width: 37px;
+  height: 37px;
+  z-index: 776;
+}
+.Untick {
+  background-image: url("images/Untick.png");
+  position: absolute;
+  left: 214px;
+  top: 2552px;
+  width: 37px;
+  height: 37px;
+  z-index: 775;
+}
+
+.I_certify_text {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 101.343px;
+  top: 2518.406px;
+  width: 897.19px;
+  height: 170.875px;
+  z-index: 773;
+}
+.submit_btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 771;
+}
+.btn_text {
+  font-size: 34.454px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.67189365014699,0,0,0.66871695720221,0,0);
+  -webkit-transform: matrix( 0.67189365014699,0,0,0.66871695720221,0,0);
+  -ms-transform: matrix( 0.67189365014699,0,0,0.66871695720221,0,0);
+  position: absolute;
+  left: 263.029px;
+  top: 2770.456px;
+  z-index: 770;
+}
+.btn_base {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 214px;
+  top: 2763px;
+  width: 327px;
+  height: 49px;
+  z-index: 769;
+}
+
+. Shoppers_Story
+.Category_title_small {
+  font-size: 46.875px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 780.786px;
+  top: 415.594px;
+  z-index: 766;
+}
+.stripes_repeat {
+  background-image: url("images/stripes repeat.png");
+  position: absolute;
+  left: 1163px;
+  top: 441px;
+  width: 51px;
+  height: 9px;
+  z-index: 765;
+}
+. Story_1
+.Reviewer_Name {
+  font-size: 16.513px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 954.471px;
+  top: 537.125px;
+  z-index: 717;
+}
+.Review_Title_text {
+  font-size: 18.348px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 955.905px;
+  top: 504.652px;
+  z-index: 716;
+}
+.review_date_text {
+  font-size: 28.125px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 1038.536px;
+  top: 530.02px;
+  z-index: 715;
+}
+.Content_text {
+  font-size: 28.125px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 771.211px;
+  top: 550.849px;
+  width: 534.678px;
+  height: 127.125px;
+  z-index: 714;
+}
+.more_text_btn {
+  font-size: 16.513px;
+  font-family: "Bariol";
+  color: rgb( 80, 71, 255 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 866.315px;
+  top: 669.625px;
+  z-index: 713;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 864px;
+  top: 704px;
+  width: 350px;
+  height: 2px;
+  z-index: 712;
+}
+
+. More_Story_btn
+.btn_text {
+  font-size: 34.454px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 0.67189371083252,0,0,0.66871555306231,0,0);
+  -webkit-transform: matrix( 0.67189371083252,0,0,0.66871555306231,0,0);
+  -ms-transform: matrix( 0.67189371083252,0,0,0.66871555306231,0,0);
+  position: absolute;
+  left: 899.302px;
+  top: 1949.456px;
+  z-index: 709;
+}
+.btn_base {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 900px;
+  top: 1948px;
+  width: 280px;
+  height: 37px;
+  z-index: 708;
+}

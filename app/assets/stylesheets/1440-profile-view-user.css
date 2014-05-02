@@ -1,0 +1,634 @@
+. Profile_View__User
+. Profile_Head
+.User_Propic {
+  border-radius: 50%;
+  background-color: rgb( 0, 0, 0 );
+  position: absolute;
+  left: 202px;
+  top: 152px;
+  width: 160px;
+  height: 160px;
+  z-index: 2763;
+}
+.User_Full_Name {
+  font-size: 34.862px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -webkit-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -ms-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  position: absolute;
+  left: 378.388px;
+  top: 156.62px;
+  z-index: 2454;
+}
+.member_since_text {
+  font-size: 17.614px;
+  font-family: "Bariol";
+  color: rgb( 112, 112, 112 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 381.748px;
+  top: 193.266px;
+  z-index: 2453;
+}
+.Thumbs_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 37px;
+  height: 36px;
+  z-index: 2722;
+}
+.Thumbs_Collected_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 547.837px;
+  top: 1007.583px;
+  z-index: 2721;
+}
+.First_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 37px;
+  height: 36px;
+  z-index: 2722;
+}
+.First_Stories_Created_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 403.317px;
+  top: 1008.083px;
+  z-index: 2719;
+}
+.Story_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 37px;
+  height: 36px;
+  z-index: 2722;
+}
+.Stories_Created_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 403.317px;
+  top: 1008.083px;
+  z-index: 2719;
+}
+.Following_Number {
+  font-size: 48.006px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 505.458px;
+  top: 266.655px;
+  z-index: 2448;
+}
+.FOLLOWING {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 488.526px;
+  top: 302.62px;
+  z-index: 2447;
+}
+.Followers_Number {
+  font-size: 48.006px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-align: left;
+  -moz-transform: matrix( 0.64,0v,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 354.176px;
+  top: 266.655px;
+  z-index: 2446;
+}
+.FOLLOWERS {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 343.493px;
+  top: 302.62px;
+  z-index: 2445;
+}
+.edit_btn {
+  background-image: url("images/edit-btn.png");
+  position: absolute;
+  left: 234px;
+  top: 286px;
+  width: 123px;
+  height: 34px;
+  z-index: 2444;
+}
+.Line_Grey_1 {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 207px;
+  top: 347px;
+  width: 1025px;
+  height: 2px;
+  z-index: 2443;
+}
+
+. Badges
+.stripes_repeat {
+  background-image: url("images/stripes repeat copy 4.png");
+  position: absolute;
+  left: 803px;
+  top: 205px;
+  width: 429px;
+  height: 12px;
+  z-index: 2440;
+}
+.Category_title_text {
+  font-size: 46.875px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 697.501px;
+  top: 183.18px;
+  z-index: 2439;
+}
+.Left_arrow {
+  background-image: url("images/Right-arrow.png");
+  opacity: 0.702;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 26px;
+  height: 52px;
+  z-index: 1;
+}
+.Right_arrow {
+  background-image: url("images/Right-arrow.png");
+  opacity: 0.702;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 26px;
+  height: 52px;
+  z-index: 1;
+}
+.Badges_frame {
+  background-color: rgb( 201, 9, 9 );
+  position: absolute;
+  left: 1113px;
+  top: 238px;
+  width: 85px;
+  height: 85px;
+  z-index: 2436;
+}
+.Badges_frame {
+  background-color: rgb( 201, 9, 9 );
+  opacity: 0.631;
+  position: absolute;
+  left: 1023px;
+  top: 238px;
+  width: 85px;
+  height: 85px;
+  z-index: 2435;
+}
+
+. Followed_Merchants
+.Category_title {
+  font-size: 60px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 133.042px;
+  top: 367.2px;
+  z-index: 2428;
+}
+.stripes_repeat {
+  background-image: url("images/stripes repeat.png");
+  position: absolute;
+  left: 635px;
+  top: 397px;
+  width: 593px;
+  height: 12px;
+  z-index: 2427;
+}
+.edit_btn {
+  background-image: url("images/edit-btn.png");
+  position: absolute;
+  left: 500px;
+  top: 378px;
+  width: 123px;
+  height: 34px;
+  z-index: 2426;
+}
+.Left_arrow {
+  background-image: url("images/Right-arrow.png");
+  opacity: 0.702;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 26px;
+  height: 52px;
+  z-index: 1;
+}
+.Right_arrow {
+  background-image: url("images/Right-arrow.png");
+  opacity: 0.702;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 26px;
+  height: 52px;
+  z-index: 1;
+}
+.Merchant_Propic_Frame {
+  background-color: rgb( 0, 0, 0 );
+  opacity: 0.412;
+  position: absolute;
+  left: 1062px;
+  top: 440px;
+  width: 126px;
+  height: 126px;
+  z-index: 2423;
+}
+.Merchant_Propic_Frame {
+  background-color: rgb( 0, 0, 0 );
+  opacity: 0.412;
+  position: absolute;
+  left: 929px;
+  top: 440px;
+  width: 126px;
+  height: 126px;
+  z-index: 2422;
+}
+.E_dollar_icon_frame {
+  background-color: rgb( 253, 4, 16 );
+  opacity: 0.51;
+  position: absolute;
+  left: 1067px;
+  top: 579px;
+  width: 20px;
+  height: 32px;
+  z-index: 2408;
+}
+.E_dollar_Point {
+  font-size: 29.379px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-transform: uppercase;
+  -moz-transform: matrix( 1.09065545391018,0,0,1.0892176966174,0,0);
+  -webkit-transform: matrix( 1.09065545391018,0,0,1.0892176966174,0,0);
+  -ms-transform: matrix( 1.09065545391018,0,0,1.0892176966174,0,0);
+  position: absolute;
+  left: 1092.746px;
+  top: 582.166px;
+  z-index: 2406;
+}
+.E_dollar_icon_frame {
+  background-color: rgb( 253, 4, 16 );
+  opacity: 0.51;
+  position: absolute;
+  left: 934px;
+  top: 579px;
+  width: 20px;
+  height: 32px;
+  z-index: 2403;
+}
+.E_dollar_Point {
+  font-size: 29.379px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-transform: uppercase;
+  -moz-transform: matrix( 1.09065545391018,0,0,1.0892176966174,0,0);
+  -webkit-transform: matrix( 1.09065545391018,0,0,1.0892176966174,0,0);
+  -ms-transform: matrix( 1.09065545391018,0,0,1.0892176966174,0,0);
+  position: absolute;
+  left: 960.246px;
+  top: 582.166px;
+  z-index: 2401;
+}
+.Line_1{
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 207px;
+  top: 630px;
+  width: 1025px;
+  height: 1px;
+  z-index: 2374;
+}
+
+. Stories
+.Category_title_text {
+  font-size: 62.5px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 183.407px;
+  top: 655.125px;
+  z-index: 2371;
+}
+.stripes_repeat {
+  background-image: url("images/stripes repeat.png");
+  position: absolute;
+  left: 335px;
+  top: 688px;
+  width: 893px;
+  height: 12px;
+  z-index: 2370;
+}
+.1440_merchantphoto_big {
+  background-color: rgb( 0, 0, 0 );
+  opacity: 0.412;
+  position: absolute;
+  left: 228px;
+  top: 728px;
+  width: 134px;
+  height: 135px;
+  z-index: 2368;
+}
+.Merchant_Name {
+  font-size: 34.862px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-transform: uppercase;
+  text-align: left;
+  -moz-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -webkit-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -ms-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  position: absolute;
+  left: 384.091px;
+  top: 739.594px;
+  z-index: 2366;
+}
+.Ratings {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 2365;
+}
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 474px;
+  top: 785px;
+  width: 19.44px;
+  height: 19.44px;
+  z-index: 2364;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 449px;
+  top: 785px;
+  width: 22px;
+  height: 22px;
+  z-index: 2363;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 423px;
+  top: 785px;
+  width: 22px;
+  height: 22px;
+  z-index: 2362;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 398px;
+  top: 785px;
+  width: 22px;
+  height: 22px;
+  z-index: 2361;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 373px;
+  top: 785px;
+  width: 22px;
+  height: 22px;
+  z-index: 2360;
+}
+.Thumbs_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 37px;
+  height: 36px;
+  z-index: 2722;
+}
+.Thumbs_Collected_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 547.837px;
+  top: 1007.583px;
+  z-index: 2721;
+}
+.Get_link_btn {
+  background-image: url("images/Get-link btn.png");
+  position: absolute;
+  left: 517px;
+  top: 1154px;
+  width: 134px;
+  height: 37px;
+  z-index: 2356;
+}
+.Share_btn {
+  background-image: url("images/Share btn.png");
+  position: absolute;
+  left: 372px;
+  top: 1154px;
+  width: 135px;
+  height: 37px;
+  z-index: 2355;
+}
+.edit_btn {
+  background-image: url("images/edit-btn.png");
+  position: absolute;
+  left: 1090px;
+  top: 827px;
+  width: 123px;
+  height: 34px;
+  z-index: 2353;
+}
+.Review_Title {
+  font-size: 25.833px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 243.834px;
+  top: 887.39px;
+  z-index: 2352;
+}
+.review_date {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 201.857px;
+  top: 915.424px;
+  z-index: 2351;
+}
+.on_Category_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 996.127px;
+  top: 731.624px;
+  z-index: 2350;
+}
+.country_text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 1112.2px;
+  top: 758.624px;
+  z-index: 2349;
+}
+.Content_text {
+  font-size: 36px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: -46.417px;
+  top: 919.992px;
+  width: 1528.709px;
+  height: 205.665px;
+  z-index: 2348;
+}
+.more_btn {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 80, 71, 255 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 232.623px;
+  top: 1105.819px;
+  z-index: 2347;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 207px;
+  top: 1215px;
+  width: 1025px;
+  height: 1px;
+  z-index: 2346;
+}
+. More_Story_btn
+.btn_text_1440 {
+  font-size: 34.454px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 0.67179732011754,0,0,0.67824577622312,0,0);
+  -webkit-transform: matrix( 0.67179732011754,0,0,0.67824577622312,0,0);
+  -ms-transform: matrix( 0.67179732011754,0,0,0.67824577622312,0,0);
+  position: absolute;
+  left: 565.486px;
+  top: 4388.456px;
+  z-index: 2643;
+}
+.btn_base_1440 {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 580px;
+  top: 4386px;
+  width: 280px;
+  height: 38px;
+  z-index: 2642;
+}

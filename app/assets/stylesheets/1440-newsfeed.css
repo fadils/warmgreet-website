@@ -1,0 +1,373 @@
+._1440_feed_banner_image {
+  background-image: url("images/1440-feed-banner image.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 900px;
+  z-index: 2837;
+}
+. Offers_1
+._1440_merchantphoto {
+  background-color: rgb( 253, 16, 122 );
+  opacity: 0.439;
+  position: absolute;
+  left: 209px;
+  top: 2046px;
+  width: 131px;
+  height: 131px;
+  z-index: 2734;
+}
+.Offers_description {
+  font-size: 37.5px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 110.719px;
+  top: 2451.632px;
+  width: 1346.362px;
+  height: 168.875px;
+  z-index: 2732;
+}
+.Merchant_Offers_Content_Picture {
+  background-color: rgb( 253, 16, 122 );
+  position: absolute;
+  left: 352px;
+  top: 2046px;
+  width: 859px;
+  height: 415px;
+  z-index: 2731;
+}
+.Line_separator {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 207px;
+  top: 2628px;
+  width: 1025px;
+  height: 2px;
+  z-index: 2729;
+}
+
+. User_1
+.Propic_Frame {
+  border-radius: 50%;
+  background-color: rgb( 15, 61, 207 );
+  opacity: 0.529;
+  position: absolute;
+  left: 221px;
+  top: 923px;
+  width: 111px;
+  height: 111px;
+  z-index: 2726;
+}
+.User_Name_Text {
+  font-size: 21.136px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 69, 69, 69 );
+  text-align: left;
+  -moz-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  -webkit-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  -ms-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  position: absolute;
+  left: 407.329px;
+  top: 960.957px;
+  z-index: 2723;
+}
+.Thumbs_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 33px;
+  height: 32px;
+  z-index: 2722;
+}
+.Thumbs_Collected_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 547.837px;
+  top: 1007.583px;
+  z-index: 2721;
+}
+.Story_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 33px;
+  height: 32px;
+  z-index: 2722;
+}
+.Stories_Created_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 403.317px;
+  top: 1008.083px;
+  z-index: 2719;
+}
+.Review_Title {
+  font-size: 27.521px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 369.107px;
+  top: 1051.478px;
+  z-index: 2718;
+}
+. Ratings-dots
+.Ellipse_half_filled_onbiggercard {
+  border-width: 2px;
+  border-color: rgb( 88, 85, 86 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 441px;
+  top: 1093px;
+  width: 14px;
+  height: 14px;
+  z-index: 2716;
+}
+.Ellipse_filled_onbiggercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 420px;
+  top: 1093px;
+  width: 19px;
+  height: 18px;
+  z-index: 2715;
+}
+.Ellipse_filled_onbiggercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 399px;
+  top: 1093px;
+  width: 18px;
+  height: 18px;
+  z-index: 2714;
+}
+.Ellipse_filled_onbiggercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 378px;
+  top: 1093px;
+  width: 19px;
+  height: 18px;
+  z-index: 2713;
+}
+.Ellipse_filled_onbiggercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 357px;
+  top: 1093px;
+  width: 19px;
+  height: 18px;
+  z-index: 2712;
+}
+.Time_Text {
+  font-size: 14.091px;
+  font-family: "Bariol";
+  color: rgb( 157, 157, 157 );
+  text-align: left;
+  -moz-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  -webkit-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  -ms-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  position: absolute;
+  left: 502.164px;
+  top: 1094.713px;
+  z-index: 2710;
+}
+.Description_Text {
+  font-size: 24.003px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 1.00028185991725,0,0,0.99987763247145,0,0);
+  -webkit-transform: matrix( 1.00028185991725,0,0,0.99987763247145,0,0);
+  -ms-transform: matrix( 1.00028185991725,0,0,0.99987763247145,0,0);
+  position: absolute;
+  left: 359.207px;
+  top: 1131.763px;
+  width: 859.283px;
+  height: 195.201px;
+  z-index: 2709;
+}
+._merchantpropic {
+  background-color: rgb( 253, 16, 122 );
+  opacity: 0.439;
+  position: absolute;
+  left: 209px;
+  top: 1049px;
+  width: 131px;
+  height: 131px;
+  z-index: 2708;
+}
+.Picture_container {
+  background-color: rgb( 253, 16, 122 );
+  opacity: 0.729;
+  position: absolute;
+  left: 358px;
+  top: 1352px;
+  width: 848px;
+  height: 410px;
+  z-index: 2705;
+}
+. Details_Rating 
+.details_rating_text {
+  font-size: 37.5px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 455.545px;
+  top: 1782.631px;
+  z-index: 2702;
+}
+. Ratings-dots
+.Ellipse_half_filled_onbiggercard {
+  border-width: 2px;
+  border-color: rgb( 88, 85, 86 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 441px;
+  top: 1792px;
+  width: 14px;
+  height: 14px;
+  z-index: 2700;
+}
+.Ellipse_filled_onbiggercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 420px;
+  top: 1792px;
+  width: 19px;
+  height: 18px;
+  z-index: 2699;
+}
+.Ellipse_filled_onbiggercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 399px;
+  top: 1792px;
+  width: 18px;
+  height: 18px;
+  z-index: 2698;
+}
+.Ellipse_filled_onbiggercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 378px;
+  top: 1792px;
+  width: 19px;
+  height: 18px;
+  z-index: 2697;
+}
+.Ellipse_filled_onbiggercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 357px;
+  top: 1792px;
+  width: 19px;
+  height: 18px;
+  z-index: 2696;
+}
+.Thumbs_icon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 58px;
+  height: 57px;
+  z-index: 2653;
+}
+.Stories_Thumbs_Number {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.70304229772919,0,0,1.70321626031756,0,0);
+  -webkit-transform: matrix( 1.70304229772919,0,0,1.70321626031756,0,0);
+  -ms-transform: matrix( 1.70304229772919,0,0,1.70321626031756,0,0);
+  position: absolute;
+  left: 454.945px;
+  top: 1939.041px;
+  z-index: 2652;
+}
+.helpful_btn {
+  background-image: url("images/helpful? copy.png");
+  position: absolute;
+  left: 584px;
+  top: 1924px;
+  width: 227px;
+  height: 57px;
+  z-index: 2647;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 207px;
+  top: 2020px;
+  width: 1025px;
+  height: 1px;
+  z-index: 2646;
+}
+. More_Story_btn
+.btn_text_1440 {
+  font-size: 34.454px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 0.67179732011754,0,0,0.67824577622312,0,0);
+  -webkit-transform: matrix( 0.67179732011754,0,0,0.67824577622312,0,0);
+  -ms-transform: matrix( 0.67179732011754,0,0,0.67824577622312,0,0);
+  position: absolute;
+  left: 565.486px;
+  top: 4388.456px;
+  z-index: 2643;
+}
+.btn_base_1440 {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 580px;
+  top: 4386px;
+  width: 280px;
+  height: 38px;
+  z-index: 2642;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 207px;
+  top: 4448px;
+  width: 1025px;
+  height: 2px;
+  z-index: 2641;
+}

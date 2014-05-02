@@ -1,0 +1,635 @@
+. Home
+
+. Share_your_story
+.head_text {
+  font-size: 28.182px;
+  font-family: "Novecento wide";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -webkit-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -ms-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  position: absolute;
+  left: 482.774px;
+  top: 972.015px;
+  z-index: 636;
+}
+.Type {
+  font-size: 17.614px;
+  font-family: "Bariol";
+  color: rgb( 124, 124, 124 );
+  text-align: left;
+  -moz-transform: matrix( 1.70321626473146,0,0,1.70586208556446,0,0);
+  -webkit-transform: matrix( 1.70321626473146,0,0,1.70586208556446,0,0);
+  -ms-transform: matrix( 1.70321626473146,0,0,1.70586208556446,0,0);
+  position: absolute;
+  left: 423.32px;
+  top: 1072.766px;
+  z-index: 635;
+}
+.Textbox {
+  border-width: 1px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  position: absolute;
+  left: 353px;
+  top: 1053px;
+  width: 433px;
+  height: 56px;
+  z-index: 634;
+}
+.Create_btn_text {
+  font-size: 17.586px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-transform: uppercase;
+  text-align: left;
+  -moz-transform: matrix( 1.70321626473146,0,0,1.70586208556446,0,0);
+  -webkit-transform: matrix( 1.70321626473146,0,0,1.70586208556446,0,0);
+  -ms-transform: matrix( 1.70321626473146,0,0,1.70586208556446,0,0);
+  position: absolute;
+  left: 891.787px;
+  top: 1074.92px;
+  z-index: 633;
+}
+.Create_story_btn_base {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 806px;
+  top: 1053px;
+  width: 284px;
+  height: 58px;
+  z-index: 632;
+}
+
+. Head_Menu
+.search_btn {
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 1363px;
+  top: 17px;
+  width: 59px;
+  height: 59px;
+  z-index: 628;
+}
+.Find_Friends {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 349.844px;
+  top: 38.862px;
+  z-index: 627;
+}
+.Category {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 214.844px;
+  top: 38.832px;
+  z-index: 626;
+}
+.Write_a_Story {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 51.52px;
+  top: 38.772px;
+  z-index: 625;
+}
+.Are_you_a_member_ {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 172, 172, 172 );
+  position: absolute;
+  left: 920.352px;
+  top: 38.862px;
+  z-index: 624;
+}
+.Register___Login {
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 1126.844px;
+  top: 37.862px;
+  z-index: 623;
+}
+.Search_bg {
+  background-color: rgb( 35, 31, 32 );
+  opacity: 0.749;
+  position: absolute;
+  left: 1345px;
+  top: 0px;
+  width: 95px;
+  height: 94px;
+  z-index: 622;
+}
+.Head_menu_bar {
+  background-color: rgb( 35, 31, 32 );
+  opacity: 0.749;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 94px;
+  z-index: 621;
+}
+
+.Home-Banner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 5120px;
+  z-index: 619;
+}
+
+. User_Review_on_Banner
+.Berrybenka {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+  position: absolute;
+  left: 184.938px;
+  top: 487.843px;
+  z-index: 615;
+}
+.see_more_shoppers_experience_on {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+  position: absolute;
+  left: 184.567px;
+  top: 450.472px;
+  z-index: 614;
+}
+.Reviewer_Name {
+  font-size: 17.614px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+  -moz-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  -webkit-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  -ms-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  position: absolute;
+  left: 369.052px;
+  top: 401.766px;
+  z-index: 613;
+}
+.Review_Title {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 255, 255, 255 );
+  font-style: italic;
+  text-align: left;
+  -moz-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  -webkit-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  -ms-transform: matrix( 1.70321626031756,0,0,1.70321626031756,0,0);
+  position: absolute;
+  left: 271.183px;
+  top: 366.819px;
+  z-index: 612;
+}
+
+. Ratings-dots
+.Ellipse_half_filled_onsmallercard {
+  border-width: 2px;
+  border-color: rgb( 255, 255, 255 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 267px;
+  top: 402px;
+  width: 14px;
+  height: 14px;
+  z-index: 610;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 246px;
+  top: 402px;
+  width: 19px;
+  height: 18px;
+  z-index: 609;
+}
+
+. Per category: Fashion
+.Category_title {
+  font-size: 93.75px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 163.924px;
+  top: 1145.219px;
+  z-index: 508;
+}
+.stripes_repeat {
+  background-image: url("images/stripes repeat.png");
+  position: absolute;
+  left: 385px;
+  top: 1199px;
+  width: 843px;
+  height: 12px;
+  z-index: 509;
+}
+
+. biggercard
+.berrybenka {
+  background-image: url("images/berrybenka.png");
+  position: absolute;
+  left: 229px;
+  top: 1230px;
+  width: 84px;
+  height: 84px;
+  z-index: 593;
+}
+. Ratings-dots
+.Ellipse_half_filled_onbiggercard {
+  border-width: 1.28px;
+  border-color: rgb( 255, 255, 255 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 293px;
+  top: 1322px;
+  width: 9.44px;
+  height: 9.44px;
+  z-index: 591;
+}
+.Ellipse_filled_onbiggercard {
+  border-radius: 50%;
+  background-color: rgb( 255, 255, 255 );
+  position: absolute;
+  left: 280px;
+  top: 1322px;
+  width: 12px;
+  height: 12px;
+  z-index: 590;
+}
+
+._1440_Merchant_Banner_Picture {
+  background-image: url("images/merchant-banner.png");
+  position: absolute;
+  left: 229px;
+  top: 1230px;
+  width: 471px;
+  height: 227px;
+  z-index: 584;
+}
+.avatar_1 {
+  background-image: url("images/avatar 1.png");
+  position: absolute;
+  left: 230px;
+  top: 1480px;
+  width: 71px;
+  height: 72px;
+  z-index: 583;
+}
+.Review_Title {
+  font-size: 25.833px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 322.334px;
+  top: 1483.39px;
+  z-index: 582;
+}
+.Reviewer_Name {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 322.73px;
+  top: 1519.041px;
+  z-index: 581;
+}
+.Thumbs_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 33px;
+  height: 32px;
+  z-index: 2722;
+}
+.Thumbs_Collected_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 547.837px;
+  top: 1007.583px;
+  z-index: 2721;
+}
+.Story_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 33px;
+  height: 32px;
+  z-index: 2722;
+}
+.Stories_Created_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 403.317px;
+  top: 1008.083px;
+  z-index: 2719;
+}
+.Content_text {
+  font-size: 36px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 99.519px;
+  top: 1562.492px;
+  width: 721.838px;
+  height: 205.665px;
+  z-index: 576;
+}
+.see_more_shoppers_experience_on {
+  font-size: 36px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.63993463187315,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.63993463187315,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.63993463187315,0,0,0.64,0,0);
+  position: absolute;
+  left: 143.977px;
+  top: 1759.269px;
+  z-index: 575;
+}
+
+. Merchant_Button
+.Merchant_btn_1440_text {
+  font-size: 34.454px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.67189365014699,0,0,0.66871695720221,0,0);
+  -webkit-transform: matrix( 0.67189365014699,0,0,0.66871695720221,0,0);
+  -ms-transform: matrix( 0.67189365014699,0,0,0.66871695720221,0,0);
+  position: absolute;
+  left: 251.823px;
+  top: 1795.179px;
+  z-index: 573;
+}
+.Merchant_btn_1440_wide {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 228px;
+  top: 1796px;
+  width: 211px;
+  height: 38px;
+  z-index: 572;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 228px;
+  top: 1856px;
+  width: 473px;
+  height: 2px;
+  z-index: 570;
+}
+
+. smallercard
+.Reviewer_Name {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 971.266px;
+  top: 1294.28px;
+  z-index: 554;
+}
+.avatar_3 {
+  background-image: url("images/avatar 3.png");
+  position: absolute;
+  left: 887px;
+  top: 1293px;
+  width: 71px;
+  height: 71px;
+  z-index: 557;
+}
+.Review_Title {
+  font-size: 21.136px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 900.183px;
+  top: 1229.319px;
+  z-index: 556;
+}
+._2_days_ago {
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 869.077px;
+  top: 1245.424px;
+  z-index: 555;
+}
+. Ratings-dots
+.Ellipse_half_filled_onsmallercard {
+  border-width: 1.28px;
+  border-color: rgb( 0, 0, 0 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 849px;
+  top: 1380px;
+  width: 19.44px;
+  height: 19.44px;
+  z-index: 564;
+}
+.Ellipse_filled_onsmallercard {
+  border-radius: 50%;
+  background-color: rgb( 45, 45, 45 );
+  position: absolute;
+  left: 824px;
+  top: 1380px;
+  width: 22px;
+  height: 22px;
+  z-index: 563;
+}
+.Thumbs_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 33px;
+  height: 32px;
+  z-index: 2722;
+}
+.Thumbs_Collected_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 547.837px;
+  top: 1007.583px;
+  z-index: 2721;
+}
+.Story_icon {
+  background-image: url("images/Story-icon copy 3.png");
+  position: absolute;
+  left: 360px;
+  top: 1000px;
+  width: 33px;
+  height: 32px;
+  z-index: 2722;
+}
+.Stories_Created_Number_Text {
+  font-size: 22.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 403.317px;
+  top: 1008.083px;
+  z-index: 2719;
+}
+.more_shopping_story_on {
+  font-size: 36px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.63993463187315,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.63993463187315,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.63993463187315,0,0,0.64,0,0);
+  position: absolute;
+  left: 829.257px;
+  top: 1371.264px;
+  z-index: 549;
+}
+
+. Merchant_Button;
+.Merchant_name_onbutton {
+  font-size: 33.86px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.68261792110522,0,0,0.68044883364435,0,0);
+  -webkit-transform: matrix( 0.68261792110522,0,0,0.68044883364435,0,0);
+  -ms-transform: matrix( 0.68261792110522,0,0,0.68044883364435,0,0);
+  position: absolute;
+  left: 911.802px;
+  top: 1412.667px;
+  z-index: 547;
+}
+.Merchant_btn_base_mini {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 888px;
+  top: 1410px;
+  width: 138px;
+  height: 38px;
+  z-index: 546;
+}
+.Line {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 741px;
+  top: 1458px;
+  width: 472px;
+  height: 2px;
+  z-index: 544;
+}
+
+. More_Merchants_btn
+.See_More_btn_text {
+  font-size: 36px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-transform: uppercase;
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 705.543px;
+  top: 1773.13px;
+  z-index: 513;
+}
+.See_more_btn_base {
+  background-color: rgb( 255, 234, 71 );
+  position: absolute;
+  left: 740px;
+  top: 1763px;
+  width: 472px;
+  height: 55px;
+  z-index: 512;
+}
+.Line_copy_3 {
+  background-color: rgba( 255, 255, 255, 0 );
+  position: absolute;
+  left: 740px;
+  top: 1857px;
+  width: 472px;
+  height: 1px;
+  z-index: 511;
+}
+
+.BG {
+  background-color: rgb( 247, 247, 247 );
+  position: absolute;
+  left: 0px;
+  top: -1px;
+  width: 1440px;
+  height: 5001px;
+  z-index: 2;
+}
