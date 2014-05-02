@@ -17,6 +17,7 @@ class SessionsController < ApplicationController
 
     if user
       sign_in(user)
+      Keen.publish(:sign_ins, {:username => "#{user.username}", :time => "#{Time.new.inspect}" })
       #redirect_to "/merchants/index"
       redirect_to user_url(current_user)
     else
@@ -26,6 +27,8 @@ class SessionsController < ApplicationController
 
   def destroy
     sign_out
+    Keen.publish(:sign_outs, {:username => user.username, :time => "#{Time.new.inspect}" })
+    puts "****************Just sign out*******************"
     redirect_to new_session_url
   end
 end

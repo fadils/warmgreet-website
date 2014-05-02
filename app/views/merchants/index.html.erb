@@ -30,65 +30,69 @@
   </div>
 
 <div class="content group">
- 
-
-  <%#<h2>Whats's Popular in <%= @city.name %> <%#= @city.state.name %><%#/h2%>
-  <div class="category-separator">
-    <label>CATEGORY</label> 
-    <%= image_tag "WGSlice/stripe_repeat.png" %> 
-  </div>
-  <br>
-  <%= link_to "Add a new online store", new_country_merchant_url(@country) %>
-
-  <ol class="group">
-  <% @merchants.each_with_index do |merchant, i| %>
-
-  <a href="<%= merchant_url(merchant) %>">
-    <% if merchant.photo.file? %>
-      <%= image_tag merchant.photo.url(:small) %>
-    <% else %>
-      <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "60x60" %>
-    <% end %>
-    
-  </a>
-
-    <li class="results">
-      <%= (5*(@merchants.current_page-1))+i+1 %>.
-      <a href="<%= merchant_url(merchant) %>">
-        <%= merchant.name %>
-      </a>
-      (Average Rating: <%= merchant.avg_rating.to_f.round(1) %>)
+  <div class = "content-main-header">
+    <div class="category-separator">
+        <label>CATEGORY</label> 
+        <%= image_tag "WGSlice/stripe_repeat.png" %> 
+      </div>
       <br>
+      <%= link_to "Add a new online store", new_country_merchant_url(@country) %>
+  </div>
 
-      <h3>
-        <%= merchant.reviews.first.title %> by <a href="<%= user_url(merchant.reviews.first.user) %>">
-        <%= merchant.reviews.first.user.username %>
+  <div class = "content-main">
+      <%#<h2>Whats's Popular in <%= @city.name %> <%#= @city.state.name %><%#/h2%>
+      
+
+      <ol class="group">
+      <% @merchants.each_with_index do |merchant, i| %>
+
+      <a href="<%= merchant_url(merchant) %>">
+        <% if merchant.photo.file? %>
+          <%= image_tag merchant.photo.url(:small) %>
+        <% else %>
+          <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "60x60" %>
+        <% end %>
+        
       </a>
-      </h3>
 
-    
-      <% if merchant.reviews.first.user.photo.file? %>
-        <%= image_tag merchant.reviews.first.user.photo.url(:small) %>
-      <%end%>
-      <%= merchant.reviews.first.body %>
-    </li>
+        <li class="results">
+          <%= (5*(@merchants.current_page-1))+i+1 %>.
+          <a href="<%= merchant_url(merchant) %>">
+            <%= merchant.name %>
+          </a>
+          (Average Rating: <%= merchant.avg_rating.to_f.round(1) %>)
+          <br>
 
-  <% end %>
-  </ol>
+          <h3>
+            <%= merchant.reviews.first.title %> by <a href="<%= user_url(merchant.reviews.first.user) %>">
+            <%= merchant.reviews.first.user.username %>
+          </a>
+          </h3>
 
-  <%= paginate @merchants %>
+        
+          <% if merchant.reviews.first.user.photo.file? %>
+            <%= image_tag merchant.reviews.first.user.photo.url(:small) %>
+          <%end%>
+          <%= merchant.reviews.first.body %>
+        </li>
 
-  <hr>
+      <% end %>
+      </ol>
 
-  <h2>Recent Stories</h2>
-  <ul class="recent-reviews-<%= @country.id %> group">
-    <% @reviews.each do |review| %>
-     <li class="recent-<%= @country.id %>">
-      <%= render partial: "reviews/pusherform", locals: {review: review} %>
-    </li>
-    <% end %>
-  </ul>
-</div>
+      <%= paginate @merchants %>
+
+      <hr>
+
+      <h2>Recent Stories</h2>
+      <ul class="recent-reviews-<%= @country.id %> group">
+        <% @reviews.each do |review| %>
+         <li class="recent-<%= @country.id %>">
+          <%= render partial: "reviews/pusherform", locals: {review: review} %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 
 <script src="http://js.pusher.com/2.1/pusher.min.js"></script>
 <script>

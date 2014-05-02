@@ -31,9 +31,22 @@ html, body, form, h1, div, label, ul {
   src: url("BARIOL_REGULAR.OTF");
 }
 
+@font-face
+{
+  font-family: "Novecento";
+  src: url("NOVECENTOWIDE-MEDIUM.OTF");
+}
+
+
 /*
   CLEAR FIX!
 */
+
+.content-main{
+  width:95%;
+  position: absolute;
+  margin-left:-55px;
+}
 
 .find_friends {
   list-style: none
@@ -42,6 +55,16 @@ html, body, form, h1, div, label, ul {
   font-color: white;
   position: absolute;
   left: 415px;
+  top: 25px;
+}
+
+.find_friends-no-sign-in {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 295px;
   top: 25px;
 }
 
@@ -63,6 +86,16 @@ html, body, form, h1, div, label, ul {
   font-color: white;
   position: absolute;
   left: 295px;
+  top: 25px;
+}
+
+.category-no-sign-in {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 125px;
   top: 25px;
 }
 
@@ -186,7 +219,7 @@ header a {
   height: 64px;
 }
 
-.top-nav {
+.top-nav{
   position: relative;
   width: 100%;
   height: 750px;
@@ -200,15 +233,30 @@ header a {
   background-size: cover;;
 }
 
+.top-nav-noindex {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  margin: auto;
+  
+  box-shadow: 1px 1px 3px gray;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+}
+
 .info {
   position: relative;
   display: block;
   float: right;
   padding: 20px;
   color: white;
+  font-family: 'bariol';
   /*background: #F0F3F8;*/
   border-radius: 3px;
   height: 23px;
+  margin-top: -70px;
 }
 
 nav ul {
@@ -249,36 +297,30 @@ nav form {
 
 .search-box-title{
   font-weight: bold;
-  line-height: 43pt;
-  font-family: "Novecento"
-  margin-left: -55px;
+  font-size: 25pt;
+  width: 100%;
+  font-family: "Novecento";
+  /*margin-left: -75px;*/
 }
 
 .search-box {
-  -webkit-appearance: none;
   background: #F5F5F1;
   position: absolute;
   border: 1px solid #000;
   margin-top: 0px;
-  left: 300px;
-  width: 434px;
-  height: 57px;
-  margin-right: 15px;
+  left: 275px;
+  width: 42.5%;
+  height: 44px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
   font-size: 30px;
-}
-
-.search-box label {
-  font-weight: bold;
-  line-height: 30px;
-  padding-left: 5px;
+  padding-top: 0.5em;
 }
 
 .search-box input[type=text] {
   position: relative;
-  width: 140px;
+  width: 100%;
   height: 30px;
   left: 3px;
 }
@@ -306,7 +348,7 @@ nav form {
   display: block;
   position: absolute;
   margin-top: 15px;
-  left: 755px;
+  left: 715px;
   background-color: rgb(255,234,71);
   /*background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);*/
   /*border: 1px solid black;
@@ -316,7 +358,7 @@ nav form {
   text-align: center;
   padding-top: 10px;
   margin: 0;
-  width: 283px;
+  width: 29.4%;
   height: 50px;
   -moz-border-radius: 0px;
 -webkit-border-radius: 0px;
@@ -638,16 +680,18 @@ main {
 }
 
 .content {
-  width: 900px;
+  max-width: 1200px;
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 150px;
   margin-left: 130px;
+  margin-right: 130px;
 }
 
 .content-header {
+  max-width: 900px;
   margin-top: 0px;
-  margin-left: 500px;
+  margin-left: 275px;
 }
 
 .content > h1 {

@@ -13,7 +13,21 @@ module WarmGreet
   class Application < Rails::Application
     config.autoload_paths += %W(#{config.root}/lib)
 
+    config.KEEN_READ_KEY = "5411fee7152078ede6c40c7d55c6a7749216290a24e88709d2edcfe70806a09c3a86513e511960e8118007a509560051bd53bfbc339b8fb665e5ab1cc19838d7e5ce9903347ac84e1b86a2da434758c7c06951638f753b749b41cefb6490eda408d0c310923458b96a830fd1336653f5"
+
+
+  config.KEEN_WRITE_KEY = "55e861c46e4a406ae35816c5ca824d3078135f1bfe839afc23f4b65dbe9b878b4d5c22b18412c3d6304381cab54ea65140f2821c08ddf595fda31c725378bcd0ca38802567584102ca260ad9ce077e9767493fc02a811b72dcc44ca4d1723663b84046bda2e4aae7bbcb15f9f354159c"
+
+  config.KEEN_MASTER_KEY = "945C37D7EB9FBE87F37CA69D73332485"
+
+  config.KEEN_PROJECT_ID = "5361e590ce5e4305a9000005"
+
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
+
+    #Keen.project_id = Rails.configuration.KEEN_PROJECT_ID
+    #Keen.write_key = Rails.configuration.KEEN_WRITE_KEY
+    #Keen.read_key = Rails.configuration.KEEN_READ_KEY
+    #Keen.master_key = Rails.configuration.KEEN_MASTER_KEY
 
     config.generators do |g|
       g.test_framework :rspec,

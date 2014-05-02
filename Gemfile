@@ -9,6 +9,10 @@ gem 'pg'
 
 gem 'fog'
 
+gem 'keen'
+
+gem "em-http-request", "~> 1.0"
+
 gem 'jquery-rails'
 gem 'backbone-on-rails'
 gem 'bcrypt-ruby', :require => 'bcrypt'

@@ -6,6 +6,16 @@ WarmGreet::Application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
+  
+
+  
+
+  #Keen.project_id = config.keenio_project_id
+  #Keen.write_key = config.keenio_write
+  #Keen.read_key = config.keenio_read
+  #Keen.master_key = config.keenio_master
+
+
   # Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true
 
