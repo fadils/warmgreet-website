@@ -1,82 +1,10 @@
 <div class="prof-content group">
 
-  <h2><%= @user.username %>'s story feed</h2>
-  <br>
-
-
-  <div class="prof-left group">
-
-    <% if @user.photo.file? %>
-      <%= image_tag @user.photo.url(:big) %>
-    <% elsif @user.image? %>
-      <%= image_tag @user.image, size: "100x100" %>
-    <% else %>
-      <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "100x100" %>
-    <% end %>
-
-    <br>
-
-    <% if current_user == @user %>
-      <%= link_to "Edit Profile", edit_user_url(@user) %>
-    <% end %>
-
-    <% unless current_user == @user %>
-      <div class="foll <%="is-followed" if current_user.followed_users.include?(@user) %>">
-        <%= button_to "FOLLOW", user_follows_url(@user), method: :post, form_class: "follow-button grad_button", remote: true %>
-        <%= button_to "UNFOLLOW", user_follow_url(@user), method: :delete, form_class: "unfollow-button grad_button", remote: true %>
-      </div>
-    <% end %>
-
-    <ul>
-      <li>Location: <%= @user.location %></li>
-    </ul>
-
-    <h3>Biography:</h3>
-    <p><%= @user.biography %></p>
-
-     <h3>Thumbs Given:</h3>
-    <strong class="badge">
-      <%= @user.vote_tags.count %>
-    </strong>
-
-    <h3>Thumbs Received:</h3>
-    <strong class="badge">
-      <%= @user.count_thumbs_up %>
-    </strong>
-
-  </div>
-
+  
   <div class="prof-mid group">
-    <h3>Stories:</h3>
     <%= render "reviews/user", :user => @user %>
   </div>
 
-  <div class="prof-right group">
-    <h3>Favorite Online Stores</h3>
-    <%= render "favorites/user", :user => @user %>
-
-    <%#= render "follows/user", :user => @user %>
-    <h3>Following</h3>
-<%# @userf = user %>
-<h3><%= link_to @user.followed_users.count, follows_following_url(@user) %></h3>
-<ul>
-<% @user.followed_users.each do |followed| %>
-  <li><%= link_to followed.username, user_url(followed) %></li>
-<% end %>
-</ul>
-
-
-<h3>Followers</h3>
-<h3><%= link_to @user.followers.count, follows_followers_url(@user) %></h3>
-<ul>
-<% @user.followers.each do |follower| %>
-  <li><%= link_to follower.username, user_url(follower) %></li>
-<% end %>
-</ul>
-
-
-
-  </div>
 </div>
 
 <script>

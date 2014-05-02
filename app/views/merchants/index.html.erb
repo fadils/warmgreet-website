@@ -31,15 +31,16 @@
 
 <div class="content group">
   <div class = "content-main-header">
-    <div class="category-separator">
-        <label>CATEGORY</label> 
-        <%= image_tag "WGSlice/stripe_repeat.png" %> 
-      </div>
+      
+          <h4 class="category-separator">CATEGORY</h4> 
+          <hr class="separator-pic">
+          <%#= image_tag "WGSlice/stripe_repeat.png", :class => "separator-pic" %> 
+        
       <br>
       <%= link_to "Add a new online store", new_country_merchant_url(@country) %>
   </div>
 
-  <div class = "content-main">
+  <div class = "content-main-index">
       <%#<h2>Whats's Popular in <%= @city.name %> <%#= @city.state.name %><%#/h2%>
       
 

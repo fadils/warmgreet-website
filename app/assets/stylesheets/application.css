@@ -45,6 +45,13 @@ html, body, form, h1, div, label, ul {
 .content-main{
   width:95%;
   position: absolute;
+  margin-top: -100px;
+  margin-left:-55px;
+}
+
+.content-main-index{
+  width:900px;
+  position: absolute;
   margin-left:-55px;
 }
 
@@ -88,6 +95,16 @@ html, body, form, h1, div, label, ul {
   left: 295px;
   top: 25px;
 }
+
+.category-separator {
+  width: 900px;
+}
+
+
+.separator-pic {
+
+}
+
 
 .category-no-sign-in {
   list-style: none
@@ -227,6 +244,21 @@ header a {
   
   box-shadow: 1px 1px 3px gray;
   background-image: url("/assets/WGSlice/Banner_1440_r.png"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+}
+
+
+.top-nav-stories-feed{
+  position: relative;
+  width: 100%;
+  height: 750px;
+  margin: auto;
+  
+  box-shadow: 1px 1px 3px gray;
+  background-image: url("/assets/WGSlice/banner-feed.png"); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -664,15 +696,30 @@ body a {
 main {
   position: relative;
   padding-top: 1px;
+
+}
+
+.stories-thumbs-count h5, .stories-thumb-count strong{
+  display: inline-block;
+  vertical-align: top;
 }
 
 .main {
-  width: 1000px;
+  width: 1040px;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+}
+
+
+.main-index {
+  width: 1040px;
   height: 100%;
   
   top: 50px;
   position: absolute;
 }
+
 
 .city-switch {
   float: right;
@@ -731,7 +778,7 @@ main {
 */
 
 .prof-content {
-  margin: 0 auto;
+  margin-top: auto;
   padding: 20px 25px;
 }
 
@@ -754,16 +801,18 @@ main {
 
 .prof-left {
   display: block;
+  position: absolute;
   width: 20%;
-  float: left;
+  margin-left:-155px;
   padding: 0 0 0 35px;
 }
 
 .prof-mid {
-  width: 50%;
-  float: left;
-  border-left: 1px solid #E5E5E1;
-  border-right: 1px solid #E5E5E1;
+  position: absolute;
+  width: 80%;
+  margin-left: 352px;
+  /*border-left: 1px solid #E5E5E1;
+  border-right: 1px solid #E5E5E1;*/
 }
 
 .prof-right {
@@ -955,7 +1004,7 @@ main {
 }
 
 .badge {
-  display: inline-block;
+  display: inline;
   background: #C4DBF0;
   border: 1px solid #ccc;
   font-size: 12px;
@@ -1142,7 +1191,7 @@ footer {
 }
 
 .footer {
-  width: 1000px;
+  width: 1040px;
   height: 80px;
   margin: 0 auto;
   font-size: 14px;

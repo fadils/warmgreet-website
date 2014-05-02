@@ -37,10 +37,15 @@
       <div class="WG-mainlogo">
         <%= image_tag("WGSlice/mainlogo.png", height: '80%', width: '80%')%>
       </div>
+  <% end %>
 
-  <% else %>
-    <nav class="top-nav-no-index group">
 
+  <% if signed_in? %>
+   <%# puts "*****************#{current_user.slug}*****************"%>
+    <% if request.original_url == "#{home}/users/#{current_user.slug}"%>
+      <nav class="top-nav-stories-feed group">
+
+    <% end %>
   <% end %>
 
  
@@ -116,15 +121,7 @@
       <% end %>
 
 
-  </div>
-
-      
-
-             
-        
-      
-
-      
+  </div>    
 
     </div>
   </nav>
