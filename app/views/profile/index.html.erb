@@ -1,6 +1,8 @@
 <div class="prof-content group">
 
   <% @user = current_user %>
+  <%# @user = User.find(params[:id])%>
+  <%#@user = User.find(params[:user])%>
   <h2><%= @user.username %>'s story</h2>
   <br>
 

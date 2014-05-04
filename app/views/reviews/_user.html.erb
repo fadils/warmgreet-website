@@ -2,36 +2,50 @@
 
   <div class="prof-review group">
 
-     <div class="prof-left group">
+     <div class="prof-left-feed group">
         <% if review.user.photo.file? %>
         <%= image_tag review.user.photo.url(:big) %>
         <% elsif review.user.image? %>
           <%= image_tag review.user.image, size: "100x100" %>
         <% else %>
-          <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "100x100" %>
+          <% puts "*************************#{review.user.gender}********************" %>
+          <% if review.user.gender=="M" %>
+            <%= image_tag "WGSlice/default-user-male.png", size: "100x100" %>
+          <% elsif review.user.gender=="F" %>
+            <%= image_tag "WGSlice/default-user-female.png", size: "100x100" %>
+          <% else %>
+            <%= image_tag "WGSlice/default-user-male.png", size: "100x100" %>
+          <% end %>
         <% end %>
 
-        <br>
+        <br> <br>
         
         <% if review.merchant.photo.file? %>
         <%= image_tag review.merchant.photo.url(:big) %>
         <% else %>
-          <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "100x100" %>
+          <%= image_tag "WGSlice/default-merchant.png", size: "100x100" %>
         <% end %>
     </div>
 
-    <h4><%= link_to review.user.username, user_url(review.user) %></h4>
+    <%= link_to review.user.username, user_url(review.user), :class => "story-writer" %>
       
-      <div class"stories-thumbs-count">
-        <strong> <%= review.user.reviews.count %> Stories </strong>
+      <br>
+       
+          <strong><%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge") %></strong>
+
+          <strong style="position:absolute; margin-top:7px; font-weight:100;font-size:85%"><%= review.user.reviews.count %> Stories</strong> 
+
 
         
-        <strong class="badge"><%= review.user.count_thumbs_up %></strong>
+        <strong class="story-thumb"><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "story-badge") %></strong>
+
+         <strong style="position:absolute; margin-top:7px; margin-left:100px; font-weight:100;font-size:85%;"> <%= review.user.count_thumbs_up%> thumbs</strong>
         
-      </div>
-
-    <strong>"<%= review.title %>"</strong>
-
+        <br>
+      
+      
+        <strong class="story-title">"<%= review.title %>"</strong>
+      
     <% if current_user == @user %>
         (<%= link_to "Edit Story", edit_review_url(review) %>)
       <% end %>
@@ -64,13 +78,14 @@
           <%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:-35px; margin-left: 25px") %>
         </div>
         <% end %>
-
+        
+        <hr>
 
       
     </div>
 
+
   </div>
-<br>
 
 <% end %>
 

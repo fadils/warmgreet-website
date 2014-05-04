@@ -40,13 +40,15 @@
   <% end %>
 
 
-  <% if signed_in? %>
+  <%# if signed_in? %>
    <%# puts "*****************#{current_user.slug}*****************"%>
     <% if request.original_url == "#{home}/users/#{current_user.slug}"%>
       <nav class="top-nav-stories-feed group">
 
+    <% else %>
+      <nav class="top-nav-noindex group">
     <% end %>
-  <% end %>
+  <%# end %>
 
  
     <div class="top-nav-header">

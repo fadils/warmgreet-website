@@ -232,7 +232,7 @@ header a {
 {
   background-color: rgb(35,31,32);
   opacity: 0.75;
-  border-bottom: 1px solid black;
+  /*border-bottom: 1px solid black;*/
   height: 64px;
 }
 
@@ -268,8 +268,8 @@ header a {
 .top-nav-noindex {
   position: relative;
   width: 100%;
-  height: 750px;
-  margin: auto;
+  height: auto;
+  margin-top: auto;
   
   box-shadow: 1px 1px 3px gray;
   -webkit-background-size: cover;
@@ -297,7 +297,7 @@ nav ul {
 
 nav .container {
   width: 1024px;
-  height: 80px;
+  height: 0px;
   margin: 0 auto;
 }
 
@@ -699,9 +699,7 @@ main {
 
 }
 
-.stories-thumbs-count h5, .stories-thumb-count strong{
-  display: inline-block;
-  vertical-align: top;
+.stories-thumbs-count{
 }
 
 .main {
@@ -777,10 +775,278 @@ main {
   USER PROFILE STYLING!
 */
 
+.user-propic {
+  border-radius: 50%;
+  background-color: rgb( 0, 0, 0 );
+  position: absolute;
+  width: 160px;
+  height: 160px;
+}
+
+.user-profile-stats{
+  position: absolute;
+  left: 205px;
+  top: 50px;
+}
+
+.story-badge-in-profile{
+   position: absolute;
+  left: 205px;
+  top: 90px;
+  width:14%;
+  height:14%;
+}
+
+.story-badge-in-profile-text{
+   position: absolute;
+  left: 250px;
+  top: 95px;
+  width:100px;
+  font-size: 18.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+}
+
+.thumbs-badge-in-profile{
+   position: absolute;
+  left: 355px;
+  top: 90px;
+  width:14%;
+  height:14%;
+}
+
+.thumbs-badge-in-profile-text{
+   position: absolute;
+  left: 400px;
+  top: 95px;
+  width:100px;
+  font-size: 18.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+}
+
+
+.following-text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 195px;
+  top: 155px;
+}
+
+.following-number {
+  font-size: 48.006px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-align: center;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 257px;
+  top: 120px;
+}
+
+
+.followed-text {
+  font-size: 36px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 345px;
+  top: 155px;
+}
+
+.followed-number {
+  font-size: 48.006px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-align: center;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 407px;
+  top: 120px;
+}
+
+
+
+
+.user-username {
+  font-size: 34.862px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -webkit-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -ms-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  position: absolute;
+  left: 220.388px;
+  top: 15px;
+}
+
+
+.member-since-text {
+  font-size: 17.614px;
+  width:300px;
+  font-family: "Bariol";
+  color: rgb( 112, 112, 112 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 227.748px;
+  top: 60.266px;
+}
+
+/*
+after profile separator line
+*/
+.after-profile-separator{
+  position: absolute;
+  top:225px;
+  width: 1020px;
+
+}
+/*
+end
+*/
+
+
+/*
+Followed Merchant Section
+*/
+.followed-merchants-text {
+  font-size: 46.875px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: -40px;
+  top: 183.18px;
+  width: 400px;
+}
+
+.followed-merchants-separator {
+  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: absolute;
+  left: 310px;
+  top: 260px;
+  width: 748px;
+  height: 12px;
+  border: none;
+}
+
+
+.merchants-list-container{
+  border-bottom: 1px solid black;
+
+}
+
+.followed-merchants-list {
+  position: absolute;
+  width: 900px;
+  left: 40px;
+  top: 300px;
+}
+
+.followed-merchants-list li{
+
+  display: inline-block;
+  list-style: none;
+}
+
+.after-merchants-list-separator{
+  position: absolute;
+  top:465px;
+  width: 1020px;
+
+}
+
+/*
+End of followed merchant section
+*/
+
+
+/*
+Stories in profile section
+*/
+.stories-in-profile{
+  position: absolute;
+  top:390px;
+  left: -10px;
+}
+
+.stories-in-profile h4{
+  font-size: 62.5px;
+  font-weight: 100;
+  width: 250px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+}
+
+
+.stories-in-profile-separator {
+  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: absolute;
+  left: 180px;
+  top: 110px;
+  width: 888px;
+  height: 12px;
+  border: none;
+}
+
+/*
+end
+*/
+
+
 .prof-content {
   margin-top: auto;
   padding: 20px 25px;
 }
+
+.prof-content-public {
+  margin-top: 500px;
+  padding: 20px 25px;
+}
+
+
+
+.prof-content-profile-view {
+  margin-top: 0px;
+  padding: 20px 25px;
+}
+
 
 .prof-content h2 {
   display: inline-block;
@@ -803,9 +1069,39 @@ main {
   display: block;
   position: absolute;
   width: 20%;
+  margin-left:85px;
+  padding: 0 0 0 35px;
+}
+
+
+.prof-left-feed {
+  display: block;
+  position: absolute;
+  width: 20%;
   margin-left:-155px;
   padding: 0 0 0 35px;
 }
+
+
+.prof-mid-feed {
+  position: absolute;
+  width: 80%;
+  margin-left: 352px;
+  /*border-left: 1px solid #E5E5E1;
+  border-right: 1px solid #E5E5E1;*/
+}
+
+
+.prof-mid-stories-public {
+  position: absolute;
+  top: 530px;
+  width: 300%;
+  margin-left: 120px;
+  /*border-left: 1px solid #E5E5E1;
+  border-right: 1px solid #E5E5E1;*/
+}
+
+
 
 .prof-mid {
   position: absolute;
@@ -814,6 +1110,7 @@ main {
   /*border-left: 1px solid #E5E5E1;
   border-right: 1px solid #E5E5E1;*/
 }
+
 
 .prof-right {
   width: 25%;
@@ -854,11 +1151,11 @@ main {
   color: #00f;
 }
 
-.is-followed .follow-button {
+.is-followed .follow-button{
   display: none;
 }
 
-.is-followed .unfollow-button {
+.is-followed .unfollow-button{
   display: block;
 }
 
@@ -866,6 +1163,8 @@ main {
   display: block;
   padding: 5px;
   width: 80px;
+  margin-top:170px;
+  margin-left:38px;
   color: #fff;
   font-weight: bold;
   font-size: 12px;
@@ -877,6 +1176,8 @@ main {
   display: none;
   padding: 5px;
   width: 80px;
+  margin-top:170px;
+  margin-left: 38px;
   color: #fff;
   font-weight: bold;
   font-size: 12px;
@@ -885,13 +1186,58 @@ main {
 }
 
 /*
-  RESTAURANT PROFILE STYLING!
+  MERCHANT PROFILE STYLING!
 */
 
 .rest-content {
   margin: 0 auto;
   padding: 25px 35px;
 }
+
+
+
+.followed-button {
+  display: none;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  margin-top:160px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  background: url("WGslice/follow-btn.png") no-repeat;
+  
+}
+
+
+.following-button {
+  display: block;
+  padding: 5px;
+  width: 180px;
+  height: 180px;
+  margin-top:160px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  background: url("WGslice/follow-btn.png") no-repeat;
+}
+
+
+.following {
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 24px;
+  top: 155.62px;
+}
+
 
 .rest-content a {
   color: #00f;
@@ -1013,6 +1359,67 @@ main {
   padding: 2px 7px;
   border-radius: 8px;
   margin: 2px;
+}
+
+.story-writer{
+  font-size: 27.521px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+}
+
+
+.story-title{
+  font-size: 27.521px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+}
+
+.story-title-public{
+  margin-top:55px;
+}
+
+
+.written-time-public{
+  margin-top:5px;
+  font-weight: 20;
+}
+
+
+
+
+.story-badge{
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin-top:5px;
+}
+
+.story-badge-public{
+  display: inline;
+  width: 36px;
+  height: 36px;
+  margin-top:5px;
+}
+
+.story-thumb{
+  position:absolute;
+  margin-top:0px;
+  margin-left: 78px;
+}
+
+
+.story-thumb-public{
+  position:absolute;
+  margin-top:0px;
+  margin-left: 0px;
 }
 
 .delete-review div {
