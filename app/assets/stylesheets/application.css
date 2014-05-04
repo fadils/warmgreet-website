@@ -96,12 +96,29 @@ html, body, form, h1, div, label, ul {
   top: 25px;
 }
 
+.store-category-text{
+  float: right;
+  font-family: "Bariol";
+}
+
 .category-separator {
+  position: absolute;
   width: 900px;
+  font-size: 23px;
+  left:140px;
+  top:220px;
+  font-family: "Novecento";
 }
 
 
 .separator-pic {
+  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: absolute;
+  left: 510px;
+  top: 221px;
+  width: 620px;
+  height: 12px;
+  border: none;
 
 }
 
@@ -340,7 +357,7 @@ nav form {
   position: absolute;
   border: 1px solid #000;
   margin-top: 0px;
-  left: 275px;
+  left: 270px;
   width: 42.5%;
   height: 44px;
   -moz-border-radius: 0px;
@@ -380,7 +397,7 @@ nav form {
   display: block;
   position: absolute;
   margin-top: 15px;
-  left: 715px;
+  left: 725px;
   background-color: rgb(255,234,71);
   /*background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);*/
   /*border: 1px solid black;
@@ -390,7 +407,7 @@ nav form {
   text-align: center;
   padding-top: 10px;
   margin: 0;
-  width: 29.4%;
+  width: 25.4%;
   height: 50px;
   -moz-border-radius: 0px;
 -webkit-border-radius: 0px;
@@ -729,7 +746,7 @@ main {
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 150px;
-  margin-left: 130px;
+  margin-left: 100px;
   margin-right: 130px;
 }
 
@@ -758,6 +775,12 @@ main {
   padding: 30px 0;
 }
 
+.results-pic-index {
+  position: absolute;
+  margin-left: 315px;
+  padding: 30px 0;
+  padding-bottom: 15px;
+}
 .search_results {
   margin-left: 135px;
   padding: 50px 0;
@@ -1018,9 +1041,9 @@ Stories in profile section
 .stories-in-profile-separator {
   background-image: url("/assets/WGSlice/stripe_repeat.png") ;
   position: absolute;
-  left: 180px;
+  left: 170px;
   top: 110px;
-  width: 888px;
+  width: 900px;
   height: 12px;
   border: none;
 }
@@ -1040,7 +1063,9 @@ end
   padding: 20px 25px;
 }
 
-
+.prof-content-index{
+  margin-top:400px;
+}
 
 .prof-content-profile-view {
   margin-top: 0px;
@@ -1082,11 +1107,55 @@ end
   padding: 0 0 0 35px;
 }
 
+.prof-left-index {
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 500px;
+  margin-left:140px;
+  margin-top:160px;
+}
+
+
+.prof-left-index-text {
+  display: block;
+  position: absolute;
+  width: 20%;
+  margin-left:-15px;
+  margin-top:100px;
+}
+
+
+.prof-left-index h3{
+  margin-left: 20px;
+  margin-top: 125px;
+  width:400px;
+}
+
+.prof-left-index h4{
+  margin-left: 20px;
+  width:400px;
+  font-family: "Bariol";
+  font-size: 16px;
+}
+
+
+
+.prof-left-index-review {
+  display: block;
+  position: absolute;
+  width: 20%;
+  margin-left:-55px;
+  margin-top:10px;
+  padding: 0 0 0 35px;
+}
+
+
 
 .prof-mid-feed {
   position: absolute;
-  width: 80%;
-  margin-left: 352px;
+  width: 95%;
+  margin-left: 255px;
   /*border-left: 1px solid #E5E5E1;
   border-right: 1px solid #E5E5E1;*/
 }
@@ -1130,20 +1199,20 @@ end
 
 .prof-review {
   float: left;
+  margin-left: 0px;
   display: block;
   position: relative;
   width: 90%;
-  padding: 25px;
 
 }
 
 .prof-review .review-body {
   display: inline-block;
-  font-family: sans-serif;
-  font-size: 14px;
+  font-family: "Bariol";
+  font-size: 20px;
   line-height: normal;
   word-break: normal;
-  white-space: pre-wrap;
+  height:auto;
 }
 
 .prof-content a {
@@ -1415,6 +1484,37 @@ end
   margin-left: 78px;
 }
 
+.story-icon-index{
+  position:absolute;
+  margin-top:65px;
+  margin-left: 95px;
+}
+
+
+.story-icon-index-text{
+  position:absolute;
+  font-family: "Bariol";
+  font-weight:100;
+  margin-top:71px;
+  margin-left: 122px;
+}
+
+.story-thumb-index{
+  position:absolute;
+  margin-top:65px;
+  margin-left: 205px;
+}
+
+
+.story-thumb-index-text{
+  position:absolute;
+  font-family: "Bariol";
+  font-weight:100;
+  margin-top:71px;
+  margin-left: 232px;
+}
+
+
 
 .story-thumb-public{
   position:absolute;
@@ -1461,13 +1561,37 @@ end
 
 .review-body {
   display: block;
-  font-family: sans-serif;
+  font-family: "Bariol";
   font-size: 14px;
   line-height: normal;
   word-break: normal;
   white-space: pre-wrap;
   padding: 0 10px;
+  height: auto;
+  vertical-align: bottom;
 }
+
+
+.review-body-index {
+  margin-top:5px;
+  float: left;
+  margin-left: 5px;
+  width: 476px;
+  font-family: "Bariol";
+  text-align: left;
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 40px;
+}
+
+.merchant-banner-index{
+  margin-top:15px;
+}
+.review-pic-index {
+  margin-top:15px;
+}
+
+
 
 /*
   CITY INDEX VIEW

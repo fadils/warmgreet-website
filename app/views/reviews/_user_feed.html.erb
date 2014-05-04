@@ -18,7 +18,7 @@
           <% end %>
         <% end %>
 
-        <br> <br>
+        <br>
         
         <% if review.merchant.photo.file? %>
         <%= image_tag review.merchant.photo.url(:big) %>
@@ -62,28 +62,27 @@
     <div class="review-body">
       <%= review.body %>
 
-
       <% if review.pic.file? %>
         <%= image_tag review.pic.url(:big) %>
       <% end %>
 
       <% if review.vote_tags.empty? %>
-        <div>
-          <strong class="badge">0</strong>
-          <strong><%#= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:-35px; margin-left: 25px")%></strong>
-        </div>
-        <% else %>
-        <div>
-          <strong class="badge"><%= review.vote_tags.count %></strong>
-          <%#= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:-35px; margin-left: 25px") %>
-        </div>
-        <% end %>
         
-        <hr>
+          <strong class="badge">0</strong>
+          <strong><%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:-35px; margin-left: 25px")%></strong>
+        
+        <% else %>
+        
+          <strong class="badge"><%= review.vote_tags.count %></strong>
+          <%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:-35px; margin-left: 25px") %>
+        
+        <% end %>
+
 
       
     </div>
 
+    <hr>
 
   </div>
 

@@ -1,25 +1,11 @@
-<!--div class="city-switch">
-  <form id="page-changer" action="" method="post">
-    <select onChange="window.location.replace(this.options[this.selectedIndex].value)">
-      <option value="">Go to city...</option>
-      <% Country.all.each do |country| %>
-        <option value="<%= country_merchants_url(country) %>">
-          <%= country.name %>
-        </option>
-      <% end %>
-    </select>
-  </form>
-</div-->
  <div class="content-header">
       
   <h2 class="search-box-title">What's your online shopping story?</h2>
 
-  <form class="group" action="<%= search_url %>" method="get">
+    <form class="group" action="<%= search_url %>" method="get">
           <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
 
         <div class="search-box">
-
-          
           <input type="text" name="query" value="">
         </div>
 
@@ -27,71 +13,106 @@
           <input class="button-writing" type="submit" value="Create Story">
         </div>
       </form>
-  </div>
 
-<div class="content group">
-  <div class = "content-main-header">
+      <div class = "content-main-header">
       
-          <h4 class="category-separator">CATEGORY</h4> 
+          <strong class="category-separator">Popular Online Stores</strong> 
           <hr class="separator-pic">
-          <%#= image_tag "WGSlice/stripe_repeat.png", :class => "separator-pic" %> 
+         
         
       <br>
-      <%= link_to "Add a new online store", new_country_merchant_url(@country) %>
-  </div>
+      <%#= link_to "Add a new online store", new_country_merchant_url(@country) %>
+    </div>
+</div>
 
-  <div class = "content-main-index">
-      <%#<h2>Whats's Popular in <%= @city.name %> <%#= @city.state.name %><%#/h2%>
+
+ <div class="prof-review group">
+
+     <div class="prof-left-index group">
       
 
-      <ol class="group">
+      
       <% @merchants.each_with_index do |merchant, i| %>
 
-      <a href="<%= merchant_url(merchant) %>">
-        <% if merchant.photo.file? %>
-          <%= image_tag merchant.photo.url(:small) %>
-        <% else %>
-          <%= image_tag "WGSlice/default-merchant.png", size: "60x60" %>
-        <% end %>
-        
-      </a>
+      
 
-        <li class="results">
-          <%= (5*(@merchants.current_page-1))+i+1 %>.
-          <a href="<%= merchant_url(merchant) %>">
-            <%= merchant.name %>
-          </a>
-          (Average Rating: <%= merchant.avg_rating.to_f.round(1) %>)
+          
+        <a href="<%= merchant_url(merchant) %>">
+          <% if merchant.photo.file? %>
+            <%= image_tag merchant.photo.url(:small) %>
+          <% else %>
+            <%= image_tag "WGSlice/default-merchant-banner.png", size: "471x227" %>
+          <% end %>
+    
+         </a>
+          
+
           <br>
+        
+          
+            <strong style="position:absolute; width:1000px; font-style: italic; font-family:'Bariol'; font-size:18px; font-weight:bold; margin-left:90px; margin-top:25px;">
+              "<%= merchant.reviews.first.title %>"
+            </strong>
 
-          <h3>
-            <%= merchant.reviews.first.title %> by <a href="<%= user_url(merchant.reviews.first.user) %>">
-            <%= merchant.reviews.first.user.username %>
-          </a>
-          </h3>
+
+
+            <strong style="position:absolute; width:1000px; font-family:'Bariol'; font-size:14px; font-weight:bold; margin-left:90px; margin-top:45px;">
+              - <%= merchant.reviews.first.user.username %> shopping story (<% if merchant.reviews.first.created_at > Time.now.beginning_of_day %>
+              <%="- Written #{time_ago_in_words(merchant.reviews.first.created_at)} ago"%>
+              <br>
+          <% else %>
+              Written on <%= merchant.reviews.first.created_at.strftime("%m/%d/%Y") %>
+          <% end %>)
+            </strong>
+
+             <strong class="story-icon-index"><%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge") %></strong>
+
+          <strong class="story-icon-index-text"><%= merchant.reviews.first.user.reviews.count %> Stories</strong> 
+
+
+        
+        <strong class="story-thumb-index"><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "story-badge") %></strong>
+
+         <strong class="story-thumb-index-text"> <%= merchant.reviews.first.user.count_thumbs_up%> thumbs</strong>
+          
+          
+          
 
         
           <% if merchant.reviews.first.user.photo.file? %>
-            <%= image_tag merchant.reviews.first.user.photo.url(:small) %>
-          <%end%>
-          <%= merchant.reviews.first.body %>
-        </li>
+            <%= image_tag merchant.reviews.first.user.photo.url(:big) %>
+            <% elsif merchant.reviews.first.user.image? %>
+              <%= image_tag merchant.reviews.first.user.image, size: "80x80" %>
+            <% else %>
+              <% if merchant.reviews.first.user.gender=="M" %>
+                <%= image_tag "WGSlice/default-user-male.png", size: "80x80", class:"review-pic-index" %>
+              <% elsif merchant.reviews.first.user.gender=="F" %>
+                <%= image_tag "WGSlice/default-user-female.png", size: "80x80", class:"review-pic-index" %>
+              <% else %>
+                <%= image_tag "WGSlice/default-user-male.png", size: "80x80", class:"review-pic-index" %>
+              <% end %>
+            <% end %>
+          
+
+            
+            <strong class="review-body-index">
+              <%= merchant.reviews.first.body %>
+            </strong>
 
       <% end %>
-      </ol>
+      
 
-      <%= paginate @merchants %>
+      <%#= paginate @merchants %>
 
-      <hr>
-
-      <h2>Recent Stories</h2>
+      
+      <!--h2>Recent Stories</h2>
       <ul class="recent-reviews-<%= @country.id %> group">
         <% @reviews.each do |review| %>
          <li class="recent-<%= @country.id %>">
           <%= render partial: "reviews/pusherform", locals: {review: review} %>
         </li>
         <% end %>
-      </ul>
+      </ul-->
     </div>
   </div>
 
