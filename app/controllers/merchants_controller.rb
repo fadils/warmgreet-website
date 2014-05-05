@@ -45,6 +45,8 @@ class MerchantsController < ApplicationController
     #@country = Country.find(params[:country_id])
     @country = Country.find(1)
 
+    @category = Category.all
+
     @merchants = @country.merchants.select("merchants.*, AVG(reviews.rating) AS avg_rating")
                         .joins("LEFT JOIN reviews ON reviews.merchant_id = merchants.id")
                         .group("merchants.id")

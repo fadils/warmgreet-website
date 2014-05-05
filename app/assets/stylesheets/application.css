@@ -101,6 +101,13 @@ html, body, form, h1, div, label, ul {
   font-family: "Bariol";
 }
 
+.store-category-text-index{
+  position:absolute;
+  left:600px;
+  float: right;
+  font-family: "Bariol";
+}
+
 .category-separator {
   position: absolute;
   width: 900px;
@@ -418,6 +425,55 @@ border-radius: 0px;
   background-color: rgb(255,234,71);
   opacity: 0.75;
 }
+
+.merchant-button-review-index{
+  
+  background-color: rgb(255,234,71);
+  /*background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);*/
+  /*border: 1px solid black;
+  border-radius: 5px;
+  */
+  color: black;
+  text-align: center;
+  padding-top: 5px;
+  margin-left:0px;
+  margin-top:35px;
+  width: 33.4%;
+  height: 50px;
+  -moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+}
+
+.merchant-button-review-index:hover {
+  background-color: rgb(255,234,71);
+  opacity: 0.75;
+  padding: 5px;
+}
+
+
+.button-writing-index-bg{
+  padding: 5px 6px 5px 6px;
+  background-color: rgb(255,234,71);
+  height: 20px;
+  width: 43%;
+  vertical-align: middle;
+
+  text-align: center;
+}
+
+.button-writing-index-bg:hover{
+  background-color: rgb(255,234,71);
+  opacity: 0.75;
+}
+
+
+.button-writing-index-bg a{
+  font-family: 'Bariol';
+  font-size: 16pt;
+  color:black;
+}
+
 
 .button-writing{
   font-family: 'trebuchet';
@@ -1186,6 +1242,63 @@ end
   float: right;
 }
 
+
+.prof-right-index {
+  position: absolute;
+  margin-left:510px;
+  margin-top:-229px;
+  width: 25%;
+  float: right;
+  height:400px;
+  padding-bottom: 100px;
+}
+
+.prof-right-rating{
+  margin-left: 40px;
+  width: 100px;
+}
+
+.prof-right-index-title {
+  position: absolute;
+  margin-left:160px;
+  margin-top:-160px;
+  float: right;
+  position:absolute; 
+  width:370px; 
+  font-style: italic; 
+  font-family:'Bariol'; 
+  font-size:20px; 
+  font-weight:bold; 
+}
+
+
+.prof-right-index-title-no-stories {
+  position: absolute;
+  margin-left:160px;
+  margin-top:-150px;
+  float: right;
+  position:absolute; 
+  width:370px; 
+  font-style: italic; 
+  font-family:'Bariol'; 
+  font-size:20px; 
+  font-weight:bold; 
+  padding-bottom: 400px;
+}
+
+.prof-right-time-created{
+  position:absolute; 
+  width:400px; 
+  font-family:'Bariol'; 
+  font-size:14px;
+  font-weight: 90; 
+  font-weight:bold; 
+  margin-left:120px; 
+  margin-top:-100px;"
+}
+
+
+
 .prof-content ul {
   list-style: none;
 }
@@ -1486,23 +1599,48 @@ end
 
 .story-icon-index{
   position:absolute;
-  margin-top:65px;
+  margin-top:80px;
   margin-left: 95px;
 }
+
+
+.story-icon-index-right{
+  position:absolute;
+  margin-top:px;
+  margin-left: 5px;
+}
+
 
 
 .story-icon-index-text{
   position:absolute;
   font-family: "Bariol";
   font-weight:100;
-  margin-top:71px;
+  margin-top:86px;
   margin-left: 122px;
+}
+
+.story-icon-index-text-right{
+  font-family: "Bariol";
+  font-weight:100;
+  margin-top:91px;
+  margin-left: 31px;
+  font-size: 14px;
+  width:94px;
 }
 
 .story-thumb-index{
   position:absolute;
-  margin-top:65px;
+  margin-top:80px;
   margin-left: 205px;
+}
+
+.story-thumb-index-right{
+  position:absolute;
+  font-family: "Bariol";
+  font-weight:100;
+  margin-top:77px;
+  margin-left: 195px;
 }
 
 
@@ -1510,10 +1648,18 @@ end
   position:absolute;
   font-family: "Bariol";
   font-weight:100;
-  margin-top:71px;
+  margin-top:86px;
   margin-left: 232px;
 }
 
+.story-thumb-index-text-right{
+  font-family: "Bariol";
+  font-weight:100;
+  margin-top:91px;
+  margin-left: 91px;
+  font-size: 14px;
+  width:94px;
+}
 
 
 .story-thumb-public{
@@ -1573,25 +1719,69 @@ end
 
 
 .review-body-index {
-  margin-top:5px;
+  margin-top:40px;
   float: left;
   margin-left: 5px;
-  width: 476px;
+  width: 474px;
   font-family: "Bariol";
   text-align: left;
   font-size: 16px;
   font-weight: 100;
-  padding-bottom: 40px;
+  padding-bottom: 26px;
+}
+
+
+.review-body-index-right {
+  margin-top:0px;
+  float: left;
+  margin-left: 175px;
+  width: 474px;
+  font-family: "Bariol";
+  text-align: left;
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 26px;
+}
+
+
+.review-body-index-separator{
+  width:265%;
+}
+
+
+.see-more-index {
+  margin-top:205px;
+  float: left;
+  margin-left: 5px;
+  width: 474px;
+  font-family: "Bariol";
+  text-align: left;
+  font-size: 16px;
+  font-weight: 100;
 }
 
 .merchant-banner-index{
   margin-top:15px;
 }
+
 .review-pic-index {
-  margin-top:15px;
+  margin-top:-10px;
 }
 
+.prof-right-review-pic{
+  position: absolute;
+  margin-top:-115px;
+  margin-left: 155px;
+}
 
+.prof-right-name{
+  position: absolute;
+  margin-left: 240px;
+  margin-top: -90px;
+  font-family: "Bariol";
+  font-weight: 100;
+  font-size: 20px;
+}
 
 /*
   CITY INDEX VIEW
