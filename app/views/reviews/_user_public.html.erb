@@ -17,7 +17,7 @@
       <div class="store-category-text">
         <strong> <%= review.merchant.categories.first.name.capitalize %> Category</strong>
         <br>
-        <strong> <%= review.merchant.country.name %> </strong>
+        <strong> <%#= review.merchant.country.name %> </strong>
       </div>
       <br>
         <strong>Rating: <%= review.rating %> </strong>
@@ -48,18 +48,21 @@
       </div>
     
 
-    <div class="review-body">
+    <div class="review-body-public">
       <%= review.body %>
 
 
       <% if review.pic.file? %>
-        <%= image_tag review.pic.url(:small) %>
+        <%= image_tag review.pic.url(:big) %>
       <% end %>
 
+      <div>
+        <hr>
+      </div>
+      
       
     </div>
 
-    <hr>
 
   </div>
 

@@ -3,6 +3,7 @@
 <head>
   <title>WarmGreet</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -40,15 +41,14 @@
   <% end %>
 
 
-  <%# if signed_in? %>
+  <% if signed_in? %>
    <%# puts "*****************#{current_user.slug}*****************"%>
     <% if request.original_url == "#{home}/users/#{current_user.slug}"%>
       <nav class="top-nav-stories-feed group">
-
-    <% else %>
-      <nav class="top-nav-noindex group">
     <% end %>
-  <%# end %>
+  <% else %>
+      <nav class="top-nav-noindex group">
+  <% end %>
 
  
     <div class="top-nav-header">

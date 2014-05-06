@@ -1,0 +1,202 @@
+<% category.merchants.first(1).each_with_index do |merchant, i| %>
+
+    <div class = "content-main-header">
+      
+        
+          <strong class="category-separator"><%= category.name.capitalize %></strong> 
+          <hr class="separator-pic">
+         
+        
+      <br>
+      <%#= link_to "Add a new online store", new_country_merchant_url(@country) %>
+    </div>
+ <div class="prof-review group">
+
+     <div class="prof-left-index group"> 
+      
+
+        <% if merchant.reviews.first %>
+          <a href="<%= merchant_url(merchant) %>">
+            <% if merchant.photo.file? %>
+              <%= image_tag merchant.photo.url(:small) %>
+            <% else %>
+              <%= image_tag "WGSlice/default-merchant-banner.png", size: "471x227" %>
+            <% end %>
+    
+          </a>
+
+                     <div class="prof-right-index">
+                      <% category.merchants.sample(2).each_with_index do |merchantright, i| %>
+                        
+                       <a href="<%= merchant_url(merchantright) %>">
+                          <% if merchantright.photo.file? %>
+                            <%= image_tag merchantright.photo.url(:big) %>
+                          <% else %>
+                            <%= image_tag "WGSlice/default-merchant.png", size: "150x150" %>
+                          <% end %>
+                       </a>
+
+
+
+                         <% if merchantright.reviews.first %>
+
+                          <div class="prof-right-rating">
+                              Rating: <%= merchantright.reviews.first.rating %>
+                          </div>
+
+                          <strong class="prof-right-index-title">
+                              "<%= merchantright.reviews.first.title %>"
+                              <br>
+                              - <% if merchantright.reviews.first.created_at > Time.now.beginning_of_day %>
+                              <%="- Written #{time_ago_in_words(merchant.reviews.first.created_at)} ago"%>
+                            <br>
+                            <% else %>
+                              Written on <%= merchantright.reviews.first.created_at.strftime("%m/%d/%Y") %>
+                            <% end %>
+                          </strong>
+
+                          <br>
+                     
+
+
+
+                          <strong class="prof-right-name">
+                            <%= merchantright.reviews.first.user.username%>
+                            <!--strong class="story-icon-index-right"><%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge") %></strong>
+
+                            <strong class="story-icon-index-text-right"><%= merchant.reviews.first.user.reviews.count %> Stories</strong> 
+
+                            <strong class="story-thumb-index-right"><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "story-badge") %></strong>
+
+                            <strong class="story-thumb-index-text-right"> <%= merchant.reviews.first.user.count_thumbs_up%> thumbs</strong-->
+                          </strong>
+
+                          <br>
+
+                          
+                          <strong class="review-body-index-right">
+                            <%#= merchant.reviews.first.body %>
+                            
+                            More shopping story on <br>
+                            <div class="button-writing-index-bg">
+                               <%= link_to merchantright.name, merchant_url(merchantright) %>
+                            </div>
+                          </strong>
+                      
+                      
+
+                    
+                            <% if merchant.reviews.first.user.photo.file? %>
+                              <%= image_tag merchant.reviews.first.user.photo.url(:big) %>
+                            <% elsif merchant.reviews.first.user.image? %>
+                             <%= image_tag merchant.reviews.first.user.image, size: "80x80" %>
+                            <% else %>
+                                <% if merchant.reviews.first.user.gender=="M" %>
+                                  <%= image_tag "WGSlice/default-user-male.png", size: "80x80", class:"prof-right-review-pic" %>
+                                <% elsif merchant.reviews.first.user.gender=="F" %>
+                                  <%= image_tag "WGSlice/default-user-female.png", size: "80x80", class:"prof-right-review-pic" %>
+                                <% else %>
+                                  <%= image_tag "WGSlice/default-user-male.png", size: "80x80", class:"prof-right-review-pic" %>
+                                <% end %>
+                            <% end %>
+                        
+
+                       
+                        <% else %>
+                          <strong class="prof-right-index-title-no-stories">
+                              "No stories yet"
+                            </strong>
+
+                          <div class="prof-right-rating">
+                              Rating: N/A
+                          </div>
+
+                          <strong class="review-body-index-right">
+                            <%#= merchant.reviews.first.body %>
+                            
+                            Create story about <br>
+                            <div class="button-writing-index-bg">
+                               <%= link_to merchantright.name, merchant_url(merchantright) %>
+                            </div>
+                          </strong>
+                        <% end %>
+                          
+
+                             
+
+                      <% end %>
+
+                          
+                        
+                     </div>
+          
+
+          <br>
+        
+         
+            <strong style="position:absolute; width:390px; font-style: italic; font-family:'Bariol'; font-size:22px; font-weight:bold; margin-left:90px; margin-top:25px;">
+              "<%= merchant.reviews.first.title %>"
+            </strong>
+
+            <br>
+         
+
+
+
+            <strong style="position:absolute; width:400px; font-family:'Bariol'; font-size:16px; font-weight:bold; margin-left:90px; margin-top:60px;">
+              - <%= merchant.reviews.first.user.username %> shopping story (<% if merchant.reviews.first.created_at > Time.now.beginning_of_day %>
+              <%="- Written #{time_ago_in_words(merchant.reviews.first.created_at)} ago"%>
+              <br>
+          <% else %>
+              Written on <%= merchant.reviews.first.created_at.strftime("%m/%d/%Y") %>
+          <% end %>)
+            </strong>
+
+            <br>
+
+             <strong class="story-icon-index"><%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge") %></strong>
+
+          <strong class="story-icon-index-text"><%= merchant.reviews.first.user.reviews.count %> Stories</strong> 
+
+
+        
+        <strong class="story-thumb-index"><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "story-badge") %></strong>
+
+         <strong class="story-thumb-index-text"> <%= merchant.reviews.first.user.count_thumbs_up%> thumbs</strong>
+          
+          
+          
+
+        
+          <% if merchant.reviews.first.user.photo.file? %>
+            <%= image_tag merchant.reviews.first.user.photo.url(:big) %>
+            <% elsif merchant.reviews.first.user.image? %>
+              <%= image_tag merchant.reviews.first.user.image, size: "80x80" %>
+            <% else %>
+              <% if merchant.reviews.first.user.gender=="M" %>
+                <%= image_tag "WGSlice/default-user-male.png", size: "80x80", class:"review-pic-index" %>
+              <% elsif merchant.reviews.first.user.gender=="F" %>
+                <%= image_tag "WGSlice/default-user-female.png", size: "80x80", class:"review-pic-index" %>
+              <% else %>
+                <%= image_tag "WGSlice/default-user-male.png", size: "80x80", class:"review-pic-index" %>
+              <% end %>
+            <% end %>
+          
+
+            
+            <strong class="review-body-index">
+              <%= merchant.reviews.first.body %>
+              <br><br>
+              See more shopping experience on <br>
+              <div class="button-writing-index-bg">
+                 <%= link_to merchant.name, merchant_url(merchant) %>
+              </div>
+            </strong>
+               
+            <hr class = "review-body-index-separator">
+          <%  end %>
+        </div>
+    </div>
+
+      <% end %>
+      

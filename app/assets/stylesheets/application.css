@@ -201,6 +201,10 @@ html, body, form, h1, div, label, ul {
   padding: 50px 0 0 70px;
 }
 
+.social h4{
+  font-family: "Bariol";
+}
+
 .left #facebook {
 
 }
@@ -1566,6 +1570,7 @@ end
 
 .story-title-public{
   margin-top:55px;
+  width:100%;
 }
 
 
@@ -1717,6 +1722,23 @@ end
   vertical-align: bottom;
 }
 
+
+.review-body-public {
+  display: block;
+  font-family: "Bariol";
+  font-size: 18px;
+  line-height: normal;
+  word-break: normal;
+  padding: 0 10px;
+  height: auto;
+  vertical-align: bottom;
+  width: 135%;
+  margin-bottom: 25px;
+}
+
+.review-body-public-separator {
+  width: 135%;
+}
 
 .review-body-index {
   margin-top:40px;
