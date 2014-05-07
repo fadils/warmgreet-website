@@ -11,6 +11,10 @@ class ApplicationController < ActionController::Base
      @current_user ||= User.find_by_session_token(session[:token])
    end
 
+   def random_user
+    @random_user = User.first(:order => "RANDOM()")
+   end
+
    def signed_in?
      !!current_user
    end
