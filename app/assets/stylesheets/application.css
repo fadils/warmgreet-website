@@ -61,9 +61,21 @@ html, body, form, h1, div, label, ul {
   font-family: "Bariol";
   font-color: white;
   position: absolute;
-  left: 415px;
+  left: 350px;
   top: 25px;
 }
+
+
+.find_friends-home {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 253px;
+  top: 25px;
+}
+
 
 .find_friends-no-sign-in {
   list-style: none
@@ -74,6 +86,17 @@ html, body, form, h1, div, label, ul {
   left: 295px;
   top: 25px;
 }
+
+.find_friends-no-sign-in-home {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 205px;
+  top: 25px;
+}
+
 
 .WG-mainlogo {
   list-style: none
@@ -92,9 +115,44 @@ html, body, form, h1, div, label, ul {
   font-family: "Bariol";
   font-color: white;
   position: absolute;
-  left: 295px;
+  left: 265px;
   top: 25px;
 }
+
+
+.category-home {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 170px;
+  top: 25px;
+}
+
+
+
+
+.category-no-sign-in {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 200px;
+  top: 25px;
+}
+
+.category-no-sign-in-home {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 200px;
+  top: 25px;
+}
+
 
 .store-category-text{
   float: right;
@@ -107,6 +165,11 @@ html, body, form, h1, div, label, ul {
   float: right;
   font-family: "Bariol";
 }
+
+.info li{
+  display: inline-block;
+}
+
 
 .category-separator {
   position: absolute;
@@ -158,6 +221,17 @@ html, body, form, h1, div, label, ul {
   font-color: white;
   position: absolute;
   left: 125px;
+  top: 25px;
+}
+
+
+.write_story-home {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 35px;
   top: 25px;
 }
 
@@ -294,7 +368,7 @@ header a {
   position:absolute;
   color: white;
   font-family: "Bariol";
-  margin-top:250px;
+  margin-top:220px;
   margin-left:-420px;
   width: 100%;
 }
@@ -347,15 +421,18 @@ header a {
 
 .info {
   position: relative;
-  display: block;
   float: right;
   padding: 20px;
   color: white;
-  font-family: 'bariol';
+  right: 15px;
+  list-style: none
+  font-size: 24px;
+  font-family: 'Bariol';
   /*background: #F0F3F8;*/
   border-radius: 3px;
   height: 23px;
-  margin-top: -70px;
+  margin-top: -60px;
+  max-width: 600px;
 }
 
 nav ul {
@@ -905,6 +982,16 @@ main {
   height: 160px;
 }
 
+
+.user-propic-merchant {
+   text-align: justify;
+  background-color: rgb( 0, 0, 0 );
+  position: absolute;
+  width: 160px;
+  height: 160px;
+}
+
+
 .user-profile-stats{
   position: absolute;
   left: 205px;
@@ -984,6 +1071,35 @@ main {
   top: 120px;
 }
 
+.following-text-merchant {
+  font-size: 32px;
+  font-family: "Helvetica Neue LT Std";
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 60px;
+  top: 30px;
+}
+
+.following-number-merchant {
+  font-size: 32.006px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-align: center;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 65px;
+  top: 30px;
+}
+
+
 
 .followed-text {
   font-size: 36px;
@@ -1030,6 +1146,22 @@ main {
 }
 
 
+.user-username-merchant {
+  font-size: 34.862px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -webkit-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -ms-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  position: absolute;
+  left: -15px;
+  top: 130px;
+  width:400px;
+}
+
+
+
 .member-since-text {
   font-size: 17.614px;
   width:300px;
@@ -1044,13 +1176,43 @@ main {
   top: 60.266px;
 }
 
+
+.member-since-text-merchant {
+  font-size: 17.614px;
+  width:300px;
+  font-family: "Bariol";
+  color: rgb( 112, 112, 112 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  left: 227.748px;
+  top: 10.266px;
+}
+
+.merchant-photo-text-container
+{
+  width: 100%;
+}
+
+.prof-merchant-banner{
+  margin-left: 525px;
+}
 /*
 after profile separator line
 */
 .after-profile-separator{
   position: absolute;
-  top:225px;
   width: 1020px;
+  top:225px;
+
+}
+
+.after-profile-separator-merchant{
+  position: absolute;
+  width: 510px;
+  top:235px;
 
 }
 /*
@@ -1192,7 +1354,7 @@ end
 .prof-left {
   display: block;
   position: absolute;
-  width: 20%;
+  max-width: 1020px;
   margin-left:85px;
   padding: 0 0 0 35px;
 }
@@ -1761,6 +1923,9 @@ end
   vertical-align: bottom;
 }
 
+.merchant-right-pic{
+  position: absolute;
+}
 
 .review-body-public {
   display: block;

@@ -2,13 +2,18 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   # Expose these methods to the views
-   helper_method :current_user, :signed_in?
+   helper_method :current_user, :current_merchant, :signed_in?
 
    private
 
    def current_user
      return nil unless session[:token]
      @current_user ||= User.find_by_session_token(session[:token])
+   end
+
+   def current_merchant(user)
+     return nil unless user.is_merchant?
+     @current_merchant = user
    end
 
    def random_user

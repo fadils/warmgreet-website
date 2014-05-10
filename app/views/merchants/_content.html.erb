@@ -84,21 +84,22 @@
                           </strong>
                       
                       
-
-                    
-                            <% if merchant.reviews.first.user.photo.file? %>
-                              <%= image_tag merchant.reviews.first.user.photo.url(:big) %>
-                            <% elsif merchant.reviews.first.user.image? %>
-                             <%= image_tag merchant.reviews.first.user.image, size: "80x80" %>
+                      
+                          <div class = "merchant-right-pic">
+                            <% if merchantright.reviews.first.user.photo.file? %>
+                              <%= image_tag merchantright.reviews.first.user.photo.url(:big) %>
+                            <% elsif merchantright.reviews.first.user.image? %>
+                             <%= image_tag merchantright.reviews.first.user.image, size: "80x80" %>
                             <% else %>
-                                <% if merchant.reviews.first.user.gender=="M" %>
+                                <% if merchantright.reviews.first.user.gender=="M" %>
                                   <%= image_tag "WGSlice/default-user-male.png", size: "80x80", class:"prof-right-review-pic" %>
-                                <% elsif merchant.reviews.first.user.gender=="F" %>
+                                <% elsif merchantright.reviews.first.user.gender=="F" %>
                                   <%= image_tag "WGSlice/default-user-female.png", size: "80x80", class:"prof-right-review-pic" %>
                                 <% else %>
                                   <%= image_tag "WGSlice/default-user-male.png", size: "80x80", class:"prof-right-review-pic" %>
                                 <% end %>
                             <% end %>
+                          </div>
                         
 
                        

@@ -31,9 +31,7 @@
       <div class="WG-mainlogo">
         <%= image_tag("WGSlice/mainlogo.png", height: '80%', width: '80%')%>
 
-        
-          <span class="random-story"> TEST </span>
-        
+                  
       </div>
 
 
@@ -97,15 +95,18 @@
  
     <div class="top-nav-header">
       <div class="logo">
-      <% if signed_in? %>
-        <a href="<%= user_url(current_user)%>">
-          <%= image_tag("wg_logo_2.png", height: '60', width: '60')%>
-        </a>
-      <% else %>
-        <a href="/">
-          <%= image_tag("wg_logo_2.png", height: '60', width: '60')%>
-        </a>
-      <% end %>
+        <% if request.original_url != "#{home}/"%>
+          <% if signed_in? %>
+            <a href="<%= user_url(current_user)%>">
+              <%= image_tag("wg_logo_2.png", height: '60', width: '60')%>
+            </a>
+          <% else %>
+            <a href="/">
+              <%= image_tag("wg_logo_2.png", height: '60', width: '60')%>
+            </a>
+          <% end %>
+        <% else %>
+        <% end %>
       </div>
     </div>
 
@@ -117,56 +118,96 @@
             <li style="color:white">Hi,
               <%#= link_to current_user.username, user_url(current_user) %>
               <%= link_to current_user.username.capitalize, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol'} %>
-              
+              | 
               <%= "(admin)" if current_user.admin == true %>
             </li>
             <li style="color:white"><%= link_to "Sign Out", session_url, :method => :delete, :style => 'color:#FFFFFF;' %></li>
           <% else %>
-            <li><%= link_to "Sign In", new_session_url, {:style => 'color:#FFFFFF; font-family:bariol'} %></li>
-            <li><%= link_to "Sign up", new_user_url, {:style => 'color:#FFFFFF; font-family:bariol'} %></li>
+            
+              <li><%= link_to "Sign up", new_user_url, {:style => 'color:#FFFFFF; font-family:bariol'} %></li>
+              
+              |
+              
+              <li><%= link_to "Sign In", new_session_url, {:style => 'color:#FFFFFF; font-family:bariol'} %></li>
+            
           <% end %>
           </strong>
         </ul>
       </div>
       
     <div class="container group">
+      <% if request.original_url != "#{home}/"%>
+          <% if signed_in? %>
+              <div class = "write_story">
+                
+                <a href="<%= user_url(current_user)%>"  style="color:white">
+                    What's your story
+                </a>
+              </div>
 
-      <% if signed_in? %>
-          <div class = "write_story">
-            
-            <a href="<%= user_url(current_user)%>"  style="color:white">
-                What's your story
-            </a>
-          </div>
+              <div class = "category">
+               <a href="/"  style="color:white">
+                Category
+               </a>
+              </div>
 
-          <div class = "category">
-           <a href="/"  style="color:white">
-            Discover
-           </a>
-          </div>
+              <div class = "find_friends">
+                <a href="<%= users_url%>"  style="color:white">
+                    Find Friends
+                </a>
+                  <%#= link_to "Find Friends".html_safe, users_url %>
+              </div>
+            <% else %>
+              <div class = "category-no-sign-in">
+               <a href="/"  style="color:white">
+                Discover
+               </a>
+              </div>
 
-          <div class = "find_friends">
-            <a href="<%= users_url%>"  style="color:white">
-                Find Friends
-            </a>
-              <%#= link_to "Find Friends".html_safe, users_url %>
-          </div>
-        <% else %>
-          <div class = "category-no-sign-in">
-           <a href="/"  style="color:white">
-            Discover
-           </a>
-          </div>
+              <div class = "find_friends-no-sign-in">
+                <a href="<%= users_url%>"  style="color:white">
+                  Find Friends
+                </a>
+                  <%#= link_to "Find Friends".html_safe, users_url %>
+              </div>
+          <% end %>
+      <% else %>
+          <% if signed_in? %>
+              <div class = "write_story-home">
+                
+                <a href="<%= user_url(current_user)%>"  style="color:white">
+                    What's your story
+                </a>
+              </div>
 
-          <div class = "find_friends-no-sign-in">
-            <a href="<%= users_url%>"  style="color:white">
-              Find Friends
-            </a>
-              <%#= link_to "Find Friends".html_safe, users_url %>
-          </div>
+              <div class = "category-home">
+               <a href="/"  style="color:white">
+                Category
+               </a>
+              </div>
+
+              <div class = "find_friends-home">
+                <a href="<%= users_url%>"  style="color:white">
+                    Find Friends
+                </a>
+                  <%#= link_to "Find Friends".html_safe, users_url %>
+              </div>
+            <% else %>
+              <div class = "category-home">
+               <a href="/"  style="color:white">
+                Category
+               </a>
+              </div>
+
+              <div class = "find_friends-no-sign-in-home">
+                <a href="<%= users_url%>"  style="color:white">
+                  Find Friends
+                </a>
+                  <%#= link_to "Find Friends".html_safe, users_url %>
+              </div>
+          <% end %>
+
       <% end %>
-
-
   </div>    
 
     </div>

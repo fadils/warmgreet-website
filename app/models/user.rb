@@ -70,6 +70,10 @@ class User < ActiveRecord::Base
     age == 0
   end
 
+  def merchantnumber?
+    return self.merchantnumber
+  end
+
   def count_thumbs_up
     total = 0
     count = self.reviews.count

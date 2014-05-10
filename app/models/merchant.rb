@@ -2,7 +2,15 @@ class Merchant < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, :use => :slugged
 
-  attr_accessible :name, :website, :phone, :country_id, :category_ids, :photo, :avg_rtg
+  attr_accessible :name, :username, :password, :email, :website, :phone, :country_id, :category_ids, :photo, :avg_rtg, :session_token, :auth_token, :activated
+  attr_reader :password
+
+  before_validation :ensure_session_token
+  before_validation(:ensure_auth_token, on: :create)
+
+  validates :username, :email, :session_token, presence: true, uniqueness: true
+  validates :password, length: { minimum: 6, :allow_nil => true }
+  validates :password_digest, presence: true
 
   validates :name, :country_id, presence: true
 
@@ -86,6 +94,47 @@ class Merchant < ActiveRecord::Base
     return @result
     #return @merchants.count(:conditions => ['avg_rating > ?', self.avg_rtg])
     
+  end
+
+   def self.find_by_credentials(username, password)
+    merchant = (Merchant.find_by_username(username) || Merchant.find_by_email(username))
+    merchant.try(:is_password?, password) ? merchant : nil
+  end
+
+  def self.generate_session_token
+    SecureRandom::urlsafe_base64(16)
+  end
+
+  def is_password?(unencrypted_password)
+    BCrypt::Password.new(self.password_digest).is_password?(unencrypted_password)
+  end
+
+  def password=(unencrypted_password)
+    if unencrypted_password.present?
+      @password = unencrypted_password
+      self.password_digest = BCrypt::Password.create(unencrypted_password)
+    end
+  end
+
+  def reset_session_token!
+    self.session_token = self.class.generate_session_token
+    self.save!
+    self.session_token
+  end
+
+  def activate!
+    self.activated = true
+    self.save
+  end
+
+  private
+
+  def ensure_session_token
+    self.session_token ||= self.class.generate_session_token
+  end
+
+  def ensure_auth_token
+    self.auth_token ||= self.class.generate_session_token
   end
 
 end

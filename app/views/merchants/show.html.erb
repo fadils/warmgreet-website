@@ -1,4 +1,105 @@
-<div class="rest-content group">
+<div class="prof-content-profile-view group">
+  
+
+      <div class="prof-left group">
+
+        <div class = "merchant-photo-text-container">
+  
+          <div class="merchant-photo">
+            <% if @merchant.photo.file? %>
+              <%= image_tag @merchant.photo.url(:big), :class => "user-propic-merchant", alt: @merchant.name %>
+            <% else %>
+                <%= image_tag "WGSlice/default-merchant.png", :class => "user-propic-merchant", alt: @merchant.name %>            
+            <% end %>
+            
+            <div class="prof-merchant-banner">
+              <%= image_tag "WGSlice/default-merchant-banner.png", size: "471x245" %>
+            </div>
+
+          </div>
+
+          <p class = "user-username-merchant">
+              <%= @merchant.name.upcase %>
+              <br>
+
+           <strong class="following-number-merchant"> <%= @merchant.favorites.count %> </strong>
+          <strong class="following-text-merchant"> Followers </strong>
+        
+          </p>
+          
+          <div class = "after-profile-separator-merchant">
+            <hr>
+          </div>
+           
+        </div>
+
+
+        
+          
+        
+
+       
+
+        <div class = "member-since-text-merchant">
+          
+          Average Rating: <%= @merchant.average_rating %> 
+          <br>
+
+          (based on <%= @merchant.reviews.count %> reviews)
+          <br>
+          
+          <% if @merchant.ranking(@merchant) == nil %>
+            Rank: Unranked
+          <% else %>
+            Rank: <%= @merchant.ranking(@merchant) %> of <%= Merchant.all.count %> online stores
+          <% end %>
+
+        </div>
+        
+          
+          
+         
+
+         
+
+        <div class = "merchants-list-coainer">
+
+          <h4 class= "followed-merchants-text">
+            Offers
+          </h4>
+
+          <hr class = "followed-merchants-separator">
+
+         
+          <div class="prof-mid-stories-public group">
+            <%= render "reviews/index", :merchant => @merchant %>
+          </div>
+         
+
+         
+        </div>
+
+        <hr class = "after-merchants-list-separator">
+
+        <div class = "stories-in-profile">
+          <h4>Stories</h4>
+          <hr class = "stories-in-profile-separator">
+
+          <div class="reviews">
+            <%= render "reviews/index", :merchant => @merchant %>
+          </div>
+        </div>
+        
+        
+
+        <% if current_merchant(current_user) %>
+          <%= link_to "Edit Profile", edit_merchant_url(@merchant) %>
+        <% end %>
+        
+      </div>
+    
+
+<!--div class="rest-content group">
 
   <section class="modal">
     <article class="modal-box">
@@ -51,7 +152,7 @@
       <% if @merchant.photo.file? %>
         <%= image_tag @merchant.photo.url(:big) %>
       <% else %>
-        <%= image_tag "http://i.imgur.com/xqtsqlj.png", size: "100x100" %>
+        <%= image_tag "WGSlice/default-merchant.png", size: "150x150" %>
       <% end %>
       </div>
 
@@ -90,11 +191,11 @@
   <% @merchant.categories.each do |category| %>
     <li><%= category.name %></li>
   <% end %>
-  </ul>
+  </ul-->
 
   <!-- merchant INFO -->
 
-  <h3>merchant Info</h3>
+  <!--h3>merchant Info</h3>
   <ul>
     <% unless @merchant.website.empty? %>
       <li><%= link_to @merchant.website, @merchant.website %> </li>
@@ -103,13 +204,13 @@
       <li> <%= @merchant.phone %> </li>
     <% end %>
    
-  </ul>
+  </ul-->
 
   <!-- REVIEWS -->
-  <h3>Stories</h3>
+  <!--h3>Stories</h3>
 
   <% if current_user && @merchant.open == true %>
-    <!--a href="#" class="show-modal">Write a new review!</a-->
+    
     <%= link_to "Write a story!", new_merchant_review_url(@merchant)%>
   <% end %>
 
@@ -119,16 +220,16 @@
   <%= render "reviews/index", :merchant => @merchant %>
 </div>
     </div>
-  </div>
+  </div-->
 
 
   <!-- MAPS IMAGE -->
 
-  <div class="rest-right group">
+  <!--div class="rest-right group">
     <%= render "reviews/randompic", :merchant => @merchant %>
     
   </div>
-</div>
+</div-->
 
 
 
