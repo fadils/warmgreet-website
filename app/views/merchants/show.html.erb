@@ -22,10 +22,17 @@
               <%= @merchant.name.upcase %>
               <br>
 
-           <strong class="following-number-merchant"> <%= @merchant.favorites.count %> </strong>
-          <strong class="following-text-merchant"> Followers </strong>
+          
         
           </p>
+
+          <p class = "user-username-merchant-followers">
+             <strong class="following-number-merchan"> <%= @merchant.favorites.count %> </strong>
+             <strong class="following-text-merchan"> Followers </strong>
+        
+          </p>
+
+           
           
           <div class = "after-profile-separator-merchant">
             <hr>
@@ -56,36 +63,58 @@
 
         </div>
         
+           <ul class="merchants-randompic-list">
+              <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
+              <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
+              <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
+              <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
+              <li><%= image_tag "WGSlice/more-shoppers-photo.png", size: "126x126", style: "margin-left:350px" %></li>
+              
+            </ul>
           
-          
+           <hr class = "merchants-randompic-separator">
          
 
          
 
-        <div class = "merchants-list-coainer">
+        
 
-          <h4 class= "followed-merchants-text">
+          <h4 class= "merchants-offers-text">
             Offers
           </h4>
 
-          <hr class = "followed-merchants-separator">
+          <hr class = "merchants-offers-stripe">
 
-         
-          <div class="prof-mid-stories-public group">
-            <%= render "reviews/index", :merchant => @merchant %>
+          <div class="merchants-offers-1">
+            <%= image_tag "WGSlice/dummy-merchant-offer.png", size: "450x235" %>
+            <p>
+            Sapiente enim ut et consequatur reiciendis praesentium ipsam. Delectus nulla et consequuntur eum eos corporis et. Repudiandae earum omnis at odit consequatur quia. Ullam eum et veniam beatae. Qui nihil officiis qui nostrum veniam. Esse quod omnis sed sunt commodi ad. Cum rerum alias deserunt vitae iusto. Porro ut nemo incidunt id et. Suscipit et voluptas maiores. Eos cumque consequuntur dolores necessitatibus et. Quia iure accusantium quasi cumque distinctio dolores. Neque dolores labore impedit.
+            </p>
+
           </div>
-         
+
+          <div class="merchants-offers-2">
+            <%= image_tag "WGSlice/dummy-merchant-offer.png", size: "450x235" %>
+            <p>
+            Sapiente enim ut et consequatur reiciendis praesentium ipsam. Delectus nulla et consequuntur eum eos corporis et. Repudiandae earum omnis at odit consequatur quia. Ullam eum et veniam beatae. Qui nihil officiis qui nostrum veniam. Esse quod omnis sed sunt commodi ad. Cum rerum alias deserunt vitae iusto. Porro ut nemo incidunt id et. Suscipit et voluptas maiores. Eos cumque consequuntur dolores necessitatibus et. Quia iure accusantium quasi cumque distinctio dolores. Neque dolores labore impedit.
+            </p>
+          </div>
+
+          <div class="more-offers">
+            <span>More Offers</span>
+          </div>
 
          
-        </div>
+         
+         
 
-        <hr class = "after-merchants-list-separator">
+        <hr class = "merchants-offers-separator">
 
-        <div class = "stories-in-profile">
+        <div class = "stories-in-merchant-profile">
           <h4>Stories</h4>
-          <hr class = "stories-in-profile-separator">
+          <hr class = "stories-in-merchant-profile-stripes">
 
-          <div class="reviews">
+          <div class="reviews-merchant">
             <%= render "reviews/index", :merchant => @merchant %>
           </div>
         </div>

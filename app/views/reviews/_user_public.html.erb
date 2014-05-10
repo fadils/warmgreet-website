@@ -22,7 +22,7 @@
       <br>
         <strong>Rating: <%= review.rating %> </strong>
       
-      <br>
+      <br> <br>
         
         <strong class="story-thumb-public"><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "story-badge-public") %></strong>
 
@@ -55,6 +55,8 @@
       <% if review.pic.file? %>
         <%= image_tag review.pic.url(:big) %>
       <% end %>
+
+      <br><br>
 
       <div>
         <hr>

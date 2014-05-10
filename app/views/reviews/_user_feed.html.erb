@@ -1,4 +1,6 @@
+
 <%user.feed.sort_by{ |rev| rev.created_at }.reverse!.each do |review| %>
+
 
   <div class="prof-review group">
 
@@ -46,10 +48,6 @@
       
         <strong class="story-title">"<%= review.title %>"</strong>
       
-    <% if current_user == @user %>
-        (<%= link_to "Edit Story", edit_review_url(review) %>)
-      <% end %>
-
     <br>
     <strong>Rating: <%= review.rating %> - </strong>
     <% if review.created_at > Time.now.beginning_of_day %>
@@ -67,13 +65,13 @@
       <% end %>
 
       <% if review.vote_tags.empty? %>
-        
-          <strong class="badge">0</strong>
+        <br><br><br><br>
+          <strong class="badge-feed">0</strong>
           <strong><%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:-35px; margin-left: 25px")%></strong>
         
         <% else %>
-        
-          <strong class="badge"><%= review.vote_tags.count %></strong>
+        <br><br><br><br>
+          <strong class="badge-feed"><%= review.vote_tags.count %></strong>
           <%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:-35px; margin-left: 25px") %>
         
         <% end %>

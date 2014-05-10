@@ -11,9 +11,10 @@
   <br>
   Rating: <%= review.rating %>
   <br>
+  <br>
   <div class="review-body">
   <%= review.body %>
-
+  <br>
   <% if review.pic.file? %>
     <%= image_tag review.pic.url(:big) %>
   <% end %>
@@ -22,9 +23,10 @@
   <% if signed_in? %>
   <% unless current_user == review.user %>
     <%# if current_user.voted_reviews.include?(review) %>
-      <%= button_to "Not Helpful", review_vote_tag_url(review), method: :delete, form_class: "cool-button" %>
+    <br>
+      <span><%= button_to "Not Helpful", review_vote_tag_url(review), method: :delete, form_class: "cool-button" %></span>
     <%# else %> 
-      <%= button_to "Helpful", review_vote_tags_url(review), method: :post, form_class: "cool-button" %>
+      <%= button_to "Helpful", review_vote_tags_url(review), method: :post, form_class: "cool-button", style:"margin-left:5px;" %>
     <%# end %>
   <% else %>
   cool votes

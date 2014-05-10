@@ -1147,19 +1147,34 @@ main {
 
 
 .user-username-merchant {
-  font-size: 34.862px;
+  font-size: 30px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -webkit-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  -ms-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
+  position: relative;
+  left: 20px;
+  top: -110px;
+  width:400px;
+}
+
+
+.user-username-merchant-followers {
+  font-size: 22px;
+  font-weight: 100;
   font-family: "Helvetica Neue LT Std";
   color: rgb( 45, 45, 45 );
   text-align: center;
   -moz-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
   -webkit-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
   -ms-transform: matrix( 1.10149160953525,0,0,1.10149160953525,0,0);
-  position: absolute;
-  left: -15px;
-  top: 130px;
+  position: relative;
+  left: -140px;
+  top: -140px;
   width:400px;
 }
-
 
 
 .member-since-text {
@@ -1237,6 +1252,26 @@ Followed Merchant Section
   width: 400px;
 }
 
+.merchants-offers-text {
+  position: relative;
+  font-size: 46.875px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  left: -35px;
+  top: -190px;
+  width: 200px;
+}
+
+.merchants-randompic-separator{
+  position: relative;
+  width:100%;
+  top:-120px;
+}
+
 .followed-merchants-separator {
   background-image: url("/assets/WGSlice/stripe_repeat.png") ;
   position: absolute;
@@ -1246,6 +1281,72 @@ Followed Merchant Section
   height: 12px;
   border: none;
 }
+
+
+.merchants-offers-1{
+  position: relative;
+  float: left;
+  top:-280px;
+  left:25px;
+  width:40%;
+}
+
+.merchants-offers-1 p{
+  text-align: justify;
+  width: 113%;
+}
+
+.more-offers{
+  position: relative;
+  text-align: center;
+  top:170px;
+}
+
+.more-offers span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+}
+
+.more-offers span:hover{
+  opacity: 0.5;
+}
+
+
+
+.merchants-offers-2{
+  position: relative;
+  float: right;
+  top:-280px;
+  right:70px;
+  width:40%;
+}
+
+.merchants-offers-2 p{
+  text-align: justify;
+  width: 113%;
+}
+
+
+
+
+.merchants-offers-stripe {
+  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: relative;
+  left: 47px;
+  top: -285px;
+  width: 91.3%;
+  height: 12px;
+  border: none;
+}
+
+
+.merchants-offers-separator {
+  position: relative;
+  width: 100%;
+  top:-210px;
+}
+
+
 
 
 .merchants-list-container{
@@ -1265,6 +1366,22 @@ Followed Merchant Section
   display: inline-block;
   list-style: none;
 }
+
+.merchants-randompic-list {
+  position: relative;
+  top: -130px;
+  max-width: 1020px;
+  left: 0px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+.merchants-randompic-list li{
+
+  display: inline-block;
+  list-style: none;
+}
+
 
 .after-merchants-list-separator{
   position: absolute;
@@ -1308,6 +1425,47 @@ Stories in profile section
   height: 12px;
   border: none;
 }
+
+li:hover{
+  opacity: 0.5;
+}
+
+button:hover{
+  opacity: 0.5;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
+.stories-in-merchant-profile{
+  position: relative;
+  top:-305px;
+  left: -45px;
+}
+
+.stories-in-merchant-profile h4{
+  font-size: 62.5px;
+  font-weight: 100;
+  width: 250px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+}
+
+
+.stories-in-merchant-profile-stripes {
+  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: relative;
+  left: 108px;
+  top: -122px;
+  width: 88%;
+  height: 12px;
+  border: none;
+}
+
 
 /*
 end
@@ -1724,6 +1882,7 @@ end
 
 .cool-button input[type="submit"] {
   display: block;
+  position: relative;
   float: left;
   padding: 5px;
   width: 90px;
@@ -1736,6 +1895,10 @@ end
   cursor: pointer;
 }
 
+.cool-button:hover{
+  opacity: 0.5;
+}
+
 .badge {
   display: inline;
   background: #C4DBF0;
@@ -1746,6 +1909,25 @@ end
   padding: 2px 7px;
   border-radius: 8px;
   margin: 2px;
+}
+
+
+.badge-feed {
+  position: relative;
+  top:-25px;
+  background: #C4DBF0;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  padding: 2px 7px;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+
+.badge .cool-button{
+  vertical-align: center;
 }
 
 .story-writer{
@@ -1904,6 +2086,14 @@ end
   border-top: 1px solid #ccc;
   padding: 15px 0;
   margin: 0;
+  width: 100%;
+}
+
+
+.reviews-merchant {
+  position: relative;
+  left: 45px;
+  top:-110px;
 }
 
 .review-date {
@@ -1914,13 +2104,13 @@ end
 .review-body {
   display: block;
   font-family: "Bariol";
-  font-size: 14px;
+  font-size: 18px;
   line-height: normal;
   word-break: normal;
-  white-space: pre-wrap;
   padding: 0 10px;
   height: auto;
   vertical-align: bottom;
+  text-align: justify;
 }
 
 .merchant-right-pic{
