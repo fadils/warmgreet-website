@@ -166,10 +166,50 @@ html, body, form, h1, div, label, ul {
   font-family: "Bariol";
 }
 
-.info li{
+.info-not-sign-in li{
   display: inline-block;
 }
 
+.info ul ul{
+  display: none;
+  background-color: rgb(35,31,32);
+  opacity: 0.75;
+}
+
+.info ul li:hover > ul {
+    display: block;
+  }
+
+.info ul li:hover {
+    /*background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);*/
+  }
+
+.list-header:hover{
+  opacity:1;
+}
+
+.info ul li:hover a {
+      color: #fff;
+    }
+
+.info ul li{
+  list-style: none;
+}  
+.info ul li a {
+    display: block; 
+    padding: 10px 0px;
+    color: #757575; text-decoration: none;
+  }
+
+.info ul ul li {
+    float: none; 
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+    position: relative;
+  }
 
 .category-separator {
   position: absolute;
@@ -431,13 +471,35 @@ header a {
   /*background: #F0F3F8;*/
   border-radius: 3px;
   height: 23px;
-  margin-top: -60px;
-  max-width: 600px;
+  margin-top: -70px;
+}
+
+.user-pic-header {
+  position: relative;
+  float: right;
+  padding: 20px;
+  color: white;
+  right: 120px;
+  list-style: none
+  font-size: 24px;
+  font-family: 'Bariol';
+  /*background: #F0F3F8;*/
+  border-radius: 3px;
+  height: 23px;
+  margin-top: -70px;
+}
+
+
+.info ul{
 }
 
 nav ul {
   list-style: none;
 }
+
+.info ul:after {
+    content: ""; clear: both; display: block;
+  }
 
 nav .container {
   width: 1024px;

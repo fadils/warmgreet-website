@@ -110,28 +110,62 @@
       </div>
     </div>
 
-    <div class="info">
-        <ul>
-          <strong>
-          <% if signed_in? %>
-            <%#if current_user = shopper%>
-            <li style="color:white">Hi,
-              <%#= link_to current_user.username, user_url(current_user) %>
-              <%= link_to current_user.username.capitalize, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol'} %>
-              | 
-              <%= "(admin)" if current_user.admin == true %>
-            </li>
-            <li style="color:white"><%= link_to "Sign Out", session_url, :method => :delete, :style => 'color:#FFFFFF;' %></li>
+    
+      <% if signed_in? %>
+      <div class="user-pic-header">
+        <% if current_user.photo.file? %>
+                  <%= image_tag current_user.photo.url(:big), :class => "user-propic" %>
+        <% elsif current_user.image? %>
+          <%= image_tag current_user.image, size: "40x40" %>
+        <% else %>
+          <% if current_user.gender=="M"%>
+            <%= image_tag "WGSlice/default-user-male.png", size:"40x40" %>
+          <% elsif current_user.gender=="F"%>
+            <%= image_tag "WGSlice/default-user-female.png", size:"40x40"%>
           <% else %>
+            <%= image_tag "WGSlice/default-user-male.png", size:"40x40" %>
+          <% end %>
+        <% end %>
+      </div>
+
+      <div class="info">
+          <strong>
+        <ul>
+            <%#if current_user = shopper%>
             
+            <li class="list-header">
+
+              <%#= link_to current_user.username, user_url(current_user) %>
+
+
+
+                    <%= link_to current_user.username.capitalize, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol;'} %>
+
+                      <ul>
+                        <li><a href="#">Story Feed</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                      </ul>
+
+                  </li>
+            </strong>
+          </ul>
+        </div>
+               
+              <%#= "(admin)" if current_user.admin == true %>
+            
+            <!--li style="color:white"><%= link_to "Sign Out", session_url, :method => :delete, :style => 'color:#FFFFFF;' %></li-->
+        <% else %>
+           <div class="info-not-sign-in">
+            <ul>
+             <strong>
               <li><%= link_to "Sign up", new_user_url, {:style => 'color:#FFFFFF; font-family:bariol'} %></li>
               
               |
               
               <li><%= link_to "Sign In", new_session_url, {:style => 'color:#FFFFFF; font-family:bariol'} %></li>
-            
+            </strong>
           <% end %>
-          </strong>
+          
         </ul>
       </div>
       
