@@ -8,7 +8,8 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+
+<body style="overflow-x:hidden;">
 
   
 <% env = Rails.env %>
@@ -80,6 +81,8 @@
         </span>
         
       </div>
+  <% else%>
+    <nav class="top-nav-no-index group">
   <% end %>
 
 
@@ -128,8 +131,9 @@
         <% end %>
       </div>
 
+      
       <div class="info">
-          <strong>
+          
         <ul>
             <%#if current_user = shopper%>
             
@@ -139,17 +143,17 @@
 
 
 
-                    <%= link_to current_user.username.capitalize, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol;'} %>
-
+                    <%= link_to current_user.username.capitalize, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol;'} %> 
                       <ul>
                         <li><a href="#">Story Feed</a></li>
                         <li><a href="#">Sign Out</a></li>
                       </ul>
 
                   </li>
-            </strong>
+            
           </ul>
         </div>
+
                
               <%#= "(admin)" if current_user.admin == true %>
             

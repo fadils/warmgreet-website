@@ -40,10 +40,11 @@
 
       <div class="written-time-public">
         <% if review.created_at > Time.now.beginning_of_day %>
-              <%="- Written #{time_ago_in_words(review.created_at)} ago"%>
+              <%="- #{time_ago_in_words(review.created_at)} ago"%>
               <br>
           <% else %>
-              - Written on <%= review.created_at.strftime("%m/%d/%Y") %>
+              - <%= review.created_at.strftime("%m/%d/%Y") %>
+              <br>
           <% end %>
       </div>
     

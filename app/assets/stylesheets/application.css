@@ -188,7 +188,7 @@ html, body, form, h1, div, label, ul {
   }
 
 .list-header:hover{
-  opacity:1;
+  opacity:2;
 }
 
 .info ul li:hover a {
@@ -197,7 +197,9 @@ html, body, form, h1, div, label, ul {
 
 .info ul li{
   list-style: none;
+  text-align: center;
 }  
+
 .info ul li a {
     display: block; 
     padding: 10px 0px;
@@ -278,7 +280,7 @@ html, body, form, h1, div, label, ul {
 
 .fashion {
   font-size: 34.454px;
-  font-family: "Novecento wide";
+  font-family: "Novecento";
   color: rgb( 255, 255, 255 );
   text-align: center;
   text-shadow: 1px 1.732px 4px rgb( 0, 0, 0 );
@@ -376,6 +378,62 @@ header {
   /*background: url("/Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/images/WGSlice/Banner_1440.png");*/
 }
 
+
+/*
+ADD New merchant
+*/
+
+.add-new-content{
+  left:0%;
+  position: absolute;
+}
+
+.add-new-head-text{
+  font-size: 19px;
+  position: relative;
+  left: 77.5%;
+  font-family: "Novecento";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -webkit-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -ms-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+}
+
+
+.prologue-text {
+  font-size: 36px;
+  font-family: "Trebuchet MS";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 0.64,0,0,0.63984594103382,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.63984594103382,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.63984594103382,0,0);
+  position: absolute;
+  left: 60%;
+  top:5px;
+  width: 675.976px;
+  height: 92.6px;
+}
+
+.textbox-merchant {
+  background: #F5F5F1;
+  border: 1px solid #000;
+  position: absolute;
+  left: 445px;
+  top: -180px;
+  width: 1000px;
+  height: 39px;
+   -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 19px;
+}
+
+/*
+End
+*/
+
 header a {
   color: #00f;
   text-decoration: none;
@@ -391,10 +449,9 @@ header a {
 
 .top-nav{
   position: relative;
-  max-width: 1366px;
-  width: 100%;
+  overflow: hidden;
   height: 750px;
-  margin: auto;
+  padding-right: -20px;
   
   box-shadow: 1px 1px 3px gray;
   background-image: url("/assets/WGSlice/Banner_1440_r.png"); 
@@ -402,7 +459,15 @@ header a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;;
+
 }
+
+
+.top-nav-no-index{
+  position: relative;
+  padding-right: -20px;
+}
+
 
 .random-story{
   position:absolute;
@@ -459,8 +524,17 @@ header a {
   background-size: cover;;
 }
 
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #f00;
+}
+
 .info {
-  position: relative;
+  position: absolute;
   float: right;
   padding: 20px;
   color: white;
@@ -470,8 +544,10 @@ header a {
   font-family: 'Bariol';
   /*background: #F0F3F8;*/
   border-radius: 3px;
-  height: 23px;
+  height: 73px;
+  width: 100px;
   margin-top: -70px;
+  z-index: 9999;
 }
 
 .user-pic-header {
@@ -552,7 +628,7 @@ nav form {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  font-size: 30px;
+  font-size: 26px;
   padding-top: 0.5em;
 }
 
@@ -608,6 +684,11 @@ border-radius: 0px;
   opacity: 0.75;
 }
 
+.merchant-following-section{
+  position: absolute;
+  top:135px;
+  left:455px;
+}
 .merchant-button-review-index{
   
   background-color: rgb(255,234,71);
@@ -746,7 +827,8 @@ textarea {
 }
 
 .input {
-  margin: 20px 0;
+  position: relative;
+  margin: 200px 0;
 }
 
 .input > label {
@@ -1062,10 +1144,10 @@ main {
 
 .story-badge-in-profile{
    position: absolute;
-  left: 205px;
-  top: 90px;
-  width:14%;
-  height:14%;
+  left: 218px;
+  top: 94px;
+  width:20px;
+  height:20px;
 }
 
 .story-badge-in-profile-text{
@@ -1083,11 +1165,11 @@ main {
 }
 
 .thumbs-badge-in-profile{
-   position: absolute;
-  left: 355px;
-  top: 90px;
-  width:14%;
-  height:14%;
+  position: absolute;
+  left: 368px;
+  top: 94px;
+  width:20px;
+  height:20px;
 }
 
 .thumbs-badge-in-profile-text{
@@ -1115,7 +1197,7 @@ main {
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
   -ms-transform: matrix( 0.64,0,0,0.64,0,0);
   position: absolute;
-  left: 195px;
+  left: 198px;
   top: 155px;
 }
 
@@ -1173,7 +1255,7 @@ main {
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
   -ms-transform: matrix( 0.64,0,0,0.64,0,0);
   position: absolute;
-  left: 345px;
+  left: 348px;
   top: 155px;
 }
 
@@ -1240,7 +1322,7 @@ main {
 
 
 .member-since-text {
-  font-size: 17.614px;
+  font-size: 14.614px;
   width:300px;
   font-family: "Bariol";
   color: rgb( 112, 112, 112 );
@@ -2014,7 +2096,7 @@ end
 }
 
 .story-title-public{
-  margin-top:55px;
+  margin-top:15px;
   width:100%;
 }
 
@@ -2188,7 +2270,9 @@ end
   padding: 0 10px;
   height: auto;
   vertical-align: bottom;
-  width: 135%;
+  width: 880px;
+  text-align: justify;
+  margin-top: 15px;
   margin-bottom: 25px;
 }
 

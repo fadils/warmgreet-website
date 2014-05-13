@@ -47,7 +47,11 @@
           <strong class="thumbs-badge-in-profile-text"> <%= @user.count_thumbs_up%> thumbs</strong>
           
           <strong class="following-number"> <%= @user.followers.count %> </strong>
-          <strong class="following-text"> Followers </strong>
+           <% if @user.followers.count != 1 %>
+            <strong class="following-text"> Followers </strong>
+           <% else %>
+             <strong class="following-text"> Follower </strong>
+           <% end %>
 
           <strong class="followed-number"> <%= @user.followed_users.count %> </strong>
           <strong class="followed-text"> Following </strong>
