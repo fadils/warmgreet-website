@@ -227,7 +227,7 @@ html, body, form, h1, div, label, ul {
   position: absolute;
   width: 225px;
   font-size: 16px;
-  left:720px;
+  left:755px;
   top:165px;
   font-family: "Novecento";
 }
@@ -386,6 +386,7 @@ ADD New merchant
 .add-new-content{
   left:0%;
   position: absolute;
+  height: 550px;
 }
 
 .add-new-head-text{
@@ -416,11 +417,11 @@ ADD New merchant
   height: 92.6px;
 }
 
-.textbox-merchant {
+.textbox-merchant-name {
   background: #F5F5F1;
-  border: 1px solid #000;
+  border: 1px solid #003;
   position: absolute;
-  left: 445px;
+  left: 428px;
   top: -180px;
   width: 1000px;
   height: 39px;
@@ -429,6 +430,74 @@ ADD New merchant
   border-radius: 0px;
   font-size: 19px;
 }
+
+
+.textbox-merchant-web {
+  background: #F5F5F1;
+  border: 1px solid #003;
+  position: absolute;
+  left: 428px;
+  top: -120px;
+  width: 1000px;
+  height: 39px;
+   -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 19px;
+}
+
+
+.textbox-merchant-category {
+  background: #F5F5F1;
+  border: 1px solid #003;
+  position: absolute;
+  left: 428px;
+  top: -60px;
+  width: 324px;
+  height: 39px;
+  padding-left: 10px;
+   -webkit-appearance: none;
+   -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 19px;
+}
+
+
+.textbox-merchant-country {
+  background: #F5F5F1;
+  border: 1px solid #003;
+  position: absolute;
+  left: 428px;
+  top: 0px;
+  width: 324px;
+  height: 39px;
+  padding-left: 10px;
+   -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 19px;
+   -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+.textbox-merchant-submit{
+  background: #F5F5F1;
+  border: 1px solid #003;
+  position: absolute;
+  left: 428px;
+  top: 60px;
+  width: 1000px;
+  height: 39px;
+   -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 19px;
+}
+
+
+
+
 
 /*
 End
@@ -838,10 +907,10 @@ textarea {
 }
 
 .input > input {
-  border: 2px solid #000;
+  border: 1px solid #000;
   padding: 5px 10px;
-  width: 250px;
-  border-radius: 5px;
+  width: 300px;
+  border-radius: 0px;
 }
 
 .input > input[type="radio"] {
@@ -849,15 +918,22 @@ textarea {
   outline: 0;
 }
 
+.input select{
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
 .input > textarea {
   margin-top: -15px;
   position: relative;
-  border: 2px solid #000;
+  border: 1px solid #000;
   padding: 5px 10px;
   width: 400px;
   height: 250px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
+
 
 .input > input[type="file"] {
   border: none;
@@ -870,31 +946,41 @@ textarea {
 }
 
 .input > input:focus {
-  outline: 1px solid #C4DBF0;
+  outline: 2px solid #C4DBF0;
 }
 
 textarea:focus {
-  outline: 1px solid #C4DBF0;
+  outline: 2px solid #C4DBF0;
 }
 
 .submit {
 
 }
 
+span.amp {
+   font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+   font-size:110%;
+   font-style:italic;
+}
+
 .submit > input {
   position: relative;
   float: right;
-  width: 150px;
-  background: -webkit-linear-gradient(top, rgba(255,234,71,1) 0%,rgba(107,0,0,1) 100%);
+  width: 300px;
+  background-color: rgb(255,234,71);
   color: #fff;
   padding: 10px 15px;
-  margin-right: 125px;
+  margin-right: 90px;
   border-radius: 5px;
   cursor: pointer;
+  color:black; 
+  font-family:'Bariol';
+  font-size: 20px;
 }
 
 .submit > input:hover {
-  background: -webkit-linear-gradient(top, rgba(107,0,0,1) 0%,rgba(194,17,1,1) 100%);
+  background-color: rgb(255,234,71);
+  opacity: 0.75;
 }
 
 .button {
@@ -1455,6 +1541,21 @@ Followed Merchant Section
   opacity: 0.5;
 }
 
+
+.merchant-link{
+  position: relative;
+  text-align: center;
+  top:170px;
+}
+
+.merchant-link span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+}
+
+.merchant-link span:hover{
+  opacity: 0.5;
+}
 
 
 .merchants-offers-2{

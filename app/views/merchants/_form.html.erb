@@ -18,15 +18,45 @@
 
 
     <div class="input">
-      <label for="merchant_name">Merchant Name</label>
       <input
-         class="textbox-merchant"
+         class="textbox-merchant-name"
          name="merchant[name]"
          type="text"
-         value="<%= @merchant.name %>">
+         placeholder="Online store's name goes here">
     </div>
 
     <div class="input">
+      <input
+         id="merchant_website"
+         class="textbox-merchant-web"
+         name="merchant[website]"
+         type="url"
+         placeholder="URL address">
+    </div>
+
+     <div class="input">
+      <select
+         class="textbox-merchant-category">
+         <% Category.all.each do |category| %>
+          <option><%= category.name %></option>
+         <% end %>
+      </select>
+    </div>
+
+     <div class="input">
+      <select
+         class="textbox-merchant-country">
+         <% Country.all.each do |country| %>
+          <option><%= country.name %></option>
+         <% end %>
+      </select>
+    </div>
+
+    <div class="submit">
+     <input class="textbox-merchant-submit" type="submit" value="Submit &amp; create story">
+    </div>
+
+    <!--div class="input">
       <label for="merchant_category">Industry</label>
 
     <ul>
@@ -82,7 +112,7 @@
 
     <div class="submit">
       <input type="submit" value="<%= message %>">
-    </div>
+    </div-->
   </form>
   <br>
 </div>
