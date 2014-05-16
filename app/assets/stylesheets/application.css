@@ -166,6 +166,14 @@ html, body, form, h1, div, label, ul {
   font-family: "Bariol";
 }
 
+.info-not-sign-in{
+  position: absolute;
+  font-size: 16px;
+  font-family: "Bariol";
+  top:22px;
+  right:30px;
+}
+
 .info-not-sign-in li{
   display: inline-block;
 }
