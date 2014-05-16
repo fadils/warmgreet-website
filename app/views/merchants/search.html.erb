@@ -30,6 +30,15 @@
     <%= paginate @merchants %>
 
   <% else %>
-    <%= "No results found!" %>
+    <div class="searched-merchant-noresult">
+     <%= "No results found!" %>
+
+       <div class="search-write-story-noresult">
+        <span>
+          <%= link_to "add a new online store", new_country_merchant_url(@country), style:"color:black;" %>
+        </span>
+       </div>
+    </div>
+    
   <% end %>
 </div>

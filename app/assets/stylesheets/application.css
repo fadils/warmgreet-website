@@ -1181,6 +1181,13 @@ main {
   left:-57px;
 }
 
+.searched-merchant-noresult{
+  position: relative;
+  top:-110px;
+  left:0px;
+}
+
+
 .content {
   max-width: 1200px;
   padding-left: 50px;
@@ -1597,10 +1604,29 @@ Followed Merchant Section
   color: white;
 }
 
-.more-offers span:hover{
+.search-write-story span:hover{
   opacity: 0.5;
 }
 
+.search-write-story-noresult{
+  position: relative;
+  text-align: center;
+  top:-15px;
+  left:-90px;
+
+  color: white;
+}
+
+.search-write-story-noresult span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+  font-family: "Bariol";
+  color: white;
+}
+
+.search-write-story-noresult span:hover{
+  opacity: 0.5;
+}
 
 
 .merchant-link{

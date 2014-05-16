@@ -73,6 +73,7 @@ class MerchantsController < ApplicationController
   end
 
   def search
+    @country = Country.find(1)
     @results = PgSearch.multisearch(params[:query])
 
     if @results.empty?
