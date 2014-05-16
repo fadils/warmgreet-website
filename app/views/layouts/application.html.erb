@@ -117,9 +117,9 @@
       <% if signed_in? %>
       <div class="user-pic-header">
         <% if current_user.photo.file? %>
-                  <%= image_tag current_user.photo.url(:big), :class => "user-propic" %>
+                  <%= image_tag current_user.photo.url(:big), :class => "user-propic circular" %>
         <% elsif current_user.image? %>
-          <%= image_tag current_user.image, size: "40x40" %>
+          <%= image_tag current_user.image, size: "35x35", :class => "circular" %>
         <% else %>
           <% if current_user.gender=="M"%>
             <%= image_tag "WGSlice/default-user-male.png", size:"40x40" %>
@@ -145,8 +145,8 @@
 
                     <%= link_to current_user.username.capitalize, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol;'} %> 
                       <ul>
-                        <li><a href="#">Story Feed</a></li>
-                        <li><a href="#">Sign Out</a></li>
+                        <li><a href="/">Story Feed</a></li>
+                        <li><%= link_to "Sign Out", session_url, :method => :delete, :style => 'color:#FFFFFF;' %></li>
                       </ul>
 
                   </li>
@@ -179,7 +179,7 @@
               <div class = "write_story">
                 
                 <a href="<%= user_url(current_user)%>"  style="color:white">
-                    What's your story
+                    Write a new story
                 </a>
               </div>
 

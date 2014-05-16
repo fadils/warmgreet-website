@@ -2,69 +2,106 @@
 <% method = (review.persisted? ? "put" : "post") %>
 <% message = (review.persisted? ? "Update Story!" : "Create Story!") %>
 
-<form class="form" action="<%= action %>" method="<%=method%>" enctype="multipart/form-data">
-  <input
-     name="_method"
-     type="hidden"
-     value="<%= method %>">
-  <input
-     name="authenticity_token"
-     type="hidden"
-     value="<%= form_authenticity_token %>">
+<span class="create-story-header"> What's the story? </span>
 
-  <h4> Other stories about <%= @merchant.name %> </h4>
-  <% @merchant.reviews.each_with_index do |story, i| %>
-    <% if i < 5%>
-      <%= render partial: "reviews/pusherform", locals: {review: story} %>
+<div class="create-story-merchant-section">
+    <% if @merchant.photo.file? %>
+      <%= image_tag review.merchant.photo.url(:big), size:"100x100" %>
+    <% else %>
+      <%= image_tag "WGSlice/default-merchant.png", size: "100x100" %>
     <% end %>
-  <% end %>
 
- <h4><%= message %></h4>
+    <span class="create-story-merchant-name">
+      <%= @merchant.name %>
+    </span>
 
- <div class="input">
-  <label for="review_rating">Rating</label>
-  <select id="review_rating" name="review[rating]">
-    <option value="1" <%= "selected" if @review.rating == 1 %>>1</option>
-    <option value="2" <%= "selected" if @review.rating == 2 %>>2</option>
-    <option value="3"<%= "selected" if @review.rating == 3 %>>3</option>
-    <option value="4" <%= "selected" if @review.rating == 4 %>>4</option>
-    <option value="5" <%= "selected" if @review.rating == 5 %>>5</option>
-  </select>
- </div>
+    <span class="create-story-merchant-follower">
+      <%= @merchant.favorites.count %> <% if @merchant.favorites.count > 1%> <span style="opacity:0.35"> Followers </span> 
+                                        <% else %> <span style="opacity:0.35"> Follower </span> 
+                                       <% end %>
+    </span>
 
- <div class="input">
-  <label for="review_email">Story Title</label>
-  <input
-     id="review_title"
-     name="review[title]"
-     type="text"
-     value="<%= @review.title %>">
-  <br>
+    <hr class="hr-create-story-merchant-section">
+
+    <div class="create-story-about">
+      <h4 style="opacity:0.35; font-family:'Novecento'; "> Stories about <%= @merchant.name %> </h4>
+      <% @merchant.reviews.each_with_index do |story, i| %>
+        <% if i < 3%>
+          <%= render partial: "reviews/pusherform", locals: {review: story} %>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="create-story-form-area">
+      <span class="your-experience-text">Your first-hand experience really helps other online shoppers. Thanks! </span>
+    </div>
+
+    <form action="<%= action %>" method="<%=method%>" enctype="multipart/form-data">
+      <input
+         name="_method"
+         type="hidden"
+         value="<%= method %>">
+      <input
+         name="authenticity_token"
+         type="hidden"
+         value="<%= form_authenticity_token %>">
+    
+      <div class="create-story-input">
+        <span class="create-story-review-rating">Overall experience rating</span>
+        <br>
+        <select id="review_rating" name="review[rating]">
+          <option value="1" <%= "selected" if @review.rating == 1 %>>1</option>
+          <option value="2" <%= "selected" if @review.rating == 2 %>>2</option>
+          <option value="3"<%= "selected" if @review.rating == 3 %>>3</option>
+          <option value="4" <%= "selected" if @review.rating == 4 %>>4</option>
+          <option value="5" <%= "selected" if @review.rating == 5 %>>5</option>
+        </select>
+      </div>
+
+      <div class="input" style="top:-150px;">
+        <span class="create-story-review-title">Title of your story</span>
+        <br>
+        <input
+           id="review_title"
+           name="review[title]"
+           type="text"
+           style="width:60%; border-color:rgb(194,194,194);"
+           value="<%= @review.title %>">
+        <br>
+      </div>
+
+      <div class="input" style="top:-325px;">
+        <span class="create-story-review-body">Story Body</span>
+        <br><br>
+        <textarea rows="4"
+                cols="50"
+                id="review_body"
+                name="review[body]" style="border-color:rgb(194,194,194);"><%= @review.body %></textarea>
+      </div>
+
+
+      <div class="input" style="top:-500px;">
+          <span class="create-story-review-pic">Share some pic</span>
+          <br>
+          <input
+              id="review_pic"
+              name="review[pic]"
+              type="file">
+      </div>
+
+      <div class="submit submit-story">
+        <input type="submit" value="<%= message %>">
+      </div>
+  </form>
+
 </div>
 
-<div class="input">
-  <label for="review_body">Story Body</label><br>
-<textarea rows="4"
-          cols="50"
-          id="review_body"
-          name="review[body]"><%= @review.body %></textarea>
-</div>
 
-<%#= form_for @review, :url => users_path, :html => { :multipart => true } do |form| %>
-  <%#= form.label "A pic is worth thousand words:" %>
-  
-  <%#= form.file_field :pic %>
-<%# end %>
 
-<div class="input">
-    <label for="review_pic">A pic is worth thousand words. Upload now:</label>
-    <input
-        id="review_pic"
-        name="review[pic]"
-        type="file">
-  </div>
 
- <div class="submit">
-  <input type="submit" value="<%= message %>">
- </div>
-</form>
+
+ 
+
+
+
+

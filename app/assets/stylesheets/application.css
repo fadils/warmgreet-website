@@ -463,6 +463,11 @@ ADD New merchant
   font-size: 19px;
 }
 
+.circular{
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+}
 
 .textbox-merchant-country {
   background: #F5F5F1;
@@ -1962,6 +1967,22 @@ end
   border-radius: 5px;
 }
 
+
+.edit-button {
+  position: relative;
+  display: block;
+  padding: 5px;
+  background: url("WGslice/edit-btn.png") no-repeat;
+  width: 80px;
+  margin-top:10px;
+  margin-left:38px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+}
+
 .unfollow-button {
   display: none;
   padding: 5px;
@@ -1976,6 +1997,127 @@ end
 }
 
 /*
+Create story
+*/
+.create-story-header{
+  font-size: 27.944px;
+  font-family: "Novecento";
+  color: rgb( 45, 45, 45 );
+  text-align: center;
+  -moz-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -webkit-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  -ms-transform: matrix( 1.53639781741673,0,0,1.53878449809685,0,0);
+  position: relative;
+  left:50%;
+  top:30px;
+}
+
+.create-story-merchant-section{
+  position: relative;
+  left:150px;
+  top:70px;
+}
+
+.create-story-merchant-name{
+  position: relative;
+  top:-45px;
+  left:5px;
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+}
+
+
+.create-story-merchant-follower{
+  position: relative;
+  top:-10px;
+  left: -365px;
+  font-family: "Novecento";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.hr-create-story-merchant-section{
+  position: relative;
+  width: 95%;
+  left:-25px;
+}
+
+.create-story-form-area{
+  width:65%;
+}
+
+.your-experience-text{
+  font-family: "Trebuchet MS";
+  font-size: 25px;
+}
+
+.create-story-input{
+  position: relative;
+  top:25px;
+}
+
+.create-story-review-rating{
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+}
+
+.create-story-review-title{
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+}
+
+.create-title-input{
+  border: 1px solid gray;
+}
+
+.create-story-about{
+  position: absolute;
+  left:700px;
+  top:113px;
+  width:25%;
+  padding-left:25px;
+  border-left: 1px solid rgb(194,194,194);
+}
+
+.create-story-review-body{
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+  top:-25px;
+}
+
+.create-story-review-pic{
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+  top:-25px;
+}
+
+.submit-story{
+  position: relative;
+  top:100px;
+  left: -650px;
+}
+
+/*
+End
+*/
+
+/*
   MERCHANT PROFILE STYLING!
 */
 
@@ -1984,6 +2126,11 @@ end
   padding: 25px 35px;
 }
 
+.merchant-write-story{
+  position: relative;
+  top:25px;
+  right:0px;
+}
 
 
 .followed-button {

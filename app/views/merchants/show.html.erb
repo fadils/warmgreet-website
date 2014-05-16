@@ -64,9 +64,25 @@
             Rank: <%= @merchant.ranking(@merchant) %> of <%= Merchant.all.count %> online stores
           <% end %>
 
+          <div class="merchant-write-story">
+           <% if current_user %>
+              <%= link_to "Write a story!", new_merchant_review_url(@merchant)%>
+           <% end %>
+
+         </div>
+
              
 
         </div>
+
+
+        
+         <div class="merchant-write-story">
+           <% if current_user %>
+              <%= link_to "Write a story!", new_merchant_review_url(@merchant)%>
+           <% end %>
+
+         </div>
 
         <div class="merchant-following-section">
           

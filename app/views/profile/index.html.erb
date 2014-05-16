@@ -4,9 +4,9 @@
       <div class="prof-left group">
 
         <% if @user.photo.file? %>
-          <%= image_tag @user.photo.url(:big), :class => "user-propic" %>
+          <%= image_tag @user.photo.url(:big), :class => "user-propic circular" %>
         <% elsif @user.image? %>
-          <%= image_tag @user.image, size: "160x160" %>
+          <%= image_tag @user.image, size: "160x160", :class => "circular" %>
         <% else %>
           <% if @user.gender=="M"%>
             <%= image_tag "WGSlice/default-user-male.png", :class => "user-propic" %>
@@ -97,7 +97,7 @@
         
 
         <% if current_user == @user %>
-          <%= link_to "Edit Profile", edit_user_url(@user) %>
+          <%= button_to "", edit_user_url(@user), :class => "edit-button" %>
         <% end %>
 
         <% unless current_user == @user %>
