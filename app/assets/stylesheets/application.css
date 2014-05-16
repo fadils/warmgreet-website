@@ -706,6 +706,24 @@ nav form {
   padding-top: 0.5em;
 }
 
+.search-box-write {
+  background: #F5F5F1;
+  position: absolute;
+  border: 1px solid #000;
+  margin-top: 35px;
+  left: 37%;
+  width: 42.5%;
+  height: 44px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 26px;
+  padding-top: 0.5em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
 .search-box input[type=text] {
   position: relative;
   width: 100%;
@@ -1152,6 +1170,17 @@ main {
   padding: 10px;
 }
 
+.search-result{
+  position: relative;
+  top:-100px;
+}
+
+.searched-merchant{
+  position: relative;
+  top:-110px;
+  left:-57px;
+}
+
 .content {
   max-width: 1200px;
   padding-left: 50px;
@@ -1165,6 +1194,12 @@ main {
   max-width: 900px;
   margin-top: 0px;
   margin-left: 275px;
+}
+
+.content-header-write {
+  max-width: 900px;
+  margin-top: 0px;
+  height:400px;
 }
 
 .content > h1 {
@@ -1545,6 +1580,27 @@ Followed Merchant Section
 .more-offers span:hover{
   opacity: 0.5;
 }
+
+.search-write-story{
+  position: relative;
+  text-align: center;
+  top:-25px;
+  left:-210px;
+
+  color: white;
+}
+
+.search-write-story span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+  font-family: "Bariol";
+  color: white;
+}
+
+.more-offers span:hover{
+  opacity: 0.5;
+}
+
 
 
 .merchant-link{
@@ -2031,9 +2087,9 @@ Create story
 
 
 .create-story-merchant-follower{
-  position: relative;
-  top:-10px;
-  left: -365px;
+  position: absolute;
+  top:65px;
+  left: 110px;
   font-family: "Novecento";
   font-size: 18px;
   text-transform: uppercase;
@@ -2126,10 +2182,20 @@ End
   padding: 25px 35px;
 }
 
+
 .merchant-write-story{
   position: relative;
   top:25px;
   right:0px;
+}
+
+.merchant-write-story span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+}
+
+.merchant-write-story span:hover{
+  opacity: 0.5;
 }
 
 
