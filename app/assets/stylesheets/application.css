@@ -131,6 +131,15 @@ html, body, form, h1, div, label, ul {
 }
 
 
+.category-home-no-sign-in {
+  list-style: none
+  font-size: 24px;
+  font-family: "Bariol";
+  font-color: white;
+  position: absolute;
+  left: 35px;
+  top: 25px;
+}
 
 
 .category-no-sign-in {
@@ -170,7 +179,8 @@ html, body, form, h1, div, label, ul {
   position: absolute;
   font-size: 16px;
   font-family: "Bariol";
-  top:22px;
+  color:white;
+  top:25px;
   right:30px;
 }
 

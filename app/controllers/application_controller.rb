@@ -12,8 +12,12 @@ class ApplicationController < ActionController::Base
    end
 
    def current_merchant(user)
+    if signed_in?
      return nil unless user.is_merchant?
      @current_merchant = user
+    else
+     return nil
+    end
    end
 
    def random_user
