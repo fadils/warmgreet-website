@@ -15,6 +15,11 @@
 /*
   RESET!
 */
+html,body{
+  width:100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 
 html, body, form, h1, div, label, ul {
   margin: 0;
@@ -56,10 +61,10 @@ html, body, form, h1, div, label, ul {
 }
 
 .find_friends {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 350px;
   top: 25px;
@@ -67,10 +72,10 @@ html, body, form, h1, div, label, ul {
 
 
 .find_friends-home {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 253px;
   top: 25px;
@@ -78,20 +83,20 @@ html, body, form, h1, div, label, ul {
 
 
 .find_friends-no-sign-in {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 295px;
   top: 25px;
 }
 
 .find_friends-no-sign-in-home {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 205px;
   top: 25px;
@@ -99,10 +104,10 @@ html, body, form, h1, div, label, ul {
 
 
 .WG-mainlogo {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 35px;
   top: 90px;
@@ -110,10 +115,10 @@ html, body, form, h1, div, label, ul {
 
 
 .category {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 265px;
   top: 25px;
@@ -121,10 +126,10 @@ html, body, form, h1, div, label, ul {
 
 
 .category-home {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 170px;
   top: 25px;
@@ -132,10 +137,10 @@ html, body, form, h1, div, label, ul {
 
 
 .category-home-no-sign-in {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 35px;
   top: 25px;
@@ -143,20 +148,20 @@ html, body, form, h1, div, label, ul {
 
 
 .category-no-sign-in {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 200px;
   top: 25px;
 }
 
 .category-no-sign-in-home {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 200px;
   top: 25px;
@@ -233,10 +238,9 @@ html, body, form, h1, div, label, ul {
 
 .category-separator {
   position: absolute;
-  width: 900px;
   font-size: 23px;
-  left:140px;
-  top:220px;
+  left:13.5%;
+  top:217px;
   font-family: "Novecento";
 }
 
@@ -255,9 +259,9 @@ html, body, form, h1, div, label, ul {
 .separator-pic {
   background-image: url("/assets/WGSlice/stripe_repeat.png") ;
   position: absolute;
-  left: 510px;
+  left: 35%;
   top: 221px;
-  width: 620px;
+  width: 76%;
   height: 12px;
   border: none;
 
@@ -265,20 +269,20 @@ html, body, form, h1, div, label, ul {
 
 
 .category-no-sign-in {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 125px;
   top: 25px;
 }
 
 .write_story {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 125px;
   top: 25px;
@@ -286,10 +290,10 @@ html, body, form, h1, div, label, ul {
 
 
 .write_story-home {
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: "Bariol";
-  font-color: white;
+  color: white;
   position: absolute;
   left: 35px;
   top: 25px;
@@ -543,7 +547,6 @@ header a {
   position: relative;
   overflow: hidden;
   height: 750px;
-  padding-right: -20px;
   
   box-shadow: 1px 1px 3px gray;
   background-image: url("/assets/WGSlice/Banner_1440_r.png"); 
@@ -557,7 +560,6 @@ header a {
 
 .top-nav-no-index{
   position: relative;
-  padding-right: -20px;
 }
 
 
@@ -585,7 +587,6 @@ header a {
 .random-story-body{
   margin-left: 15px;
   font-size: 18px;
-  font-weight: 70;
 }
 
 
@@ -631,8 +632,8 @@ header a {
   padding: 20px;
   color: white;
   right: 15px;
-  list-style: none
-  font-size: 24px;
+  list-style: none;
+  font-size: 16px;
   font-family: 'Bariol';
   /*background: #F0F3F8;*/
   border-radius: 3px;
@@ -648,7 +649,7 @@ header a {
   padding: 20px;
   color: white;
   right: 120px;
-  list-style: none
+  list-style: none;
   font-size: 24px;
   font-family: 'Bariol';
   /*background: #F0F3F8;*/
@@ -714,7 +715,7 @@ nav form {
   position: absolute;
   border: 1px solid #000;
   margin-top: 0px;
-  left: 270px;
+  left: 26%;
   width: 42.5%;
   height: 44px;
   -moz-border-radius: 0px;
@@ -772,7 +773,7 @@ nav form {
   display: block;
   position: absolute;
   margin-top: 15px;
-  left: 725px;
+  left: 69%;
   background-color: rgb(255,234,71);
   /*background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);*/
   /*border: 1px solid black;
@@ -1218,7 +1219,7 @@ main {
 .content-header {
   max-width: 900px;
   margin-top: 0px;
-  margin-left: 275px;
+  margin-left: 26%;
 }
 
 .content-header-write {
@@ -1881,7 +1882,7 @@ end
   position: absolute;
   width: 40%;
   height: 500px;
-  margin-left:140px;
+  margin-left:15%;
   margin-top:160px;
 }
 
@@ -1958,9 +1959,9 @@ end
 
 .prof-right-index {
   position: absolute;
-  margin-left:510px;
+  margin-left:135%;
   margin-top:-229px;
-  width: 25%;
+  width: 24%;
   float: right;
   height:400px;
   padding-bottom: 100px;
@@ -2003,11 +2004,10 @@ end
   position:absolute; 
   width:400px; 
   font-family:'Bariol'; 
-  font-size:14px;
-  font-weight: 90; 
+  font-size:14px; 
   font-weight:bold; 
   margin-left:120px; 
-  margin-top:-100px;"
+  margin-top:-100px;
 }
 
 
@@ -2429,7 +2429,6 @@ End
 
 
 .badge .cool-button{
-  vertical-align: center;
 }
 
 .story-writer{
@@ -2461,7 +2460,6 @@ End
 
 .written-time-public{
   margin-top:5px;
-  font-weight: 20;
 }
 
 
@@ -2496,7 +2494,6 @@ End
 
 .story-icon-index-right{
   position:absolute;
-  margin-top:px;
   margin-left: 5px;
 }
 
@@ -2730,7 +2727,6 @@ End
 .story-pic-container{
   width: 120px;
   min-height: 120px;
-  max-height: auto;
   float: left;
   margin: 3px;
   padding: 3px;

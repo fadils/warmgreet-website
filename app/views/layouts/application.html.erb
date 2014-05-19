@@ -9,7 +9,7 @@
   <%= csrf_meta_tags %>
 </head>
 
-<body style="overflow-x:hidden;">
+<body>
 
   
 <% env = Rails.env %>
@@ -17,7 +17,7 @@
 <% if env == "development" %>
   <% home = "http://localhost:3000" %> 
 <% else %>
-  <% home = "http://www.warmgreet.com"%>
+  <% home = "http://warmgreet.com"%>
 <% end %>    
 
 <%Keen.project_id = Rails.configuration.KEEN_PROJECT_ID%>
@@ -46,6 +46,7 @@
         
         
         <span class="random-story">
+          <%if @review != nil %>
             <% if @review.user.photo.file? %>
               <%= image_tag @review.user.photo.url(:big) %>
               <% elsif @review.user.image? %>
@@ -61,23 +62,24 @@
                 <% end %>
               <% end %>
 
-         <strong class="random-story-title">"<%= @review.title %>"</strong>
-         
-         <br>
-         
-         <strong class="random-story-body">Rating: <%= @review.rating %> 
-              - <%= @review.user.username%>'s shopping story </strong>
+             <strong class="random-story-title">"<%= @review.title %>"</strong>
+             
+             <br>
+             
+             <strong class="random-story-body">Rating: <%= @review.rating %> 
+                  - <%= @review.user.username%>'s shopping story </strong>
 
-           <br><br>
+               <br><br>
 
-          <strong class="random-story-body">
-            see more shopping stories on 
-          </strong>
-           <br>
-           
-          <strong class="random-story-body">
-           <%= link_to @review.merchant.name, merchant_url(@review.merchant), style:"color:white;" %>
-          </strong>
+              <strong class="random-story-body">
+                see more shopping stories on 
+              </strong>
+               <br>
+               
+              <strong class="random-story-body">
+               <%= link_to @review.merchant.name, merchant_url(@review.merchant), style:"color:white;" %>
+              </strong>
+          <% end %>
         </span>
         
       </div>
