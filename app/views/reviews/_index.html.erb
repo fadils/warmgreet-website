@@ -1,26 +1,70 @@
 <% merchant.reviews.sort_by{ |rev| rev.created_at }.reverse!.each do |review| %>
+<div class="prof-review-in-merchant group">
 
-<div class="review">
+       <div class="prof-left-in-merchant group">
+          
+          <% if review.user.photo.file? %>
+        <%= image_tag review.user.photo.url(:big) %>
+        <% elsif review.user.image? %>
+          <%= image_tag review.user.image, size: "100x100", class:"circular" %>
+        <% else %>
+          <% puts "*************************#{review.user.gender}********************" %>
+          <% if review.user.gender=="M" %>
+            <%= image_tag "WGSlice/default-user-male.png", size: "100x100" %>
+          <% elsif review.user.gender=="F" %>
+            <%= image_tag "WGSlice/default-user-female.png", size: "100x100" %>
+          <% else %>
+            <%= image_tag "WGSlice/default-user-male.png", size: "100x100" %>
+          <% end %>
+        <% end %>
 
-  <strong>"<%= review.title %>"</strong> by <%= link_to review.user.username, user_url(review.user) %> <div class="review-date"><% if review.created_at > Time.now.beginning_of_day %>
-        <%="(written #{time_ago_in_words(review.created_at)} ago)"%>
-    <% else %>
-        <%= review.created_at.strftime("(%m/%d/%Y)") %>
-    <% end %></div>
+      </div>
 
-  <br>
-  Rating: <%= review.rating %>
-  <br>
-  <br>
-  <div class="review-body">
-  <%= review.body %>
-  <br>
-  <% if review.pic.file? %>
-    <%= image_tag review.pic.url(:big) %>
-  <% end %>
-  </div>
+      
+      <%= link_to review.user.username.upcase, merchant_url(review.merchant), :class => "story-writer-public" %>
 
-  <% if signed_in? %>
+      
+      <br>
+        <strong class="story-writer-public-rating">Rating: <%= review.rating %> </strong>
+      
+      <br> <br>
+        
+        <strong class="story-thumb-public"><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "story-badge-public") %></strong>
+
+         <strong style="position:absolute; margin-top:10px; margin-left:150px; font-weight:100;font-size:120%;"> <%= review.user.count_thumbs_up%> thumbs</strong>
+
+         <strong><%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:0px; margin-left: 230px; height:40px")%></strong>
+        
+       
+       <div class="story-title-public">
+        <strong class="story-title">"<%= review.title %>"</strong>
+       </div>
+    <% if current_user == @user %>
+        (<%= link_to "Edit Story", edit_review_url(review) %>)
+      <% end %>
+
+      <div class="written-time-public">
+        <% if review.created_at > Time.now.beginning_of_day %>
+              <%="- #{time_ago_in_words(review.created_at)} ago"%>
+              <br>
+          <% else %>
+              - <%= review.created_at.strftime("%m/%d/%Y") %>
+              <br>
+          <% end %>
+      </div>
+    
+
+    <div class="review-body-public">
+      <%= review.body %>
+
+
+      <% if review.pic.file? %>
+        <%= image_tag review.pic.url(:big) %>
+      <% end %>
+
+      <br><br>
+
+      <% if signed_in? %>
   <% unless current_user == review.user %>
     <%# if current_user.voted_reviews.include?(review) %>
     <br>
@@ -29,15 +73,9 @@
       <%= button_to "Helpful", review_vote_tags_url(review), method: :post, form_class: "cool-button", style:"margin-left:5px;" %>
     <%# end %>
   <% else %>
-  cool votes
+  
   <% end %>
 
-
-    <% if review.vote_tags.empty? %>
-    <strong class="badge">0</strong>
-    <% else %>
-    <strong class="badge"><%= review.vote_tags.count %></strong>
-    <% end %>
 
     <br><br>
 
@@ -45,5 +83,15 @@
       <%= button_to "Delete Review", review_url(review), method: :delete, form_class: "delete-review" %>
     <% end %>
   <% end %>
-</div>
+
+      <div>
+        <hr>
+      </div>
+      
+      
+    </div>
+
+
+  </div>
+
 <% end %>

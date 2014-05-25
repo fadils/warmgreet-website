@@ -1,15 +1,16 @@
-<div class="content group">
+<div class="container group">
   <h4 class="search-result">SEARCH RESULTS!</h4>
 
   <% if (!@category.nil? || !@merchants.nil?) %>
 
-    <ol class="searched-merchant group">
+    <ul class="searched-merchant group">
     <% @merchants.each_with_index do |merchant, i| %>
       <% if merchant.photo.file? %>
           <%= image_tag merchant.photo.url(:big) %>
           <% else %>
             <%= image_tag "WGSlice/default-merchant.png", size: "120x120" %>
           <% end %>
+          <br>
       <li class="search_results">
         <%= (10*(@merchants.current_page-1))+i+1 %>.
         <a href="<%= merchant_url(merchant) %>">
@@ -26,7 +27,7 @@
         </span>
       </div>
     <% end %>
-    </ol>
+    </ul>
     <%= paginate @merchants %>
 
   <% else %>

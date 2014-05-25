@@ -1,7 +1,9 @@
+
 <% action = (review.persisted? ? review_url(review) : merchant_reviews_url(merchant)) %>
 <% method = (review.persisted? ? "put" : "post") %>
 <% message = (review.persisted? ? "Update Story!" : "Create Story!") %>
 
+<div class="create-story-container">
 <span class="create-story-header"> What's the story? </span>
 
 <div class="create-story-merchant-section">
@@ -48,7 +50,7 @@
     
       <div class="create-story-input">
         <span class="create-story-review-rating">Overall experience rating</span>
-        <br>
+        <br><br>
         <select id="review_rating" name="review[rating]">
           <option value="1" <%= "selected" if @review.rating == 1 %>>1</option>
           <option value="2" <%= "selected" if @review.rating == 2 %>>2</option>
@@ -58,6 +60,7 @@
         </select>
       </div>
 
+      <br><br>
       <div class="input" style="top:-150px;">
         <span class="create-story-review-title">Title of your story</span>
         <br>
@@ -65,10 +68,12 @@
            id="review_title"
            name="review[title]"
            type="text"
-           style="width:60%; border-color:rgb(194,194,194);"
+           style="width:60%; height:15%;padding-left:5px; border:1px solid rgb(194,194,194);"
            value="<%= @review.title %>">
         <br>
       </div>
+
+      <br>
 
       <div class="input" style="top:-325px;">
         <span class="create-story-review-body">Story Body</span>
@@ -79,6 +84,7 @@
                 name="review[body]" style="border-color:rgb(194,194,194);"><%= @review.body %></textarea>
       </div>
 
+      <br>
 
       <div class="input" style="top:-500px;">
           <span class="create-story-review-pic">Share some pic</span>
@@ -90,10 +96,13 @@
       </div>
 
       <div class="submit submit-story">
-        <input type="submit" value="<%= message %>">
+        <span>
+          <input type="submit" value="<%= message %>">
+        <span>
       </div>
   </form>
 
+</div>
 </div>
 
 

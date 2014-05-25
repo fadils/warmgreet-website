@@ -1,6 +1,6 @@
 <%user.reviews.sort_by{ |rev| rev.created_at }.reverse!.each do |review| %>
 
-  <div class="prof-review group">
+  <div class="prof-review-feed group">
 
        <div class="prof-left-feed group">
           
@@ -12,7 +12,8 @@
 
       </div>
 
-      <%= link_to review.merchant.name.upcase, merchant_url(review.merchant), :class => "story-writer" %>
+      
+      <%= link_to review.merchant.name.upcase, merchant_url(review.merchant), :class => "story-writer-public" %>
 
       <div class="store-category-text">
         <strong> <%= review.merchant.categories.first.name.capitalize %> Category</strong>
@@ -20,15 +21,15 @@
         <strong> <%#= review.merchant.country.name %> </strong>
       </div>
       <br>
-        <strong>Rating: <%= review.rating %> </strong>
+        <strong class="story-writer-public-rating">Rating: <%= review.rating %> </strong>
       
       <br> <br>
         
         <strong class="story-thumb-public"><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "story-badge-public") %></strong>
 
-         <strong style="position:absolute; margin-top:10px; margin-left:45px; font-weight:100;font-size:120%;"> <%= review.user.count_thumbs_up%> thumbs</strong>
+         <strong style="position:absolute; margin-top:10px; margin-left:150px; font-weight:100;font-size:120%;"> <%= review.user.count_thumbs_up%> thumbs</strong>
 
-         <strong><%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:0px; margin-left: 145px; height:40px")%></strong>
+         <strong><%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:0px; margin-left: 230px; height:40px")%></strong>
         
        
        <div class="story-title-public">
@@ -70,4 +71,3 @@
   </div>
 
 <% end %>
-

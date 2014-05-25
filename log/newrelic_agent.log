@@ -4145,3 +4145,204 @@ LINE 1: SELECT  "users".* FROM "users"  ORDER BY RANDOM LIMIT 1
 [05/16/14 23:33:02 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `favorite_places' for nil:NilClass
 [05/16/14 23:36:33 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `is_merchant?' for nil:NilClass
 [05/16/14 23:36:33 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `is_merchant?' for nil:NilClass
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Starting the New Relic agent in "development" environment.
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Reading configuration from config/newrelic.yml
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : New Relic Agent Developer Mode enabled.
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Enabling the Request Sampler.
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Environment: development
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : No known dispatcher detected.
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Application: My Application
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] WARN : Agent configured not to send data in this environment.
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Installing ActiveRecord instrumentation
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Installing middleware-based Excon instrumentation
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Installing Net instrumentation
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Installing deferred Rack instrumentation
+[05/20/14 13:59:05 +0700 Pr0ducer.local (83523)] INFO : Installing Rails 3 Controller instrumentation
+[05/20/14 13:59:06 +0700 Pr0ducer.local (83523)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/20/14 13:59:06 +0700 Pr0ducer.local (83523)] INFO : Installing Rails3 Error instrumentation
+[05/20/14 13:59:06 +0700 Pr0ducer.local (83523)] INFO : Finished instrumentation
+[05/20/14 13:59:44 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: cannot load such file -- less
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/bootstrap_and_overrides.css.less)
+[05/20/14 13:59:44 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: cannot load such file -- less
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/bootstrap_and_overrides.css.less)
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Starting the New Relic agent in "development" environment.
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Reading configuration from config/newrelic.yml
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : New Relic Agent Developer Mode enabled.
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Enabling the Request Sampler.
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Environment: development
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : No known dispatcher detected.
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Application: My Application
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] WARN : Agent configured not to send data in this environment.
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Installing ActiveRecord instrumentation
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Installing middleware-based Excon instrumentation
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Installing Net instrumentation
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Installing deferred Rack instrumentation
+[05/20/14 14:08:04 +0700 Pr0ducer.local (83640)] INFO : Installing Rails 3 Controller instrumentation
+[05/20/14 14:08:06 +0700 Pr0ducer.local (83640)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/20/14 14:08:06 +0700 Pr0ducer.local (83640)] INFO : Installing Rails3 Error instrumentation
+[05/20/14 14:08:06 +0700 Pr0ducer.local (83640)] INFO : Finished instrumentation
+[05/20/14 15:21:29 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: File to import not found or unreadable: bootstrap.
+Load path: Sass::Rails::Importer(/Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 15:21:29 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: File to import not found or unreadable: bootstrap.
+Load path: Sass::Rails::Importer(/Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 16:21:54 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:33: syntax error, unexpected ',', expecting ')'
+...ge_tag("WGSlice/mainlogo.png"), class:"img-responsive;");@ou...
+...                               ^
+[05/20/14 16:21:54 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:33: syntax error, unexpected ',', expecting ')'
+...ge_tag("WGSlice/mainlogo.png"), class:"img-responsive;");@ou...
+...                               ^
+[05/20/14 16:23:29 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:33: syntax error, unexpected ',', expecting ')'
+...ge_tag("WGSlice/mainlogo.png"), class:'img-responsive' );@ou...
+...                               ^
+[05/20/14 16:23:29 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:33: syntax error, unexpected ',', expecting ')'
+...ge_tag("WGSlice/mainlogo.png"), class:'img-responsive' );@ou...
+...                               ^
+[05/20/14 17:39:43 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "html,body": expected selector or at-rule, was "{"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 17:39:43 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "html,body": expected selector or at-rule, was "{"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 17:40:23 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "html,body ": expected selector or at-rule, was "{"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 17:40:23 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "html,body ": expected selector or at-rule, was "{"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 17:40:44 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "html, body ": expected selector or at-rule, was "{"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 17:40:44 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "html, body ": expected selector or at-rule, was "{"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 17:41:25 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "...div, label, ul ": expected selector or at-rule, was "{"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 17:41:25 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "...div, label, ul ": expected selector or at-rule, was "{"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 17:41:41 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "*/": expected selector or at-rule, was "@font-face"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 17:41:41 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "*/": expected selector or at-rule, was "@font-face"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/20/14 22:37:54 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:22: syntax error, unexpected ')'
+...esponsive", size: "471x227",  );@output_buffer.safe_concat('
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+');             end 
+                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:27: syntax error, unexpected keyword_do_block, expecting ')'
+...ts.sample(2).each_with_index do |merchantright, i| 
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:27: syntax error, unexpected '|', expecting '='
+...ith_index do |merchantright, i| 
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:126: syntax error, unexpected keyword_end, expecting ')'
+');                       end 
+                             ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:196: syntax error, unexpected keyword_end, expecting ')'
+');            end 
+                  ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:200: syntax error, unexpected keyword_end, expecting ')'
+');       end 
+             ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:203: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:205: syntax error, unexpected keyword_end, expecting ')'
+[05/20/14 22:37:54 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:22: syntax error, unexpected ')'
+...esponsive", size: "471x227",  );@output_buffer.safe_concat('
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+');             end 
+                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:27: syntax error, unexpected keyword_do_block, expecting ')'
+...ts.sample(2).each_with_index do |merchantright, i| 
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:27: syntax error, unexpected '|', expecting '='
+...ith_index do |merchantright, i| 
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:126: syntax error, unexpected keyword_end, expecting ')'
+');                       end 
+                             ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:196: syntax error, unexpected keyword_end, expecting ')'
+');            end 
+                  ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:200: syntax error, unexpected keyword_end, expecting ')'
+');       end 
+             ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:203: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:205: syntax error, unexpected keyword_end, expecting ')'
+[05/21/14 15:06:50 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "	margin-left10%": expected placeholder name, was ";"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/21/14 15:06:50 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "	margin-left10%": expected placeholder name, was ";"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss)
+[05/21/14 21:53:52 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/users/show.html.erb:27: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting keyword_end
+[05/21/14 21:53:52 +0700 Pr0ducer.local (1987)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/users/show.html.erb:27: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting keyword_end
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Starting the New Relic agent in "development" environment.
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Reading configuration from config/newrelic.yml
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : New Relic Agent Developer Mode enabled.
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Enabling the Request Sampler.
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Environment: development
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Dispatcher: webrick
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Application: My Application
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] WARN : Agent configured not to send data in this environment.
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Installing ActiveRecord instrumentation
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Installing middleware-based Excon instrumentation
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Installing Net instrumentation
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Installing deferred Rack instrumentation
+[05/22/14 15:28:24 +0700 Pr0ducer.local (855)] INFO : Installing Rails 3 Controller instrumentation
+[05/22/14 15:28:25 +0700 Pr0ducer.local (855)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/22/14 15:28:25 +0700 Pr0ducer.local (855)] INFO : Installing Rails3 Error instrumentation
+[05/22/14 15:28:25 +0700 Pr0ducer.local (855)] INFO : Finished instrumentation
+[05/22/14 15:28:27 +0700 Pr0ducer.local (855)] INFO : Doing deferred dependency-detection before Rack startup
+[05/25/14 15:06:46 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (3 for 1..2)
+[05/25/14 15:07:49 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `symbolize_keys!' for "http://localhost:3000/merchants/howell-kovacek":String
+[05/25/14 15:07:49 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `symbolize_keys!' for "http://localhost:3000/merchants/howell-kovacek":String
+[05/25/14 15:09:19 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:66: syntax error, unexpected ')', expecting =>
+...merchant_url(followedmerchant));@output_buffer.safe_concat('...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+');               end 
+                     ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:69: syntax error, unexpected keyword_end, expecting ')'
+');             end 
+                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:77: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:106: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:108: syntax error, unexpected keyword_end, expecting ')'
+[05/25/14 15:09:19 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:66: syntax error, unexpected ')', expecting =>
+...merchant_url(followedmerchant));@output_buffer.safe_concat('...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+');               end 
+                     ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:69: syntax error, unexpected keyword_end, expecting ')'
+');             end 
+                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:77: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:106: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:108: syntax error, unexpected keyword_end, expecting ')'
+[05/25/14 15:10:49 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (3 for 1..2)
+[05/25/14 15:10:49 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (3 for 1..2)
+[05/25/14 15:11:33 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:66: syntax error, unexpected ':', expecting ')'
+...rchant_url(followedmerchant)) :class=>"fmerchant");@output_b...
+...                               ^
+[05/25/14 15:11:33 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_user_profile.html.erb:66: syntax error, unexpected ':', expecting ')'
+...rchant_url(followedmerchant)) :class=>"fmerchant");@output_b...
+...                               ^
+[05/25/14 22:44:43 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"favorites", :merchant_id=>#<Merchant id: 82, name: "Auer, Barrows and Heaney", website: "http://franeckiullrich.com", price: nil, phone: "(195)054-0785", street: nil, zip: nil, open: true, created_at: "2014-04-25 16:45:41", updated_at: "2014-04-25 16:45:41", avg_rtg: nil, country_id: 4, photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, slug: "auer-barrows-and-heaney">}
+[05/25/14 22:44:43 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"favorites", :merchant_id=>#<Merchant id: 82, name: "Auer, Barrows and Heaney", website: "http://franeckiullrich.com", price: nil, phone: "(195)054-0785", street: nil, zip: nil, open: true, created_at: "2014-04-25 16:45:41", updated_at: "2014-04-25 16:45:41", avg_rtg: nil, country_id: 4, photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, slug: "auer-barrows-and-heaney">}
+[05/25/14 23:13:02 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<#<Class:0x007fdd93c97ed0>:0x007fdd98e1ece0>
+[05/25/14 23:13:02 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<#<Class:0x007fdd93c97ed0>:0x007fdd98e1ece0>
+[05/25/14 23:39:15 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<#<Class:0x007fdd93c97ed0>:0x007fdd964cd3a0>
+[05/25/14 23:39:15 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<#<Class:0x007fdd93c97ed0>:0x007fdd964cd3a0>
+[05/25/14 23:58:39 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for #<User:0x007fdd87aeb9a8>
+[05/25/14 23:58:39 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for #<User:0x007fdd87aeb9a8>
+[05/26/14 00:27:57 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `upcase' for #<User:0x007fdd9f3e19b0>
+[05/26/14 00:27:57 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `upcase' for #<User:0x007fdd9f3e19b0>
+[05/26/14 01:13:11 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "  left0px": expected "{", was ";"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss:1843)
+[05/26/14 01:13:11 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "  left0px": expected "{", was ";"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss:1843)

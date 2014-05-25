@@ -1,6 +1,6 @@
 <div class="content-header-write">
  
-  <h2 class="search-box-title" style="left:50%;position:relative;top:5%;">Select the store</h2>
+  <h2 class="search-box-title-select">Select the store</h2>
 
     <form class="group" action="<%= search_url %>" method="get">
           <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
@@ -9,8 +9,10 @@
           <input type="text" name="query" value="">
         </div>
 
-        <div class="search-submit group" style="top:230px; left:46%;">
-          <input class="button-writing" type="submit" value="Search Store">
+        <div class="search-submit group" style="top:210px; margin-left:-16%;">
+          <span>
+            <input class="button-writing" type="submit" value="Search Store">
+          </span>
         </div>
       </form>
 </div>

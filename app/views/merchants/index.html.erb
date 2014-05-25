@@ -1,20 +1,22 @@
-
- <div class="content-header">
+<div class="container">
  
   <h2 class="search-box-title">What's your online shopping story?</h2>
 
     <form class="group" action="<%= search_url %>" method="get">
-          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-
+        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+        
         <div class="search-box">
-          <input type="text" name="query" value="">
+          <input type="text" name="query" value="" placeholder="Search online store">
         </div>
 
-        <div class="search-submit group">
-          <input class="button-writing" type="submit" value="Search Store">
-        </div>
-      </form>
-</div>
+        <!--div class="search-submit group">
+          <span>
+            <input type="submit" value="search store">
+          </span>
+        </div-->
+    </form>
+
+
 
 <%# @merchants.sort_by { |cat| cat.categories }.each do |category| %>
 
@@ -23,6 +25,10 @@
   <%= render "merchants/content", :category => category2 %>
        
 <% end %>
+
+</div>
+
+
 
 <script src="http://js.pusher.com/2.1/pusher.min.js"></script>
 <script>

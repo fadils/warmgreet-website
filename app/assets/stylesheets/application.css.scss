@@ -1,0 +1,1899 @@
+@import "bootstrap";
+
+
+@font-face
+{
+  font-family: "Bariol";
+  src: url("BARIOL_REGULAR.OTF");
+}
+
+@font-face
+{
+  font-family: "Novecento";
+  src: url("NOVECENTOWIDE-MEDIUM.OTF");
+}
+
+html,body{
+  min-width:1020px;
+  min-height:1000px;
+}
+
+html{
+  overflow-x:hidden;
+}
+
+.container{
+	padding-left:5%;
+	padding-right:5%;
+}
+/*
+Header with the big image
+*/
+.top-nav{
+  position: relative;
+  overflow: hidden;
+  height: 750px;
+  
+  box-shadow: 1px 1px 3px gray;
+  background-image: url("/assets/WGSlice/Banner_1440_r.png"); 
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+}
+
+
+.top-nav-no-index{
+  position: relative;
+  overflow:hidden;
+  height:750px;
+}
+
+
+.top-nav-stories-feed{
+  position: relative;
+  width: 100%;
+  height: 95%;
+  margin: auto;
+  
+  box-shadow: 1px 1px 3px gray;
+  background-image: url("/assets/WGSlice/banner-feed.png"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+}
+
+
+/*
+Main logo, but not in the nav header. "Online story, honestly shared"
+*/
+.WG-mainlogo {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 3%;
+  top: 12%;
+  height:28%;
+  width:60%;
+}
+
+/*
+HEader: write a story, category, etc
+*/
+.top-nav-header
+{
+  background-color: rgb(35,31,32);
+  opacity: 0.75;
+  /*border-bottom: 1px solid black;*/
+  height: 9%;
+}
+
+/*
+random story showed in top-nav
+*/
+.random-story{
+  position:absolute;
+  color: white;
+  font-family: "Bariol";
+  margin-top:27%;
+  margin-left:-57%;
+  width:100%;
+}
+
+.random-story img{
+  float: left;
+}
+
+.random-story-title{
+  font-size: 28px;
+  color: white;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.random-story-body{
+  margin-left: 2%;
+  font-size: 18px;
+}
+
+.random-story-see-more{
+  margin-left:2%;
+  font-size: 18px;
+}
+/*
+*/
+
+
+.logo {
+  float: left;
+  margin-left:1.5%;
+  margin-top: 4px;
+  padding: 0 35px
+}
+
+.write_story-home {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 35px;
+  top: 13px;
+}
+
+
+.write_story {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 125px;
+  top: 13px;
+}
+
+
+.category {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 255px;
+  top: 13px;
+}
+
+.category-home {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 170px;
+  top: 13px;
+}
+
+
+.find_friends {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 337px;
+  top: 13px;
+}
+
+
+.find_friends-home {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 253px;
+  top: 13px;
+}
+
+
+.find_friends-no-sign-in-home {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 205px;
+  top: 13px;
+}
+
+
+.info {
+  position: absolute;
+  float: right;
+  padding: 20px;
+  color: white;
+  right: 4%;
+  list-style: none;
+  font-size: 16px;
+  font-family: 'Bariol';
+  /*background: #F0F3F8;*/
+  border-radius: 3px;
+  height: 73px;
+  width: 165px;
+  margin-top: -75px;
+  z-index: 9999;
+}
+
+.user-pic-header {
+  position: absolute;
+  color: white;
+  right: 13%;
+  list-style: none;
+  font-size: 24px;
+  font-family: 'Bariol';
+  /*background: #F0F3F8;*/
+  border-radius: 3px;
+  height: 23px;
+  margin-top:-52px;
+}
+
+
+.info ul{
+
+}
+
+
+.info ul:after {
+    content: ""; clear: both; display: block;
+}
+
+a span{
+	display:block;
+}
+
+.arrow{
+	margin-top:-65px;
+	margin-left:90px;
+}
+
+.info ul ul{
+  display: none;
+  background-color: rgb(35,31,32);
+  opacity: 0.75;
+  margin-top:-15%;
+  width:120px;
+}
+
+.info ul li:hover > ul {
+    display: block;
+}
+
+
+.list-header:hover{
+  opacity:2;
+}
+
+.info ul li:hover a {
+   color: #fff;
+}
+
+
+li:hover{
+  opacity: 0.75;
+}
+
+a:hover{
+	opacity: 0.75;
+}
+
+.info ul li:hover {
+    /*background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);*/
+}
+
+
+.info ul li {
+  list-style: none;
+  text-align: center;
+}  
+
+.info ul li a {
+    display: block; 
+    padding: 10px 0px;
+    color: #757575; 
+    text-decoration: none;
+}
+
+.info ul ul li {
+    float: none; 
+    margin-left:-35%;
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+    position: relative;
+    width:100px;
+}
+
+
+nav ul {
+  list-style: none;
+}
+
+
+.user-propic {
+  border-radius: 50%;
+  background-color: rgb( 0, 0, 0 );
+  position: absolute;
+  width: 160px;
+  height: 160px;
+}
+
+
+.user-propic-profile {
+ position: absolute;
+  left: 118px;
+  top: 104px;
+  width:160px;
+  height:160px;
+}
+
+.merchant-propic-profile {
+ position: absolute;
+  left: 125px;
+  top: 570px;
+}
+
+
+.circular{
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+}
+
+.info-not-sign-in{
+  position: absolute;
+  font-size: 16px;
+  font-family: "Bariol";
+  color:white;
+  top:25px;
+  right:30px;
+}
+
+.info-not-sign-in li{
+  display: inline-block;
+}
+
+
+.search-box-title{
+  font-weight: bold;
+  font-size: 25pt;
+  text-align:center;
+  width: 100%;
+  font-family: "Novecento";
+  /*margin-left: -75px;*/
+}
+
+.search-result{
+  position: relative;
+  top:-620px;
+}
+
+
+.search_results {
+  margin-top: -170px;
+  margin-left: 155px;
+  padding: 50px 0;
+}
+
+
+.searched-merchant{
+  position: relative;
+  top:-600px;
+}
+
+.searched-merchant-noresult{
+  position: relative;
+  top:-110px;
+  left:0px;
+}
+
+.search-write-story{
+  position: relative;
+  text-align: center;
+  top:-25px;
+  left:-210px;
+
+  color: white;
+}
+
+.search-write-story span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+  font-family: "Bariol";
+  color: white;
+}
+
+.search-write-story span:hover{
+  opacity: 0.5;
+}
+
+.search-write-story-noresult{
+  position: relative;
+  text-align: center;
+  top:-15px;
+  left:-90px;
+
+  color: white;
+}
+
+.search-write-story-noresult span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+  font-family: "Bariol";
+  color: white;
+}
+
+.search-write-story-noresult span:hover{
+  opacity: 0.5;
+}
+
+
+
+
+.search-box {
+  position: absolute;
+  border: 1px solid #000;
+  margin-top: 1%;
+  padding-left: 1%;
+  left: 33%;
+  width: 34%;
+  height: 42px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 16px;
+  padding-top: 0.5em;
+}
+
+
+.input > input:focus {
+  outline: 2px solid #C4DBF0;
+}
+
+
+textarea:focus {
+  outline: 2px solid #C4DBF0;
+}
+
+
+.search-submit {
+  position: relative;
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  left: 54%;
+  /*background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);*/
+  /*border: 1px solid black;
+  border-radius: 5px;
+  */
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  width: 25.4%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+
+.search-submit span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+}
+
+.search-submit span:hover {
+	opacity: 0.75;
+}
+
+.button-writing{
+  font-family: 'trebuchet';
+  font-size: 30pt;
+}
+
+
+input[type="text"],
+input[type="username"],
+input[type="password"],
+input[type="submit"],
+input[type="email"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  width: auto;
+}
+
+.white{
+	color:white;
+}
+
+.white:hover{
+    color: black;
+}
+
+
+.category-separator {
+  margin-top:5%;
+  font-size: 23px;
+  left:13.5%;
+  font-family: "Novecento";
+}
+
+.separator-pic {
+  position: absolute;
+  /*background: url("/assets/WGSlice/stripe_repeat.png");
+  width:74.5%;*/
+  left: 20%;
+  top: 139%;
+  height: 12px;
+  border: none;
+}
+
+
+.prof-review {
+  float: left;
+  left:125px;
+  width:82%;
+  display: block;
+  position: relative;
+
+}
+
+.prof-review-in-index {
+  float: left;
+  left:95px;
+  right:175px;
+  display: block;
+  position: absolute;
+
+}
+
+
+.prof-review-feed-container {
+  left: 125px;
+  top:425px;
+  right:125px;
+  position: absolute;
+  display:block;
+}
+
+.prof-review-feed{
+  position:relative;
+  top:150px;
+}
+
+
+.prof-review .review-body {
+  display: inline-block;
+  font-family: "Bariol";
+  font-size: 20px;
+  line-height: normal;
+  word-break: normal;
+  height:auto;
+}
+
+.review-body {
+  display: block;
+  margin-top:0%;
+  margin-left:105px;
+  font-family: "Bariol";
+  font-size: 18px;
+  line-height: normal;
+  word-break: normal;
+  padding: 0 10px;
+  height: auto;
+  vertical-align: bottom;
+  text-align: justify;
+}
+
+.review-body-header{
+	margin-left:115px;
+
+  margin-top:-10px;
+}
+
+
+
+.prof-left-index {
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 500px;
+  margin-left:2%;
+  margin-top:1%;
+}
+
+
+.prof-left-index-text {
+  display: block;
+  position: absolute;
+  width: 20%;
+  margin-left:-15px;
+  margin-top:100px;
+}
+
+
+.prof-left-index h3{
+  margin-left: 20px;
+  margin-top: 125px;
+  width:400px;
+}
+
+.prof-left-index h4{
+  margin-left: 20px;
+  width:400px;
+  font-family: "Bariol";
+  font-size: 16px;
+}
+
+
+
+.prof-left-index-review {
+  display: block;
+  position: absolute;
+  width: 20%;
+  margin-left:-55px;
+  margin-top:10px;
+  padding: 0 0 0 35px;
+}
+
+
+.prof-right-index {
+  position: absolute;
+  margin-left:55%;
+  margin-top:1%;
+  width: 13%;
+  float: right;
+  height:400px;
+  padding-bottom: 100px;
+}
+
+.prof-right-rating{
+  margin-left: 40%;
+  width: 100%;
+}
+
+.prof-right-index-title {
+  position: absolute;
+  margin-left:130%;
+  margin-top:-160px;
+  float: right;
+  position:absolute; 
+  width:280%; 
+  font-style: italic; 
+  font-family:'Bariol'; 
+  font-size:20px; 
+  font-weight:bold; 
+}
+
+
+.prof-right-index-title-no-stories {
+  position: absolute;
+  margin-left:5%;
+  margin-top:-5%;
+  float: right;
+  position:absolute; 
+  width:130%; 
+  font-style: italic; 
+  font-family:'Bariol'; 
+  font-size:20px; 
+  font-weight:bold; 
+  padding-bottom: 400px;
+}
+
+.prof-right-time-created{
+  position:absolute; 
+  font-family:'Bariol'; 
+  font-size:14px; 
+  font-weight:bold; 
+  margin-left:120px; 
+  margin-top:-100px;
+}
+
+.default-merchant-banner-category{
+	max-width:130%;
+	max-height:46%;
+}
+
+
+.default-merchant-picture-category{
+	width:150%;
+	height:46%;
+}
+
+
+.prof-right-name{
+  position: absolute;
+  margin-left: 240px;
+  margin-top: -90px;
+  font-family: "Bariol";
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.review-body-index {
+  margin-top:40px;
+  float: left;
+  margin-left: 5px;
+  text-align: justify;
+  width: 128.5%;
+  font-family: "Bariol";
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 26px;
+}
+
+
+.review-body-index-right {
+  margin-top:0px;
+  float: left;
+  margin-left: 175px;
+  width: 474px;
+  font-family: "Bariol";
+  text-align: left;
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 26px;
+}
+
+
+.button-writing-index-bg{
+  
+ 
+  height: 20px;
+  width: 43%;
+  vertical-align: middle;
+
+  text-align: center;
+}
+
+.button-writing-index-bg span{
+	padding: 5px;
+	background-color: rgb(255,234,71);
+}
+
+.button-writing-index-bg span:hover{
+  opacity: 0.75;
+}
+
+
+.button-writing-index-bg a{
+  font-family: 'Bariol';
+  font-size: 16pt;
+  color:black;
+}
+
+
+/*
+Story Feed
+*/
+.merchant-right-pic{
+  position: absolute;
+}
+
+
+.prof-right-review-pic{
+  position: absolute;
+  margin-top:-115px;
+  margin-left: 155px;
+}
+
+
+.story-badge{
+  display: inline;
+  width: 40%;
+  height: 30%;
+  margin-top:5px;
+}
+
+.story-badge-feed{
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin-top:5px;
+}
+
+.story-icon-index{
+  position:absolute;
+  margin-top:21%;
+  margin-left: 25%;
+}
+
+
+.story-icon-index-text{
+  position:absolute;
+  font-family: "Bariol";
+  font-weight:100;
+  margin-top:22.5%;
+  margin-left: 32%;
+}
+
+
+.story-thumb-index{
+  position:absolute;
+  margin-top:21%;
+  margin-left: 55%;
+}
+
+
+
+.story-thumb-index-text{
+  position:absolute;
+  font-family: "Bariol";
+  font-weight:100;
+  margin-top:22.5%;
+  margin-left: 62%;
+}
+
+
+.review-pic-index {
+  margin-top:-5%;
+  width:25%;
+}
+
+
+.prof-content {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.prof-mid-feed {
+  position: absolute;
+  text-align: justify;
+}
+
+.prof-left-feed {
+  display: block;
+  position: absolute;
+  margin-left:0px;
+}
+
+.story-writer{
+  margin-left:0;
+  margin-top:120px;
+  font-size: 27.521px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+}
+
+.public-feed-list{
+  list-style:none;
+}
+
+.public-feed-list li{
+  min-width:900px;
+}
+
+.story-writer-public{
+  font-size: 22px;
+  font-family: "Bariol";
+  font-style:italic;
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  position: absolute;
+  text-align:left;
+  left: 105px;
+  top: 0px;
+}
+
+.story-writer-public-rating{
+  position: absolute;
+  left:110px;
+  top: 25px;
+}
+
+
+.story-thumb{
+  position:absolute;
+  margin-top:0px;
+  margin-left: 55px;
+}
+
+
+.story-title{
+  font-size: 27.521px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+}
+
+
+.badge-feed {
+  position: relative;
+  top:-18px;
+  background: #C4DBF0;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  padding: 2px 7px;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+.story-thumb-public{
+  position:absolute;
+  top:68px;
+  left: 115px;
+}
+
+.story-badge-public{
+  display: inline;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+
+/*
+END OF Story Feed
+*/
+
+
+/*
+Start of User Profile
+*/
+
+.store-category-text{
+  font-size: 24px;
+  font-family: "Helvetica Neue LT Std";
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.store-category-text-index{
+  position:absolute;
+  left:600px;
+  float: right;
+  font-family: "Bariol";
+}
+
+.prof-content-public {
+  margin-top: 500px;
+  padding: 20px 25px;
+}
+
+.prof-mid-stories-public {
+  position: absolute;
+  margin-top: 1030px;
+  /*border-left: 1px solid #E5E5E1;
+  border-right: 1px solid #E5E5E1;*/
+}
+
+.followed-merchants-list {
+  position: absolute;
+  width: 65%;
+  left: 100px;
+  top: 365px;
+}
+
+.after-profile-separator{
+  position: absolute;
+  left: 120px;
+  right:120px;
+  top: 290px;
+}
+
+
+.followed-merchants-list li{
+
+  display: inline-block;
+  list-style: none;
+}
+
+
+.story-badge-in-profile{
+   position: absolute;
+  left: 288px;
+  top: 184px;
+  width:20px;
+  height:20px;
+}
+
+.story-badge-in-profile-text{
+   position: absolute;
+  left: 320px;
+  top: 183px;
+  width:100px;
+  font-size: 18.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+}
+
+.thumbs-badge-in-profile{
+  position: absolute;
+  left: 405px;
+  top: 184px;
+  width:20px;
+  height:20px;
+}
+
+.thumbs-badge-in-profile-text{
+   position: absolute;
+  left: 436px;
+  top:183px;
+  width:100px;
+  font-size: 18.017px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+}
+
+
+.following-text {
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 272px;
+  top: 240px;
+}
+
+.following-number {
+  font-size: 48.006px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-align: center;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 327px;
+  top: 205px;
+}
+
+.followed-text {
+  font-size: 36px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 378px;
+  top: 240px;
+}
+
+.followed-number {
+  font-size: 48.006px;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  font-weight: bold;
+  text-align: center;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 437px;
+  top: 205px;
+}
+
+
+.prof-content-profile-view {
+	margin-top: -63%;
+}
+
+
+.user-username {
+  font-size: 36px;
+  font-family: "Bariol";
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  text-align:left;
+  position: absolute;
+  left: 290px;
+  top: 100px;
+}
+
+.member-since-text {
+  font-size: 28px;
+  font-family: "Bariol";
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 235px;
+  top: 140px;
+  
+}
+
+.followed-merchants-text {
+  font-size: 46.875px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 50px;
+  top: 295px;
+  width: 400px;
+}
+
+
+.is-followed .follow-button{
+  display: none;
+}
+
+.is-followed .unfollow-button{
+  display: block;
+}
+
+.follow-button {
+  font-size: 43px;
+  font-family: "Bariol";
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 160px;
+  top: 270px;
+  width:80px;
+  height:30px;
+  display: block;
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  z-index:999999;
+}
+
+.unfollow-button {
+  font-size: 53px;
+  font-family: "Bariol";
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 160px;
+  top: 270px;
+  width:80px;
+  height:30px;
+  display: none;
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  z-index:999999;
+}
+
+
+.followed-button {
+  display: none;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  margin-top:160px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  background: url("WGslice/follow-btn.png") no-repeat;
+  
+}
+
+
+.following-button {
+
+  display: block;
+  padding: 5px;
+  width: 180px;
+  height: 180px;
+  margin-top:160px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  background: url("WGslice/follow-btn.png") no-repeat;
+}
+
+
+
+.edit-button {
+  position: relative;
+  display: block;
+  padding: 5px;
+  background: url("WGslice/edit-btn.png") no-repeat;
+  width: 80px;
+  margin-top:10px;
+  margin-left:38px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+
+
+.followed-merchants-separator {
+  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: absolute;
+  left: 390px;
+  right:120px;
+  top: 305px;
+  height: 12px;
+  border: none;
+}
+
+
+.after-merchants-list-separator{
+  position: absolute;
+  top:500px;
+  left:120px;
+  right:120px;
+
+}
+
+
+.stories-in-profile{
+    font-size: 46.875px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 50px;
+  top: 510px;
+  width: 400px;
+
+}
+
+
+.stories-in-profile-separator {
+  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: absolute;
+  left: 220px;
+  right: 120px;
+  top: 520px;
+  height: 12px;
+  border: none;
+}
+
+.prof-mid-stories-public {
+  position: absolute;
+  margin-top: 500px;
+  width: 87%;
+  margin-left: 25px;
+  /*border-left: 1px solid #E5E5E1;
+  border-right: 1px solid #E5E5E1;*/
+}
+
+
+.store-category-text{
+  float: right;
+  font-family: "Bariol";
+}
+
+.store-category-text-index{
+  position:absolute;
+  left:600px;
+  float: right;
+  font-family: "Bariol";
+}
+
+
+
+.story-title-public{
+  margin-top:15px;
+  width:100%;
+}
+
+
+.written-time-public{
+  margin-top:0px;
+}
+
+.review-body-public {
+  display: block;
+  font-family: "Bariol";
+  font-size: 18px;
+  line-height: normal;
+  word-break: normal;
+  padding: 0 10px;
+  height: auto;
+  vertical-align: bottom;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+
+/*
+End
+*/
+
+
+/*
+Write a new story
+*/
+
+.search-box-title-select{
+  margin-top:-650px;
+  font-weight: bold;
+  font-size: 25pt;
+  text-align:center;
+  width: 100%;
+  font-family: "Novecento";
+  /*margin-left: -75px;*/
+}
+
+
+.search-box-write {
+  position: absolute;
+  border: 1px solid #000;
+  margin-top: 10px;
+  left: 28%;
+  right:28%;
+  width: 42.5%;
+  height: 44px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/*
+END
+*/
+
+
+.group:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+
+.grad_button {
+    background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);
+}
+
+.grad_button:hover {
+    background: -webkit-linear-gradient(top, rgba(107,0,0,1) 0%,rgba(194,17,1,1) 100%);
+}
+
+/*
+User Profile
+*/
+
+/*
+Merchant Page
+*/
+
+.prof-merchant-container {
+  left: 125px;
+  right:125px;
+  position: absolute;
+  display:block;
+}
+
+
+.merchant-photo-text-container
+{
+  width: 100%;
+}
+
+
+.prof-merchant-banner{
+  left: 675px;
+  width:38%;
+  height:60%;
+  top:100px;
+  position: absolute;
+}
+
+.user-propic-merchant {
+  text-align: justify;
+  background-color: rgb( 0, 0, 0 );
+  position: absolute;
+  left:125px;
+  top:100px;
+  width: 160px;
+  height: 160px;
+}
+
+.user-username-merchant-followers {
+  font-size: 28px;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  text-align:left;
+  position: absolute;
+  left: 130px;
+  top: 300px;
+}
+
+.user-username-merchant {
+  font-size: 28px;
+  font-family: "Bariol";
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  text-align:left;
+  position: absolute;
+  left: 125px;
+  top: 270px;
+}
+
+.after-profile-separator-merchant{
+  position: absolute;
+  left: 125px;
+  right: 615px;
+  top:323px;
+}
+
+.member-since-text-merchant {
+  font-size: 28px;
+  font-family: "Bariol";
+  font-weight: 100;
+  color: rgb( 45, 45, 45 );
+  text-align: left;
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 255px;
+  top: 80px;
+  
+}
+
+.merchant-write-story{
+  position: relative;
+  top:25px;
+  right:0px;
+}
+
+.merchant-write-story span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+}
+
+.merchant-write-story span:hover{
+  opacity: 0.5;
+}
+
+.merchant-following-section{
+  position: absolute;
+  top:305px;
+  left:580px;
+}
+
+.is-favorite .favorite-button {
+  display: none;
+}
+
+.is-favorite .unfavorite-button {
+  display: block;
+}
+
+.favorite-button {
+  display: block;
+  padding: 5px;
+  width: 80px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.unfavorite-button {
+  display: none;
+  padding: 5px;
+  width: 80px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.merchants-randompic-list {
+  position: absolute;
+  left: 100px;
+  right:125px;
+  top: 365px;
+}
+
+.merchants-randompic-list li{
+
+  display: inline-block;
+  list-style: none;
+}
+
+.merchants-randompic-separator{
+  position: absolute;
+  left:125px;
+  right:125px;
+  top:500px;
+}
+
+
+.merchants-offers-text {
+  font-size: 46.875px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 60px;
+  top: 510px;
+  width: 400px;
+}
+
+.merchants-offers-stripe {
+  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: absolute;
+  left: 225px;
+  top: 520px;
+  right: 125px;
+  height: 12px;
+  border: none;
+}
+
+.merchants-offers-1{
+  position: absolute;
+  float: right;
+  top:570px;
+  left:165px;
+  right:52%;
+}
+
+.merchants-offers-1 p{
+  text-align: justify;
+}
+
+.merchants-offers-1 img{
+  width:100%;
+}
+
+.merchants-offers-2{
+  position: absolute;
+  float: left;
+  top:570px;
+  left:52%;
+  right:165px;
+}
+
+.merchants-offers-2 p{
+  text-align: justify;
+}
+
+.merchants-offers-2 img{
+  width:100%;
+}
+
+.more-offers{
+  position: absolute;
+  text-align: center;
+  top:1010px;
+  left:46%;
+}
+
+.more-offers span{
+  background-color: rgb(255,234,71); 
+  padding: 10px;
+}
+
+.more-offers span:hover{
+  opacity: 0.5;
+}
+
+.merchants-offers-separator {
+  position: absolute;
+  left:125px;
+  right:125px;
+  top:1040px;
+}
+
+.stories-in-merchant-profile{
+  position: absolute;
+  top:1050px;
+  left: 105px;
+  font-size: 46.875px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
+  color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+}
+
+
+.stories-in-merchant-profile-stripes {
+  background-image: url("/assets/WGSlice/stripe_repeat.png");
+  position: absolute;
+  left: 225px;
+  top: 1060px;
+  right: 125px;
+  height: 12px;
+  border: none;
+}
+
+.prof-review-merchant-container{
+  left: 125px;
+  top:965px;
+  right:145px;
+  position: absolute;
+  display:block;
+}
+
+.prof-review-in-merchant{
+  position:relative;
+  top:150px;
+}
+
+
+.cool-button input[type="submit"] {
+  display: block;
+  position: relative;
+  float: left;
+  padding: 5px;
+  width: 90px;
+  color: #00f;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cool-button:hover{
+  opacity: 0.5;
+}
+
+.prof-left-in-merchant {
+  display: block;
+  position: absolute;
+  margin-left:0px;
+}
+
+/**
+*/
+/*
+Create story
+*/
+.create-story-container{
+  position:absolute;
+  top:50px;
+  left:125px;
+  right:125px;
+}
+.create-story-header{
+  top:50px;
+  position:absolute;
+  font-weight: bold;
+  font-size: 25pt;
+  text-align:center;
+  width: 100%;
+  font-family: "Novecento";
+}
+
+.create-story-merchant-section{
+  position: relative;
+  top:140px;
+}
+
+.create-story-merchant-name{
+  position: relative;
+  top:-25px;
+  left:5px;
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+}
+
+
+.create-story-merchant-follower{
+  position: absolute;
+  top:45px;
+  left: 110px;
+  font-family: "Novecento";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.hr-create-story-merchant-section{
+  position: relative;
+  width: 100%;
+  left:-25px;
+}
+
+.create-story-form-area{
+  width:65%;
+}
+
+.your-experience-text{
+  font-family: "Trebuchet MS";
+  font-size: 25px;
+}
+
+.create-story-input{
+  position: relative;
+  top:10px;
+}
+
+.input select{
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.input > textarea {
+  margin-top: -15px;
+  position: relative;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  width: 400px;
+  height: 250px;
+  border-radius: 0px;
+}
+
+
+
+.create-story-review-rating{
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+}
+
+.create-story-review-title{
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+}
+
+.create-title-input{
+  border: 1px solid gray;
+}
+
+.create-story-about{
+  position: absolute;
+  left:630px;
+  top:120px;
+  width:33%;
+  padding-left:25px;
+  border-left: 1px solid rgb(194,194,194);
+}
+
+.create-story-review-body{
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+  top:-25px;
+  left:-55px;
+}
+
+.review-body-in-create{
+  position:relative;
+  left:0px;
+}
+
+.create-story-review-pic{
+  font-family: "Novecento";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  opacity: 0.35;
+  top:-25px;
+}
+
+.submit-story{
+  position: relative;
+  top:50px;
+}
+
+.submit-story span{
+  background-color: rgb(255,234,71); 
+  padding: 10px 5px 10px 55px;
+  font-family: "Bariol";
+  color: back;
+}
+
+.submit-story span:hover{
+  opacity:0.5;
+}
+
+/*
+End
+*/
+
+
+
+
+
+
+
+a:hover{
+  text-decoration:none;
+}
+
+
+
+
+
+

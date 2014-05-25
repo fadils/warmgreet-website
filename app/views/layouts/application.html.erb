@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>WarmGreet</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -11,7 +11,6 @@
 
 <body>
 
-  
 <% env = Rails.env %>
 <%#puts Rails.env + "ADFADFADFA"%>
 <% if env == "development" %>
@@ -27,10 +26,11 @@
 
 <% @review = Review.first %>
 <header>
+
   <% if request.original_url == "#{home}/merchants/index.html" %>
     <nav class="top-nav group">
       <div class="WG-mainlogo">
-        <%= image_tag("WGSlice/mainlogo.png", height: '80%', width: '80%')%>
+        <%= image_tag "WGSlice/mainlogo.png", class:"img-responsive" %>
 
                   
       </div>
@@ -40,9 +40,10 @@
   <% end %>
 
   <% if request.original_url == "#{home}/"%>
-    <nav class="top-nav group">
+
+    <nav class="top-nav group img-responsive">
       <div class="WG-mainlogo">
-        <%= image_tag("WGSlice/mainlogo.png", height: '80%', width: '80%')%>
+        <%= image_tag("WGSlice/mainlogo.png", height: '60%', width: '60%')%>
         
         
         <span class="random-story">
@@ -66,19 +67,20 @@
              
              <br>
              
-             <strong class="random-story-body">Rating: <%= @review.rating %> 
-                  - <%= @review.user.username%>'s shopping story </strong>
-
+             <strong class="random-story-body">
+              Rating: <%= @review.rating %> 
+                  - <%= @review.user.username%>'s shopping story 
+             </strong>
                <br><br>
 
-              <strong class="random-story-body">
+             <strong class="random-story-see-more"> 
                 see more shopping stories on 
-              </strong>
+             
                <br>
                
-              <strong class="random-story-body">
-               <%= link_to @review.merchant.name, merchant_url(@review.merchant), style:"color:white;" %>
-              </strong>
+              
+               <%= link_to @review.merchant.name, merchant_url(@review.merchant), style:"color:white; margin-left:16%;" %>
+              </strong> 
           <% end %>
         </span>
         
@@ -117,9 +119,10 @@
 
     
       <% if signed_in? %>
-      <div class="user-pic-header">
+      
+      <!--div class="user-pic-header">
         <% if current_user.photo.file? %>
-                  <%= image_tag current_user.photo.url(:big), :class => "user-propic circular" %>
+          <%= image_tag current_user.photo.url(:big), :class => "user-propic circular" %>
         <% elsif current_user.image? %>
           <%= image_tag current_user.image, size: "35x35", :class => "circular" %>
         <% else %>
@@ -131,7 +134,7 @@
             <%= image_tag "WGSlice/default-user-male.png", size:"40x40" %>
           <% end %>
         <% end %>
-      </div>
+      </div-->
 
       
       <div class="info">
@@ -144,14 +147,14 @@
               <%#= link_to current_user.username, user_url(current_user) %>
 
 
+                    <%= link_to current_user.username.capitalize, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol;'} %> <span class="caret arrow"></span>
 
-                    <%= link_to current_user.username.capitalize, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol;'} %> 
                       <ul>
-                        <li><a href="/">Story Feed</a></li>
+                        <li><%= link_to "Story Feed", user_url(current_user),:style => 'color:#FFFFFF;' %></li>
                         <li><%= link_to "Sign Out", session_url, :method => :delete, :style => 'color:#FFFFFF;' %></li>
                       </ul>
 
-                  </li>
+            </li>
             
           </ul>
         </div>
@@ -178,25 +181,42 @@
     <div class="container group">
       <% if request.original_url != "#{home}/"%>
           <% if signed_in? %>
-              <div class = "write_story">
-                
-                <a href="<%= writestory_write_url %>"  style="color:white">
-                    Write a new story
-                </a>
+
+
+            
+              <div class="write_story">
+                <ul class="nav nav-pills">
+                  <li>
+                    <a  class="white" href="<%= writestory_write_url %>">
+                        Write a new story
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+
+              <div class="category">
+                <ul class="nav nav-pills">
+                  <li>
+                   <a class="white" href="/">
+                    Category
+                   </a>
+                  </li>
+                </ul>
               </div>
 
-              <div class = "category">
-               <a href="/"  style="color:white">
-                Category
-               </a>
-              </div>
-
-              <div class = "find_friends">
-                <a href="<%= users_url%>"  style="color:white">
-                    Find Friends
-                </a>
+              <!--div class = "find_friends"-->
+              <div class="find_friends">
+                <ul class="nav nav-pills">
+                  <li>
+                    <a class="white" href="<%= users_url%>">
+                        Find Friends
+                    </a>
+                  </li>
+                </ul>
                   <%#= link_to "Find Friends".html_safe, users_url %>
               </div>
+            </ul>
             <% else %>
               <div class = "category-no-sign-in">
                <a href="/"  style="color:white">
@@ -214,27 +234,38 @@
       <% else %>
           <% if signed_in? %>
               <div class = "write_story-home">
-                
-                <a href="<%= user_url(current_user)%>"  style="color:white">
-                    What's your story
+                <ul class="nav nav-pills">
+                  <li>
+                <a class="white" href="<%= writestory_write_url %>">
+                    Write a new story
                 </a>
+                   </li>
+                </ul>
               </div>
 
               <div class = "category-home">
-               <a href="/"  style="color:white">
-                Category
-               </a>
+                 <ul class="nav nav-pills">
+                  <li>
+                   <a class="white" href="/">
+                    Category
+                   </a>
+                   </li>
+                  </ul>
               </div>
 
               <div class = "find_friends-home">
-                <a href="<%= users_url%>"  style="color:white">
-                    Find Friends
-                </a>
-                  <%#= link_to "Find Friends".html_safe, users_url %>
+                <ul class="nav nav-pills">
+                  <li>
+                  <a class="white" href="<%= users_url%>">
+                      Find Friends
+                  </a>
+                    <%#= link_to "Find Friends".html_safe, users_url %>
+                  </li>
+                </ul>
               </div>
             <% else %>
               <div class = "category-home-no-sign-in">
-               <a href="/"  style="color:white">
+               <a class="white" href="/">
                 Category
                </a>
               </div>
