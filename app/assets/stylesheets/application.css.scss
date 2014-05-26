@@ -178,6 +178,17 @@ random story showed in top-nav
   top: 13px;
 }
 
+.category-home-no-sign-in {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 35px;
+  top: 13px;
+}
+
+
 
 .find_friends {
   list-style: none;
@@ -1883,7 +1894,199 @@ End
 */
 
 
+/*
+sign in page
+*/
 
+/*
+  SIGN-IN PAGE
+*/
+
+.sign-in-page-container{
+  position:absolute;
+  top:70px;
+  left:95px;
+}
+
+.merchant-sign-up-container{
+  position:absolute;
+  top:70px;
+}
+
+.left {
+  width: 45%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.left .social {
+  margin: 0;
+  padding: 50px 0 0 70px;
+}
+
+.social h4{
+  font-family: "Bariol";
+}
+
+.left #facebook {
+
+}
+
+.left #facebook img {
+  display: block;
+  margin: 0 auto;
+}
+
+.left #twitter {
+
+}
+
+.left #twitter img{
+  display: block;
+  margin: 0 auto;
+}
+
+.right {
+  width: 49%;
+  float: right;
+  padding: 0 25px 0 0;
+}
+
+.social h1 {
+  font-weight: bold;
+  font-size: 60px;
+  margin: 0 0 30px 0;
+}
+
+.social p {
+  margin: 15px 0;
+}
+
+/*
+Form styl
+*/
+
+input[type="text"],
+input[type="username"],
+input[type="password"],
+input[type="submit"],
+input[type="email"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  width: auto;
+}
+
+.form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.form > h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.input {
+  position: relative;
+  margin: 50px 0;
+}
+
+.input > label {
+  display: block;
+  font-weight: bold;
+  padding: 0 0 5px 0;
+}
+
+.input > input {
+  border: 1px solid #000;
+  padding: 5px 10px;
+  width: 300px;
+  border-radius: 0px;
+}
+
+.input > input[type="radio"] {
+  width: auto;
+  outline: 0;
+}
+
+.input select{
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.input > textarea {
+  margin-top: -15px;
+  position: relative;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  width: 400px;
+  height: 250px;
+  border-radius: 0px;
+}
+
+
+.input > input[type="file"] {
+  border: none;
+}
+
+.category_box {
+  list-style: none;
+  float: left;
+  margin: 5px;
+}
+
+.input > input:focus {
+  outline: 2px solid #C4DBF0;
+}
+
+textarea:focus {
+  outline: 2px solid #C4DBF0;
+}
+
+.submit {
+
+}
+
+span.amp {
+   font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+   font-size:110%;
+   font-style:italic;
+}
+
+.submit > input {
+  position: relative;
+  float: right;
+  width: 300px;
+  background-color: rgb(255,234,71);
+  color: #fff;
+  padding: 10px 15px;
+  margin-right: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  color:black; 
+  font-family:'Bariol';
+  font-size: 20px;
+}
+
+.submit > input:hover {
+  background-color: rgb(255,234,71);
+  opacity: 0.75;
+}
 
 
 

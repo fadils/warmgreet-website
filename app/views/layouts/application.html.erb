@@ -96,7 +96,7 @@
       <nav class="top-nav-stories-feed group">
     <% end %>
   <% else %>
-      <nav class="top-nav-noindex group">
+      <nav class="top-nav-no-index group">
   <% end %>
 
  
@@ -265,15 +265,23 @@
               </div>
             <% else %>
               <div class = "category-home-no-sign-in">
-               <a class="white" href="/">
-                Category
-               </a>
+                 <ul class="nav nav-pills">
+                  <li>
+                   <a class="white" href="/">
+                    Category
+                   </a>
+                  <li>
+                  </ul>
               </div>
 
               <div class = "find_friends-no-sign-in-home">
-                <a href="<%= users_url%>"  style="color:white">
-                  Find Friends
-                </a>
+                 <ul class="nav nav-pills">
+                  <li>
+                    <a class="white" href="<%= users_url%>">
+                      Find Friends
+                    </a>
+                  </li>
+                 </ul>
                   <%#= link_to "Find Friends".html_safe, users_url %>
               </div>
           <% end %>
