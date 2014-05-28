@@ -43,7 +43,7 @@
 
     <nav class="top-nav group img-responsive">
       <div class="WG-mainlogo">
-        <%= image_tag("WGSlice/mainlogo.png", height: '60%', width: '60%')%>
+        <%= image_tag("WGSlice/mainlogo.png", height: '100%', width: '100%')%>
         
         
         <span class="random-story">
@@ -51,15 +51,15 @@
             <% if @review.user.photo.file? %>
               <%= image_tag @review.user.photo.url(:big) %>
               <% elsif @review.user.image? %>
-                <%= image_tag @review.user.image, size: "100x100" %>
+                <%= image_tag @review.user.image, size: "100x100", class:"circular" %>
               <% else %>
                 <%# puts "*************************#{review.user.gender}********************" %>
                 <% if @review.user.gender=="M" %>
-                  <%= image_tag "WGSlice/default-user-male.png", size: "100x100" %>
+                  <%= image_tag "WGSlice/default-user-male.png", size: "100x100", class:"circular" %>
                 <% elsif @review.user.gender=="F" %>
-                  <%= image_tag "WGSlice/default-user-female.png", size: "100x100" %>
+                  <%= image_tag "WGSlice/default-user-female.png", size: "100x100", class:"circular" %>
                 <% else %>
-                  <%= image_tag "WGSlice/default-user-male.png", size: "100x100" %>
+                  <%= image_tag "WGSlice/default-user-male.png", size: "100x100", class:"circular" %>
                 <% end %>
               <% end %>
 
@@ -67,20 +67,20 @@
              
              <br>
              
-             <strong class="random-story-body">
+             <span class="random-story-body">
               Rating: <%= @review.rating %> 
                   - <%= @review.user.username%>'s shopping story 
-             </strong>
+             </span>
                <br><br>
 
-             <strong class="random-story-see-more"> 
+             <span class="random-story-see-more"> 
                 see more shopping stories on 
              
                <br>
                
               
-               <%= link_to @review.merchant.name, merchant_url(@review.merchant), style:"color:white; margin-left:16%;" %>
-              </strong> 
+               <%= link_to @review.merchant.name, merchant_url(@review.merchant), style:"color:white; margin-left:110px" %>
+              </span> 
           <% end %>
         </span>
         
@@ -146,8 +146,10 @@
 
               <%#= link_to current_user.username, user_url(current_user) %>
 
-
-                    <%= link_to current_user.username.capitalize, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol;'} %> <span class="caret arrow"></span>
+                  <a href="#{profile_index_url(current_user)}" style ='color:#FFFFFF; font-family:bariol;'>
+                    <%=current_user.username.capitalize%>
+                    <b class="caret"></b>
+                  </a>
 
                       <ul>
                         <li><%= link_to "Story Feed", user_url(current_user),:style => 'color:#FFFFFF;' %></li>
@@ -157,6 +159,8 @@
             </li>
             
           </ul>
+
+
         </div>
 
                
@@ -193,14 +197,20 @@
                   </li>
                 </ul>
               </div>
+
+
               
 
-              <div class="category">
+              <div class="category" >
                 <ul class="nav nav-pills">
                   <li>
-                   <a class="white" href="/">
-                    Category
+                   <a class="white" href="#">
+                    Category   
                    </a>
+                    <ul class="category-dropdown">
+                      <li><a href="#">Electronics</a></li>
+                      <li><a href="#">Fashion</a></li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -219,9 +229,19 @@
             </ul>
             <% else %>
               <div class = "category-no-sign-in">
-               <a href="/"  style="color:white">
+               <a href="#"  style="color:white">
                 Category
+                <b class="caret"></b>
                </a>
+               <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
               </div>
 
               <div class = "find_friends-no-sign-in">
@@ -246,9 +266,19 @@
               <div class = "category-home">
                  <ul class="nav nav-pills">
                   <li>
-                   <a class="white" href="/">
+                   <a class="white" href="#">
                     Category
+                    <b class="caret"></b>
                    </a>
+                   <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
                    </li>
                   </ul>
               </div>
@@ -267,9 +297,19 @@
               <div class = "category-home-no-sign-in">
                  <ul class="nav nav-pills">
                   <li>
-                   <a class="white" href="/">
+                   <a class="white" href="#">
                     Category
+                    <b class="caret"></b>
                    </a>
+                   <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
                   <li>
                   </ul>
               </div>

@@ -35,7 +35,7 @@ Header with the big image
   height: 750px;
   
   box-shadow: 1px 1px 3px gray;
-  background-image: url("/assets/WGSlice/Banner_1440_r.png"); 
+  background-image: url("/assets/WGSlice/Banner_1440.jpg"); 
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -58,7 +58,7 @@ Header with the big image
   margin: auto;
   
   box-shadow: 1px 1px 3px gray;
-  background-image: url("/assets/WGSlice/banner-feed.png"); 
+  background-image: url("/assets/WGSlice/banner-feed.jpg"); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -77,8 +77,6 @@ Main logo, but not in the nav header. "Online story, honestly shared"
   position: absolute;
   left: 3%;
   top: 12%;
-  height:28%;
-  width:60%;
 }
 
 /*
@@ -99,8 +97,9 @@ random story showed in top-nav
   position:absolute;
   color: white;
   font-family: "Bariol";
-  margin-top:27%;
-  margin-left:-57%;
+  margin-top:90px;
+  margin-left:45px;
+  z-index:9999;
   width:100%;
 }
 
@@ -109,19 +108,23 @@ random story showed in top-nav
 }
 
 .random-story-title{
+  font-family: "Bariol";
   font-size: 28px;
   color: white;
   margin-top: 15px;
   margin-left: 10px;
   font-style: italic;
+  font-weight: bold;
 }
 
 .random-story-body{
+  font-family:"Bariol";
   margin-left: 2%;
   font-size: 18px;
 }
 
 .random-story-see-more{
+  font-family: "Bariol";
   margin-left:2%;
   font-size: 18px;
 }
@@ -164,10 +167,16 @@ random story showed in top-nav
   font-family: "Bariol";
   color: white;
   position: absolute;
-  left: 255px;
+  left: 20%;
+  right: 75%;
   top: 13px;
 }
 
+.category-dropdown{
+  position:absolute;
+  left:-15px;
+  margin-top:45px;
+}
 .category-home {
   list-style: none;
   font-size: 16px;
@@ -228,14 +237,15 @@ random story showed in top-nav
   float: right;
   padding: 20px;
   color: white;
-  right: 4%;
+  right: 2%;
+  left:82%;
   list-style: none;
   font-size: 16px;
   font-family: 'Bariol';
   /*background: #F0F3F8;*/
   border-radius: 3px;
   height: 73px;
-  width: 165px;
+  
   margin-top: -75px;
   z-index: 9999;
 }
@@ -269,18 +279,18 @@ a span{
 
 .arrow{
 	margin-top:-65px;
-	margin-left:90px;
+	margin-left:5%;
 }
 
-.info ul ul{
+.info ul ul, .category ul ul{
   display: none;
   background-color: rgb(35,31,32);
   opacity: 0.75;
-  margin-top:-15%;
+  margin-top:-5%;
   width:120px;
 }
 
-.info ul li:hover > ul {
+.info ul li:hover > ul, .category ul li:hover > ul {
     display: block;
 }
 
@@ -289,7 +299,7 @@ a span{
   opacity:2;
 }
 
-.info ul li:hover a {
+.info ul li:hover a{
    color: #fff;
 }
 
@@ -310,19 +320,27 @@ a:hover{
 }
 
 
-.info ul li {
+.info ul li, .category ul li {
   list-style: none;
   text-align: center;
 }  
 
-.info ul li a {
+.info ul li a{
     display: block; 
     padding: 10px 0px;
     color: #757575; 
     text-decoration: none;
 }
 
-.info ul ul li {
+.category ul ul li a{
+  display: block;
+  padding:10px;
+  padding-top:10px;
+  color:white;
+}
+
+
+.info ul ul li, .category ul ul li {
     float: none; 
     margin-left:-35%;
     border-top: 1px solid #6b727c;
@@ -391,10 +409,16 @@ nav ul {
 }
 
 .search-result{
+  font-family:"Novecento";
   position: relative;
   top:-620px;
+  left: 20px;
 }
 
+.list-results{
+  position:absolute;
+  z-index:99999;
+}
 
 .search_results {
   margin-top: -170px;
@@ -410,15 +434,15 @@ nav ul {
 
 .searched-merchant-noresult{
   position: relative;
-  top:-110px;
+  top:-600px;
   left:0px;
 }
 
 .search-write-story{
   position: relative;
   text-align: center;
-  top:-25px;
-  left:-210px;
+  top:-40px;
+  left:-290px;
 
   color: white;
 }
@@ -482,13 +506,12 @@ textarea:focus {
   outline: 2px solid #C4DBF0;
 }
 
-
 .search-submit {
   position: relative;
   display: block;
   position: absolute;
   margin-top: 10px;
-  left: 54%;
+  left: 53.3%;
   /*background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);*/
   /*border: 1px solid black;
   border-radius: 5px;
@@ -496,7 +519,7 @@ textarea:focus {
   font-size: 20px;
   text-align: center;
   padding-top: 10px;
-  width: 25.4%;
+  width: 5.4%;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
@@ -504,7 +527,7 @@ textarea:focus {
 
 
 .search-submit span{
-  background-color: rgb(255,234,71); 
+  background-color: rgb(255,234,71);
   padding: 10px;
 }
 
@@ -1398,7 +1421,6 @@ Write a new story
   /*margin-left: -75px;*/
 }
 
-
 .search-box-write {
   position: absolute;
   border: 1px solid #000;
@@ -1416,6 +1438,7 @@ Write a new story
   padding-left: 5px;
   padding-right: 5px;
 }
+
 /*
 END
 */
@@ -1968,24 +1991,6 @@ sign in page
 Form styl
 */
 
-input[type="text"],
-input[type="username"],
-input[type="password"],
-input[type="submit"],
-input[type="email"],
-input[type="url"],
-textarea {
-  -webkit-appearance: none;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  width: auto;
-}
 
 .form {
   margin: 0 auto;

@@ -14,10 +14,21 @@
       <li class="search_results">
         <%= (10*(@merchants.current_page-1))+i+1 %>.
         <a href="<%= merchant_url(merchant) %>">
-        <%= merchant.name %>
+        <%= merchant.name.upcase %>
         </a>
+        <br>
         (Average Rating: <%= merchant.average_rating %>)
+        <br>
+         (based on <%= merchant.reviews.count %> stories)
+            <br>
+        <% if merchant.ranking(merchant) == nil %>
+              Rank: Unranked
+            <% else %>
+              Rank: <%= merchant.ranking(merchant) %> of <%= Merchant.all.count %> online stores
+            <% end %>
       </li>
+
+
 
       <div class="search-write-story">
         <span>

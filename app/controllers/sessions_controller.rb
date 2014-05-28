@@ -27,8 +27,8 @@ class SessionsController < ApplicationController
 
   def destroy
     sign_out
-    Keen.publish(:sign_outs, {:username => user.username, :time => "#{Time.new.inspect}" })
+    #Keen.publish(:sign_outs, {:username => "#{user.username}", :time => "#{Time.new.inspect}" })
     puts "****************Just sign out*******************"
-    redirect_to new_session_url
+    redirect_to "/"
   end
 end

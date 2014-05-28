@@ -4348,3 +4348,214 @@ Load path: Sass::Rails::Importer(/Users/fadilsutomo/RailsProject/warmgreet-websi
   (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss:1843)
 [05/26/14 14:27:17 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<SessionsController:0x007fdd818237d0>
 [05/26/14 14:27:17 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<SessionsController:0x007fdd818237d0>
+[05/27/14 23:48:00 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<SessionsController:0x007fdd8d2caae8>
+[05/27/14 23:48:00 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `user' for #<SessionsController:0x007fdd8d2caae8>
+[05/28/14 11:53:21 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected keyword_class, expecting '}'
+...FFF; font-family:bariol;' class:"caret arrow"} );@output_buf...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected '}', expecting :: or '[' or '.'
+...y:bariol;' class:"caret arrow"} );@output_buffer.safe_concat...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:168: syntax error, unexpected keyword_else, expecting ')'
+');         else 
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:178: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:314: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_end, expecting ')'
+[05/28/14 11:53:21 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected keyword_class, expecting '}'
+...FFF; font-family:bariol;' class:"caret arrow"} );@output_buf...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected '}', expecting :: or '[' or '.'
+...y:bariol;' class:"caret arrow"} );@output_buffer.safe_concat...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:168: syntax error, unexpected keyword_else, expecting ')'
+');         else 
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:178: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:314: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_end, expecting ')'
+[05/28/14 11:53:40 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected ')', expecting =>
+...FFFFFF; font-family:bariol;'} );@output_buffer.safe_concat('...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:168: syntax error, unexpected keyword_else, expecting ')'
+');         else 
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:178: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:314: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_end, expecting ')'
+[05/28/14 11:53:40 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected ')', expecting =>
+...FFFFFF; font-family:bariol;'} );@output_buffer.safe_concat('...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:168: syntax error, unexpected keyword_else, expecting ')'
+');         else 
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:178: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:314: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_end, expecting ')'
+[05/28/14 11:54:07 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected ')', expecting =>
+...FFFFFF; font-family:bariol;'} );@output_buffer.safe_concat('...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:168: syntax error, unexpected keyword_else, expecting ')'
+');         else 
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:178: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:314: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_end, expecting ')'
+[05/28/14 11:54:07 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected ')', expecting =>
+...FFFFFF; font-family:bariol;'} );@output_buffer.safe_concat('...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:168: syntax error, unexpected keyword_else, expecting ')'
+');         else 
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:178: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:314: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_end, expecting ')'
+[05/28/14 16:04:57 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: OmniAuth::Strategies::OAuth2::CallbackError
+[05/28/14 16:32:24 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected '<'
+...nt_user.username.capitalize + <span>test</span>, profile_ind...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:153: unknown regexp option - l
+unmatched close parenthesis: /span>, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol;'} );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+                      <ul>
+                        <li>');@output_buffer.append= ( link_to "Story Feed", user_url(current_user),:style => 'color:#FFFFFF;' );@output_buffer.safe_concat('</i
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:154: syntax error, unexpected '<'
+                        <li>');@output_buffer.append= ...
+                         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:154: syntax error, unexpected tIDENTIFIER, expecting ')'
+...od => :delete, :style => 'color:#FFFFFF;' );@output_buffer.s...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:157: unknown regexp option - l
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:159: syntax error, unexpected '<'
+          </ul>
+           ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:162: unknown regexp options - dv
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:167: syntax error, unexpected '<', expecting ')'
+            <!--li style="color:white">');...
+             ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:167: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+            <!--li style="color:white">');@output_buf...
+                        ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:167: syntax error, unexpected tIDENTIFIER, expecting ')'
+...od => :delete, :style => 'color:#FFFFFF;' );@output_buffer.s...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:169: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+@output_buffer.safe_concat('           <div class="info-not-sign-in">
+                                                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:170: syntax error, unexpected '<'
+            <ul>
+             ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:172: syntax error, unexpected tIDENTIFIER, expecting ')'
+...new_user_url, {:style => 'color:#FFFFFF; font-family:bariol'...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:176: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._session_url, {:style => 'color:#FFFFFF; font-family:bariol'...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:180: syntax error, unexpected '<', expecting ')'
+        </ul>
+         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:181: unknown regexp options - dv
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:183: syntax error, unexpected '<'
+    <div class="container group">
+     ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:189: syntax error, unexpected '<', expecting ')'
+              <div class="write_story">
+               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:190: syntax error, unexpected '<'
+                <ul class="nav nav-pills">
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/view
+[05/28/14 16:32:24 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:150: syntax error, unexpected '<'
+...nt_user.username.capitalize + <span>test</span>, profile_ind...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:153: unknown regexp option - l
+unmatched close parenthesis: /span>, profile_index_url(current_user), {:style => 'color:#FFFFFF; font-family:bariol;'} );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+                      <ul>
+                        <li>');@output_buffer.append= ( link_to "Story Feed", user_url(current_user),:style => 'color:#FFFFFF;' );@output_buffer.safe_concat('</i
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:154: syntax error, unexpected '<'
+                        <li>');@output_buffer.append= ...
+                         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:154: syntax error, unexpected tIDENTIFIER, expecting ')'
+...od => :delete, :style => 'color:#FFFFFF;' );@output_buffer.s...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:157: unknown regexp option - l
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:159: syntax error, unexpected '<'
+          </ul>
+           ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:162: unknown regexp options - dv
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:167: syntax error, unexpected '<', expecting ')'
+            <!--li style="color:white">');...
+             ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:167: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+            <!--li style="color:white">');@output_buf...
+                        ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:167: syntax error, unexpected tIDENTIFIER, expecting ')'
+...od => :delete, :style => 'color:#FFFFFF;' );@output_buffer.s...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:169: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+@output_buffer.safe_concat('           <div class="info-not-sign-in">
+                                                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:170: syntax error, unexpected '<'
+            <ul>
+             ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:172: syntax error, unexpected tIDENTIFIER, expecting ')'
+...new_user_url, {:style => 'color:#FFFFFF; font-family:bariol'...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:176: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._session_url, {:style => 'color:#FFFFFF; font-family:bariol'...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:180: syntax error, unexpected '<', expecting ')'
+        </ul>
+         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:181: unknown regexp options - dv
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:183: syntax error, unexpected '<'
+    <div class="container group">
+     ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:189: syntax error, unexpected '<', expecting ')'
+              <div class="write_story">
+               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:190: syntax error, unexpected '<'
+                <ul class="nav nav-pills">
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/view
+[05/28/14 16:34:26 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_ensure, expecting end-of-input
+[05/28/14 16:34:26 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_ensure, expecting end-of-input
+[05/28/14 16:35:37 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:152: syntax error, unexpected keyword_end
+... ');@output_buffer.append= (end);@output_buffer.safe_concat('
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:170: syntax error, unexpected keyword_else, expecting ')'
+');         else 
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:180: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:318: syntax error, unexpected keyword_end, expecting ')'
+[05/28/14 16:35:37 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:152: syntax error, unexpected keyword_end
+... ');@output_buffer.append= (end);@output_buffer.safe_concat('
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:170: syntax error, unexpected keyword_else, expecting ')'
+');         else 
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:180: syntax error, unexpected keyword_end, expecting ')'
+');           end 
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:316: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:318: syntax error, unexpected keyword_end, expecting ')'
+[05/28/14 17:21:25 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `ranking' for nil:NilClass
+[05/28/14 17:21:25 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `ranking' for nil:NilClass
+[05/28/14 17:23:04 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `reviews' for nil:NilClass
+[05/28/14 17:23:04 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `reviews' for nil:NilClass
