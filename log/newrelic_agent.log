@@ -4559,3 +4559,384 @@ unmatched close parenthesis: /span>, profile_index_url(current_user), {:style =>
 [05/28/14 17:21:25 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `ranking' for nil:NilClass
 [05/28/14 17:23:04 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `reviews' for nil:NilClass
 [05/28/14 17:23:04 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `reviews' for nil:NilClass
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Starting the New Relic agent in "development" environment.
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Reading configuration from config/newrelic.yml
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : New Relic Agent Developer Mode enabled.
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Enabling the Request Sampler.
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Environment: development
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : No known dispatcher detected.
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Application: My Application
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] WARN : Agent configured not to send data in this environment.
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Installing ActiveRecord instrumentation
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Installing middleware-based Excon instrumentation
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Installing Net instrumentation
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Installing deferred Rack instrumentation
+[05/28/14 21:13:05 +0700 Pr0ducer.local (44686)] INFO : Installing Rails 3 Controller instrumentation
+[05/28/14 21:13:06 +0700 Pr0ducer.local (44686)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/28/14 21:13:06 +0700 Pr0ducer.local (44686)] INFO : Installing Rails3 Error instrumentation
+[05/28/14 21:13:06 +0700 Pr0ducer.local (44686)] INFO : Finished instrumentation
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Starting the New Relic agent in "development" environment.
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Reading configuration from config/newrelic.yml
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : New Relic Agent Developer Mode enabled.
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Enabling the Request Sampler.
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Environment: development
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : No known dispatcher detected.
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Application: My Application
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] WARN : Agent configured not to send data in this environment.
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Installing ActiveRecord instrumentation
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Installing middleware-based Excon instrumentation
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Installing Net instrumentation
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Installing deferred Rack instrumentation
+[05/29/14 12:38:30 +0700 Pr0ducer.local (47827)] INFO : Installing Rails 3 Controller instrumentation
+[05/29/14 12:38:31 +0700 Pr0ducer.local (47827)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/29/14 12:38:31 +0700 Pr0ducer.local (47827)] INFO : Installing Rails3 Error instrumentation
+[05/29/14 12:38:31 +0700 Pr0ducer.local (47827)] INFO : Finished instrumentation
+[05/29/14 13:31:00 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (0 for 2..3)
+[05/29/14 13:31:00 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (0 for 2..3)
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Starting the New Relic agent in "development" environment.
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Reading configuration from config/newrelic.yml
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : New Relic Agent Developer Mode enabled.
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Enabling the Request Sampler.
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Environment: development
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : No known dispatcher detected.
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Application: My Application
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] WARN : Agent configured not to send data in this environment.
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Installing ActiveRecord instrumentation
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Installing middleware-based Excon instrumentation
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Installing Net instrumentation
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Installing deferred Rack instrumentation
+[05/29/14 13:32:07 +0700 Pr0ducer.local (48421)] INFO : Installing Rails 3 Controller instrumentation
+[05/29/14 13:32:08 +0700 Pr0ducer.local (48421)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/29/14 13:32:08 +0700 Pr0ducer.local (48421)] INFO : Installing Rails3 Error instrumentation
+[05/29/14 13:32:08 +0700 Pr0ducer.local (48421)] INFO : Finished instrumentation
+[05/29/14 14:15:08 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:218: syntax error, unexpected tIDENTIFIER, expecting ')'
+              <!--div class = "find_friends"-->
+                                           ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:219: syntax error, unexpected tIDENTIFIER, expecting ')'
+              <div class="find_friends">
+                                      ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:220: syntax error, unexpected tIDENTIFIER, expecting ')'
+                <ul class="nav nav-pills">
+                              ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:220: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+                <ul class="nav nav-pills">
+                                         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:222: syntax error, unexpected tIDENTIFIER, expecting ')'
+...                <a class="white" href="');@output_buffer.app...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:231: syntax error, unexpected tIDENTIFIER, expecting ')'
+...         <div class = "category-no-sign-in">
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:231: syntax error, unexpected keyword_in
+...iv class = "category-no-sign-in">
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:234: syntax error, unexpected '<', expecting ')'
+               </a>
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:236: unknown regexp options - dv
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:238: syntax error, unexpected '<'
+              <div class = "find_friends-no-sign-in">
+               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:239: syntax error, unexpected '<'
+                <a href="');@output_buffer.app...
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:239: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ut_buffer.safe_concat('"  style="color:white">
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:240: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:243: unknown regexp options - dv
+unmatched close parenthesis: /a>
+');
+@output_buffer.safe_concat('              </i
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:247: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...oncat('              <div class = "write_story-home">
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:248: syntax error, unexpected '<'
+                <ul class="nav nav-pills">
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:249: syntax error, unexpected '<'
+                  <li>
+                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:250: syntax error, unexpected tIDENTIFIER, expecting ')'
+...          <a class="white" href="');@output_buffer.append= (...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:251: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+                    Write a new story
+                           ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:25
+[05/29/14 14:15:08 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:218: syntax error, unexpected tIDENTIFIER, expecting ')'
+              <!--div class = "find_friends"-->
+                                           ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:219: syntax error, unexpected tIDENTIFIER, expecting ')'
+              <div class="find_friends">
+                                      ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:220: syntax error, unexpected tIDENTIFIER, expecting ')'
+                <ul class="nav nav-pills">
+                              ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:220: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+                <ul class="nav nav-pills">
+                                         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:222: syntax error, unexpected tIDENTIFIER, expecting ')'
+...                <a class="white" href="');@output_buffer.app...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:231: syntax error, unexpected tIDENTIFIER, expecting ')'
+...         <div class = "category-no-sign-in">
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:231: syntax error, unexpected keyword_in
+...iv class = "category-no-sign-in">
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:234: syntax error, unexpected '<', expecting ')'
+               </a>
+                ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:236: unknown regexp options - dv
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:238: syntax error, unexpected '<'
+              <div class = "find_friends-no-sign-in">
+               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:239: syntax error, unexpected '<'
+                <a href="');@output_buffer.app...
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:239: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ut_buffer.safe_concat('"  style="color:white">
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:240: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:243: unknown regexp options - dv
+unmatched close parenthesis: /a>
+');
+@output_buffer.safe_concat('              </i
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:247: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...oncat('              <div class = "write_story-home">
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:248: syntax error, unexpected '<'
+                <ul class="nav nav-pills">
+                 ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:249: syntax error, unexpected '<'
+                  <li>
+                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:250: syntax error, unexpected tIDENTIFIER, expecting ')'
+...          <a class="white" href="');@output_buffer.append= (...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:251: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+                    Write a new story
+                           ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/layouts/application.html.erb:25
+[05/29/14 14:15:49 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template categories/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fadilsutomo/RailsProject/warmgreet-website/app/views"
+  * "/Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views"
+
+[05/29/14 14:15:49 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template categories/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fadilsutomo/RailsProject/warmgreet-website/app/views"
+  * "/Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views"
+
+[05/29/14 14:17:15 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template categories/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fadilsutomo/RailsProject/warmgreet-website/app/views"
+  * "/Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views"
+
+[05/29/14 14:17:15 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template categories/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fadilsutomo/RailsProject/warmgreet-website/app/views"
+  * "/Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views"
+
+[05/29/14 14:17:17 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template categories/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fadilsutomo/RailsProject/warmgreet-website/app/views"
+  * "/Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views"
+
+[05/29/14 14:17:17 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing template categories/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :jbuilder, :coffee]}. Searched in:
+  * "/Users/fadilsutomo/RailsProject/warmgreet-website/app/views"
+  * "/Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views"
+
+[05/29/14 14:22:29 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category with id=Electronics
+[05/29/14 14:22:29 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category with id=Electronics
+[05/29/14 14:24:01 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category without an ID
+[05/29/14 14:24:01 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category without an ID
+[05/29/14 14:24:34 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd9af7eef8>
+[05/29/14 14:24:34 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd9af7eef8>
+[05/29/14 14:26:32 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category without an ID
+[05/29/14 14:26:32 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category without an ID
+[05/29/14 14:30:01 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for #<CategoriesController:0x007fdd97586200>
+[05/29/14 14:30:01 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for #<CategoriesController:0x007fdd97586200>
+[05/29/14 14:32:00 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[05/29/14 14:32:00 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[05/29/14 14:32:43 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[05/29/14 14:32:43 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[05/29/14 14:34:25 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd93d386f0>
+[05/29/14 14:34:25 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd93d386f0>
+[05/29/14 14:35:19 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category with id=Electronics
+[05/29/14 14:35:19 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category with id=Electronics
+[05/29/14 14:35:24 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category with id=Electronics
+[05/29/14 14:35:24 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category with id=Electronics
+[05/29/14 14:37:38 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd85943210>
+[05/29/14 14:37:38 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd85943210>
+[05/29/14 14:38:18 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd9628e3a0>
+[05/29/14 14:38:18 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd9628e3a0>
+[05/29/14 14:38:20 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd9a598e48>
+[05/29/14 14:38:20 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd9a598e48>
+[05/29/14 14:38:24 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd9a292a00>
+[05/29/14 14:38:24 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<CategoriesController:0x007fdd9a292a00>
+[05/29/14 14:38:44 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category without an ID
+[05/29/14 14:38:44 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Category without an ID
+[05/29/14 14:40:14 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[05/29/14 14:40:14 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[05/29/14 14:40:57 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[05/29/14 14:40:57 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[05/29/14 15:04:31 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `sample' for #<Class:0x007fdd7dbf1550>
+[05/29/14 15:04:31 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `sample' for #<Class:0x007fdd7dbf1550>
+[05/29/14 15:04:58 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `sample' for #<Class:0x007fdd7dbf1550>
+[05/29/14 15:04:58 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `sample' for #<Class:0x007fdd7dbf1550>
+[05/29/14 15:24:21 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "  text-align:left:": expected pseudoclass or pseudoelement, was "}"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss:104)
+[05/29/14 15:24:22 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "  text-align:left:": expected pseudoclass or pseudoelement, was "}"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss:104)
+[05/29/14 16:20:10 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category2' for #<#<Class:0x007fdd9f187f48>:0x007fdd7958f6e8>
+[05/29/14 16:20:10 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category2' for #<#<Class:0x007fdd9f187f48>:0x007fdd7958f6e8>
+[05/29/14 16:40:42 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:40:42 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:40:59 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:40:59 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:42:53 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:42:53 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:43:28 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:43:28 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:43:46 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:43:46 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:43:57 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:43:57 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:44:44 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:44:44 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:45:33 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/show.html.erb:203: syntax error, unexpected keyword_ensure, expecting end-of-input
+[05/29/14 16:45:33 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/show.html.erb:203: syntax error, unexpected keyword_ensure, expecting end-of-input
+[05/29/14 16:45:44 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<#<Class:0x007fdd9f187f48>:0x007fdd7db51988>
+[05/29/14 16:45:44 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `category' for #<#<Class:0x007fdd9f187f48>:0x007fdd7db51988>
+[05/29/14 16:46:22 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/show.html.erb:203: syntax error, unexpected keyword_ensure, expecting end-of-input
+[05/29/14 16:46:22 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/show.html.erb:203: syntax error, unexpected keyword_ensure, expecting end-of-input
+[05/29/14 16:46:36 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `merchant' for #<#<Class:0x007fdd9f187f48>:0x007fdd8eb92a30>
+[05/29/14 16:46:36 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `merchant' for #<#<Class:0x007fdd9f187f48>:0x007fdd8eb92a30>
+[05/29/14 16:47:32 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 16:47:32 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 18:02:50 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:203: syntax error, unexpected keyword_ensure, expecting end-of-input
+[05/29/14 18:02:50 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/merchants/_content.html.erb:203: syntax error, unexpected keyword_ensure, expecting end-of-input
+[05/29/14 19:25:13 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:248: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:250: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:25:13 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:248: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:250: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:26:02 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:247: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:249: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:26:02 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:247: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:249: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:26:34 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:248: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:250: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:26:34 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:248: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:250: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:27:12 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:249: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:251: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:27:12 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:249: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:251: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:27:53 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:250: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:252: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:27:53 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:250: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:252: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:28:24 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:252: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:254: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 19:28:24 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:252: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:254: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 20:03:45 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd85d29578>
+[05/29/14 20:03:45 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd85d29578>
+[05/29/14 20:05:09 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 20:05:09 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/categories/_content.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+[05/29/14 20:06:58 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd8f4cd2f8>
+[05/29/14 20:06:58 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd8f4cd2f8>
+[05/29/14 20:08:15 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd96050958>
+[05/29/14 20:08:15 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd96050958>
+[05/29/14 20:09:00 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd81e9d098>
+[05/29/14 20:09:00 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd81e9d098>
+[05/29/14 20:09:19 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd886349e0>
+[05/29/14 20:09:19 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd886349e0>
+[05/29/14 20:10:20 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd96798620>
+[05/29/14 20:10:20 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd96798620>
+[05/29/14 20:12:55 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd7e383660>
+[05/29/14 20:12:55 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant:0x007fdd7e383660>
+[05/29/14 21:23:04 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 21:23:04 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `user' for nil:NilClass
+[05/29/14 21:53:30 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `title' for nil:NilClass
+[05/29/14 21:53:30 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `title' for nil:NilClass
+[05/29/14 21:58:54 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "  top": expected ";", was ":100%;"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss:2231)
+[05/29/14 21:58:54 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "  top": expected ";", was ":100%;"
+  (in /Users/fadilsutomo/RailsProject/warmgreet-website/app/assets/stylesheets/application.css.scss:2231)
+[05/30/14 11:22:07 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `body' for nil:NilClass
+[05/30/14 11:22:07 +0700 Pr0ducer.local (855)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `body' for nil:NilClass
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Starting the New Relic agent in "development" environment.
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Reading configuration from config/newrelic.yml
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : New Relic Agent Developer Mode enabled.
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Enabling the Request Sampler.
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Environment: development
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Dispatcher: webrick
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Application: My Application
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] WARN : Agent configured not to send data in this environment.
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Installing ActiveRecord instrumentation
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Installing middleware-based Excon instrumentation
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Installing Net instrumentation
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Installing deferred Rack instrumentation
+[05/30/14 15:51:45 +0700 Pr0ducer.local (2189)] INFO : Installing Rails 3 Controller instrumentation
+[05/30/14 15:51:46 +0700 Pr0ducer.local (2189)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/30/14 15:51:46 +0700 Pr0ducer.local (2189)] INFO : Installing Rails3 Error instrumentation
+[05/30/14 15:51:46 +0700 Pr0ducer.local (2189)] INFO : Finished instrumentation
+[05/30/14 15:51:52 +0700 Pr0ducer.local (2189)] INFO : Doing deferred dependency-detection before Rack startup
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Starting the New Relic agent in "development" environment.
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Reading configuration from config/newrelic.yml
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : New Relic Agent Developer Mode enabled.
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Enabling the Request Sampler.
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Environment: development
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Dispatcher: webrick
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Application: My Application
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] WARN : Agent configured not to send data in this environment.
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Installing ActiveRecord instrumentation
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Installing middleware-based Excon instrumentation
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Installing Net instrumentation
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Installing deferred Rack instrumentation
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Installing Rails 3 Controller instrumentation
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Installing Rails3 Error instrumentation
+[05/30/14 15:55:55 +0700 Pr0ducer.local (2284)] INFO : Finished instrumentation
+[05/30/14 15:55:56 +0700 Pr0ducer.local (2284)] INFO : Doing deferred dependency-detection before Rack startup
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Starting the New Relic agent in "development" environment.
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Reading configuration from config/newrelic.yml
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : New Relic Agent Developer Mode enabled.
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Enabling the Request Sampler.
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Environment: development
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Dispatcher: webrick
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Application: My Application
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] WARN : Agent configured not to send data in this environment.
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Installing ActiveRecord instrumentation
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Installing middleware-based Excon instrumentation
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Installing Net instrumentation
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Installing deferred Rack instrumentation
+[05/30/14 20:46:06 +0700 Pr0ducer.local (854)] INFO : Installing Rails 3 Controller instrumentation
+[05/30/14 20:46:07 +0700 Pr0ducer.local (854)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/30/14 20:46:07 +0700 Pr0ducer.local (854)] INFO : Installing Rails3 Error instrumentation
+[05/30/14 20:46:07 +0700 Pr0ducer.local (854)] INFO : Finished instrumentation
+[05/30/14 20:46:14 +0700 Pr0ducer.local (854)] INFO : Doing deferred dependency-detection before Rack startup
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Starting the New Relic agent in "development" environment.
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Reading configuration from config/newrelic.yml
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : New Relic Agent Developer Mode enabled.
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Enabling the Request Sampler.
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Environment: development
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Dispatcher: webrick
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Application: My Application
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] WARN : Agent configured not to send data in this environment.
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Installing ActiveRecord instrumentation
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Installing middleware-based Excon instrumentation
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Installing Net instrumentation
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Installing deferred Rack instrumentation
+[05/30/14 20:50:01 +0700 Pr0ducer.local (987)] INFO : Installing Rails 3 Controller instrumentation
+[05/30/14 20:50:02 +0700 Pr0ducer.local (987)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/30/14 20:50:02 +0700 Pr0ducer.local (987)] INFO : Installing Rails3 Error instrumentation
+[05/30/14 20:50:02 +0700 Pr0ducer.local (987)] INFO : Finished instrumentation
+[05/30/14 20:50:08 +0700 Pr0ducer.local (987)] INFO : Doing deferred dependency-detection before Rack startup

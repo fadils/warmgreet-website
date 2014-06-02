@@ -1,0 +1,105 @@
+<div class="container">
+  <strong class="category-text"><%= category.name.capitalize %> </strong>
+   <hr class="separator-pic">
+</div>
+  
+
+
+<% category.merchants.each_with_index do |merchant, i| %>
+
+<div class="category-content-container group">
+  <div class="row">
+       <div class="category-left-container">
+          <div class="category-left-banner">
+
+            <a href="<%= merchant_url(merchant) %>">
+              <% if merchant.photo.file? %>
+                <%= image_tag merchant.photo.url(:small) %>
+              <% else %>
+                <%= image_tag "WGSlice/default-merchant-banner.png", class:"default-merchant-banner-category"%>
+              <% end %>
+            </a> 
+
+            
+          </div>
+
+          <% if merchant.reviews.first %>
+              <div class="category-story-title">
+                <span style="font-style:italic"><%= merchant.reviews.first.title %>"</span>
+                <span class="category-story-writer">
+                - <a href="<%=user_url(merchant.reviews.first.user)%>"><%= merchant.reviews.first.user.username %></a>'s shopping story 
+                (<% if merchant.reviews.first.created_at > Time.now.beginning_of_day %>
+                           <%="#{time_ago_in_words(merchant.reviews.first.created_at)} ago"%>
+                          <br>
+                <% else %>
+                    <%= merchant.reviews.first.created_at.strftime("%m/%d/%Y") %>
+                <% end %>)
+
+                  <span class="review-body-category">
+                    <%= merchant.reviews.first.body %>
+                    <br><br>
+                    See more shopping experience on <br>
+                    <div class="button-writing-index-bg">
+                      <span>
+                       <%= link_to merchant.name, merchant_url(merchant) %>
+                     </span>
+                    </div>
+                  </span>
+
+                </span>
+
+                
+            </div>
+
+                          
+
+              
+              <% if merchant.reviews.first.user.photo.file? %>
+                <%= image_tag merchant.reviews.first.user.photo.url(:big) %>
+                <% elsif merchant.reviews.first.user.image? %>
+                  <%= image_tag merchant.reviews.first.user.image, size: "80x80" %>
+                <% else %>
+                  <% if merchant.reviews.first.user.gender=="M" %>
+                    <%= image_tag "WGSlice/default-user-male.png", class:"review-pic-category" %>
+                  <% elsif merchant.reviews.first.user.gender=="F" %>
+                    <%= image_tag "WGSlice/default-user-female.png", class:"review-pic-category" %>
+                  <% else %>
+                    <%= image_tag "WGSlice/default-user-male.png", class:"review-pic-category" %>
+                  <% end %>
+
+
+              <% end %>
+            <% else %>
+               <span class="category-story-title">"No Review Yet"</span>
+            <% end %> 
+
+
+
+
+        </div>
+  </div>
+
+</div>
+
+<% category.merchants.sample(2).each_with_index do |merchantright, i| %>
+        <div class="category-right-container">
+          <div class="category-right-banner">
+            
+                        
+             <a href="<%= merchant_url(merchantright) %>">
+                <% if merchantright.photo.file? %>
+                  <%= image_tag merchantright.photo.url(:big) %>
+                <% else %>
+                  <%= image_tag "WGSlice/default-merchant.png", class:"default-merchant-picture-category"  %>
+                <% end %>
+             </a>
+
+           
+          </div>
+        </div> 
+         <% end %>   
+
+<% end %>
+
+
+      

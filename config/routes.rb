@@ -1,4 +1,6 @@
 WarmGreet::Application.routes.draw do
+  get "electronics/index"
+
   get "writestory/write"
 
   get "profile/index"
@@ -22,6 +24,13 @@ WarmGreet::Application.routes.draw do
     resources :follows, :only => [:create, :destroy]
     get 'activate'
   end
+
+  resources :categories, :only => [:create, :new, :show, :edit, :update, :index, :profile] do
+    resources :follows, :only => [:create, :destroy]
+    get 'activate'
+  end
+
+
 
 
   resources :customers, :only => [:create, :new, :show, :edit, :update, :index] do

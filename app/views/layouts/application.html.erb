@@ -24,7 +24,9 @@
   <%Keen.read_key = Rails.configuration.KEEN_READ_KEY%>
 <%Keen.master_key = Rails.configuration.KEEN_MASTER_KEY%>
 
-<% @review = Review.first %>
+<% @review = Review.order("RANDOM()").first %>
+ <%@categories = Category.all %>
+
 <header>
 
   <% if request.original_url == "#{home}/merchants/index.html" %>
@@ -63,29 +65,33 @@
                 <% end %>
               <% end %>
 
-             <strong class="random-story-title">"<%= @review.title %>"</strong>
+             <div class="random-story-text">
+                <span class="random-story-title">"<%= @review.title %>"</span>
+                <br>
+                <span class="random-story-body">
+                  Rating: <%= @review.rating %> 
+                      - <%= @review.user.username%>'s shopping story 
+                 </span>
+               <br><br>
+
+               <span class="random-story-see-more"> 
+                  see more shopping stories on 
+               
+                 <br>
+                 
+                
+                 <strong><%= link_to @review.merchant.name, merchant_url(@review.merchant), style:"color:white; margin-left:10px" %></strong>
+                </span> 
+             </div>
              
              <br>
              
-             <span class="random-story-body">
-              Rating: <%= @review.rating %> 
-                  - <%= @review.user.username%>'s shopping story 
-             </span>
-               <br><br>
-
-             <span class="random-story-see-more"> 
-                see more shopping stories on 
              
-               <br>
-               
-              
-               <%= link_to @review.merchant.name, merchant_url(@review.merchant), style:"color:white; margin-left:110px" %>
-              </span> 
           <% end %>
         </span>
         
       </div>
-  <% else%>
+  <% else request.original_url == "#{home}/"%>
     <nav class="top-nav-no-index group">
   <% end %>
 
@@ -94,7 +100,14 @@
    <%# puts "*****************#{current_user.slug}*****************"%>
     <% if request.original_url == "#{home}/users/#{current_user.slug}"%>
       <nav class="top-nav-stories-feed group">
+    
+    <% elsif request.original_url == "#{home}/categories/Electronics"%>
+      <nav class="top-nav-electronics group">
+
+    <% elsif request.original_url == "#{home}/categories/Fashion"%>
+      <nav class="top-nav-fashion group">
     <% end %>
+
   <% else %>
       <nav class="top-nav-no-index group">
   <% end %>
@@ -199,17 +212,17 @@
               </div>
 
 
-              
+             
 
               <div class="category" >
                 <ul class="nav nav-pills">
                   <li>
-                   <a class="white" href="#">
+                   <a class="white">
                     Category   
                    </a>
                     <ul class="category-dropdown">
-                      <li><a href="#">Electronics</a></li>
-                      <li><a href="#">Fashion</a></li>
+                      <li><a href="<%=category_url(@categories.first)%>"><%=@categories.first.name%></a></li>
+                      <li><a href="<%=category_url(@categories.second)%>"><%=@categories.second.name%></a></li>
                     </ul>
                   </li>
                 </ul>
@@ -229,19 +242,10 @@
             </ul>
             <% else %>
               <div class = "category-no-sign-in">
-               <a href="#"  style="color:white">
+               <a class="white">
                 Category
-                <b class="caret"></b>
                </a>
-               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
+               
               </div>
 
               <div class = "find_friends-no-sign-in">
@@ -266,19 +270,13 @@
               <div class = "category-home">
                  <ul class="nav nav-pills">
                   <li>
-                   <a class="white" href="#">
+                   <a class="white">
                     Category
-                    <b class="caret"></b>
                    </a>
-                   <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
+                     <ul class="category-dropdown">
+                      <li><a href="<%=category_url(@categories.first)%>"><%=@categories.first.name%></a></li>
+                      <li><a href="<%=category_url(@categories.second)%>"><%=@categories.second.name%></a></li>
+                    </ul>
                    </li>
                   </ul>
               </div>
@@ -297,19 +295,13 @@
               <div class = "category-home-no-sign-in">
                  <ul class="nav nav-pills">
                   <li>
-                   <a class="white" href="#">
+                   <a class="white">
                     Category
-                    <b class="caret"></b>
                    </a>
-                   <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
+                   <ul class="category-dropdown">
+                      <li><a href="<%=category_url(@categories.first)%>"><%=@categories.first.name%></a></li>
+                      <li><a href="<%=category_url(@categories.second)%>"><%=@categories.second.name%></a></li>
+                    </ul>
                   <li>
                   </ul>
               </div>

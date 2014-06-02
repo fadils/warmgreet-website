@@ -13,8 +13,14 @@
   src: url("NOVECENTOWIDE-MEDIUM.OTF");
 }
 
+@font-face
+{
+  font-family: "Helvetica Thin";
+  src: url("HELVETICANEUELTSTD-TH.OTF");
+}
+
 html,body{
-  min-width:1020px;
+  min-width:960px;
   min-height:1000px;
 }
 
@@ -26,6 +32,7 @@ html{
 	padding-left:5%;
 	padding-right:5%;
 }
+
 /*
 Header with the big image
 */
@@ -50,11 +57,39 @@ Header with the big image
   height:750px;
 }
 
+.top-nav-electronics{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  
+  box-shadow: 1px 1px 3px gray;
+  background-image: url("/assets/WGSlice/banner-category-tech.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+}
+
+.top-nav-fashion{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  
+  box-shadow: 1px 1px 3px gray;
+  background-image: url("/assets/WGSlice/banner-category-fashion.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+}
+
 
 .top-nav-stories-feed{
   position: relative;
   width: 100%;
-  height: 95%;
+  height: 100%;
   margin: auto;
   
   box-shadow: 1px 1px 3px gray;
@@ -97,17 +132,27 @@ random story showed in top-nav
   position:absolute;
   color: white;
   font-family: "Bariol";
-  margin-top:90px;
-  margin-left:45px;
+  margin-top:50px;
+  left:40px;
+  right:50px;
   z-index:9999;
-  width:100%;
 }
 
 .random-story img{
   float: left;
 }
 
+.random-story-text{
+  position:absolute;
+  width:100%;
+  margin-top: 5px;
+  margin-left: 100px;
+  text-align:left;
+}
+
+
 .random-story-title{
+  position:relative;
   font-family: "Bariol";
   font-size: 28px;
   color: white;
@@ -118,8 +163,10 @@ random story showed in top-nav
 }
 
 .random-story-body{
+  position:relative;
   font-family:"Bariol";
-  margin-left: 2%;
+  margin-left: 10px;
+  margin-top:50px;
   font-size: 18px;
 }
 
@@ -167,8 +214,7 @@ random story showed in top-nav
   font-family: "Bariol";
   color: white;
   position: absolute;
-  left: 20%;
-  right: 75%;
+  left: 257px;
   top: 13px;
 }
 
@@ -282,7 +328,7 @@ a span{
 	margin-left:5%;
 }
 
-.info ul ul, .category ul ul{
+.info ul ul, .category ul ul, .category-home ul ul, .category-home-no-sign-in ul ul{
   display: none;
   background-color: rgb(35,31,32);
   opacity: 0.75;
@@ -290,7 +336,7 @@ a span{
   width:120px;
 }
 
-.info ul li:hover > ul, .category ul li:hover > ul {
+.info ul li:hover > ul, .category ul li:hover > ul, .category-home ul li:hover > ul, .category-home-no-sign-in ul li:hover > ul{
     display: block;
 }
 
@@ -320,7 +366,7 @@ a:hover{
 }
 
 
-.info ul li, .category ul li {
+.info ul li, .category ul li, .category-home ul li, .category-home-no-sign-in ul li {
   list-style: none;
   text-align: center;
 }  
@@ -332,7 +378,7 @@ a:hover{
     text-decoration: none;
 }
 
-.category ul ul li a{
+.category ul ul li a, .category-home ul ul li a, .category-home-no-sign-in ul ul li a{
   display: block;
   padding:10px;
   padding-top:10px;
@@ -340,7 +386,7 @@ a:hover{
 }
 
 
-.info ul ul li, .category ul ul li {
+.info ul ul li, .category ul ul li, .category-home ul ul li, .category-home-no-sign-in ul ul li {
     float: none; 
     margin-left:-35%;
     border-top: 1px solid #6b727c;
@@ -412,7 +458,8 @@ nav ul {
   font-family:"Novecento";
   position: relative;
   top:-620px;
-  left: 20px;
+  left: 45%;
+  right:45%;
 }
 
 .list-results{
@@ -619,6 +666,14 @@ textarea {
   top:150px;
 }
 
+.result-merchant-name{
+  font-size:24px;
+  font-family:"Helvetica Thin"
+}
+
+.searched-merchant ul li{
+  list-style: none;
+}
 
 .prof-review .review-body {
   display: inline-block;
@@ -631,7 +686,7 @@ textarea {
 
 .review-body {
   display: block;
-  margin-top:0%;
+  margin-top: 4%;
   margin-left:105px;
   font-family: "Bariol";
   font-size: 18px;
@@ -645,8 +700,7 @@ textarea {
 
 .review-body-header{
 	margin-left:115px;
-
-  margin-top:-10px;
+  margin-top:30px;
 }
 
 
@@ -748,14 +802,14 @@ textarea {
 }
 
 .default-merchant-banner-category{
-	max-width:130%;
-	max-height:46%;
+	width:52%;
+	height:30%;
 }
 
 
 .default-merchant-picture-category{
-	width:150%;
-	height:46%;
+	width:16%;
+	height:16%;
 }
 
 
@@ -889,6 +943,8 @@ Story Feed
 }
 
 
+
+
 .prof-content {
   margin-top: auto;
   padding-top: 20px;
@@ -959,6 +1015,15 @@ Story Feed
   -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
   -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
   -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
+  position: absolute;
+  margin-top: 18px;
+  margin-left:14px;
+}
+
+.story-title-rating{
+  position: absolute;
+margin-top: 36px;
+margin-left: 2px;
 }
 
 
@@ -2092,6 +2157,175 @@ span.amp {
   background-color: rgb(255,234,71);
   opacity: 0.75;
 }
+
+/**
+Category
+**/
+
+.category-content-container {
+  padding-left: 125px;
+  padding-right:125px;
+}
+
+.category-left-container{
+  position:relative;
+  top:-200px;
+  left:10px;
+  right:500px;
+}
+
+.category-right-container{
+  position: relative;
+  left: 656px;
+  right:125px;
+  top: -720px;
+  width:500px;
+}
+
+
+.category-mid-feed {
+  position: absolute;
+  text-align: justify;
+}
+
+.category-review {
+  float: left;
+  left:125px;
+  display: block;
+  position: relative;
+
+}
+
+.category-body-header{
+  
+}
+
+.prof-left-category {
+  display: block;
+  width: 40%;
+  height: 500px;
+  margin-left:2%;
+  margin-top:1%;
+}
+
+
+
+.category-body {
+  display: block;
+  margin-top:0%;
+  margin-left:15px;
+  font-family: "Bariol";
+  font-size: 18px;
+  line-height: normal;
+  word-break: normal;
+  padding: 0 10px;
+  height: auto;
+  vertical-align: bottom;
+  text-align: justify;
+}
+
+.review-body-category {
+  position:absolute;
+  margin-top:9%;
+  right:0%;
+  left:-27%;
+  text-align: justify;
+  font-family: "Bariol";
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 26px;
+}
+
+.category-left-banner{
+  top:260px;
+  left:10px;
+  right:800px;
+}
+
+.category-right-banner{
+  margin-top: 166px;
+left: 800px;
+right: 10px;
+}
+
+.category-story-title{
+  position:absolute;
+  float: right;
+  font-size: 24px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  top:77%;
+  left: 11%;
+  right:48%;
+  
+}
+
+.category-story-writer{
+  position:absolute;
+  float:right;
+  text-align:left;
+  font-family:'Bariol'; 
+  font-size:16px; 
+  font-weight:bold; 
+  left:0%; 
+  right:0%;
+  top:95%;
+  
+}
+
+.review-pic-category {
+  margin-top:20px;
+  width:10%;
+}
+
+.story-icon-category{
+  position:absolute;
+  margin-top:10%;
+  margin-left: -6%;
+}
+
+
+.story-icon-category-text{
+  position:absolute;
+  font-family: "Bariol";
+  font-weight:100;
+  margin-top:11%;
+  margin-left: 3%;
+}
+
+
+.story-thumb-category{
+  position:absolute;
+  margin-top:10%;
+  margin-left: 12%;
+}
+
+
+
+.story-thumb-category-text{
+  position:absolute;
+  font-family: "Bariol";
+  font-weight:100;
+  margin-top:11%;
+  margin-left: 22%;
+}
+
+.review-body-category-separator{
+  position: absolute;
+  left: 120px;
+  right:120px;
+  top: 290px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

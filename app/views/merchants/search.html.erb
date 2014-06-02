@@ -12,31 +12,36 @@
           <% end %>
           <br>
       <li class="search_results">
-        <%= (10*(@merchants.current_page-1))+i+1 %>.
         <a href="<%= merchant_url(merchant) %>">
-        <%= merchant.name.upcase %>
+        <span class="result-merchant-name"><%= merchant.name.upcase %></span>
         </a>
-        <br>
-        (Average Rating: <%= merchant.average_rating %>)
-        <br>
-         (based on <%= merchant.reviews.count %> stories)
-            <br>
         <% if merchant.ranking(merchant) == nil %>
-              Rank: Unranked
+              <span style="font-weight:bold">Rank: Unranked</span>
             <% else %>
-              Rank: <%= merchant.ranking(merchant) %> of <%= Merchant.all.count %> online stores
+              <span style="font-weight:bold">Rank: <%= merchant.ranking(merchant) %> of <%= Merchant.all.count %></span>
             <% end %>
+        <br>
+        on <%= merchant.categories.first.name%> Online Store
+        <br>
+        <%= merchant.country.name%>
+        <br>
+        Average Rating: <%= merchant.average_rating %> - ntar dulu
+        <br>
+         based on <%= merchant.reviews.count %> <% if merchant.reviews.count > 1 %> stories
+                                                <% else %> story
+                                                <% end %>
+        
       </li>
 
 
 
-      <div class="search-write-story">
+      <!--div class="search-write-story">
         <span>
           <% if current_user %>
               <%= link_to "Write a story!", new_merchant_review_url(merchant), style:"color:black;"%>
           <% end %>
         </span>
-      </div>
+      </div-->
     <% end %>
     </ul>
     <%= paginate @merchants %>

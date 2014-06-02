@@ -1,4 +1,7 @@
 class Category < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :name
+  
   attr_accessible :name
 
   validates :name, presence: true
