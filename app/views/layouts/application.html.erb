@@ -109,7 +109,14 @@
     <% end %>
 
   <% else %>
+    <% if request.original_url == "#{home}/categories/Electronics"%>
+      <nav class="top-nav-electronics group">
+
+    <% elsif request.original_url == "#{home}/categories/Fashion"%>
+      <nav class="top-nav-fashion group">
+    <% else %>
       <nav class="top-nav-no-index group">
+    <% end %>
   <% end %>
 
  
