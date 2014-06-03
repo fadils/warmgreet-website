@@ -32,9 +32,9 @@
          <strong><%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:0px; margin-left: 230px; height:40px")%></strong>
         
        
-       <div class="story-title-public">
-        <strong class="story-title">"<%= review.title %>"</strong>
-       </div>
+       
+        <strong class="story-title-public">"<%= review.title %>"</strong>
+      
     <% if current_user == @user %>
         (<%= link_to "Edit Story", edit_review_url(review) %>)
       <% end %>

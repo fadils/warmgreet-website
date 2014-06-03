@@ -117,7 +117,7 @@
       <div class="logo">
         <% if request.original_url != "#{home}/"%>
           <% if signed_in? %>
-            <a href="<%= user_url(current_user)%>">
+            <a href="/">
               <%= image_tag("wg_logo_2.png", height: '60', width: '60')%>
             </a>
           <% else %>

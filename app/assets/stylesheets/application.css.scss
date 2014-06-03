@@ -178,6 +178,10 @@ random story showed in top-nav
 /*
 */
 
+.content-main-header-root{
+  position: relative;
+  top: -10px;
+}
 
 .logo {
   float: left;
@@ -623,6 +627,12 @@ textarea {
   font-family: "Novecento";
 }
 
+.category-separator-root {
+  font-size: 23px;
+  font-family: "Novecento";
+}
+
+
 .separator-pic {
   position: absolute;
   /*background: url("/assets/WGSlice/stripe_repeat.png");
@@ -642,6 +652,17 @@ textarea {
   position: relative;
 
 }
+
+.prof-review-root {
+  float: left;
+  top:5%;
+  left:125px;
+  width:78%;
+  display: block;
+  position: relative;
+
+}
+
 
 .prof-review-in-index {
   float: left;
@@ -1012,12 +1033,9 @@ Story Feed
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   font-style: italic;
-  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
-  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
-  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
   position: absolute;
-  margin-top: 18px;
-  margin-left:14px;
+  margin-top: 7px;
+  float: left;
 }
 
 .story-title-rating{
@@ -1380,6 +1398,16 @@ Start of User Profile
   border: none;
 }
 
+.category-name-separator{
+  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: absolute;
+  left: 190px;
+  right:125px;
+  top: -15px;
+  height: 12px;
+  border: none;
+}
+
 
 .after-merchants-list-separator{
   position: absolute;
@@ -1441,9 +1469,30 @@ Start of User Profile
 
 
 .story-title-public{
-  margin-top:15px;
+  font-size: 27.521px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  position: absolute;
+ margin-top: 61px;
+margin-left: -383px;
+  float: left;
   width:100%;
 }
+
+
+.story-title-merchant{
+  font-size: 27.521px;
+  font-family: "Bariol";
+  color: rgb( 45, 45, 45 );
+  font-style: italic;
+  position: absolute;
+ margin-top: 61px;
+margin-left: -383px;
+  float: left;
+  width:100%;
+}
+
 
 
 .written-time-public{
@@ -1460,7 +1509,7 @@ Start of User Profile
   height: auto;
   vertical-align: bottom;
   text-align: justify;
-  margin-top: 10px;
+  margin-top: 45px;
   margin-bottom: 15px;
 }
 
@@ -1537,6 +1586,11 @@ Merchant Page
   right:125px;
   position: absolute;
   display:block;
+}
+
+.root-content-container{
+  position:absolute;
+  top:780px;
 }
 
 
@@ -1871,13 +1925,16 @@ Create story
 }
 
 .hr-create-story-merchant-section{
-  position: relative;
-  width: 100%;
-  left:-25px;
+  position: absolute;
+  left: 0px;
+  right:0px;
+  top:100px;
 }
 
 .create-story-form-area{
-  width:65%;
+  width: 65%;
+top: 123px;
+position: absolute;
 }
 
 .your-experience-text{
@@ -1963,7 +2020,7 @@ Create story
 
 .submit-story{
   position: relative;
-  top:50px;
+  top: -287px;
 }
 
 .submit-story span{

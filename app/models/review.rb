@@ -3,8 +3,8 @@ class Review < ActiveRecord::Base
 
   validates :title, :body, :rating, :user_id, :merchant_id, presence: true
   #validates :merchant_id, uniqueness: { :scope => :user_id, :message => "You already wrote a review for this place!" }
-  validates :title, length: { minimum: 2, message: "title too short!" }
-  validates :body, length: { minimum: 6, message: "body too short!" }
+  validates :title, length: { minimum: 2, maximum: 60, message: "title should be between 2 to 60 characters" }
+  validates :body, length: { minimum: 50, message: "body too short! Give more detail, people will love it" }
 
   has_attached_file :pic, 
                 :styles => {
