@@ -608,6 +608,27 @@ textarea:focus {
   font-size: 30pt;
 }
 
+.delete-button {
+  padding: 0;
+  margin: 0;
+}
+
+.delete-button .delete {
+  background-color: rgb(255,234,71); 
+  padding: 10px 5px 10px 55px;
+  font-family: "Bariol";
+  color: back;
+  width: 190px;
+  top: 250px;
+  right: 125px;
+  position: absolute;
+}
+
+.delete-button .delete:hover {
+  background: -webkit-linear-gradient(top, rgba(107,0,0,1) 0%,rgba(194,17,1,1) 100%);
+}
+
+
 
 input[type="text"],
 input[type="username"],

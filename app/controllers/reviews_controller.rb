@@ -62,7 +62,7 @@ class ReviewsController < ApplicationController
       redirect_to merchant_url(@review.merchant)
     else
       @review.destroy
-      redirect_to user_url(@review.user)
+      redirect_to profile_index_url(@review.user)
     end
   end
 end
