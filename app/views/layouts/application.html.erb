@@ -65,7 +65,7 @@
         <span class="random-story">
           <%if @review != nil %>
             <% if @review.user.photo.file? %>
-              <%= image_tag @review.user.photo.url(:big) %>
+              <%= image_tag @review.user.photo.url(:big), class:"circular" %>
               <% elsif @review.user.image? %>
                 <%= image_tag @review.user.image, size: "100x100", class:"circular" %>
               <% else %>

@@ -1,7 +1,7 @@
 <div class="container">
   <div class="content group" style="margin-top:-660px;">
 
-    <h2>Follow your friends</h2>
+    <h2>Get stories from people that matter you</h2>
 
     <ol class="list-results group">
     <% @users.each do |user| %>
@@ -11,7 +11,7 @@
       <li class="results">
         <a href="<%=user_url(user)%>">
           <% if user.photo.file? %>
-              <%= image_tag @user.photo.url(:big), :class => "user-propic" %>
+              <%= image_tag user.photo.url(:big), :class => "user-propic" %>
             <% elsif user.image? %>
               <%= image_tag user.image, size: "100x100", class:"circular" %>
             <% else %>
