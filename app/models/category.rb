@@ -13,6 +13,10 @@ class Category < ActiveRecord::Base
   through: :tags,
   source: :merchant
 
+  def feeds
+    Review.all
+  end
+
   include PgSearch
     multisearchable :against => [:name]
 

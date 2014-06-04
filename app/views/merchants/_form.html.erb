@@ -34,18 +34,30 @@
          placeholder="URL address">
     </div>
 
-     <div class="input">
+    <div class="input">
+
+      <% Category.all.each do |category| %>
+        <ul class="catego group">
+           <li><input id="restaurant_category" name="merchant[category_ids][]" type="checkbox" value="<%= category.id %>" <%= "checked" if @merchant.categories.include?(category) %>><%= category.name %></option></li>
+        </ul>
+      <% end %>
+      <input type="hidden" name="merchant[category_ids][]" value="">
+    </div>
+
+     <!--div class="input">
       <select
-         class="textbox-merchant-category">
+         class="textbox-merchant-category"
+         name="merchant[category_ids]">
          <% Category.all.each do |category| %>
           <option><%= category.name %></option>
          <% end %>
       </select>
-    </div>
+    </div-->
 
      <div class="input">
       <select
-         class="textbox-merchant-country">
+         class="textbox-merchant-country"
+         name="merchant[country_id]">
          <% Country.all.each do |country| %>
           <option><%= country.name %></option>
          <% end %>

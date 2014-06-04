@@ -50,6 +50,23 @@ Header with the big image
   background-size: cover;;
 }
 
+.search-bar{
+  position:absolute; 
+  z-index:9999; 
+  top: 9px;
+  left: 363px;
+  font-family:"Bariol";
+}
+
+.search-bar-no-home{
+  position:absolute; 
+  z-index:9999; 
+  top: 9px;
+  left: 442px;
+  font-family:"Bariol";
+}
+
+
 
 .top-nav-no-index{
   position: relative;
@@ -1565,6 +1582,8 @@ END
 }
 
 
+
+
 .grad_button {
     background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);
 }
@@ -1576,6 +1595,15 @@ END
 /*
 User Profile
 */
+
+.edit-profile-link{
+  position:absolute;
+  z-index:9999;
+  top: 271px;
+left: 162px;
+
+
+}
 
 /*
 Merchant Page

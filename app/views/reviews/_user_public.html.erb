@@ -35,7 +35,7 @@
        
         <strong class="story-title-public">"<%= review.title %>"</strong>
       
-    <% if current_user == @user %>
+    <% if current_user == review.user %>
         (<%= link_to "Edit Story", edit_review_url(review) %>)
       <% end %>
 

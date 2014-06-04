@@ -1,6 +1,6 @@
 <% action = (user.persisted? ? user_url(user) : users_url) %>
 <% method = (user.persisted? ? "put" : "post") %>
-<% message = (user.persisted? ? "Update!" : "Sign up!") %>
+<% message = (user.persisted? ? "Edit" : "Sign up!") %>
 
 <form class="form" action="<%= action %>" method="post" enctype="multipart/form-data">
   <input

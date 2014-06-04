@@ -4958,3 +4958,66 @@ unmatched close parenthesis: /a>
 [06/03/14 12:38:45 +0700 Pr0ducer.local (39209)] INFO : Installing Rails3 Error instrumentation
 [06/03/14 12:38:45 +0700 Pr0ducer.local (39209)] INFO : Finished instrumentation
 [06/03/14 12:38:48 +0700 Pr0ducer.local (39209)] INFO : Doing deferred dependency-detection before Rack startup
+[06/04/14 06:06:09 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `merchant' for #<#<Class:0x007fe5516b04c0>:0x007fe5526a2478>
+[06/04/14 06:06:27 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `merchant' for #<Merchant:0x007fe555eaa2d0>
+[06/04/14 06:06:27 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `merchant' for #<Merchant:0x007fe555eaa2d0>
+[06/04/14 06:06:51 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `merchant' for #<Merchant:0x007fe554cc1280>
+[06/04/14 06:06:51 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `merchant' for #<Merchant:0x007fe554cc1280>
+[06/04/14 06:13:25 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "reviews"
+LINE 1: SELECT reviews.* FROM "merchants" INNER JOIN "tags" ON "merc...
+               ^
+: SELECT reviews.* FROM "merchants" INNER JOIN "tags" ON "merchants"."id" = "tags"."merchant_id" WHERE "tags"."category_id" = 2
+[06/04/14 06:13:25 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "reviews"
+LINE 1: SELECT reviews.* FROM "merchants" INNER JOIN "tags" ON "merc...
+               ^
+: SELECT reviews.* FROM "merchants" INNER JOIN "tags" ON "merchants"."id" = "tags"."merchant_id" WHERE "tags"."category_id" = 2
+[06/04/14 06:15:21 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant::FriendlyIdActiveRecordRelation:0x007fe54d683a28>
+[06/04/14 06:15:21 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant::FriendlyIdActiveRecordRelation:0x007fe54d683a28>
+[06/04/14 06:20:52 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "reviews"
+LINE 1: SELECT reviews.* FROM "merchants"  WHERE "merchants"."countr...
+               ^
+: SELECT reviews.* FROM "merchants"  WHERE "merchants"."country_id" = 1
+[06/04/14 06:20:52 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "reviews"
+LINE 1: SELECT reviews.* FROM "merchants"  WHERE "merchants"."countr...
+               ^
+: SELECT reviews.* FROM "merchants"  WHERE "merchants"."country_id" = 1
+[06/04/14 06:23:30 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::GroupingError: ERROR:  column "reviews.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT merchants.*, reviews.* FROM "merchants" INNER JOIN "t...
+                            ^
+: SELECT merchants.*, reviews.* FROM "merchants" INNER JOIN "tags" ON "merchants"."id" = "tags"."merchant_id" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "tags"."category_id" = 2 GROUP BY merchants.id
+[06/04/14 06:23:30 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::GroupingError: ERROR:  column "reviews.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT merchants.*, reviews.* FROM "merchants" INNER JOIN "t...
+                            ^
+: SELECT merchants.*, reviews.* FROM "merchants" INNER JOIN "tags" ON "merchants"."id" = "tags"."merchant_id" LEFT JOIN reviews ON reviews.merchant_id = merchants.id WHERE "tags"."category_id" = 2 GROUP BY merchants.id
+[06/04/14 06:23:43 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `to_datetime' for nil:NilClass
+[06/04/14 06:23:43 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `to_datetime' for nil:NilClass
+[06/04/14 06:25:41 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `to_datetime' for nil:NilClass
+[06/04/14 06:25:41 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `to_datetime' for nil:NilClass
+[06/04/14 06:26:16 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "reviews"
+LINE 1: SELECT reviews.* FROM "merchants" INNER JOIN "tags" ON "merc...
+               ^
+: SELECT reviews.* FROM "merchants" INNER JOIN "tags" ON "merchants"."id" = "tags"."merchant_id" WHERE "tags"."category_id" = 2
+[06/04/14 06:26:16 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "reviews"
+LINE 1: SELECT reviews.* FROM "merchants" INNER JOIN "tags" ON "merc...
+               ^
+: SELECT reviews.* FROM "merchants" INNER JOIN "tags" ON "merchants"."id" = "tags"."merchant_id" WHERE "tags"."category_id" = 2
+[06/04/14 06:37:12 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `reviews' for #<Merchant::FriendlyIdActiveRecordRelation:0x007fe553c37180>
+[06/04/14 06:37:12 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `reviews' for #<Merchant::FriendlyIdActiveRecordRelation:0x007fe553c37180>
+[06/04/14 06:37:47 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant::FriendlyIdActiveRecordRelation:0x007fe54a4db2c8>
+[06/04/14 06:37:47 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `review' for #<Merchant::FriendlyIdActiveRecordRelation:0x007fe54a4db2c8>
+[06/04/14 06:39:05 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `average_rating' for #<Merchant::FriendlyIdActiveRecordRelation:0x007fe556d87500>
+[06/04/14 06:39:06 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `average_rating' for #<Merchant::FriendlyIdActiveRecordRelation:0x007fe556d87500>
+[06/04/14 06:41:32 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `sort_by' for "SELECT * FROM reviews":String
+[06/04/14 06:41:32 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `sort_by' for "SELECT * FROM reviews":String
+[06/04/14 06:42:06 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `sort_by' for "SELECT * FROM reviews":String
+[06/04/14 06:42:06 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `sort_by' for "SELECT * FROM reviews":String
+[06/04/14 06:46:13 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `photo' for nil:NilClass
+[06/04/14 06:46:13 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `photo' for nil:NilClass
+[06/04/14 06:52:50 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `photo' for nil:NilClass
+[06/04/14 06:52:50 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `photo' for nil:NilClass
+[06/04/14 07:04:56 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views/kaminari/_paginator.html.erb:1: syntax error, unexpected '='
+...buffer = @output_buffer;class = local_assigns[:class];curren...
+...                               ^
+[06/04/14 07:04:56 +0700 Pr0ducer.local (39209)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kaminari-0.14.1/app/views/kaminari/_paginator.html.erb:1: syntax error, unexpected '='
+...buffer = @output_buffer;class = local_assigns[:class];curren...
+...                               ^

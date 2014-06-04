@@ -29,14 +29,21 @@
 
 <header>
 
+
+
   <% if request.original_url == "#{home}/merchants/index.html" %>
     <nav class="top-nav group">
       <div class="WG-mainlogo">
         <%= image_tag "WGSlice/mainlogo.png", class:"img-responsive" %>
-
-                  
+                
       </div>
-
+      <form class="navbar-form navbar-right search-bar" action="<%= search_url %>" method="get">
+        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+        <div class="form-group">
+          <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
 
       
   <% end %>
@@ -44,6 +51,13 @@
   <% if request.original_url == "#{home}/"%>
 
     <nav class="top-nav group img-responsive">
+      <form class="navbar-form navbar-right search-bar" action="<%= search_url %>" method="get">
+        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+        <div class="form-group">
+          <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
       <div class="WG-mainlogo">
         <%= image_tag("WGSlice/mainlogo.png", height: '100%', width: '100%')%>
         
@@ -91,8 +105,15 @@
         </span>
         
       </div>
-  <% else request.original_url == "#{home}/"%>
+  <% else %>
     <nav class="top-nav-no-index group">
+      <form class="navbar-form navbar-right search-bar-no-home" action="<%= search_url %>" method="get">
+        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+        <div class="form-group">
+          <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
   <% end %>
 
 
@@ -166,7 +187,7 @@
 
               <%#= link_to current_user.username, user_url(current_user) %>
 
-                  <a href="#{profile_index_url(current_user)}" style ='color:#FFFFFF; font-family:bariol;'>
+                  <a href="<%=profile_index_url(current_user)%>" style ='color:#FFFFFF; font-family:bariol;'>
                     <%=current_user.username.capitalize%>
                     <b class="caret"></b>
                   </a>

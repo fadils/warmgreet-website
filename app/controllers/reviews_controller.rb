@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
     @merchant.average_rating
     @merchant.update_attributes(params[:merchant_avg_rtg])
 
-    push_review(@review)
+    #push_review(@review)
 
     if request.xhr?
       headers["Content-Type"] = 'text/html; charset=utf-8'

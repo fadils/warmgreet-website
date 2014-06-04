@@ -91,7 +91,7 @@
         </div>
 
         <% if current_user == @user %>
-          <%= link_to "Edit Profile", edit_user_url(@user) %>
+          <%= link_to "Edit Profile", edit_user_url(@user), class:"edit-profile-link" %>
         <% end %>
 
         <% unless current_user == @user %>
