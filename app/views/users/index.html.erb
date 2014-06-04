@@ -11,7 +11,7 @@
       <li class="results">
         <a href="<%=user_url(user)%>">
           <% if user.photo.file? %>
-              <%= image_tag user.photo.url(:big), size:"100x100", :class => "circular" %>
+              <%= image_tag user.photo.url(:small), size:"100x100", :class => "circular" %>
             <% elsif user.image? %>
               <%= image_tag user.image, size: "100x100", :class => "circular" %>
             <% else %>
