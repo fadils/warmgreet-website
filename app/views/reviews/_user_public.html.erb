@@ -6,7 +6,7 @@
        <div class="prof-left-feed group">
           
           <% if review.merchant.photo.file? %>
-          <%= image_tag review.merchant.photo.url(:big) %>
+          <%= image_tag review.merchant.photo.url(:big), :class => "circular" %>
           <% else %>
             <%= image_tag "WGSlice/default-merchant.png", size: "100x100" %>
           <% end %>
