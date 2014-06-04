@@ -1,5 +1,6 @@
 <%user.reviews.sort_by{ |rev| rev.created_at }.reverse!.each do |review| %>
 
+<%if review%>
   <div class="prof-review-feed group">
 
        <div class="prof-left-feed group">
@@ -69,5 +70,6 @@
 
 
   </div>
+  <%end%>
 
 <% end %>

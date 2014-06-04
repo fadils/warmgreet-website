@@ -1,4 +1,5 @@
 class Review < ActiveRecord::Base
+
   attr_accessible :title, :body, :pic, :pic_file_name, :rating, :user_id, :merchant_id
 
   validates :title, :body, :rating, :user_id, :merchant_id, presence: true
