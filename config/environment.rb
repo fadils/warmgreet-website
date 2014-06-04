@@ -10,9 +10,9 @@ if Rails.env.production?
     :address        => 'smtp.sendgrid.net',
     :port           => '587',
     :authentication => :plain,
-    :user_name      => ENV['SENDGRID_USERNAME'],
-    :password       => ENV['SENDGRID_PASSWORD'],
-    :domain         => 'heroku.com'
+    :user_name      => 'fadils',
+    :password       => 'sendgrid@021103F',
+    :domain         => 'sendgrid.com'
   }
   ActionMailer::Base.delivery_method ||= :smtp
 elsif Rails.env.development?
