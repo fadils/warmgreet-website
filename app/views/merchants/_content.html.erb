@@ -8,8 +8,11 @@
 
 <% category.feeds.sort_by{ |rev| rev.created_at }.reverse!.each_with_index do |review, i| %>
 
+ 
+ 
+<%#if review.merchant.categories.first.name == category.id%>
+
 <div class="prof-review-root group">
-<% if review %>
 
   
     <div class = "row">
@@ -95,9 +98,10 @@
         </div>
       </div>
       <hr>
-    <% end %>
+    
 
   </div>
+  <%# end %>
 
 <% end %>
 

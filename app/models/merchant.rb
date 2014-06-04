@@ -95,5 +95,9 @@ class Merchant < ActiveRecord::Base
     merchant.try(:is_password?, password) ? merchant : nil
   end
 
+  def reviews
+    self.reviews
+  end
+
 
 end
