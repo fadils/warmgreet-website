@@ -21,11 +21,11 @@
               <span style="font-weight:bold">Rank: <%= merchant.ranking(merchant) %> of <%= Merchant.all.count %></span>
             <% end %>
         <br>
-        on <%= merchant.categories.first.name%> Online Store
-        <br>
+        <!--on <%#= merchant.categories.first.name%> Online Store
+        <br-->
         <%= merchant.country.name%>
         <br>
-        Average Rating: <%= merchant.average_rating %> - ntar dulu
+        Average Rating: <%= merchant.average_rating %>
         <br>
          based on <%= merchant.reviews.count %> <% if merchant.reviews.count > 1 %> stories
                                                 <% else %> story
