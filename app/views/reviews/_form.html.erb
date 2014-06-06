@@ -98,7 +98,8 @@
            name="review[title]"
            type="text"
            style="width:60%; height:15%;padding-left:5px; border:1px solid rgb(194,194,194);"
-           value="<%= @review.title %>">
+           value="<%= @review.title %>"
+           placeholder="Make it catchy (max. 60 characters)">
         <br>
       </div>
 
@@ -110,7 +111,9 @@
         <textarea rows="4"
                 cols="50"
                 id="review_body"
-                name="review[body]" style="border-color:rgb(194,194,194);"><%= @review.body %></textarea>
+                name="review[body]" 
+                placeholder="Buat ceritamu sedetil mungkin. The more detail, the better."
+                style="border-color:rgb(194,194,194);"><%= @review.body %></textarea>
       </div>
 
       <br>
