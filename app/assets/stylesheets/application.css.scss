@@ -954,6 +954,19 @@ Story Feed
   margin-left: 155px;
 }
 
+.prologue-text {
+  position: absolute;
+  top: 50px;
+  left: 33%;
+}
+
+.add-new-head-text {
+  left: 36%;
+  font-family: "Bariol";
+  font-size: 32px;
+  position: absolute;
+}
+
 
 .story-badge{
   display: inline;
@@ -975,6 +988,12 @@ Story Feed
   margin-left: 25%;
 }
 
+.add-new-content {
+  position: absolute;
+  top: 106px;
+  left: 125px;
+  right: 125px;
+}
 
 .story-icon-index-text{
   position:absolute;
