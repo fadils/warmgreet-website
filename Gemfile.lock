@@ -133,6 +133,7 @@ GEM
     formatador (0.2.4)
     friendly_id (4.0.10.1)
       activerecord (>= 3.0, < 4.0)
+    google-analytics-rails (0.0.4)
     guard (2.4.0)
       formatador (>= 0.2.4)
       listen (~> 2.1)
@@ -323,6 +324,7 @@ DEPENDENCIES
   figaro
   fog
   friendly_id
+  google-analytics-rails
   guard-rspec
   jbuilder
   jquery-rails
