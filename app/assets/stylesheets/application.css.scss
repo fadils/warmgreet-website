@@ -21,7 +21,6 @@
 
 html,body{
   min-width:960px;
-  min-height:1000px;
 }
 
 html{
@@ -118,6 +117,7 @@ Header with the big image
 }
 
 
+
 /*
 Main logo, but not in the nav header. "Online story, honestly shared"
 */
@@ -129,6 +129,13 @@ Main logo, but not in the nav header. "Online story, honestly shared"
   position: absolute;
   left: 3%;
   top: 12%;
+}
+
+.version-logo{
+  position: absolute;
+  left: 8%;
+  width: 40%;
+  top: 10%;
 }
 
 /*
@@ -294,7 +301,7 @@ random story showed in top-nav
   font-family: "Bariol";
   color: white;
   position: absolute;
-  left: 205px;
+  left: 186px;
   top: 13px;
 }
 
@@ -667,7 +674,7 @@ textarea {
 
 .category-separator-root {
   font-size: 23px;
-  font-family: "Novecento";
+  font-family: "Bariol";
 }
 
 
@@ -693,11 +700,10 @@ textarea {
 
 .prof-review-root {
   float: left;
-  top:5%;
-  left:125px;
-  width:78%;
-  display: block;
-  position: relative;
+top: 5%;
+left: 0px;
+width: 89%;
+position: relative;
 
 }
 
@@ -1439,9 +1445,9 @@ Start of User Profile
 .category-name-separator{
   background-image: url("/assets/WGSlice/stripe_repeat.png") ;
   position: absolute;
-  left: 190px;
+  left: 590px;
   right:125px;
-  top: -15px;
+  top: -20px;
   height: 12px;
   border: none;
 }
@@ -2424,24 +2430,39 @@ right: 10px;
   top: 290px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 a:hover{
   text-decoration:none;
 }
 
+/* footer */
 
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
 
+footer a {
+  color: #555;
+}
 
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
 
 

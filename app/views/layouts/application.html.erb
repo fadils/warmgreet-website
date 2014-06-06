@@ -35,9 +35,10 @@
   <% if request.original_url == "#{home}/merchants/index.html" %>
     <nav class="top-nav group">
       <div class="WG-mainlogo">
-        <%= image_tag "WGSlice/mainlogo.png", class:"img-responsive" %>
-                
+        <%= image_tag "WGSlice/mainlogo.png", class:"img-responsive" %>  
+                     
       </div>
+    
       <form class="navbar-form navbar-right search-bar" action="<%= search_url %>" method="get">
         <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
         <div class="form-group">
@@ -61,6 +62,7 @@
       </form>
       <div class="WG-mainlogo">
         <%= image_tag("WGSlice/mainlogo.png", height: '100%', width: '100%')%>
+         <%= image_tag "WGSlice/alpha.png", class:"version-logo" %>
         
         
         <span class="random-story">
@@ -362,11 +364,6 @@
   </div>
 </main>
 
-
-<footer class="group">
-  <div class="footer group">
-  </div>
-</footer>
 
 </body>
 </html>
