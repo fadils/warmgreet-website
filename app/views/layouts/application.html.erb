@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
 <% env = Rails.env %>
 <%#puts Rails.env + "ADFADFADFA"%>
 <% if env == "development" %>
@@ -28,7 +27,11 @@
 <% @review = Review.order("RANDOM()").first %>
  <%@categories = Category.all %>
 
+ 
+
 <header>
+
+
 
 
 
@@ -205,9 +208,8 @@
             <% end %>
               <%=current_user.username.capitalize%> <span class="caret"></span>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="<%=profile_index_url(current_user)%>">Profile</a></li>
+                <li><a href="<%=profile_show_url(current_user)%>">Profile</a></li>
                 <li><a href="<%=user_url(current_user)%>">Story Feed</a></li>
-                <li><a href="<%= users_url%>">Find Friends</a></li>
 
                 <li class="divider"></li>
                 <li><%= link_to "Sign Out", session_url, :method => :delete%></li>
@@ -266,11 +268,9 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" style="color:white">
                       Community <span class="caret"></span>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="<%= users_url%>">Find Friends</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="<%= users_url%>">Find Greeters</a></li>
+                        <li><a href="<%= about_index_url%>">About Us</a></li>
+                        <li><a href="<%= guideline_index_url%>">Guideline</a></li>
                       </ul>
                     </a>
                   
@@ -311,11 +311,9 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" style="color:white">
                       Community <span class="caret"></span>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="<%= users_url%>">Find Friends</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="<%= users_url%>">Find Greeters</a></li>
+                        <li><a href="<%= about_index_url%>">About Us</a></li>
+                        <li><a href="<%= guideline_index_url%>">Guideline</a></li>
                       </ul>
                     </a>
                   
@@ -343,11 +341,9 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" style="color:white">
                       Community <span class="caret"></span>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="<%= users_url%>">Find Friends</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="<%= users_url%>">Find Greeters</a></li>
+                        <li><a href="<%= about_index_url%>">About Us</a></li>
+                        <li><a href="<%= guideline_index_url%>">Guideline</a></li>
                       </ul>
                     </a>
                   
@@ -369,7 +365,6 @@
 
   </div>
 </main>
-
 
 </body>
 </html>

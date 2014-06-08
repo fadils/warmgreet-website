@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "about";
+@import "guideline";
 
 
 @font-face
@@ -19,8 +21,9 @@
   src: url("HELVETICANEUELTSTD-TH.OTF");
 }
 
-html,body{
+html, body{
   min-width:960px;
+  height:100%;
 }
 
 html{
@@ -122,8 +125,6 @@ a .white ul:hover{
 
 .top-nav-no-index{
   position: relative;
-  overflow:hidden;
-  height:750px;
 }
 
 .top-nav-electronics{
@@ -143,7 +144,7 @@ a .white ul:hover{
 .top-nav-fashion{
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 750px;
   margin: auto;
   
   box-shadow: 1px 1px 3px gray;
@@ -158,7 +159,7 @@ a .white ul:hover{
 .top-nav-stories-feed{
   position: relative;
   width: 100%;
-  height: 100%;
+  height:750px;
   margin: auto;
   
   box-shadow: 1px 1px 3px gray;
@@ -199,7 +200,7 @@ HEader: write a story, category, etc
   background-color: rgb(35,31,32);
   opacity: 0.75;
   /*border-bottom: 1px solid black;*/
-  height: 9%;
+  height: 68px;
 }
 
 /*
@@ -305,7 +306,7 @@ random story showed in top-nav
   font-family: "Bariol";
   color: white;
   position: absolute;
-  left: 371px;
+  left: 367px;
   top: 22px;
 }
 
@@ -403,13 +404,8 @@ a span{
 }
 
 
-
-li:hover{
-  opacity: 0.75;
-}
-
 a:hover{
-	opacity: 0.75;
+	opacity: 0.50;
 }
 
 .category ul ul li a, .category-home ul ul li a, .category-home-no-sign-in ul ul li a{
@@ -482,7 +478,7 @@ nav ul {
 .search-result{
   font-family:"Novecento";
   position: relative;
-  top:-620px;
+  top:30px;
   left: 45%;
   right:45%;
 }
@@ -501,12 +497,12 @@ nav ul {
 
 .searched-merchant{
   position: relative;
-  top:-600px;
+  top:50px;
 }
 
 .searched-merchant-noresult{
   position: relative;
-  top:-600px;
+  top:50px;
   left:0px;
 }
 
@@ -533,8 +529,8 @@ nav ul {
 .search-write-story-noresult{
   position: relative;
   text-align: center;
-  top:-15px;
-  left:-90px;
+  top:20px;
+  left:-450px;
 
   color: white;
 }
@@ -1588,7 +1584,7 @@ Write a new story
 */
 
 .search-box-title-select{
-  margin-top:-650px;
+  margin-top:25px;
   font-weight: bold;
   font-size: 25pt;
   text-align:center;
@@ -2454,15 +2450,23 @@ a:hover{
 
 /* footer */
 
+#wrap {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+}
+
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  height: 68px;
+  margin-top: 73%;
   border-top: 1px solid #eaeaea;
   color: #999;
+  background-color: #f5f5f5;
 }
 
 footer a {
   color: #555;
+
 }
 
 footer a:hover {
@@ -2470,17 +2474,22 @@ footer a:hover {
 }
 
 footer small {
-  float: left;
+  float: right;
+  margin-top:25px;
+  margin-right:55px;
 }
 
 footer ul {
-  float: right;
+  float: left;
+
+  margin-right:55px;
   list-style: none;
 }
 
 footer ul li {
-  float: left;
-  margin-left: 10px;
+  float: right;
+  margin-top:5px;
+  margin-right: 10px;
 }
 
 

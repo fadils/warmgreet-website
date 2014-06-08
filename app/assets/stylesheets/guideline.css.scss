@@ -1,0 +1,72 @@
+// Place all the styles related to the guideline controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.guideline{
+  position:absolute;
+  top:100px;
+  margin-left:65px;
+  margin-right:195px;
+  font-family:"Bariol";
+}
+
+.guideline-header{
+	text-align: center;
+	font-size:32px;
+	font-weight: bold;
+}
+
+.guideline-header-prolog{
+	font-size:20px;
+	font-style:italic;
+}
+
+.guideline-content{
+	position:absolute;
+	margin-top:1%;
+	left:81px;
+	right:81px;
+	text-align:justify;
+}
+
+.guideline-content-header{
+	font-style:italic;
+	font-size:28px;
+	font-weight:bold;
+}
+
+.guideline-content-header-prolog{
+	font-size:16px;
+}
+
+.guideline-content-header-1, 
+.guideline-content-header-2, 
+.guideline-content-header-3{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.guideline-content-header-1-prolog,
+.guideline-content-header-2-prolog,
+.guideline-content-header-3-prolog{
+	font-size:16px;
+	font-style:italic;
+}
+
+
+.guideline-content-1,
+.guideline-content-2,
+.guideline-content-3{
+	font-size:16px;
+}
+
+.guideline-thankyou{
+	text-align: center;
+	font-family:"Bariol";
+	font-size:32px;
+	font-weight: bold;
+}
+
+.guideline-thankyou-prolog{
+	font-size:20px;
+}
