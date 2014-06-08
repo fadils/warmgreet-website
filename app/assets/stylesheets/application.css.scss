@@ -53,17 +53,70 @@ Header with the big image
   position:absolute; 
   z-index:9999; 
   top: 9px;
-  left: 363px;
+  left: 424px;
   font-family:"Bariol";
+}
+
+.search-bar-home-sign-in{
+  position:absolute; 
+  z-index:9999; 
+  top: 9px;
+  left: 490px;
+  font-family:"Bariol";
+}
+
+.search-bar-sign-in{
+  position:absolute; 
+  z-index:9999; 
+  top: 9px;
+  left: 540px;
+  font-family:"Bariol";
+}
+
+.search-bar-no-sign-in{
+  position:absolute; 
+  z-index:9999; 
+  top: 9px;
+  left: 424px;
+  font-family:"Bariol";
+}
+
+.navbar-form .form-control{
+  width:400px;
+}
+
+a .white ul:hover{
+  opacity:0;
 }
 
 .search-bar-no-home{
   position:absolute; 
   z-index:9999; 
   top: 9px;
-  left: 442px;
+  left: 424px;
   font-family:"Bariol";
 }
+
+.community-home-no-sign-in{
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 220px;
+  top: 22px;
+}
+
+.community-home-sign-in{
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 276px;
+  top: 22px;
+}
+
 
 
 
@@ -209,7 +262,7 @@ random story showed in top-nav
 
 .logo {
   float: left;
-  margin-left:1.5%;
+  left:1.5%;
   margin-top: 4px;
   padding: 0 35px
 }
@@ -221,7 +274,7 @@ random story showed in top-nav
   color: white;
   position: absolute;
   left: 35px;
-  top: 13px;
+  top: 22px;
 }
 
 
@@ -231,8 +284,8 @@ random story showed in top-nav
   font-family: "Bariol";
   color: white;
   position: absolute;
-  left: 125px;
-  top: 13px;
+  left: 130px;
+  top: 22px;
 }
 
 
@@ -242,8 +295,18 @@ random story showed in top-nav
   font-family: "Bariol";
   color: white;
   position: absolute;
-  left: 257px;
-  top: 13px;
+  left: 275px;
+  top: 22px;
+}
+
+.community{
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 371px;
+  top: 22px;
 }
 
 .category-dropdown{
@@ -257,8 +320,8 @@ random story showed in top-nav
   font-family: "Bariol";
   color: white;
   position: absolute;
-  left: 170px;
-  top: 13px;
+  left: 181px;
+  top: 22px;
 }
 
 .category-home-no-sign-in {
@@ -267,8 +330,8 @@ random story showed in top-nav
   font-family: "Bariol";
   color: white;
   position: absolute;
-  left: 35px;
-  top: 13px;
+  left: 3%;
+  top: 22px;
 }
 
 
@@ -301,27 +364,19 @@ random story showed in top-nav
   font-family: "Bariol";
   color: white;
   position: absolute;
-  left: 186px;
+  left: 137px;
   top: 13px;
 }
 
 
 .info {
-  position: absolute;
-  float: right;
-  padding: 20px;
-  color: white;
-  right: 2%;
-  left:82%;
   list-style: none;
   font-size: 16px;
-  font-family: 'Bariol';
-  /*background: #F0F3F8;*/
-  border-radius: 3px;
-  height: 73px;
-  
-  margin-top: -75px;
-  z-index: 9999;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  right: 3%;
+  top: 17px;
 }
 
 .user-pic-header {
@@ -338,15 +393,6 @@ random story showed in top-nav
 }
 
 
-.info ul{
-
-}
-
-
-.info ul:after {
-    content: ""; clear: both; display: block;
-}
-
 a span{
 	display:block;
 }
@@ -356,26 +402,6 @@ a span{
 	margin-left:5%;
 }
 
-.info ul ul, .category ul ul, .category-home ul ul, .category-home-no-sign-in ul ul{
-  display: none;
-  background-color: rgb(35,31,32);
-  opacity: 0.75;
-  margin-top:-5%;
-  width:120px;
-}
-
-.info ul li:hover > ul, .category ul li:hover > ul, .category-home ul li:hover > ul, .category-home-no-sign-in ul li:hover > ul{
-    display: block;
-}
-
-
-.list-header:hover{
-  opacity:2;
-}
-
-.info ul li:hover a{
-   color: #fff;
-}
 
 
 li:hover{
@@ -386,41 +412,11 @@ a:hover{
 	opacity: 0.75;
 }
 
-.info ul li:hover {
-    /*background: #4b545f;
-    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-    background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);*/
-}
-
-
-.info ul li, .category ul li, .category-home ul li, .category-home-no-sign-in ul li {
-  list-style: none;
-  text-align: center;
-}  
-
-.info ul li a{
-    display: block; 
-    padding: 10px 0px;
-    color: #757575; 
-    text-decoration: none;
-}
-
 .category ul ul li a, .category-home ul ul li a, .category-home-no-sign-in ul ul li a{
   display: block;
   padding:10px;
   padding-top:10px;
   color:white;
-}
-
-
-.info ul ul li, .category ul ul li, .category-home ul ul li, .category-home-no-sign-in ul ul li {
-    float: none; 
-    margin-left:-35%;
-    border-top: 1px solid #6b727c;
-    border-bottom: 1px solid #575f6a;
-    position: relative;
-    width:100px;
 }
 
 
@@ -461,11 +457,12 @@ nav ul {
 
 .info-not-sign-in{
   position: absolute;
+  float: right;
+  right: 3%;
   font-size: 16px;
   font-family: "Bariol";
   color:white;
   top:25px;
-  right:30px;
 }
 
 .info-not-sign-in li{
@@ -661,8 +658,10 @@ textarea {
 }
 
 .white:hover{
-    color: black;
+  color:white;
+  opacity:0.75;
 }
+
 
 
 .category-separator {

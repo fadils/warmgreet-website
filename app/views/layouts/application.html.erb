@@ -53,13 +53,24 @@
   <% if request.original_url == "#{home}/"%>
 
     <nav class="top-nav group img-responsive">
-      <form class="navbar-form navbar-right search-bar" action="<%= search_url %>" method="get">
-        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-        <div class="form-group">
-          <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      <% if signed_in?%>
+        <form class="navbar-form navbar-right search-bar-home-sign-in" action="<%= search_url %>" method="get">
+          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+          <div class="form-group">
+            <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      <%else%>
+        <form class="navbar-form navbar-right search-bar-no-sign-in" action="<%= search_url %>" method="get">
+          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+          <div class="form-group">
+            <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      <%end%>
+
       <div class="WG-mainlogo">
         <%= image_tag("WGSlice/mainlogo.png", height: '100%', width: '100%')%>
          <%= image_tag "WGSlice/alpha.png", class:"version-logo" %>
@@ -110,13 +121,23 @@
       </div>
   <% else %>
     <nav class="top-nav-no-index group">
-      <form class="navbar-form navbar-right search-bar-no-home" action="<%= search_url %>" method="get">
-        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-        <div class="form-group">
-          <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      <% if signed_in?%>
+        <form class="navbar-form navbar-right search-bar-sign-in" action="<%= search_url %>" method="get">
+          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+          <div class="form-group">
+            <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      <%else%>
+        <form class="navbar-form navbar-right search-bar-sign-in" action="<%= search_url %>" method="get">
+          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+          <div class="form-group">
+            <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      <%end%>
   <% end %>
 
 
@@ -162,55 +183,39 @@
     </div>
 
     
-      <% if signed_in? %>
+        <% if signed_in? %>
       
-      <!--div class="user-pic-header">
-        <% if current_user.photo.file? %>
-          <%= image_tag current_user.photo.url(:big), :class => "user-propic circular" %>
-        <% elsif current_user.image? %>
-          <%= image_tag current_user.image, size: "35x35", :class => "circular" %>
-        <% else %>
-          <% if current_user.gender=="M"%>
-            <%= image_tag "WGSlice/default-user-male.png", size:"40x40" %>
-          <% elsif current_user.gender=="F"%>
-            <%= image_tag "WGSlice/default-user-female.png", size:"40x40"%>
-          <% else %>
-            <%= image_tag "WGSlice/default-user-male.png", size:"40x40" %>
-          <% end %>
-        <% end %>
-      </div-->
 
-      
-      <div class="info">
+        
+          <div class="info">
+            <a class="white dropdown-toggle" data-toggle="dropdown">
+              <% if current_user.photo.file? %>
+              <%= image_tag current_user.photo.url(:big), size: "35x35", class:"circular" %>
+              <% elsif current_user.image? %>
+                <%= image_tag current_user.image, size: "35x35", class:"circular" %>
+              <% else %>
+                <% puts "*************************#{review.user.gender}********************" %>
+                <% if current_user.gender=="M" %>
+                  <%= image_tag "WGSlice/default-user-male.png", size: "35x35",class:"circular" %>
+                <% elsif current_user.gender=="F" %>
+                  <%= image_tag "WGSlice/default-user-female.png", size: "35x35",class:"circular" %>
+                <% else %>
+                  <%= image_tag "WGSlice/default-user-male.png", size: "35x35",class:"circular" %>
+              <% end %>
+            <% end %>
+              <%=current_user.username.capitalize%> <span class="caret"></span>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="<%=profile_index_url(current_user)%>">Profile</a></li>
+                <li><a href="<%=user_url(current_user)%>">Story Feed</a></li>
+                <li><a href="<%= users_url%>">Find Friends</a></li>
+
+                <li class="divider"></li>
+                <li><%= link_to "Sign Out", session_url, :method => :delete%></li>
+              </ul>
+            </a>
           
-        <ul>
-            <%#if current_user = shopper%>
-            
-            <li class="list-header">
+          </div>
 
-              <%#= link_to current_user.username, user_url(current_user) %>
-
-                  <a href="<%=profile_index_url(current_user)%>" style ='color:#FFFFFF; font-family:bariol;'>
-                    <%=current_user.username.capitalize%>
-                    <b class="caret"></b>
-                  </a>
-
-                      <ul>
-                        <li><%= link_to "Story Feed", user_url(current_user),:style => 'color:#FFFFFF;' %></li>
-                        <li><%= link_to "Sign Out", session_url, :method => :delete, :style => 'color:#FFFFFF;' %></li>
-                      </ul>
-
-            </li>
-            
-          </ul>
-
-
-        </div>
-
-               
-              <%#= "(admin)" if current_user.admin == true %>
-            
-            <!--li style="color:white"><%= link_to "Sign Out", session_url, :method => :delete, :style => 'color:#FFFFFF;' %></li-->
         <% else %>
            <div class="info-not-sign-in">
             <ul>
@@ -233,21 +238,19 @@
 
             
               <div class="write_story">
-                <ul class="nav nav-pills">
-                  <li>
+               
                     <a  class="white" href="<%= writestory_write_url %>">
                         Write a new story
                     </a>
-                  </li>
-                </ul>
+                  
               </div>
 
 
              
 
               <div class="category" >
-                <ul class="nav nav-pills">
-                  <li>
+                <!--ul class="nav nav-pills">
+                  <li-->
                    <a class="white" href="/">
                     Discover   
                    </a>
@@ -255,52 +258,44 @@
                       <li><a href="<%=category_url(@categories.first)%>"><%=@categories.first.name%></a></li>
                       <li><a href="<%=category_url(@categories.second)%>"><%=@categories.second.name%></a></li>
                     </ul-->
-                  </li>
-                </ul>
+                 
               </div>
 
-              <!--div class = "find_friends"-->
-              <div class="find_friends">
-                <ul class="nav nav-pills">
-                  <li>
-                    <a class="white" href="<%= users_url%>">
-                        Find Friends
+              <div class = "community">
+                
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+                      Community <span class="caret"></span>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="<%= users_url%>">Find Friends</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
                     </a>
-                  </li>
-                </ul>
+                  
                   <%#= link_to "Find Friends".html_safe, users_url %>
               </div>
+
+             
             </ul>
             <% else %>
-              <div class = "category-no-sign-in">
-               <a class="white" href="/">
-                Category
-               </a>
-               
-              </div>
+              
 
-              <div class = "find_friends-no-sign-in">
-                <a href="<%= users_url%>"  style="color:white">
-                  Find Friends
-                </a>
-                  <%#= link_to "Find Friends".html_safe, users_url %>
-              </div>
+             
           <% end %>
       <% else %>
           <% if signed_in? %>
               <div class = "write_story-home">
-                <ul class="nav nav-pills">
-                  <li>
+                
                 <a class="white" href="<%= writestory_write_url %>">
                     Write a new story
                 </a>
-                   </li>
-                </ul>
+                   
               </div>
 
               <div class = "category-home">
-                 <ul class="nav nav-pills">
-                  <li>
+                 
                    <a class="white" href="/">
                     Discover   
                    </a>
@@ -308,24 +303,27 @@
                       <li><a href="<%=category_url(@categories.first)%>"><%=@categories.first.name%></a></li>
                       <li><a href="<%=category_url(@categories.second)%>"><%=@categories.second.name%></a></li>
                     </ul-->
-                   </li>
-                  </ul>
+                   
               </div>
 
-              <div class = "find_friends-home">
-                <ul class="nav nav-pills">
-                  <li>
-                  <a class="white" href="<%= users_url%>">
-                      Find Friends
-                  </a>
-                    <%#= link_to "Find Friends".html_safe, users_url %>
-                  </li>
-                </ul>
+              <div class = "community-home-sign-in">
+                
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+                      Community <span class="caret"></span>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="<%= users_url%>">Find Friends</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </a>
+                  
+                  <%#= link_to "Find Friends".html_safe, users_url %>
               </div>
             <% else %>
               <div class = "category-home-no-sign-in">
-                 <ul class="nav nav-pills">
-                  <li>
+                 
                    <a class="white" href="/">
                     Discover   
                    </a>
@@ -333,18 +331,26 @@
                       <li><a href="<%=category_url(@categories.first)%>"><%=@categories.first.name%></a></li>
                       <li><a href="<%=category_url(@categories.second)%>"><%=@categories.second.name%></a></li>
                     </ul-->
-                  <li>
-                  </ul>
+                
               </div>
 
-              <div class = "find_friends-no-sign-in-home">
-                 <ul class="nav nav-pills">
-                  <li>
-                    <a class="white" href="<%= users_url%>">
-                      Find Friends
+             
+
+
+
+              <div class = "community-home-no-sign-in">
+                
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+                      Community <span class="caret"></span>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="<%= users_url%>">Find Friends</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
                     </a>
-                  </li>
-                 </ul>
+                  
                   <%#= link_to "Find Friends".html_safe, users_url %>
               </div>
           <% end %>

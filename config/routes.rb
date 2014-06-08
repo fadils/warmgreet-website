@@ -1,4 +1,7 @@
 WarmGreet::Application.routes.draw do
+
+  get "about/index"
+
   get "electronics/index"
 
   get "writestory/write"
