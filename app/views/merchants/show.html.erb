@@ -48,7 +48,7 @@
             <% unless current_user == @user %>
               <div class="favs <%="is-favorite" if current_user.favorite_places.include?(@merchant)%>">
                 <%= button_to "FOLLOW", merchant_favorites_url(@merchant),class:"btn btn-default", method: :post, form_class: "favorite-button grad_button", remote: true %>
-                <%= button_to "FOLLOWING", merchant_favorite_url(@merchant), class:"btn btn-warning", method: :delete, form_class: "unfavorite-button grad_button", remote: true %>
+                <%= button_to "UNFOLLOW", merchant_favorite_url(@merchant), class:"btn btn-warning", method: :delete, form_class: "unfavorite-button grad_button", remote: true %>
               </div>
             <% end %>
 

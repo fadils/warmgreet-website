@@ -1416,46 +1416,16 @@ Start of User Profile
   display: block;
 }
 
+.foll{
+  margin-left:25px;
+}
+
 .follow-button {
-  font-size: 43px;
-  font-family: "Bariol";
-  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
-  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
-  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
-  position: absolute;
-  left: 160px;
-  top: 270px;
-  width:80px;
-  height:30px;
   display: block;
-  padding: 5px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 12px;
-  text-align: center;
-  border-radius: 5px;
-  z-index:999999;
 }
 
 .unfollow-button {
-  font-size: 53px;
-  font-family: "Bariol";
-  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
-  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
-  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
-  position: absolute;
-  left: 160px;
-  top: 270px;
-  width:80px;
-  height:30px;
   display: none;
-  padding: 5px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 12px;
-  text-align: center;
-  border-radius: 5px;
-  z-index:999999;
 }
 
 
