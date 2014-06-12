@@ -1,9 +1,7 @@
-<div class="container group">
-  <h4 class="search-result">SEARCH RESULTS!</h4>
-
+<div class="content-container">
   <% if (!@category.nil? || !@merchants.nil?) %>
 
-    <ul class="searched-merchant group">
+    <ul style="list-style:none;">
     <% @merchants.each_with_index do |merchant, i| %>
       <% if merchant.photo.file? %>
           <%= image_tag merchant.photo.url(:big) %>
@@ -11,7 +9,7 @@
             <%= image_tag "WGSlice/default-merchant.png", size: "120x120" %>
           <% end %>
           <br>
-      <li class="search_results">
+      <li>
         <a href="<%= merchant_url(merchant) %>">
         <span class="result-merchant-name"><%= merchant.name.upcase %></span>
         </a>
@@ -51,9 +49,11 @@
      <%= "No results found!" %>
 
        <div class="search-write-story-noresult">
+        <br>
         <span>
           <%= link_to "add a new online store", new_country_merchant_url(@country), style:"color:black;" %>
         </span>
+        <br>
        </div>
     </div>
     
