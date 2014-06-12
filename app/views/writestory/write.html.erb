@@ -1,18 +1,70 @@
-<div class="content-header-write">
 
-  <h2 class="search-box-title-select">Choose the online store</h2>
+<div class="content-container">
+  <h1> Merchant List </h1>
+    <p class="lead">Say something about these merchants</p>
+    <p>Cannot find the merchant you're looking for? </p> 
+     <div class="search-write-story-noresult">
+        <span>
+          <%= link_to "add a new merchant", new_country_merchant_url(@country), style:"color:black;" %>
+        </span>
+       </div>
 
-    <form class="group" action="<%= search_url %>" method="get">
-          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+    <ol class="list-results">
+    <% @popular_merchants.each do |merchant|%>
+    
+    
 
-        <div class="search-box-write">
-          <input type="text" name="query" value="" placeholder="Type e-commerce site...">
+      <li>
+        <div class="row">
+
+          <div class="greeters-photo col-md-3">
+            <a href="<%=merchant_url(merchant)%>">
+              <% if merchant.photo.file? %>
+                <%= image_tag merchant.photo.url(:big) %>
+                <% else %>
+                  <%= image_tag "WGSlice/default-merchant.png", size: "100x100" %>
+              <% end %>
+            </a>
+          </div>
+
+          
+
+          <div class="greeters-profile col-md-9">  
+            <h3><%= link_to merchant.name, merchant_url(merchant) %></h3>
+            
+            <span>
+              <% if merchant.ranking(merchant) == nil %>
+                Rank: Unranked
+              <% else %>
+                Rank: <%= merchant.ranking(merchant) %> of <%= Merchant.all.count %> online stores
+              <% end %>
+            </span>
+
+            <br>
+
+            <span>Average Rating: <%= merchant.average_rating %>
+              (based on <%= merchant.reviews.count %> stories)
+            </span>
+
+            <br>
+
+             <strong> <%= merchant.users_who_favorited.count %> </strong>
+                     <% if merchant.users_who_favorited.count != 1 %>
+                      <strong> Followers </strong>
+                     <% else %>
+                       <strong> Follower </strong>
+                     <% end %>
+            <br>
+          </div>
+
+          
+
         </div>
+      </li>
+      <br>
+      <br>
 
-        <div class="search-submit group" style="top:210px; margin-left:-16%;">
-          <span>
-            <input class="button-writing" type="submit" value="Create Story" style="width:300px;">
-          </span>
-        </div>
-      </form>
+    <% end %>
+     <%= paginate @popular_merchants%>
+    </ol>
 </div>

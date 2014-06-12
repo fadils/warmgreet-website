@@ -1,130 +1,36 @@
 <% action = (merchant.persisted? ? merchant_url(merchant) : country_merchants_url) %>
 <% method = (merchant.persisted? ? "put" : "post") %>
-<% message = (merchant.persisted? ? "Update merchant" : "Add New Online Store") %>
+<% message = (merchant.persisted? ? "Update merchant" : "Add New Merchant") %>
 
-<div class="add-new-content">
-   <p class="add-new-head-text"><%= message %></p>
-   <p class="prologue-text">Be the first person to share story about this online store</p>
 
-  <form class="form" action="<%= action %>" method="post" enctype="multipart/form-data">
-    <input
-       name="_method"
-       type="hidden"
-       value="<%= method %>">
-    <input
+<form class="form-signin" role="form" action="<%= action %>"  method="post" enctype="multipart/form-data">
+  <input
        name="authenticity_token"
        type="hidden"
        value="<%= form_authenticity_token %>">
 
+  <h2 class="form-signin-heading"><%= message %></h2>
+  <p class="lead">Jadilah yang pertama dalam menceritakan merchant ini</p>
 
-    <div class="input">
-      <input
-         class="textbox-merchant-name"
-         name="merchant[name]"
-         type="text"
-         placeholder="Online store's name goes here">
-    </div>
+  <input type="text" class="form-control" placeholder="Merchant's name" name="merchant[name]" required="" autofocus="">
+  <br>
+  <input type="url" class="form-control" placeholder="Awali dengan http://" name="merchant[website]" required="">
 
-    <div class="input">
-      <input
-         id="merchant_website"
-         class="textbox-merchant-web"
-         name="merchant[website]"
-         type="url"
-         placeholder="URL address (http://www.blabla.com)">
-    </div>
-
-    <div class="input">
-
-      <% Category.all.each do |category| %>
-        <ul class="catego group">
-           <li><input id="restaurant_category" name="merchant[category_ids][]" type="checkbox" value="<%= category.id %>" <%= "checked" if @merchant.categories.include?(category) %>><%= category.name %></option></li>
-        </ul>
-      <% end %>
+  <% Category.all.each do |category| %>
+  <label class="checkbox">
+    <input type="checkbox" value="<%= category.id %>"> <%= category.name %>
+  </label>
+  <% end %>
       <input type="hidden" name="merchant[category_ids][]" value="">
-    </div>
 
-     <!--div class="input">
-      <select
-         class="textbox-merchant-category"
-         name="merchant[category_ids]">
-         <% Category.all.each do |category| %>
-          <option><%= category.name %></option>
-         <% end %>
-      </select>
-    </div-->
-
-     <div class="input">
-      <select
-         class="textbox-merchant-country"
+  <select
+         class="textbdox-merchant-country"
          name="merchant[country_id]">
          <% Country.all.each do |country| %>
           <option><%= country.name %></option>
          <% end %>
       </select>
-    </div>
+  <br><br>
 
-    <div class="submit">
-     <input class="textbox-merchant-submit" type="submit" value="Submit &amp; create story">
-    </div>
-
-    <!--div class="input">
-      <label for="merchant_category">Industry</label>
-
-    <ul>
-      <% Category.all.each do |category| %>
-    
-       <li>
-          <input id="restaurant_category" name="restaurant[category_ids][]" type="checkbox" value="<%= category.id %>" <%= "checked" if @merchant.categories.include?(category) %>><%= category.name %></option>
-      </li>
-    
-      <% end %>
-      <input type="hidden" name="merchant[category_ids][]" value="">
-      </ul>
-    </div>
-
-    <br><br>
-
-    <div class="city-switch">
-      <select onChange="window.location.replace(this.options[this.selectedIndex].value)">
-        <option value="">Country</option>
-        <% Country.all.each do |country| %>
-          <option value="<%= country_merchants_url(country) %>">
-            <%= country.name %>
-          </option>
-        <% end %>
-      </select>
-    </div>
-
-    <div class="input">
-      <label for="merchant_website">Website</label>
-      <input
-         id="merchant_website"
-         name="merchant[website]"
-         type="url"
-         value="<%= @merchant.website %>">
-    </div>
-
-    <div class="input">
-      <label for="merchant_phone">Phone Number</label>
-      <input
-         id="merchant_phone"
-         name="merchant[phone]"
-         type="text"
-         value="<%= @merchant.phone %>">
-    </div>
-
-    <div class="input">
-      <label for="merchant_photo">Add a photo for this merchant!</label>
-      <input
-          id="merchant_photo"
-          name="merchant[photo]"
-          type="file">
-    </div>
-
-    <div class="submit">
-      <input type="submit" value="<%= message %>">
-    </div-->
-  </form>
-  <br>
-</div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+</form>

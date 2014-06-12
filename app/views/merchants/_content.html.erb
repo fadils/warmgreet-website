@@ -1,62 +1,61 @@
  <div class="root-content-container">
 
-  <div class = "content-main-header-root">
-      <strong class="category-separator-root">Discover what shoppers say about their online experience</strong>    
+  <div class="row">
+    <div class = "content-main-header-root col-md-7">
+        <strong class="category-separator-root">Discover what shoppers say about their online experience</strong>    
+    </div>
+    
+    <div class="col-md-5">
+      <hr class="category-name-separator">
+    </div>
   </div>
-
-  <hr class="category-name-separator">
 
 <% category.feeds.sort_by{ |rev| rev.created_at }.reverse!.each_with_index do |review, i| %>
 
  
- 
-<%#if review.merchant.categories.first.name == category.id%>
 
-<div class="prof-review-root group">
 
   
-    <div class = "row">
-     <div class="prof-left-feed group col-md-1">
+    <div class="row">
+      <div class="prof-left-feed col-md-1">
         
-        <a href="<%=merchant_url(review.merchant)%>" style="z-index:9999; position:absolute;">
+        <a href="<%=merchant_url(review.merchant)%>" style="z-index:99;">
           <% if review.merchant.photo.file? %>
           <%= image_tag review.merchant.photo.url(:big) %>
           <% else %>
             <%= image_tag "WGSlice/default-merchant.png", size: "100x100" %>
           <% end %>
         </a>
-    </div>
+      </div>
 
       
-    <div class="col-md-12">
+      <div class="col-md-11 review-body-content">
         <div class="review-body-header">
 
-        <%= link_to review.user.username, user_url(review.user), :class => "story-writer" %>
+          <%= link_to review.user.username, user_url(review.user), :class => "story-writer" %>
       
-      <br>
+          <br>
        
 
-              <strong><%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge-feed") %></strong>
+          <span class="attribute-container">
+            <%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge-in-profile") %>
 
-              <strong style="position:absolute; margin-top:7px; font-weight:100;font-size:90%"><%= review.user.reviews.count %> Stories</strong> 
+            <span class="story-badge-in-profile-text"><%= review.user.reviews.count %> stories</span> 
+            <%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "thumbs-badge-in-profile") %>
 
-
-            
-            <strong class="story-thumb"><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "story-badge-feed") %></strong>
-
-             <strong style="position:absolute; margin-top:7px; margin-left:80px; font-weight:100;font-size:90%;"> <%= review.user.count_thumbs_up%> thumbs</strong>
+            <span class="thumbs-badge-in-profile-text"> <%= review.user.count_thumbs_up%> thumbs</span>
+          </span>
             
             <br>
           
           
-            <strong class="story-title">"<%= review.title %>"</strong>
-            <br>
-          <span class="story-title-rating">Rating: <%= review.rating %> - 
-          <% if review.created_at > Time.now.beginning_of_day %>
-                <%="Written #{time_ago_in_words(review.created_at)} ago"%>
-            <% else %>
-                Written on <%= review.created_at.strftime("%m/%d/%Y") %>
-            <% end %>
+            <h3 class="story-title">"<%= review.title %>"</h3>
+            <span>Rating: <%= review.rating %> - 
+            <% if review.created_at > Time.now.beginning_of_day %>
+                  <%="Written #{time_ago_in_words(review.created_at)} ago"%>
+              <% else %>
+                  Written on <%= review.created_at.strftime("%m/%d/%Y") %>
+              <% end %>
             </span>
         </div>
         <br>
@@ -64,31 +63,32 @@
         <div class="review-body">
           <%= review.body %>
 
+        
+          <br>
+        
+
+          <div>
+            <br>
+          <% if review.vote_tags.empty? %>
+              <span class="badge-feed">0</span>
+            
+            <% else %>
+            
+              <span class="badge-feed"><%= review.vote_tags.count %></span>
+              
+            
+            <% end %>
+          </div>
+
           <% if signed_in? %>
             <% unless current_user == review.user %>
               <% if !current_user.voted_reviews.include?(review) %>
-              <br>
-                <%= button_to "Vote Helpful", review_vote_tags_url(review), method: :post, form_class: "cool-button", style:"margin-left:5px; margin-top:10px;" %>
+                <%= link_to image_tag("WGSlice/helpfull-btn.png", class:"helpful-btn" ), review_vote_tags_url(review), method: :post, form_class: "cool-button"%>
+              <% else %>
+                <%= image_tag("WGSlice/helpfull-btn.png", class:"helpful-btn-active") %>
               <% end %>
             <% else %>
-            <% end %>
-
-          <% if review.pic.file? %>
-            <%= image_tag review.pic.url(:big) %>
           <% end %>
-
-
-
-          <% if review.vote_tags.empty? %>
-            <br><br><br><br>
-              <strong class="badge-feed">0</strong>
-            
-            <% else %>
-            <br><br><br><br>
-              <strong class="badge-feed"><%= review.vote_tags.count %></strong>
-              <%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:-35px; margin-left: 25px") %>
-            
-            <% end %>
 
            
             
@@ -98,10 +98,6 @@
         </div>
       </div>
       <hr>
-    
-
-  </div>
-  <%# end %>
 
 <% end %>
 

@@ -1,105 +1,118 @@
+
+<div class="row">
+  <div class="col-md-2">
+    <% if @user.photo.file? %>
+      <%= image_tag @user.photo.url(:small), :class => "user-propic-profile circular" %>
+    <% elsif @user.image? %>
+      <%= image_tag @user.image, size: "150x150", :class => "user-propic-profile circular img-responsive" %>
+    <% else %>
+      <% if @user.gender=="M"%>
+        <%= image_tag "WGSlice/default-user-male.png", :class => "user-propic-profile" %>
+      <% elsif @user.gender=="F"%>
+        <%= image_tag "WGSlice/default-user-female.png", :class => "user-propic-profile"%>
+      <% else %>
+        <%= image_tag "WGSlice/default-user-male.png", :class => "user-propic-profile" %>
+      <% end %>
+    <% end %>
+    <br><br>
+    <% if current_user == @user %>
+          <%= link_to image_tag("WGSlice/edit-btn.png", size:"70x25", class:"edit-profile-link"), edit_user_url(@user) %>
+        <% end %>
+  </div>
   
-        <% if @user.photo.file? %>
-          <%= image_tag @user.photo.url(:small), :class => "user-propic-profile circular" %>
-        <% elsif @user.image? %>
-          <%= image_tag @user.image, size: "160x160", :class => "user-propic-profile circular" %>
-        <% else %>
-          <% if @user.gender=="M"%>
-            <%= image_tag "WGSlice/default-user-male.png", :class => "user-propic-profile" %>
-          <% elsif @user.gender=="F"%>
-            <%= image_tag "WGSlice/default-user-female.png", :class => "user-propic-profile"%>
-          <% else %>
-            <%= image_tag "WGSlice/default-user-male.png", :class => "user-propic-profile" %>
-          <% end %>
-        <% end %>
+
+  <div class="col-md-4 user-profile">
       
+    <strong class="user-username"><%= @user.username %></strong>
+    <br>
+    <strong class="member-since-text">  <%= "- member since #{@user.created_at.strftime("%d %B %Y")}" %> </strong>
+    <br><br>
+    
+    <span>
+      <%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge-in-profile") %>
 
+      <strong class="story-badge-in-profile-text"><%= @user.reviews.count %> stories</strong> 
+      <%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "thumbs-badge-in-profile") %>
 
-          
-        <strong class="user-username"><%= @user.username %></strong>
-
-        
-        <strong class="member-since-text">  <%= "- member since #{@user.created_at.strftime("%d %B %Y")}" %> </strong>
-
-        
-          <strong><%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge-in-profile") %></strong>
-
-          <strong class = "story-badge-in-profile-text"><%= @user.reviews.count %> stories</strong> 
-
-
-        
-          <strong><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "thumbs-badge-in-profile") %></strong>
-
-          <strong class="thumbs-badge-in-profile-text"> <%= @user.count_thumbs_up%> thumbs</strong>
-          
-          <strong class="following-number"> <%= @user.followers.count %> </strong>
-           <% if @user.followers.count != 1 %>
-            <strong class="following-text"> Followers </strong>
-           <% else %>
-             <strong class="following-text"> Follower </strong>
-           <% end %>
-
-          <strong class="followed-number"> <%= @user.followed_users.count %> </strong>
-          <strong class="followed-text"> Following </strong>
-
-          <hr class = "after-profile-separator">
-
-        <div class = "merchants-list-coainer">
-
-          <h4 class= "followed-merchants-text">
-            Followed Merchants
-          </h4>
-
-          <hr class = "followed-merchants-separator">
-
-         
-          
-         
-
-         
-          <% if @user.favorite_places.count > 0 %>
-            <% @user.favorite_places.each do |followedmerchant| %>
-            <ul class="followed-merchants-list">
-              <% if followedmerchant.photo.file? %>
-                  <li><%= link_to image_tag followedmerchant.photo.url(:small) %></li>
-              <% else %>
-                  <li><%= link_to (image_tag "WGSlice/default-merchant.png", size:"126x126"), merchant_url(followedmerchant)%></li>
-              <% end %>
-            </ul>
-            <% end %>
-          <% else %>
-            <ul class="followed-merchants-list">
-              <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
-              <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
-              <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
-              <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
-            </ul>
-          <% end %>
-
-        </div>
-
-        <hr class = "after-merchants-list-separator">
-
-        <div>
-          <h4 class="stories-in-profile">Stories</h4>
-          <hr class = "stories-in-profile-separator">
-        </div>  
-
-        
-        <div class="prof-review-feed-container">
-          <%= render "reviews/user_public", :user => @user %>
-        </div>
-
-        <% if current_user == @user %>
-          <%= link_to "Edit Profile", edit_user_url(@user), class:"edit-profile-link" %>
-        <% end %>
-
-        <% unless current_user == @user %>
-          <div class="foll <%="is-followed" if current_user.followed_users.include?(@user) %>">
-            <%#= button_to " ", user_follows_url(@user), class: "following-button", method: :post, form_class: "following-button", remote: true %>
-            <%#= button_to " ", user_follow_url(@user), class: "followed-button", method: :delete, form_class: "followed-button", remote: true %>
-            <%= button_to "FOLLOW", user_follows_url(@user), method: :post, form_class: "follow-button grad_button", remote: true %>
-            <%= button_to "UNFOLLOW", user_follow_url(@user), method: :delete, form_class: "unfollow-button grad_button", remote: true %>
-          </div>
-        <% end %>
+      <strong class="thumbs-badge-in-profile-text"> <%= @user.count_thumbs_up%> thumbs</strong>
+    </span>
+    <br><br>
       
+    <strong class="following-number"> <%= @user.followers.count %> </strong>
+    <strong class="followed-number"> <%= @user.followed_users.count %> </strong>
+    <br>
+    <% if @user.followers.count != 1 %>
+      <strong class="following-text"> Followers </strong>
+    <% else %>
+      <strong class="following-text"> Follower </strong>
+    <% end %>
+    
+    <strong class="followed-text"> Following </strong>
+  </div>
+</div>
+
+<hr class = "after-profile-separator">
+
+<div class="row">
+  <div class="col-md-4">
+    <h5 class= "followed-merchants-text">
+      Followed Merchants
+    </h5>
+  </div>
+  <div class="col-md-8">
+     <hr class = "followed-merchants-separator">
+  </div>
+</div>
+
+
+<% if @user.favorite_places.count > 0 %>         
+  <ul class="list-inline">
+    <% @user.favorite_places.each do |followedmerchant| %>
+      <% if followedmerchant.photo.file? %>
+          <li><%= link_to image_tag followedmerchant.photo.url(:small) %></li>
+      <% else %>
+          <li><%= link_to (image_tag "WGSlice/default-merchant.png", size:"126x126"), merchant_url(followedmerchant)%></li>
+      <% end %>
+    <% end %>
+  </ul>
+<% else %>
+  <ul class="list-inline"> 
+    <li><%= link_to (image_tag "WGSlice/default-merchant.png", size: "126x126") %></li>
+    <li><%= link_to (image_tag "WGSlice/default-merchant.png", size: "126x126") %></li>
+    <li><%= link_to (image_tag "WGSlice/default-merchant.png", size: "126x126") %></li>
+    <li><%= link_to (image_tag "WGSlice/default-merchant.png", size: "126x126") %></li>        
+  </ul>
+<% end %>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-2">
+    <h5 class= "followed-merchants-text">
+      Stories
+    </h5>
+  </div>
+  <div class="col-md-10">
+     <hr class = "followed-merchants-separator">
+  </div>
+</div>
+
+<%= render "reviews/user_public", :user => @user %>
+
+
+
+
+
+
+
+
+
+        
+
+         
+
+         
+
+         
+          
+  

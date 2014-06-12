@@ -1,23 +1,3 @@
-<div class="container" style="top:25px;">
- 
-  <!--h2 class="search-box-title">What's your online shopping story?</h2>
-
-    <form class="group" action="<%= search_url %>" method="get">
-        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-        
-        <div class="search-box">
-          <input type="text" name="query" value="" placeholder="Share your online shopping experience" style="width:500px;">
-        </div>
-
-        <!div class="search-submit group">
-          <span>
-            <input type="submit" value="search store">
-          </span>
-        </div>
-    </form-->
-
-
-
 <%# @merchants.sort_by { |cat| cat.categories }.each do |category| %>
 
 <% @category.first(1).each do |category2| %>
@@ -26,32 +6,6 @@
        
 <% end %>
 
-</div>
-
 
 
 <script src="http://js.pusher.com/2.1/pusher.min.js"></script>
-<script>
-  var pusher = new Pusher('<%= ENV["PUSHER_KEY"] %>');
-
-  var channel = pusher.subscribe('reviews');
-
-  channel.bind('new-review', function(data) {
-    var country = $(data).attr('data-id');
- $(data).hide().prependTo(".recent-reviews-"+country).slideDown("slow");
-
-    $(".recent-"+country).last().remove();
-  });
-</script>
-
- <%#= paginate @merchants %>
-
-      
-      <!--h2>Recent Stories</h2>
-      <ul class="recent-reviews-<%= @country.id %> group">
-        <% @reviews.each do |review| %>
-         <li class="recent-<%= @country.id %>">
-          <%= render partial: "reviews/pusherform", locals: {review: review} %>
-        </li>
-        <% end %>
-      </ul-->

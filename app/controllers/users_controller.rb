@@ -41,6 +41,10 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = Kaminari.paginate_array(User.all).page(params[:page])
+    @users = User.all
+    @thumb_stories = Review.all
+    @thumb_stories.sort! {|a,b| a.vote_tags.count <=> b.vote_tags.count}
+    @users.sort! { |a,b| a.follows.count <=> b.follows.count }
+    @matter_users = Kaminari.paginate_array(@users).page(params[:page])
   end
 end

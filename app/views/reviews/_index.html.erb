@@ -1,7 +1,5 @@
 <% merchant.reviews.sort_by{ |rev| rev.created_at }.reverse!.each do |review| %>
-<div class="prof-review-in-merchant group">
 
-       <div class="prof-left-in-merchant group">
           
           <% if review.user.photo.file? %>
         <%= image_tag review.user.photo.url(:big) %>
@@ -17,9 +15,7 @@
             <%= image_tag "WGSlice/default-user-male.png", size: "100x100" %>
           <% end %>
         <% end %>
-
-      </div>
-
+        
       
       <%= link_to review.user.username.upcase, user_url(review.user), :class => "story-writer-public" %>
 
@@ -85,8 +81,5 @@
       
       
     </div>
-
-
-  </div>
 
 <% end %>

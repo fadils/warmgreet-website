@@ -1,7 +1,6 @@
 <%user.feed.sort_by{ |rev| rev.created_at }.reverse!.each do |review| %>
 
 
-  <div class="prof-review group">
     <div class = "row">
      <div class="prof-left-feed group col-md-1">
         <% if review.user.photo.file? %>
@@ -29,7 +28,7 @@
     </div>
 
       
-    <div class="col-md-12">
+    <div class="col-md-11">
         <div class="review-body-header">
 
         <%= link_to review.user.username, user_url(review.user), :class => "story-writer" %>
@@ -64,31 +63,43 @@
 
         <div class="review-body">
           <%= review.body %>
+           <br>
+        
+
+          <div>
+            <br>
+          <% if review.vote_tags.empty? %>
+              <span class="badge-feed">0</span>
+            
+            <% else %>
+            
+              <span class="badge-feed"><%= review.vote_tags.count %></span>
+              
+            
+            <% end %>
+          </div>
 
           <% if signed_in? %>
             <% unless current_user == review.user %>
               <% if !current_user.voted_reviews.include?(review) %>
-              <br>
-                <%= button_to "Vote Helpful", review_vote_tags_url(review), method: :post, form_class: "cool-button", style:"margin-left:5px; margin-top:10px;" %>
+                <%= link_to image_tag("WGSlice/helpfull-btn.png", class:"helpful-btn" ), review_vote_tags_url(review), method: :post, form_class: "cool-button"%>
+              <% else %>
+                <%= image_tag("WGSlice/helpfull-btn.png", class:"helpful-btn-active") %>
               <% end %>
             <% else %>
-            <% end %>
+          <% end %>
+
+           
+            
           <% end %>
 
           <% if review.pic.file? %>
+            <br><br>
             <%= image_tag review.pic.url(:big) %>
+            <br><br>
           <% end %>
 
-          <% if review.vote_tags.empty? %>
-            <br><br><br><br>
-              <strong class="badge-feed">0</strong>
-            
-            <% else %>
-            <br><br><br><br>
-              <strong class="badge-feed"><%= review.vote_tags.count %></strong>
-              <%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-top:-35px; margin-left: 25px") %>
-            
-            <% end %>
+         
 
 
       
@@ -97,8 +108,6 @@
       </div>
 
     <hr>
-
-  </div>
 
 <% end %>
 

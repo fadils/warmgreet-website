@@ -21,113 +21,19 @@
   src: url("HELVETICANEUELTSTD-TH.OTF");
 }
 
-@font-face
-{
-  font-family: "Helvetica Neue";
-  src: url("HELVETICANEUE.TTF");
+html, body{
+  min-width:960px;
+  height:100%;
 }
 
-html,body{
+html{
   overflow-x:hidden;
 }
 
-.nav{
-  font-family:"Bariol";
-  font-size: 16px;
+.container{
+	padding-left:5%;
+	padding-right:5%;
 }
-
-.navbar-form .form-control {
-  font-family:"Bariol";
-}
-
-.navbar-brand{
-  padding-top:0px;
-  margin-top:-2px;
-}
-
-.navbar-brand img{
-  opacity:0.5;
-}
-
-.navbar-brand img:hover{
-  opacity:1;
-}
-
-.navbar-inverse{
-  //background-color: rgb(230,180,71);
-  opacity: 0.97;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-  //color: #000000;
-  //opacity:1;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-  //color: #000000;
-  //opacity:0.5;
-}
-
-.btn{
-  font-family:"Bariol";
-}
-
-.btn-wg{
-  color:black;
-  font-style: bold;
-  font-family:"Bariol";
-  background-color: rgb(255,234,71);
-}
-
-
-.btn-wg:hover{
-  color:black;
-  font-style: bold;
-  font-family:"Bariol";
-  background-color: rgb(255,234,71);
-  opacity:0.5;
-}
-
-.list-inline li{
-  margin-top:5px;
-}
-
-.jumbotron{
-  margin-top:-100px;
-  
-}
-
-.bg-home{
-  background: url("/assets/WGSlice/Banner_1440.jpg") no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.bg-feed{
-  height: 700px;
-  background: url("/assets/WGSlice/banner-feed.jpg") no-repeat center center; 
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-
-.offer-img{
-  width:100%;
-}
-
-.offer-text{
-  text-align:justify;
-}
-
-#footer {
-  width: 100%;
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
 
 /*
 Header with the big image
@@ -176,6 +82,10 @@ Header with the big image
   top: 9px;
   left: 424px;
   font-family:"Bariol";
+}
+
+.navbar-form .form-control{
+  width:400px;
 }
 
 a .white ul:hover{
@@ -260,17 +170,19 @@ a .white ul:hover{
   background-size: cover;;
 }
 
-.attribute-container{
-  display:inline-block;
-}
-
 
 
 /*
 Main logo, but not in the nav header. "Online story, honestly shared"
 */
 .WG-mainlogo {
-  margin-top: 150px;
+  list-style: none;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: white;
+  position: absolute;
+  left: 3%;
+  top: 12%;
 }
 
 .version-logo{
@@ -294,94 +206,58 @@ HEader: write a story, category, etc
 /*
 random story showed in top-nav
 */
-
-.random-story-container{
-  margin-left:15px;
-}
-
-.review-body-container{
-  display: inline-block;
-}
-
 .random-story{
-  display: inline-block;
-  margin-left:25px;
+  position:absolute;
   color: white;
   font-family: "Bariol";
+  margin-top:50px;
+  left:40px;
+  right:50px;
+  z-index:9999;
 }
 
-
-.random-story-img{
-  display:inline-block;
+.random-story img{
+  float: left;
 }
 
 .random-story-text{
+  position:absolute;
+  width:100%;
+  margin-top: 5px;
+  margin-left: 100px;
   text-align:left;
-}
-
-.random-story-merchant{
-  color:white;
-  opactity:0.5;
-}
-
-.random-story-merchant:hover{
-  color:white;
-  opactity:1;
 }
 
 
 .random-story-title{
-  
+  position:relative;
   font-family: "Bariol";
   font-size: 28px;
   color: white;
+  margin-top: 15px;
+  margin-left: 10px;
   font-style: italic;
   font-weight: bold;
 }
 
 .random-story-body{
-  
+  position:relative;
   font-family:"Bariol";
+  margin-left: 10px;
+  margin-top:50px;
   font-size: 18px;
 }
 
 .random-story-see-more{
   font-family: "Bariol";
+  margin-left:2%;
   font-size: 18px;
 }
 /*
 */
 
 .content-main-header-root{
-  position: relative;
   top: -10px;
-}
-
-.starter-template {
-
-}
-
-.content-container{
-  padding: 90px 15px;
-  text-align: center;
-}
-
-.feed-container{
-  padding: 20px 15px;
-  text-align: left;
-}
-
-.merchant-container{
-  padding: 115px 55px;
-  text-align: left;
-}
-
-
-
-.profile-container{
-  margin-left:70px;
-  margin-right:50px;
-  margin-top: 115px;
 }
 
 .logo {
@@ -527,6 +403,10 @@ a span{
 }
 
 
+a:hover{
+	opacity: 0.50;
+}
+
 .category ul ul li a, .category-home ul ul li a, .category-home-no-sign-in ul ul li a{
   display: block;
   padding:10px;
@@ -537,10 +417,6 @@ a span{
 
 nav ul {
   list-style: none;
-}
-
-.profile-top{
-  display: inline;
 }
 
 
@@ -554,18 +430,17 @@ nav ul {
 
 
 .user-propic-profile {
-  display:inline-block;
-  margin: 0 auto;
-  width:130px;
-  height:130px;
+ position: absolute;
+  left: 118px;
+  top: 104px;
+  width:160px;
+  height:160px;
 }
 
 .merchant-propic-profile {
-  display:inline-block;
-  margin: 0 auto;
-  width:160px;
-  height:164px;
- 
+ position: absolute;
+  left: 125px;
+  top: 570px;
 }
 
 
@@ -608,40 +483,8 @@ nav ul {
 }
 
 .list-results{
-  margin-left:40px;
-  text-align:left;
-  margin-top: 50px;
-}
-
-.list-results li{
-  padding-bottom: 35px;
-}
-
-.greeter-result{
-  margin-top:20px;
-}
-
-.greeters-photo{
-  margin-top: -55px;
-}
-
-.greeters-profile{
-  margin-top: -120px;
-margin-left: 112px;
-  font-family: "Bariol";
-  font-size: 16px;
-}
-
-.greeters-thumbed-story{
-  
-  margin-left: -80px;
-  margin-top: -50px;
-}
-
-.thumbed-story-title{
-  font-size:24px;
-  font-family:"Bariol";
-  font-style: italic;
+  position:absolute;
+  z-index:99999;
 }
 
 .search_results {
@@ -676,14 +519,19 @@ margin-left: 112px;
   padding: 10px;
   font-family: "Bariol";
   color: white;
-  opacity:0.5
 }
 
 .search-write-story span:hover{
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .search-write-story-noresult{
+  position: relative;
+  text-align: center;
+  top:20px;
+  left:-450px;
+
+  color: white;
 }
 
 .search-write-story-noresult span{
@@ -691,11 +539,10 @@ margin-left: 112px;
   padding: 10px;
   font-family: "Bariol";
   color: white;
-  opacity:0.5;
 }
 
 .search-write-story-noresult span:hover{
-  opacity: 1;
+  opacity: 0.5;
 }
 
 
@@ -714,6 +561,16 @@ margin-left: 112px;
   border-radius: 0px;
   font-size: 16px;
   padding-top: 0.5em;
+}
+
+
+.input > input:focus {
+  outline: 2px solid #C4DBF0;
+}
+
+
+textarea:focus {
+  outline: 2px solid #C4DBF0;
 }
 
 .search-submit {
@@ -739,11 +596,10 @@ margin-left: 112px;
 .search-submit span{
   background-color: rgb(255,234,71);
   padding: 10px;
-  opacity:0.5;
 }
 
 .search-submit span:hover {
-	opacity: 1;
+	opacity: 0.75;
 }
 
 .button-writing{
@@ -771,6 +627,26 @@ margin-left: 112px;
   background: -webkit-linear-gradient(top, rgba(107,0,0,1) 0%,rgba(194,17,1,1) 100%);
 }
 
+
+
+input[type="text"],
+input[type="username"],
+input[type="password"],
+input[type="submit"],
+input[type="email"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  width: auto;
+}
 
 .white{
 	color:white;
@@ -816,6 +692,16 @@ margin-left: 112px;
 
 }
 
+.prof-review-root {
+  float: left;
+top: 5%;
+left: 0px;
+width: 89%;
+position: relative;
+
+}
+
+
 .prof-review-in-index {
   float: left;
   left:95px;
@@ -858,7 +744,9 @@ margin-left: 112px;
 }
 
 .review-body {
-  margin-left:20px;
+  display: block;
+  margin-top: 4%;
+  margin-left:105px;
   font-family: "Bariol";
   font-size: 18px;
   line-height: normal;
@@ -870,29 +758,9 @@ margin-left: 112px;
 }
 
 .review-body-header{
-  font-family:"Bariol";
-  margin-left: 30px;
-  margin-top: 35px;
+	margin-left:115px;
+  margin-top:30px;
 }
-
-.helpful-btn{
-  display:inline;
-  margin-top: -40px;
-  margin-left: 27px;
-  opacity: 0.5;
-}
-
-.helpful-btn-active{
-  display:inline;
-  margin-top: -40px;
-  margin-left: 27px;
-}
-
-
-.helpful-btn:hover{
-  opacity:1;
-}
-
 
 
 
@@ -968,12 +836,6 @@ margin-left: 112px;
   font-weight:bold; 
 }
 
-.form-signin {
-max-width: 330px;
-padding: 90px 15px;
-margin: 0 auto;
-font-family:"Bariol";
-}
 
 .prof-right-index-title-no-stories {
   position: absolute;
@@ -1058,11 +920,10 @@ font-family:"Bariol";
 .button-writing-index-bg span{
 	padding: 5px;
 	background-color: rgb(255,234,71);
-  opacity:0.5;
 }
 
 .button-writing-index-bg span:hover{
-  opacity: 1;
+  opacity: 0.75;
 }
 
 
@@ -1115,21 +976,18 @@ Story Feed
   margin-top:5px;
 }
 
-.greeter-badge-feed{
-  display: inline;
-  width: 20px;
-  height: 20px;
-  margin-top:0px;
-}
-
-
 .story-icon-index{
   position:absolute;
   margin-top:21%;
   margin-left: 25%;
 }
 
-
+.add-new-content {
+  position: absolute;
+  top: 106px;
+  left: 125px;
+  right: 125px;
+}
 
 .story-icon-index-text{
   position:absolute;
@@ -1176,7 +1034,8 @@ Story Feed
 }
 
 .prof-left-feed {
-  display: inline-block;
+  display: block;
+  position: absolute;
   margin-left:0px;
 }
 
@@ -1206,7 +1065,18 @@ Story Feed
   font-style:italic;
   font-weight: 100;
   color: rgb( 45, 45, 45 );
+  position: absolute;
+  text-align:left;
+  left: 105px;
+  top: 0px;
 }
+
+.story-writer-public-rating{
+  position: absolute;
+  left:110px;
+  top: 25px;
+}
+
 
 .story-thumb{
   position:absolute;
@@ -1220,23 +1090,35 @@ Story Feed
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   font-style: italic;
+  position: absolute;
+  margin-top: 7px;
+  float: left;
 }
 
 .story-title-rating{
-  margin-top: 106px;
-  margin-left: 2px;
+  position: absolute;
+margin-top: 36px;
+margin-left: 2px;
 }
 
 
 .badge-feed {
+  position: relative;
+  top:-18px;
   background: #C4DBF0;
   border: 1px solid #ccc;
   font-size: 12px;
   font-weight: bold;
   color: #333;
-  padding: 4px 7px;
+  padding: 2px 7px;
   border-radius: 8px;
   margin: 2px;
+}
+
+.story-thumb-public{
+  position:absolute;
+  top:68px;
+  left: 115px;
 }
 
 .story-badge-public{
@@ -1260,7 +1142,7 @@ Start of User Profile
 
 .store-category-text{
   font-size: 24px;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue LT Std";
   font-weight: 100;
   color: rgb( 45, 45, 45 );
   text-align: left;
@@ -1291,27 +1173,42 @@ Start of User Profile
   border-right: 1px solid #E5E5E1;*/
 }
 
-.followed-merchants-list{
-  float:left;
+.followed-merchants-list {
+  position: absolute;
+  width: 65%;
+  left: 100px;
+  top: 365px;
+}
+
+.after-profile-separator{
+  position: absolute;
+  left: 120px;
+  right:120px;
+  top: 290px;
+}
+
+
+.followed-merchants-list li{
+
+  display: inline-block;
   list-style: none;
-  display:inline-block;
 }
-
-.followed-merchants-list{
-  margin-left:15px;
-}
-
 
 
 .story-badge-in-profile{
-  margin-top:-5px;
-  width:30px;
-  height:30px;
+   position: absolute;
+  left: 288px;
+  top: 184px;
+  width:20px;
+  height:20px;
 }
 
 .story-badge-in-profile-text{
-  margin-left:2px;
-  font-size: 18px;
+   position: absolute;
+  left: 320px;
+  top: 183px;
+  width:100px;
+  font-size: 18.017px;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   text-align: left;
@@ -1321,14 +1218,18 @@ Start of User Profile
 }
 
 .thumbs-badge-in-profile{
-  margin-top: -5px;
-  margin-left:15px;
-  width:30px;
-  height:30px;
+  position: absolute;
+  left: 405px;
+  top: 184px;
+  width:20px;
+  height:20px;
 }
 
 .thumbs-badge-in-profile-text{
-  margin-left:2px;
+   position: absolute;
+  left: 436px;
+  top:183px;
+  width:100px;
   font-size: 18.017px;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
@@ -1340,46 +1241,59 @@ Start of User Profile
 
 
 .following-text {
-  font-size: 24px;
-  font-family: "Helvetica Thin";
+  font-size: 36px;
+  font-family: "Helvetica Neue LT Std";
+  font-weight: 100;
   color: rgb( 45, 45, 45 );
-  text-align: center;
+  text-align: left;
   -moz-transform: matrix( 0.64,0,0,0.64,0,0);
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
   -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 272px;
+  top: 240px;
 }
 
 .following-number {
-  margin-left:0px;
-  font-size: 28px;
-  font-family: "Helvetica Thin";
+  font-size: 48.006px;
+  font-family: "Helvetica Neue LT Std";
   color: rgb( 45, 45, 45 );
+  font-weight: bold;
   text-align: center;
   -moz-transform: matrix( 0.64,0,0,0.64,0,0);
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
   -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 327px;
+  top: 205px;
 }
 
 .followed-text {
-  margin-left: 15px;
-  font-size: 24px;
-  font-family: "Helvetica Thin";
+  font-size: 36px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
   color: rgb( 45, 45, 45 );
-  text-align: center;
+  text-align: left;
   -moz-transform: matrix( 0.64,0,0,0.64,0,0);
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
   -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 378px;
+  top: 240px;
 }
 
 .followed-number {
-  margin-left:100px;
-  font-size: 28px;
-  font-family: "Helvetica Thin";
+  font-size: 48.006px;
+  font-family: "Helvetica Neue LT Std";
   color: rgb( 45, 45, 45 );
+  font-weight: bold;
   text-align: center;
   -moz-transform: matrix( 0.64,0,0,0.64,0,0);
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
   -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 437px;
+  top: 205px;
 }
 
 
@@ -1387,31 +1301,45 @@ Start of User Profile
 	margin-top: -63%;
 }
 
-.user-profile{
-  display: inline-block;
-}
 
 .user-username {
   font-size: 36px;
   font-family: "Bariol";
+  font-weight: 100;
   color: rgb( 45, 45, 45 );
   text-align:left;
+  position: absolute;
+  left: 290px;
+  top: 100px;
 }
 
 .member-since-text {
-  font-size: 14px;
+  font-size: 28px;
   font-family: "Bariol";
+  font-weight: 100;
   color: rgb( 45, 45, 45 );
   text-align: left;
   -moz-transform: matrix( 0.64,0,0,0.64,0,0);
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
   -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 235px;
+  top: 140px;
+  
 }
 
 .followed-merchants-text {
-  font-size: 32px;
-  font-family: "Helvetica Thin";
+  font-size: 46.875px;
+  font-weight: 100;
+  font-family: "Helvetica Neue LT Std";
   color: rgb( 45, 45, 45 );
+  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
+  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
+  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
+  position: absolute;
+  left: 50px;
+  top: 295px;
+  width: 400px;
 }
 
 
@@ -1515,23 +1443,26 @@ Start of User Profile
 }
 
 
-.stripes{
-  background-image: url("/assets/WGSlice/stripe_repeat.png") ;
-  height: 12px;
-  border: none;
-}
+
 
 .followed-merchants-separator {
   background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: absolute;
+  left: 390px;
+  right:120px;
+  top: 305px;
   height: 12px;
   border: none;
 }
 
 .category-name-separator{
   background-image: url("/assets/WGSlice/stripe_repeat.png") ;
+  position: absolute;
+  left: 590px;
+  right:125px;
+  top: -20px;
   height: 12px;
   border: none;
-  margin-top: 0px;
 }
 
 
@@ -1547,7 +1478,7 @@ Start of User Profile
 .stories-in-profile{
     font-size: 46.875px;
   font-weight: 100;
-  font-family: "Helvetica Neue ";
+  font-family: "Helvetica Neue LT Std";
   color: rgb( 45, 45, 45 );
   -moz-transform: matrix( 0.64,0,0,0.64,0,0);
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
@@ -1599,6 +1530,11 @@ Start of User Profile
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   font-style: italic;
+  position: absolute;
+ margin-top: 61px;
+margin-left: -383px;
+  float: left;
+  width:100%;
 }
 
 
@@ -1687,36 +1623,26 @@ END
 
 
 
+
+.grad_button {
+    background: -webkit-linear-gradient(top, rgba(194,17,1,1) 0%,rgba(107,0,0,1) 100%);
+}
+
+.grad_button:hover {
+    background: -webkit-linear-gradient(top, rgba(107,0,0,1) 0%,rgba(194,17,1,1) 100%);
+}
+
 /*
 User Profile
 */
 
-.favs{
-  float:right;
-  margin-top:75px;
-}
-
-.edit-story-button{
-  margin-top:-15px;
-  width: 70px;
-  height: 25px;
-  opacity:1;
-}
-
-.edit-story-button:hover{
-  opacity:0.5;
-}
-
 .edit-profile-link{
-  margin-left:30px;
-  margin-top:-10px;
-  width:70px;
-  height:25px;
-  opacity:0.5;
-}
+  position:absolute;
+  z-index:9999;
+  top: 271px;
+left: 162px;
 
-.edit-profile-link:hover{
-  opacity:1;
+
 }
 
 /*
@@ -1731,8 +1657,8 @@ Merchant Page
 }
 
 .root-content-container{
-  margin-left:60px;
-  margin-right:60px;
+  position:absolute;
+  top:780px;
 }
 
 
@@ -1805,12 +1731,14 @@ Merchant Page
 }
 
 .merchant-write-story{
+  position: relative;
+  top:25px;
+  right:0px;
 }
 
 .merchant-write-story span{
   background-color: rgb(255,234,71); 
   padding: 10px;
-  opacity:1;
 }
 
 .merchant-write-story span:hover{
@@ -1853,11 +1781,6 @@ Merchant Page
   border-radius: 5px;
 }
 
-.merchant-banner{
-  width:100%;
-  height:65%;
-}
-
 .merchants-randompic-list {
   position: absolute;
   left: 100px;
@@ -1882,7 +1805,7 @@ Merchant Page
 .merchants-offers-text {
   font-size: 46.875px;
   font-weight: 100;
-  font-family: "Helvetica Neue ";
+  font-family: "Helvetica Neue LT Std";
   color: rgb( 45, 45, 45 );
   -moz-transform: matrix( 0.64,0,0,0.64,0,0);
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
@@ -1936,22 +1859,19 @@ Merchant Page
 }
 
 .more-offers{
+  position: absolute;
   text-align: center;
+  top:1010px;
+  left:46%;
 }
 
 .more-offers span{
   background-color: rgb(255,234,71); 
   padding: 10px;
-  opacity:0.5;
 }
 
 .more-offers span:hover{
-  opacity: 1;
-}
-
-.merchant-profile{
-  font-size:22px;
-  font-family:"Bariol";
+  opacity: 0.5;
 }
 
 .merchants-offers-separator {
@@ -1967,7 +1887,7 @@ Merchant Page
   left: 105px;
   font-size: 46.875px;
   font-weight: 100;
-  font-family: "Helvetica Neue ";
+  font-family: "Helvetica Neue LT Std";
   color: rgb( 45, 45, 45 );
   -moz-transform: matrix( 0.64,0,0,0.64,0,0);
   -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
@@ -2012,11 +1932,10 @@ Merchant Page
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
-  opacity:0.5;
 }
 
 .cool-button:hover{
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .prof-left-in-merchant {
@@ -2031,10 +1950,18 @@ Merchant Page
 Create story
 */
 .create-story-container{
-  padding-top: 90px;
+  position:absolute;
+  top:50px;
+  left:125px;
+  right:125px;
 }
-.story-header{
+.create-story-header{
+  top:50px;
+  position:absolute;
+  font-weight: bold;
+  font-size: 25pt;
   text-align:center;
+  width: 100%;
   font-family: "Novecento";
 }
 
@@ -2088,6 +2015,23 @@ position: absolute;
   top:10px;
 }
 
+.input select{
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.input > textarea {
+  margin-top: -15px;
+  position: relative;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  width: 400px;
+  height: 250px;
+  border-radius: 0px;
+}
+
+
 
 .create-story-review-rating{
   font-family: "Novecento";
@@ -2110,10 +2054,12 @@ position: absolute;
 }
 
 .create-story-about{
+  position: absolute;
+  left:630px;
+  top:120px;
+  width:33%;
   padding-left:25px;
   border-left: 1px solid rgb(194,194,194);
-  margin-top: -20px;
-  padding-top: 15px;
 }
 
 .create-story-review-body{
@@ -2150,11 +2096,10 @@ position: absolute;
   padding: 10px 5px 10px 55px;
   font-family: "Bariol";
   color: back;
-  opacity:0.5;
 }
 
 .submit-story span:hover{
-  opacity:1;
+  opacity:0.5;
 }
 
 /*
@@ -2232,6 +2177,67 @@ sign in page
   margin: 15px 0;
 }
 
+/*
+Form styl
+*/
+
+
+.form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.form > h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.input {
+  position: relative;
+  margin: 50px 0;
+}
+
+.input > label {
+  display: block;
+  font-weight: bold;
+  padding: 0 0 5px 0;
+}
+
+.input > input {
+  border: 1px solid #000;
+  padding: 5px 10px;
+  width: 300px;
+  border-radius: 0px;
+}
+
+.input > input[type="radio"] {
+  width: auto;
+  outline: 0;
+}
+
+.input select{
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.input > textarea {
+  margin-top: -15px;
+  position: relative;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  width: 400px;
+  height: 250px;
+  border-radius: 0px;
+}
+
+
+.input > input[type="file"] {
+  border: none;
+}
 
 .category_box {
   list-style: none;
@@ -2239,10 +2245,42 @@ sign in page
   margin: 5px;
 }
 
+.input > input:focus {
+  outline: 2px solid #C4DBF0;
+}
+
+textarea:focus {
+  outline: 2px solid #C4DBF0;
+}
+
+.submit {
+
+}
+
 span.amp {
    font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
    font-size:110%;
    font-style:italic;
+}
+
+.submit > input {
+  position: relative;
+  float: right;
+  width: 300px;
+  background-color: rgb(255,234,71);
+  color: #fff;
+  padding: 10px 15px;
+  margin-right: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  color:black; 
+  font-family:'Bariol';
+  font-size: 20px;
+}
+
+.submit > input:hover {
+  background-color: rgb(255,234,71);
+  opacity: 0.75;
 }
 
 /**
@@ -2409,6 +2447,48 @@ a:hover{
   text-decoration:none;
 }
 
-footer p{
-  float:right;
+/* footer */
+
+#wrap {
+min-height: 100%;
+height: auto !important;
+height: 100%;
 }
+
+footer {
+  height: 68px;
+  margin-top: 73%;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+  background-color: #f5f5f5;
+}
+
+footer a {
+  color: #555;
+
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: right;
+  margin-top:25px;
+  margin-right:55px;
+}
+
+footer ul {
+  float: left;
+
+  margin-right:55px;
+  list-style: none;
+}
+
+footer ul li {
+  float: right;
+  margin-top:5px;
+  margin-right: 10px;
+}
+
+

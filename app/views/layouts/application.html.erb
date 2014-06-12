@@ -25,62 +25,101 @@
 <%Keen.master_key = Rails.configuration.KEEN_MASTER_KEY%>
 
 <% @review = Review.order("RANDOM()").first %>
- <%@categories = Category.all %>
+<% @categories = Category.all %>
 
- 
-
-<header>
-
-
-
-
-
-  <% if request.original_url == "#{home}/merchants/index.html" %>
-    <nav class="top-nav group">
-      <div class="WG-mainlogo">
-        <%= image_tag "WGSlice/mainlogo.png", class:"img-responsive" %>  
-                     
-      </div>
-    
-      <form class="navbar-form navbar-right search-bar" action="<%= search_url %>" method="get">
-        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-        <div class="form-group">
-          <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <%= image_tag("wg_logo_2.png", height: '50', width: '50')%>
+            <%= image_tag("WGSlice/alpha.png", height: '55', width: '80', style:"margin-left:-96px")%>
+          </a>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+        <div class="navbar-collapse collapse" style="height: 1px;">
+          <ul class="nav navbar-nav">
+              <li><a href="<%= writestory_write_url %>">Write a story</a></li>
+              <li><a href="/">Discover</a></li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="<%= users_url%>">Find Greeters</a></li>
+                  <li><a href="<%= about_index_url%>">About Us</a></li>
+                  <li><a href="<%= guideline_index_url%>">Guideline</a></li>
+                </ul>
+              </li>
+            </ul>
 
-      
-  <% end %>
 
-  <% if request.original_url == "#{home}/"%>
+          <form class="navbar-form navbar-left" action="<%= search_url %>" method="get">
+            <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+            <div class="form-group">
+              <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
 
-    <nav class="top-nav group img-responsive">
-      <% if signed_in?%>
-        <form class="navbar-form navbar-right search-bar-home-sign-in" action="<%= search_url %>" method="get">
-          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-          <div class="form-group">
-            <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      <%else%>
-        <form class="navbar-form navbar-right search-bar-no-sign-in" action="<%= search_url %>" method="get">
-          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-          <div class="form-group">
-            <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      <%end%>
+          
+            <ul class="nav navbar-nav navbar-right">
+              <% if !signed_in? %>
+                <li><a href="<%= new_user_url %>">Sign Up</a></li>
+                <li><a href="<%= new_session_url %>">Sign In</a></li>
+              <% else %>
+                <li>
+                  <a class="dropdown-toggle" data-toggle="dropdown">
+                    <% if current_user.photo.file? %>
+                    <%= image_tag current_user.photo.url(:big), size: "18x18", class:"circular" %>
+                    <% elsif current_user.image? %>
+                      <%= image_tag current_user.image, size: "15x15", class:"circular" %>
+                    <% else %>
+                      <% puts "*************************#{review.user.gender}********************" %>
+                      <% if current_user.gender=="M" %>
+                        <%= image_tag "WGSlice/default-user-male.png", size: "15x15",class:"circular" %>
+                      <% elsif current_user.gender=="F" %>
+                        <%= image_tag "WGSlice/default-user-female.png", size: "15x15",class:"circular" %>
+                      <% else %>
+                        <%= image_tag "WGSlice/default-user-male.png", size: "15x15",class:"circular" %>
+                      <% end %>
+                    <% end %>
 
-      <div class="WG-mainlogo">
-        <%= image_tag("WGSlice/mainlogo.png", height: '100%', width: '100%')%>
-         <%= image_tag "WGSlice/alpha.png", class:"version-logo" %>
-        
-        
-        <span class="random-story">
+                    <%=current_user.username.capitalize%> <span class="caret"></span>
+              
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="<%=profile_show_url(current_user)%>">Profile</a></li>
+                      <li><a href="<%=user_url(current_user)%>">Story Feed</a></li>
+
+                      <li class="divider"></li>
+                      <li><%= link_to "Sign Out", session_url, :method => :delete%></li>
+                    </ul>
+                  </a>
+                </li>
+              <% end %>
+            </ul>
+          
+            
+              
+          
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    
+    <% if request.original_url == "#{home}/"%>
+      <div class="jumbotron bg-home img-responsive">
+        <div class="container">
+          <%= image_tag "WGSlice/mainlogo.png", class:"img-responsive WG-mainlogo" %>
+          <br><br><br><br><br>
+          
+        <div class="row random-story-container">
           <%if @review != nil %>
+          <div class="col-md-1 random-story-img">
             <% if @review.user.photo.file? %>
               <%= image_tag @review.user.photo.url(:big), class:"circular" %>
               <% elsif @review.user.image? %>
@@ -95,15 +134,18 @@
                   <%= image_tag "WGSlice/default-user-male.png", size: "100x100", class:"circular" %>
                 <% end %>
               <% end %>
+           </div>
 
-             <div class="random-story-text">
+           <div class="col-md-8 random-story">
+
+             
                 <span class="random-story-title">"<%= @review.title %>"</span>
                 <br>
                 <span class="random-story-body">
                   Rating: <%= @review.rating %> 
                       - <%= @review.user.username%>'s shopping story 
                  </span>
-               <br><br>
+               <br>
 
                <span class="random-story-see-more"> 
                   see more shopping stories on 
@@ -111,260 +153,33 @@
                  <br>
                  
                 
-                 <strong><%= link_to @review.merchant.name, merchant_url(@review.merchant), style:"color:white; margin-left:10px" %></strong>
+                 <strong><%= link_to @review.merchant.name, merchant_url(@review.merchant), class:"random-story-merchant" %></strong>
                 </span> 
-             </div>
+             
              
              <br>
              
              
           <% end %>
-        </span>
-        
+          <br><br><br><br><br><br>
+          <br><br><br><br><br><br>
+        </div>
       </div>
-  <% else %>
-    <nav class="top-nav-no-index group">
-      <% if signed_in?%>
-        <form class="navbar-form navbar-right search-bar-sign-in" action="<%= search_url %>" method="get">
-          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-          <div class="form-group">
-            <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      <%else%>
-        <form class="navbar-form navbar-right search-bar-sign-in" action="<%= search_url %>" method="get">
-          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-          <div class="form-group">
-            <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      <%end%>
-  <% end %>
-
-
-  <% if signed_in? %>
-   <%# puts "*****************#{current_user.slug}*****************"%>
-    <% if request.original_url == "#{home}/users/#{current_user.slug}"%>
-      <nav class="top-nav-stories-feed group">
+      </div>
+    </div>
+    <% end %>
     
-    <% elsif request.original_url == "#{home}/categories/Electronics"%>
-      <nav class="top-nav-electronics group">
-
-    <% elsif request.original_url == "#{home}/categories/Fashion"%>
-      <nav class="top-nav-fashion group">
+    <% if signed_in? %>
+      <% if request.original_url == "#{home}/users/#{current_user.slug}" %>
+        <div class="jumbotron bg-feed">
+        </div>
+      <% end %>
     <% end %>
-
-  <% else %>
-    <% if request.original_url == "#{home}/categories/Electronics"%>
-      <nav class="top-nav-electronics group">
-
-    <% elsif request.original_url == "#{home}/categories/Fashion"%>
-      <nav class="top-nav-fashion group">
-    <% else %>
-      <nav class="top-nav-no-index group">
-    <% end %>
-  <% end %>
+  <div class="container">
+    <%= yield %>
+  </div>
+  
 
  
-    <div class="top-nav-header">
-      <div class="logo">
-        <% if request.original_url != "#{home}/"%>
-          <% if signed_in? %>
-            <a href="/">
-              <%= image_tag("wg_logo_2.png", height: '60', width: '60')%>
-            </a>
-          <% else %>
-            <a href="/">
-              <%= image_tag("wg_logo_2.png", height: '60', width: '60')%>
-            </a>
-          <% end %>
-        <% else %>
-        <% end %>
-      </div>
-    </div>
-
-    
-        <% if signed_in? %>
-      
-
-        
-          <div class="info">
-            <a class="white dropdown-toggle" data-toggle="dropdown">
-              <% if current_user.photo.file? %>
-              <%= image_tag current_user.photo.url(:big), size: "35x35", class:"circular" %>
-              <% elsif current_user.image? %>
-                <%= image_tag current_user.image, size: "35x35", class:"circular" %>
-              <% else %>
-                <% puts "*************************#{review.user.gender}********************" %>
-                <% if current_user.gender=="M" %>
-                  <%= image_tag "WGSlice/default-user-male.png", size: "35x35",class:"circular" %>
-                <% elsif current_user.gender=="F" %>
-                  <%= image_tag "WGSlice/default-user-female.png", size: "35x35",class:"circular" %>
-                <% else %>
-                  <%= image_tag "WGSlice/default-user-male.png", size: "35x35",class:"circular" %>
-              <% end %>
-            <% end %>
-              <%=current_user.username.capitalize%> <span class="caret"></span>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="<%=profile_show_url(current_user)%>">Profile</a></li>
-                <li><a href="<%=user_url(current_user)%>">Story Feed</a></li>
-
-                <li class="divider"></li>
-                <li><%= link_to "Sign Out", session_url, :method => :delete%></li>
-              </ul>
-            </a>
-          
-          </div>
-
-        <% else %>
-           <div class="info-not-sign-in">
-            <ul>
-             
-              <li><%= link_to "Sign up", new_user_url, {:style => 'color:#FFFFFF; font-family:bariol'} %></li>
-              
-              |
-              
-              <li><%= link_to "Sign In", new_session_url, {:style => 'color:#FFFFFF; font-family:bariol'} %></li>
-            
-          <% end %>
-          
-        </ul>
-      </div>
-      
-    <div class="container group">
-      <% if request.original_url != "#{home}/"%>
-          <% if signed_in? %>
-
-
-            
-              <div class="write_story">
-               
-                    <a  class="white" href="<%= writestory_write_url %>">
-                        Write a new story
-                    </a>
-                  
-              </div>
-
-
-             
-
-              <div class="category" >
-                <!--ul class="nav nav-pills">
-                  <li-->
-                   <a class="white" href="/">
-                    Discover   
-                   </a>
-                    <!--ul class="category-dropdown">
-                      <li><a href="<%=category_url(@categories.first)%>"><%=@categories.first.name%></a></li>
-                      <li><a href="<%=category_url(@categories.second)%>"><%=@categories.second.name%></a></li>
-                    </ul-->
-                 
-              </div>
-
-              <div class = "community">
-                
-                    <a class="dropdown-toggle" data-toggle="dropdown" style="color:white">
-                      Community <span class="caret"></span>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="<%= users_url%>">Find Greeters</a></li>
-                        <li><a href="<%= about_index_url%>">About Us</a></li>
-                        <li><a href="<%= guideline_index_url%>">Guideline</a></li>
-                      </ul>
-                    </a>
-                  
-                  <%#= link_to "Find Friends".html_safe, users_url %>
-              </div>
-
-             
-            </ul>
-            <% else %>
-              
-
-             
-          <% end %>
-      <% else %>
-          <% if signed_in? %>
-              <div class = "write_story-home">
-                
-                <a class="white" href="<%= writestory_write_url %>">
-                    Write a new story
-                </a>
-                   
-              </div>
-
-              <div class = "category-home">
-                 
-                   <a class="white" href="/">
-                    Discover   
-                   </a>
-                    <!--ul class="category-dropdown">
-                      <li><a href="<%=category_url(@categories.first)%>"><%=@categories.first.name%></a></li>
-                      <li><a href="<%=category_url(@categories.second)%>"><%=@categories.second.name%></a></li>
-                    </ul-->
-                   
-              </div>
-
-              <div class = "community-home-sign-in">
-                
-                    <a class="dropdown-toggle" data-toggle="dropdown" style="color:white">
-                      Community <span class="caret"></span>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="<%= users_url%>">Find Greeters</a></li>
-                        <li><a href="<%= about_index_url%>">About Us</a></li>
-                        <li><a href="<%= guideline_index_url%>">Guideline</a></li>
-                      </ul>
-                    </a>
-                  
-                  <%#= link_to "Find Friends".html_safe, users_url %>
-              </div>
-            <% else %>
-              <div class = "category-home-no-sign-in">
-                 
-                   <a class="white" href="/">
-                    Discover   
-                   </a>
-                    <!--ul class="category-dropdown">
-                      <li><a href="<%=category_url(@categories.first)%>"><%=@categories.first.name%></a></li>
-                      <li><a href="<%=category_url(@categories.second)%>"><%=@categories.second.name%></a></li>
-                    </ul-->
-                
-              </div>
-
-             
-
-
-
-              <div class = "community-home-no-sign-in">
-                
-                    <a class="dropdown-toggle" data-toggle="dropdown" style="color:white">
-                      Community <span class="caret"></span>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="<%= users_url%>">Find Greeters</a></li>
-                        <li><a href="<%= about_index_url%>">About Us</a></li>
-                        <li><a href="<%= guideline_index_url%>">Guideline</a></li>
-                      </ul>
-                    </a>
-                  
-                  <%#= link_to "Find Friends".html_safe, users_url %>
-              </div>
-          <% end %>
-
-      <% end %>
-  </div>    
-
-    </div>
-  </nav>
-</header>
-
-<main>
-  <div class="main group">
-
-    <%= yield %>
-
-  </div>
-</main>
-
 </body>
 </html>

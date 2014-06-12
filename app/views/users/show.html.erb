@@ -1,7 +1,7 @@
 
   <% if current_user == @user %>
-    <div class="prof-content group">
-      <div class="prof-mid-feed group">
+
+      <div class="feed-container">
         <%= render "reviews/user_feed", :user => @user %>
       </div>
   <% else %>
