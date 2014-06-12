@@ -11,34 +11,69 @@
 
   <hr>
 
+
+  
+
   <div class="row">
     <div class="col-md-7">
       <div class="row">
-        <div class="col-md-3">
-          <% if @merchant.photo.file? %>
-            <%= image_tag review.merchant.photo.url(:big),:class => "user-propic-profile" %>
-          <% else %>
-            <%= image_tag "WGSlice/default-merchant.png", size: "100x100", :class => "user-propic-profile" %>
-          <% end %>
-        </div>
+        <% if method=="post" %>
+          <div class="col-md-3">
+            <% if @merchant.photo.file? %>
+              <%= image_tag @merchant.photo.url(:big),:class => "user-propic-profile" %>
+            <% else %>
+              <%= image_tag "WGSlice/default-merchant.png", size: "100x100", :class => "user-propic-profile" %>
+            <% end %>
+          </div>
 
-        <div class="col-md-4 user-profile" style="opacity:0.5;">
+          <div class="col-md-4 user-profile" style="opacity:0.5;">
 
-          <span class="user-username">
-            <%= @merchant.name %>
-          </span>
+            <span class="user-username">
+              <%= @merchant.name %>
+            </span>
 
-          <br>
+            <br>
 
-          <span class="following-number">
-            <%= @merchant.favorites.count %>
-          </span> 
-          
-          <% if @merchant.favorites.count > 1%> <span style="opacity:0.35; font-size:24px;"> Followers </span> 
-                                              <% else %> <span style="opacity:0.35; font-size:24px;"> Follower </span> 
-                                             <% end %>
-          </span>
-        </div>
+            <span class="following-number">
+              <%= @merchant.favorites.count %>
+            </span> 
+            
+            <% if @merchant.favorites.count > 1%> <span style="opacity:0.35; font-size:24px;"> Followers </span> 
+                                                <% else %> <span style="opacity:0.35; font-size:24px;"> Follower </span> 
+                                               <% end %>
+            </span>
+          </div>
+        <% else %>
+          <div class="col-md-3">
+            <% if review.merchant.photo.file? %>
+              <%= image_tag review.merchant.photo.url(:big),:class => "user-propic-profile" %>
+            <% else %>
+              <%= image_tag "WGSlice/default-merchant.png", size: "100x100", :class => "user-propic-profile" %>
+            <% end %>
+          </div>
+
+          <div class="col-md-4 user-profile" style="opacity:0.5;">
+
+         
+
+            <span class="user-username">
+              <%= review.merchant.name %>
+            </span>
+
+
+            <br>
+
+            <span class="following-number">
+              <%= review.merchant.favorites.count %>
+            </span> 
+            
+            <% if review.merchant.favorites.count > 1%> <span style="opacity:0.35; font-size:24px;"> Followers </span> 
+                                                <% else %> <span style="opacity:0.35; font-size:24px;"> Follower </span> 
+                                               <% end %>
+            </span>
+
+          </div>
+        <% end %>
       </div>
 
 
@@ -104,8 +139,12 @@
             <br><br>
         </div>
 
+                
+        <button class="btn btn-default btn-wg"><%= message %></button>
         
-        <button class="btn btn-default btn-wg btn-lg"><%= message %></button>
+        <%# if method == "put" %>
+          <%#= button_to "Delete Story", review_url(@review), class:"btn btn-danger", method: :delete%>
+        <%# end %>
         <br><br><br>
       </form>
     </div>

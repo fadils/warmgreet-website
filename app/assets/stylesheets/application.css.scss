@@ -756,15 +756,8 @@ margin-left: 112px;
   margin: 0;
 }
 
-.delete-button .delete {
-  background-color: rgb(255,234,71); 
-  padding: 10px 5px 10px 55px;
-  font-family: "Bariol";
-  color: back;
-  width: 190px;
-  top: 250px;
-  right: 125px;
-  position: absolute;
+.delete-button{
+  float:right;
 }
 
 .delete-button .delete:hover {
