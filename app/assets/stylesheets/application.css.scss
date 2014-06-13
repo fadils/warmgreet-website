@@ -379,21 +379,24 @@ random story showed in top-nav
   text-align: center;
 }
 
+.profile-public-container{
+  padding-top:90px;
+  text-align:center;
+}
+
 .feed-container{
   padding: 20px 15px;
   text-align: left;
 }
 
 .merchant-container{
-  padding: 115px 55px;
+  padding-top: 115px;
   text-align: left;
 }
 
 
 
 .profile-container{
-  margin-left:70px;
-  margin-right:50px;
   margin-top: 115px;
 }
 
@@ -1316,8 +1319,8 @@ Start of User Profile
 
 .story-badge-in-profile{
   margin-top:-5px;
-  width:25px;
-  height:25px;
+  width:20px;
+  height:20px;
 }
 
 .story-badge-in-profile-text{
@@ -1326,27 +1329,20 @@ Start of User Profile
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   text-align: left;
-  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
-  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
-  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
 }
 
 .thumbs-badge-in-profile{
   margin-top: -5px;
-  margin-left:15px;
-  width:25px;
-  height:25px;
+  width:20px;
+  height:20px;
 }
 
 .thumbs-badge-in-profile-text{
   margin-left:2px;
-  font-size: 18.017px;
+  font-size: 1.125em;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   text-align: left;
-  -moz-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
-  -webkit-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
-  -ms-transform: matrix( 1.08994707054668,0,0,1.09005840660324,0,0);
 }
 
 
@@ -1383,7 +1379,7 @@ Start of User Profile
 }
 
 .followed-number {
-  margin-left:100px;
+  margin-left:90px;
   font-size: 1.750em;
   font-family: "Helvetica Thin";
   color: rgb( 45, 45, 45 );
@@ -1399,11 +1395,11 @@ Start of User Profile
 }
 
 .user-photo{
-  text-align: center;
+  text-align: left;
 }
 
 .user-profile{
-  text-align: center;
+  text-align: left;
 }
 
 .user-username {
@@ -1414,13 +1410,11 @@ Start of User Profile
 }
 
 .member-since-text {
-  font-size: 14px;
+  font-size: 1em;
+  margin-left:25px;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   text-align: left;
-  -moz-transform: matrix( 0.64,0,0,0.64,0,0);
-  -webkit-transform: matrix( 0.64,0,0,0.64,0,0);
-  -ms-transform: matrix( 0.64,0,0,0.64,0,0);
 }
 
 .followed-merchants-text {
@@ -1690,8 +1684,9 @@ User Profile
   opacity:0.5;
 }
 
-.edit-profile-link{
+.edit-profile-link, .foll{
   margin-top:-10px;
+  margin-left: 20px;
 }
 
 .edit-profile-link:hover{
