@@ -18,11 +18,17 @@
 
           <div style="margin-top:-15px; margin-left:5px;">      
              <strong class="following-number"> <%= @merchant.favorites.count %> </strong>
-             <% if @merchant.favorites.count > 1 %> 
+              <% if @merchant.favorites.count > 1 %> 
                <strong class="following-text"> Followers </strong>
-            <% else %>
+              <% else %>
                <strong class="following-text"> Follower </strong>
-               <% end %>  
+              <% end %>  
+              <% unless current_user == @user %>
+              <span class="favs <%="is-favorite" if current_user.favorite_places.include?(@merchant)%>">
+                <%= button_to "FOLLOW", merchant_favorites_url(@merchant),class:"btn btn-default", method: :post, form_class: "favorite-button grad_button", remote: true %>
+                <%= button_to "UNFOLLOW", merchant_favorite_url(@merchant), class:"btn btn-warning", method: :delete, form_class: "unfavorite-button grad_button", remote: true %>
+              </span>
+            <% end %>
           </div> 
           
         </div>
@@ -42,15 +48,12 @@
             <% end %>
      
             <% if current_user %>
+              <br>
               <%= button_to "Write a story!", new_merchant_review_url(@merchant), class:"btn btn-wg", method: :get%>
+              <br>
             <% end %>
          
-            <% unless current_user == @user %>
-              <div class="favs <%="is-favorite" if current_user.favorite_places.include?(@merchant)%>">
-                <%= button_to "FOLLOW", merchant_favorites_url(@merchant),class:"btn btn-default", method: :post, form_class: "favorite-button grad_button", remote: true %>
-                <%= button_to "UNFOLLOW", merchant_favorite_url(@merchant), class:"btn btn-warning", method: :delete, form_class: "unfavorite-button grad_button", remote: true %>
-              </div>
-            <% end %>
+            
 
           </div>
         </div>
@@ -66,11 +69,11 @@
   <hr>
          
   <ul class="list-inline">
-    <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
-    <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
-    <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
-    <li><%= image_tag "WGSlice/default-merchant.png", size: "126x126" %></li>
-    <li><%= image_tag "WGSlice/more-shoppers-photo.png", size: "126x126"%></li>
+    <li><%= image_tag "WGSlice/default-merchant.png" %></li>
+    <li><%= image_tag "WGSlice/default-merchant.png" %></li>
+    <li><%= image_tag "WGSlice/default-merchant.png" %></li>
+    <li><%= image_tag "WGSlice/default-merchant.png" %></li>
+    <li><%= image_tag "WGSlice/more-shoppers-photo.png" %></li>
   </ul>
             
   <hr>
@@ -124,7 +127,7 @@
   </div>
 
  
-  <%= render "reviews/user_public", :user => @merchant %>
+  <%= render "reviews/merchant_public", :merchant => @merchant %>
            
 </div>
 

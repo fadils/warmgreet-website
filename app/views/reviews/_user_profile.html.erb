@@ -1,6 +1,6 @@
 
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-2 user-photo">
     <% if @user.photo.file? %>
       <%= image_tag @user.photo.url(:small), :class => "user-propic-profile circular" %>
     <% elsif @user.image? %>
@@ -15,14 +15,19 @@
       <% end %>
     <% end %>
     <br><br>
+
+    <% if current_user == @user %>
+      <%= link_to "Edit Profile", edit_user_url(@user), class:"edit-profile-link btn btn-warning" %>
+    <% end %>
+
     <% unless current_user == @user %>
-          <div class="foll <%="is-followed" if current_user.followed_users.include?(@user) %>">
-            <%#= button_to " ", user_follows_url(@user), class: "following-button", method: :post, form_class: "following-button", remote: true %>
-            <%#= button_to " ", user_follow_url(@user), class: "followed-button", method: :delete, form_class: "followed-button", remote: true %>
-            <%= button_to "FOLLOW", user_follows_url(@user), class:"btn btn-default", method: :post, form_class: "follow-button grad_button", remote: true %>
-            <%= button_to "UNFOLLOW", user_follow_url(@user), class:"btn btn-warning", method: :delete, form_class: "unfollow-button grad_button", remote: true %>
-          </div>
-        <% end %>
+      <div class="foll <%="is-followed" if current_user.followed_users.include?(@user) %>">
+        <%#= button_to " ", user_follows_url(@user), class: "following-button", method: :post, form_class: "following-button", remote: true %>
+        <%#= button_to " ", user_follow_url(@user), class: "followed-button", method: :delete, form_class: "followed-button", remote: true %>
+        <%= button_to "FOLLOW", user_follows_url(@user), class:"btn btn-default", method: :post, form_class: "follow-button grad_button", remote: true %>
+        <%= button_to "UNFOLLOW", user_follow_url(@user), class:"btn btn-warning", method: :delete, form_class: "unfollow-button grad_button", remote: true %>
+      </div>
+    <% end %>
   </div>
   
 

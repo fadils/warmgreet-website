@@ -33,7 +33,12 @@ html,body{
 
 .nav{
   font-family:"Bariol";
-  font-size: 16px;
+  font-size: 1.125em;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #090909;
+  color: #ffea47;
 }
 
 .navbar-form .form-control {
@@ -41,7 +46,7 @@ html,body{
 }
 
 .navbar-brand{
-  padding-top:0px;
+  padding-top:2px;
   margin-top:-2px;
 }
 
@@ -59,13 +64,13 @@ html,body{
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  //color: #000000;
-  //opacity:1;
+  color: white;
+  opacity:1;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  //color: #000000;
-  //opacity:0.5;
+  color: #ffea47;
+  opacity:1;
 }
 
 .btn{
@@ -93,20 +98,20 @@ html,body{
 }
 
 .jumbotron{
-  margin-top:-100px;
-  
+  background-color: rgb(245,230,71);
 }
 
 .bg-home{
+  margin-top:-100px;
   background: url("/assets/WGSlice/Banner_1440.jpg") no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+   -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .bg-feed{
-  height: 700px;
+  height:500px;
   background: url("/assets/WGSlice/banner-feed.jpg") no-repeat center center; 
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -192,7 +197,7 @@ a .white ul:hover{
 
 .community-home-no-sign-in{
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -202,7 +207,7 @@ a .white ul:hover{
 
 .community-home-sign-in{
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -303,11 +308,19 @@ random story showed in top-nav
   display: inline-block;
 }
 
+.review-body-content{
+  margin-left: -36px;
+}
+
 .random-story{
   display: inline-block;
   margin-left:25px;
   color: white;
   font-family: "Bariol";
+}
+
+.story-img{
+  width:100%;
 }
 
 
@@ -333,7 +346,7 @@ random story showed in top-nav
 .random-story-title{
   
   font-family: "Bariol";
-  font-size: 28px;
+  font-size: 1.750em;
   color: white;
   font-style: italic;
   font-weight: bold;
@@ -342,12 +355,12 @@ random story showed in top-nav
 .random-story-body{
   
   font-family:"Bariol";
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .random-story-see-more{
   font-family: "Bariol";
-  font-size: 18px;
+  font-size: 1.125em;
 }
 /*
 */
@@ -393,7 +406,7 @@ random story showed in top-nav
 
 .write_story-home {
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -404,7 +417,7 @@ random story showed in top-nav
 
 .write_story {
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -415,7 +428,7 @@ random story showed in top-nav
 
 .category {
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -425,7 +438,7 @@ random story showed in top-nav
 
 .community{
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -440,7 +453,7 @@ random story showed in top-nav
 }
 .category-home {
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -450,7 +463,7 @@ random story showed in top-nav
 
 .category-home-no-sign-in {
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -462,7 +475,7 @@ random story showed in top-nav
 
 .find_friends {
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -473,7 +486,7 @@ random story showed in top-nav
 
 .find_friends-home {
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -484,7 +497,7 @@ random story showed in top-nav
 
 .find_friends-no-sign-in-home {
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -495,7 +508,7 @@ random story showed in top-nav
 
 .info {
   list-style: none;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color: white;
   position: absolute;
@@ -508,7 +521,7 @@ random story showed in top-nav
   color: white;
   right: 13%;
   list-style: none;
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: 'Bariol';
   /*background: #F0F3F8;*/
   border-radius: 3px;
@@ -563,9 +576,14 @@ nav ul {
 .merchant-propic-profile {
   display:inline-block;
   margin: 0 auto;
-  width:160px;
-  height:164px;
+  width:140px;
+  height:144px;
  
+}
+
+.list-inline li img{
+  width:100px;
+  height: 100px;
 }
 
 
@@ -579,7 +597,7 @@ nav ul {
   position: absolute;
   float: right;
   right: 3%;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Bariol";
   color:white;
   top:25px;
@@ -608,7 +626,6 @@ nav ul {
 }
 
 .list-results{
-  margin-left:40px;
   text-align:left;
   margin-top: 50px;
 }
@@ -629,7 +646,7 @@ nav ul {
   margin-top: -120px;
 margin-left: 112px;
   font-family: "Bariol";
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .greeters-thumbed-story{
@@ -639,7 +656,7 @@ margin-left: 112px;
 }
 
 .thumbed-story-title{
-  font-size:24px;
+  font-size: 1.5em;
   font-family:"Bariol";
   font-style: italic;
 }
@@ -712,7 +729,7 @@ margin-left: 112px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  font-size: 16px;
+  font-size: 1em;
   padding-top: 0.5em;
 }
 
@@ -726,7 +743,7 @@ margin-left: 112px;
   /*border: 1px solid black;
   border-radius: 5px;
   */
-  font-size: 20px;
+  font-size: 1.250em;
   text-align: center;
   padding-top: 10px;
   width: 5.4%;
@@ -833,7 +850,7 @@ margin-left: 112px;
 }
 
 .result-merchant-name{
-  font-size:24px;
+  font-size: 1.5em;
   font-family:"Helvetica Thin"
 }
 
@@ -844,7 +861,7 @@ margin-left: 112px;
 .prof-review .review-body {
   display: inline-block;
   font-family: "Bariol";
-  font-size: 20px;
+  font-size: 1.250em;
   line-height: normal;
   word-break: normal;
   height:auto;
@@ -853,7 +870,7 @@ margin-left: 112px;
 .review-body {
   margin-left:20px;
   font-family: "Bariol";
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: normal;
   word-break: normal;
   padding: 0 10px;
@@ -872,6 +889,7 @@ margin-left: 112px;
   display:inline;
   margin-top: -40px;
   margin-left: 27px;
+  height: 35px;
   opacity: 0.5;
 }
 
@@ -879,6 +897,7 @@ margin-left: 112px;
   display:inline;
   margin-top: -40px;
   margin-left: 27px;
+  height: 35px;
 }
 
 
@@ -918,7 +937,7 @@ margin-left: 112px;
   margin-left: 20px;
   width:400px;
   font-family: "Bariol";
-  font-size: 16px;
+  font-size: 1em;
 }
 
 
@@ -957,7 +976,7 @@ margin-left: 112px;
   width:280%; 
   font-style: italic; 
   font-family:'Bariol'; 
-  font-size:20px; 
+  font-size: 1.250em; 
   font-weight:bold; 
 }
 
@@ -977,7 +996,7 @@ font-family:"Bariol";
   width:130%; 
   font-style: italic; 
   font-family:'Bariol'; 
-  font-size:20px; 
+  font-size: 1.125em; 
   font-weight:bold; 
   padding-bottom: 400px;
 }
@@ -985,7 +1004,7 @@ font-family:"Bariol";
 .prof-right-time-created{
   position:absolute; 
   font-family:'Bariol'; 
-  font-size:14px; 
+  font-size: 0.75em; 
   font-weight:bold; 
   margin-left:120px; 
   margin-top:-100px;
@@ -1009,7 +1028,7 @@ font-family:"Bariol";
   margin-top: -90px;
   font-family: "Bariol";
   font-weight: 100;
-  font-size: 20px;
+  font-size: 1.250em;
 }
 
 .review-body-index {
@@ -1019,7 +1038,7 @@ font-family:"Bariol";
   text-align: justify;
   width: 128.5%;
   font-family: "Bariol";
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 100;
   padding-bottom: 26px;
 }
@@ -1032,7 +1051,7 @@ font-family:"Bariol";
   width: 474px;
   font-family: "Bariol";
   text-align: left;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 100;
   padding-bottom: 26px;
 }
@@ -1170,13 +1189,12 @@ Story Feed
 
 .prof-left-feed {
   display: inline-block;
-  margin-left:0px;
 }
 
 .story-writer{
   margin-left:0;
   margin-top:120px;
-  font-size: 27.521px;
+  font-size: 1.720em;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   font-style: italic;
@@ -1209,7 +1227,7 @@ Story Feed
 
 
 .story-title{
-  font-size: 27.521px;
+  font-size: 1.720em;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   font-style: italic;
@@ -1224,7 +1242,7 @@ Story Feed
 .badge-feed {
   background: #C4DBF0;
   border: 1px solid #ccc;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: bold;
   color: #333;
   padding: 4px 7px;
@@ -1234,8 +1252,8 @@ Story Feed
 
 .story-badge-public{
   display: inline;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 
@@ -1252,7 +1270,7 @@ Start of User Profile
 */
 
 .store-category-text{
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: "Helvetica Neue";
   font-weight: 100;
   color: rgb( 45, 45, 45 );
@@ -1298,13 +1316,13 @@ Start of User Profile
 
 .story-badge-in-profile{
   margin-top:-5px;
-  width:30px;
-  height:30px;
+  width:25px;
+  height:25px;
 }
 
 .story-badge-in-profile-text{
   margin-left:2px;
-  font-size: 18px;
+  font-size: 1.125em;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   text-align: left;
@@ -1316,8 +1334,8 @@ Start of User Profile
 .thumbs-badge-in-profile{
   margin-top: -5px;
   margin-left:15px;
-  width:30px;
-  height:30px;
+  width:25px;
+  height:25px;
 }
 
 .thumbs-badge-in-profile-text{
@@ -1333,7 +1351,7 @@ Start of User Profile
 
 
 .following-text {
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: "Helvetica Thin";
   color: rgb( 45, 45, 45 );
   text-align: center;
@@ -1344,7 +1362,7 @@ Start of User Profile
 
 .following-number {
   margin-left:0px;
-  font-size: 28px;
+  font-size: 1.750em;
   font-family: "Helvetica Thin";
   color: rgb( 45, 45, 45 );
   text-align: center;
@@ -1355,7 +1373,7 @@ Start of User Profile
 
 .followed-text {
   margin-left: 15px;
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: "Helvetica Thin";
   color: rgb( 45, 45, 45 );
   text-align: center;
@@ -1366,7 +1384,7 @@ Start of User Profile
 
 .followed-number {
   margin-left:100px;
-  font-size: 28px;
+  font-size: 1.750em;
   font-family: "Helvetica Thin";
   color: rgb( 45, 45, 45 );
   text-align: center;
@@ -1380,8 +1398,12 @@ Start of User Profile
 	margin-top: -63%;
 }
 
+.user-photo{
+  text-align: center;
+}
+
 .user-profile{
-  display: inline-block;
+  text-align: center;
 }
 
 .user-username {
@@ -1417,7 +1439,6 @@ Start of User Profile
 }
 
 .foll{
-  margin-left:25px;
 }
 
 .follow-button {
@@ -1437,7 +1458,7 @@ Start of User Profile
   margin-top:160px;
   color: #fff;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75em;
   text-align: center;
   border-radius: 5px;
   background: url("WGslice/follow-btn.png") no-repeat;
@@ -1454,7 +1475,7 @@ Start of User Profile
   margin-top:160px;
   color: #fff;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75em;
   text-align: center;
   border-radius: 5px;
   background: url("WGslice/follow-btn.png") no-repeat;
@@ -1472,7 +1493,7 @@ Start of User Profile
   margin-left:38px;
   color: #fff;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75em;
   text-align: center;
   border-radius: 5px;
 }
@@ -1508,7 +1529,7 @@ Start of User Profile
 
 
 .stories-in-profile{
-    font-size: 46.875px;
+  font-size: 2.930em;
   font-weight: 100;
   font-family: "Helvetica Neue ";
   color: rgb( 45, 45, 45 );
@@ -1558,7 +1579,7 @@ Start of User Profile
 
 
 .story-title-public{
-  font-size: 27.521px;
+  font-size: 1.720em;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   font-style: italic;
@@ -1566,7 +1587,7 @@ Start of User Profile
 
 
 .story-title-merchant{
-  font-size: 27.521px;
+  font-size: 1.720em;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   font-style: italic;
@@ -1586,7 +1607,7 @@ margin-left: -383px;
 .review-body-public {
   display: block;
   font-family: "Bariol";
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: normal;
   word-break: normal;
   padding: 0 10px;
@@ -1630,7 +1651,7 @@ Write a new story
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  font-size: 20px;
+  font-size: 1.250em;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -1655,7 +1676,6 @@ User Profile
 */
 
 .favs{
-  float:right;
   margin-top:75px;
 }
 
@@ -1671,11 +1691,7 @@ User Profile
 }
 
 .edit-profile-link{
-  margin-left:30px;
   margin-top:-10px;
-  width:70px;
-  height:25px;
-  opacity:0.5;
 }
 
 .edit-profile-link:hover{
@@ -1724,7 +1740,7 @@ Merchant Page
 }
 
 .user-username-merchant-followers {
-  font-size: 28px;
+  font-size: 1.750em;
   font-family: "Helvetica Neue";
   font-weight: 100;
   color: rgb( 45, 45, 45 );
@@ -1735,7 +1751,7 @@ Merchant Page
 }
 
 .user-username-merchant {
-  font-size: 28px;
+  font-size: 1.750em;
   font-family: "Bariol";
   font-weight: 100;
   color: rgb( 45, 45, 45 );
@@ -1753,7 +1769,7 @@ Merchant Page
 }
 
 .member-since-text-merchant {
-  font-size: 28px;
+  font-size: 1.750em;
   font-family: "Bariol";
   font-weight: 100;
   color: rgb( 45, 45, 45 );
@@ -1800,7 +1816,7 @@ Merchant Page
   width: 80px;
   color: #fff;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75em;
   text-align: center;
   border-radius: 5px;
 }
@@ -1811,7 +1827,7 @@ Merchant Page
   width: 80px;
   color: #fff;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75em;
   text-align: center;
   border-radius: 5px;
 }
@@ -1843,7 +1859,7 @@ Merchant Page
 
 
 .merchants-offers-text {
-  font-size: 46.875px;
+  font-size: 2.930em;
   font-weight: 100;
   font-family: "Helvetica Neue ";
   color: rgb( 45, 45, 45 );
@@ -1928,7 +1944,7 @@ Merchant Page
   position: absolute;
   top:1050px;
   left: 105px;
-  font-size: 46.875px;
+  font-size: 2.930em;
   font-weight: 100;
   font-family: "Helvetica Neue ";
   color: rgb( 45, 45, 45 );
@@ -1970,7 +1986,7 @@ Merchant Page
   width: 90px;
   color: #00f;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75em;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -2011,7 +2027,7 @@ Create story
   top:-25px;
   left:5px;
   font-family: "Novecento";
-  font-size: 24px;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: lighter;
   opacity: 0.35;
@@ -2023,7 +2039,7 @@ Create story
   top:45px;
   left: 110px;
   font-family: "Novecento";
-  font-size: 18px;
+  font-size: 1.125em;
   text-transform: uppercase;
   font-weight: lighter;
 }
@@ -2043,7 +2059,7 @@ position: absolute;
 
 .your-experience-text{
   font-family: "Trebuchet MS";
-  font-size: 25px;
+  font-size: 1.563em;
 }
 
 .create-story-input{
@@ -2054,7 +2070,7 @@ position: absolute;
 
 .create-story-review-rating{
   font-family: "Novecento";
-  font-size: 24px;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: lighter;
   opacity: 0.35;
@@ -2062,7 +2078,7 @@ position: absolute;
 
 .create-story-review-title{
   font-family: "Novecento";
-  font-size: 24px;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: lighter;
   opacity: 0.35;
@@ -2081,7 +2097,7 @@ position: absolute;
 
 .create-story-review-body{
   font-family: "Novecento";
-  font-size: 24px;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: lighter;
   opacity: 0.35;
@@ -2096,7 +2112,7 @@ position: absolute;
 
 .create-story-review-pic{
   font-family: "Novecento";
-  font-size: 24px;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: lighter;
   opacity: 0.35;
@@ -2187,7 +2203,7 @@ sign in page
 
 .social h1 {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 3.750em;
   margin: 0 0 30px 0;
 }
 
@@ -2265,7 +2281,7 @@ Category
   margin-top:0%;
   margin-left:15px;
   font-family: "Bariol";
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: normal;
   word-break: normal;
   padding: 0 10px;
@@ -2281,7 +2297,7 @@ Category
   left:-27%;
   text-align: justify;
   font-family: "Bariol";
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 100;
   padding-bottom: 26px;
 }
@@ -2301,7 +2317,7 @@ right: 10px;
 .category-story-title{
   position:absolute;
   float: right;
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   font-style: italic;
@@ -2316,7 +2332,7 @@ right: 10px;
   float:right;
   text-align:left;
   font-family:'Bariol'; 
-  font-size:16px; 
+  font-size: 1em; 
   font-weight:bold; 
   left:0%; 
   right:0%;

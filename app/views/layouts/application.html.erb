@@ -38,7 +38,7 @@
           </button>
           <a class="navbar-brand" href="/">
             <%= image_tag("wg_logo_2.png", height: '50', width: '50')%>
-            <%= image_tag("WGSlice/alpha.png", height: '55', width: '80', style:"margin-left:-96px")%>
+            <%#= image_tag("WGSlice/alpha.png", height: '55', width: '80', style:"margin-left:-96px")%>
           </a>
         </div>
         <div class="navbar-collapse collapse" style="height: 1px;">
@@ -112,7 +112,7 @@
 
     
     <% if request.original_url == "#{home}/"%>
-      <div class="jumbotron bg-home img-responsive">
+      <div class="jumbotron bg-home">
         <div class="container">
           <%= image_tag "WGSlice/mainlogo.png", class:"img-responsive WG-mainlogo" %>
           <br><br><br><br><br>
