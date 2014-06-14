@@ -2,33 +2,34 @@
 
 <%if review%>
 
-<div class="row">
-  <div class="prof-left-feed col-md-2">
+<div style="display:inline-block">
     <% if review.merchant.photo.file? %>
-      <%= image_tag review.merchant.photo.url(:big), :class => "circular" %>
+      <%= image_tag review.merchant.photo.url(:big), :class => "circular", size: "100x100" %>
     <% else %>
-      <%= image_tag "WGSlice/default-merchant.png", size: "130x130" %>
+      <%= image_tag "WGSlice/default-merchant.png", size: "100x100" %>
     <% end %>
-  </div>
 
-
-  <div class="col-md-8 review-body-content">
-    <div class="review-body-header">    
+    <span class="attribute-container-public">   
       <%= link_to review.merchant.name.upcase, merchant_url(review.merchant), :class => "story-writer-public" %>
       <br>
       <strong class="story-writer-public-rating">Rating: <%= review.rating %> </strong>
         
-        <br>
-          
+        <div class="badge-public-container">
           <strong class="story-thumb-public"><%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "story-badge-public") %></strong>
 
            <strong style="margin-left:3px;font-weight:100;font-size:120%;"> <%= review.user.count_thumbs_up%> thumbs</strong>
 
-           <strong><%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-left: 5px; width:90px;height:30px")%></strong>
+           <strong><%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline; margin-left: 5px; height:25px")%></strong>
+        </div>
           
          <br>
          
-          <strong class="story-title-public">"<%= review.title %>"</strong>
+          
+    </span>
+      
+
+    <div class="review-body">
+      <strong class="story-title-public">"<%= review.title %>"</strong>
         
         
 
@@ -41,10 +42,6 @@
                 <br>
             <% end %>
         </div>
-    </div>
-      
-
-    <div class="review-body">
       <%= review.body %>
       
 
@@ -61,7 +58,6 @@
       <% end %>
           
     </div>
-  </div> 
 </div>
 
 <hr>

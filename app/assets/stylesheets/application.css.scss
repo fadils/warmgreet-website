@@ -266,9 +266,16 @@ a .white ul:hover{
 }
 
 .attribute-container{
-  display:inline-block;
+  display: block;
+  margin-left: 115px;
+  margin-top: -65px;
 }
 
+.attribute-container-public{
+  display: block;
+  margin-left: 115px;
+  margin-top: -90px;
+}
 
 
 /*
@@ -305,11 +312,10 @@ random story showed in top-nav
 }
 
 .review-body-container{
-  display: inline-block;
 }
 
 .review-body-content{
-  margin-left: -36px;
+  margin-left: 5px;
 }
 
 .random-story{
@@ -375,7 +381,7 @@ random story showed in top-nav
 }
 
 .content-container{
-  padding: 90px 15px;
+  padding-top: 90px;
   text-align: center;
 }
 
@@ -385,7 +391,7 @@ random story showed in top-nav
 }
 
 .feed-container{
-  padding: 20px 15px;
+  padding-top: 20px;
   text-align: left;
 }
 
@@ -630,7 +636,8 @@ nav ul {
 
 .list-results{
   text-align:left;
-  margin-top: 50px;
+  margin-top: 80px;
+  list-style: none;
 }
 
 .list-results li{
@@ -871,12 +878,10 @@ margin-left: 112px;
 }
 
 .review-body {
-  margin-left:20px;
   font-family: "Bariol";
   font-size: 1.125em;
   line-height: normal;
   word-break: normal;
-  padding: 0 10px;
   height: auto;
   vertical-align: bottom;
   text-align: justify;
@@ -892,7 +897,7 @@ margin-left: 112px;
   display:inline;
   margin-top: -40px;
   margin-left: 27px;
-  height: 35px;
+  height: 25px;
   opacity: 0.5;
 }
 
@@ -900,7 +905,7 @@ margin-left: 112px;
   display:inline;
   margin-top: -40px;
   margin-left: 27px;
-  height: 35px;
+  height: 25px;
 }
 
 
@@ -1193,6 +1198,7 @@ Story Feed
 .prof-left-feed {
   display: inline-block;
 }
+
 
 .story-writer{
   margin-left:0;
@@ -1592,10 +1598,13 @@ margin-left: -383px;
   width:100%;
 }
 
-
+.badge-public-container{
+  margin-top:5px;
+}
 
 .written-time-public{
   margin-top:0px;
+  opacity:0.5;
 }
 
 .review-body-public {
@@ -1705,8 +1714,6 @@ Merchant Page
 }
 
 .root-content-container{
-  margin-left:60px;
-  margin-right:60px;
 }
 
 

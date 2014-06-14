@@ -3,7 +3,7 @@
   <h1> Our awesome greeters </h1>
     <p class="lead">Get stories from people that matter to you</p>
 
-    <ol class="list-results">
+    <ul class="list-results">
     <% @matter_users.each do |user|%>
     <%# @users.each do |user| %>
 
@@ -81,6 +81,8 @@
       <br>
 
     <% end %>
-     <%= paginate @matter_users%>
-    </ol>
+     
+    </ul>
+
+    <%= paginate @matter_users%>
 </div>

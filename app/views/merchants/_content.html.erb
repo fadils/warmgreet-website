@@ -16,39 +16,41 @@
 
 
   
-    <div class="row">
-      <div class="prof-left-feed col-md-2">
+    <div style="display:inline-block">
         
         <a href="<%=merchant_url(review.merchant)%>" style="z-index:99;">
           <% if review.merchant.photo.file? %>
-          <%= image_tag review.merchant.photo.url(:big) %>
+          <%= image_tag review.merchant.photo.url(:big), size: "100x100" %>
           <% else %>
-            <%= image_tag "WGSlice/default-merchant.png", size: "130x130" %>
+            <%= image_tag "WGSlice/default-merchant.png", size: "100x100" %>
           <% end %>
         </a>
-      </div>
+      
 
       
-      <div class="col-md-8 review-body-content">
-        <div class="review-body-header">
+        
 
-          <%= link_to review.user.username, user_url(review.user), :class => "story-writer" %>
-      
-          <br>
        
 
           <span class="attribute-container">
+
+            <span><%= link_to review.user.username, user_url(review.user), :class => "story-writer" %>
+            </span>
+
+            <br>
             <%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge-in-profile") %>
 
             <span class="story-badge-in-profile-text"><%= review.user.reviews.count %> stories</span> 
             <%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "thumbs-badge-in-profile") %>
 
             <span class="thumbs-badge-in-profile-text"> <%= review.user.count_thumbs_up%> thumbs</span>
-          </span>
             
-            <br>
-          
-          
+            
+            
+          </span>
+      </div>
+
+      <div class="review-body">
             <h3 class="story-title">"<%= review.title %>"</h3>
             
             <span>Rating: <%= review.rating %> - 
@@ -58,10 +60,7 @@
                   Written on <%= review.created_at.strftime("%m/%d/%Y") %>
               <% end %>
             </span>
-        </div>
-        <br>
-
-        <div class="review-body">
+            <br><br>
           <%= review.body %>
 
         
@@ -96,8 +95,6 @@
           <% end %>
       
          </div>
-        </div>
-      </div>
       <hr>
 
 <% end %>
