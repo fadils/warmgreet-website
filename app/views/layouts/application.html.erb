@@ -115,15 +115,17 @@
       <div class="jumbotron bg-home">
         <div class="container">
           <%= image_tag "WGSlice/mainlogo.png", class:"img-responsive WG-mainlogo" %>
-          <br><br><br><br><br>
+          
+          <div class="random-push">
+          </div>
           
         <div class="row random-story-container">
           <%if @review != nil %>
           <div class="col-md-1 random-story-img">
             <% if @review.user.photo.file? %>
-              <%= image_tag @review.user.photo.url(:big), class:"circular" %>
+              <%= image_tag @review.user.photo.url(:big), class:"circular random-user-image" %>
               <% elsif @review.user.image? %>
-                <%= image_tag @review.user.image, size: "100x100", class:"circular" %>
+                <%= image_tag @review.user.image, class:"circular random-user-image" %>
               <% else %>
                 <%# puts "*************************#{review.user.gender}********************" %>
                 <% if @review.user.gender=="M" %>
