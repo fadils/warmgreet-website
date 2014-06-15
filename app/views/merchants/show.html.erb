@@ -1,41 +1,16 @@
 <div class="merchant-container">
   <div class="row">
     <div class="col-md-6">
-       <div class="row">
-        <div class="col-md-4">  
+        
+        <div style="display:inline-block">
           <% if @merchant.photo.file? %>
             <%= image_tag @merchant.photo.url(:big), :class => "merchant-propic-profile", alt: @merchant.name %>
           <% else %>
               <%= image_tag "WGSlice/default-merchant.png", :class => "merchant-propic-profile", alt: @merchant.name %>            
           <% end %>
-          
-          
-          <p class = "user-username">
-              <%= @merchant.name.upcase %>
-              <br>          
-          </p>
-
-
-          <div style="margin-top:-15px; margin-left:5px;">      
-             <strong class="following-number"> <%= @merchant.favorites.count %> </strong>
-              <% if @merchant.favorites.count > 1 %> 
-               <strong class="following-text"> Followers </strong>
-              <% else %>
-               <strong class="following-text"> Follower </strong>
-              <% end %>  
-              <% unless current_user == @user %>
-              <span class="favs <%="is-favorite" if current_user.favorite_places.include?(@merchant)%>">
-                <%= button_to "FOLLOW", merchant_favorites_url(@merchant),class:"btn btn-default", method: :post, form_class: "favorite-button grad_button", remote: true %>
-                <%= button_to "UNFOLLOW", merchant_favorite_url(@merchant), class:"btn btn-warning", method: :delete, form_class: "unfavorite-button grad_button", remote: true %>
-              </span>
-            <% end %>
-          </div> 
-          
-        </div>
-        <div class="col-md-8 merchant-profile">          
-          <div>
-        
-            Average Rating: <%= @merchant.average_rating %> 
+          <br>
+          <span>
+          Average Rating: <%= @merchant.average_rating %> 
             <br>
 
             (based on <%= @merchant.reviews.count %> stories)
@@ -50,14 +25,36 @@
             <% if current_user %>
               <br>
               <%= button_to "Write a story!", new_merchant_review_url(@merchant), class:"btn btn-wg", method: :get%>
-              <br>
+              <br><br>
             <% end %>
-         
-            
-
-          </div>
+          </span>
         </div>
-      </div>
+
+          
+
+          
+
+          <span class="attribute-container-merchant-show"> 
+
+            <span class = "user-username">
+              <%= @merchant.name.upcase %>
+              <br>          
+            </span>     
+             <strong class="following-number"> <%= @merchant.favorites.count %> </strong>
+              <% if @merchant.favorites.count > 1 %> 
+               <strong class="following-text"> Followers </strong>
+              <% else %>
+               <strong class="following-text"> Follower </strong>
+              <% end %>  
+              <% unless current_user == @user %>
+              <span class="favs <%="is-favorite" if current_user.favorite_places.include?(@merchant)%>">
+                <%= button_to "FOLLOW", merchant_favorites_url(@merchant),class:"btn btn-default", method: :post, form_class: "favorite-button grad_button", remote: true %>
+                <%= button_to "UNFOLLOW", merchant_favorite_url(@merchant), class:"btn btn-warning", method: :delete, form_class: "unfavorite-button grad_button", remote: true %>
+              </span>
+            <% end %>
+            <br><br><br><br><br><br>
+          </span>
+         
     </div>
 
     <div class="col-md-6">

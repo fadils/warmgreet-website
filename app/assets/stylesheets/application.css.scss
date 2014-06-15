@@ -36,6 +36,11 @@ html,body{
   font-size: 1.125em;
 }
 
+hr{
+  border-color: #ffea47;
+  opacity: 0.4;
+}
+
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #090909;
   color: #ffea47;
@@ -271,11 +276,25 @@ a .white ul:hover{
   margin-top: -65px;
 }
 
+.attribute-container-profile{
+  display: block;
+  margin-left: 155px;
+  margin-top: -175px;
+}
+
+
 .attribute-container-public{
   display: block;
   margin-left: 115px;
   margin-top: -90px;
 }
+
+.attribute-container-merchant-show{
+  display: block;
+  margin-left: 154px;
+  margin-top: -270px;
+}
+
 
 
 /*
@@ -340,12 +359,12 @@ random story showed in top-nav
 
 .random-story-merchant{
   color:white;
-  opactity:0.5;
+  opacity:0.5;
 }
 
 .random-story-merchant:hover{
   color:white;
-  opactity:1;
+  opacity:1;
 }
 
 
@@ -583,10 +602,8 @@ nav ul {
 }
 
 .merchant-propic-profile {
-  display:inline-block;
-  margin: 0 auto;
   width:140px;
-  height:144px;
+  height:140px;
  
 }
 
@@ -886,6 +903,18 @@ margin-left: 112px;
   vertical-align: bottom;
   text-align: justify;
 }
+
+.review-body-user-feed {
+  margin-left:30px;
+  font-family: "Bariol";
+  font-size: 1.125em;
+  line-height: normal;
+  word-break: normal;
+  height: auto;
+  vertical-align: bottom;
+  text-align: justify;
+}
+
 
 .review-body-header{
   font-family:"Bariol";
@@ -1402,14 +1431,19 @@ Start of User Profile
 
 .user-photo{
   text-align: left;
+  margin-left:15px;
 }
 
 .user-profile{
   text-align: left;
 }
 
+.user-profile-container{
+  margin-left: -20px;
+}
+
 .user-username {
-  font-size: 36px;
+  font-size: 30px;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   text-align:left;
@@ -1417,7 +1451,6 @@ Start of User Profile
 
 .member-since-text {
   font-size: 1em;
-  margin-left:25px;
   font-family: "Bariol";
   color: rgb( 45, 45, 45 );
   text-align: left;
@@ -1438,8 +1471,6 @@ Start of User Profile
   display: block;
 }
 
-.foll{
-}
 
 .follow-button {
   display: block;
@@ -1693,10 +1724,16 @@ User Profile
   opacity:0.5;
 }
 
-.edit-profile-link, .foll{
+.edit-profile-link{
   margin-top:-10px;
   margin-left: 20px;
 }
+
+.foll{
+  margin-top:-10px;
+  margin-left: 27px;
+}
+
 
 .edit-profile-link:hover{
   opacity:1;
