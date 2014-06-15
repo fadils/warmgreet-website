@@ -106,23 +106,49 @@ hr{
   background-color: rgb(245,230,71);
 }
 
-.bg-home{
-  margin-top:-100px;
-  background: url("/assets/WGSlice/Banner_1440.jpg") no-repeat center center; 
-   -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
+@media all and (min-device-width : 601px) {
+  .bg-home{
+    margin-top:-100px;
+    background: url("/assets/WGSlice/Banner_1440.jpg") no-repeat center center; 
+     -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+
+  .bg-feed{
+    height:500px;
+    background: url("/assets/WGSlice/banner-feed.jpg") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+         
 }
 
-.bg-feed{
-  height:500px;
-  background: url("/assets/WGSlice/banner-feed.jpg") no-repeat center center; 
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
+@media all and (max-device-width : 600px) {
+  .bg-home{
+    margin-top:-100px;
+    background: #ffffff; 
+     -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+
+  .bg-feed{
+    height:500px;
+    background: #ffffff; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+         
 }
+
+
 
 .offer-img{
   width:100%;
