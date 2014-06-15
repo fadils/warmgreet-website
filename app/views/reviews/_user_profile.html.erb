@@ -18,7 +18,8 @@
     <br><br>
 
     <% if current_user == @user %>
-      <%= link_to "Edit Profile", edit_user_url(@user), class:"edit-profile-link btn btn-warning" %>
+      <%= link_to image_tag("WGSlice/edit-btn.png", class:"edit-story-button edit-profile-link btn-wg"), edit_user_url(@user) %>
+      <%#= link_to "Edit", edit_user_url(@user), class:"edit-profile-link btn btn-warning" %>
     <% end %>
 
     <% unless current_user == @user %>
@@ -36,7 +37,7 @@
       
     <strong class="user-username"><%= @user.username %></strong>
     <br>
-    <strong class="member-since-text">  <%= "- member since #{@user.created_at.strftime("%d %B %Y")}" %> </strong>
+    <strong class="member-since-text">  <%="Joined #{time_ago_in_words(@user.created_at)} ago"%> </strong>
     <br><br>
 
         <%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge-in-profile") %>
@@ -64,12 +65,12 @@
 <hr class = "after-profile-separator">
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-3">
     <h5 class= "followed-merchants-text">
       Followed Merchants
     </h5>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-9">
      <hr class = "followed-merchants-separator">
   </div>
 </div>

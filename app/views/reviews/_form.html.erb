@@ -1,6 +1,6 @@
 
-<% action = (review.persisted? ? review_url(review) : merchant_reviews_url(merchant)) %>
-<% method = (review.persisted? ? "put" : "post") %>
+<% action = (review.persisted? ? review_url : merchant_reviews_url(merchant)) %>
+<% method = (review.persisted? ? "PUT" : "POST") %>
 <% message = (review.persisted? ? "Update Story!" : "Create Story!") %>
 
 <div class="create-story-container">
@@ -17,7 +17,7 @@
   <div class="row">
     <div class="col-md-7">
       <div class="row">
-        <% if method=="post" %>
+        <% if message=="Create Story!" %>
           <div class="col-md-3">
             <% if @merchant.photo.file? %>
               <%= image_tag @merchant.photo.url(:big),:class => "user-propic-profile" %>
@@ -78,21 +78,22 @@
 
 
       
-      <form action="<%= action %>" method="<%=method%>" enctype="multipart/form-data">
-        <input
-           name="_method"
-           type="hidden"
-           value="<%= method %>">
-        <input
-           name="authenticity_token"
-           type="hidden"
-           value="<%= form_authenticity_token %>">
+<form role="form" action="<%= action %>" method="POST" enctype="multipart/form-data">
+  <input
+     name="_method"
+     type="hidden"
+     value="<%= method %>">
+  <input
+     name="authenticity_token"
+     type="hidden"
+     value="<%= form_authenticity_token %>">
+        
       
-        <div class="input" style="top:55px;">
+        <div class="form-group" style="top:55px;">
           <br><br>
-          <span class="create-story-review-rating">Overall experience rating</span>
+          <label class="create-story-review-rating">Overall experience rating</label>
           <br><br>
-          <select id="review_rating" name="review[rating]">
+          <select class="form-control" id="review_rating" name="review[rating]">
             <option value="1" <%= "selected" if @review.rating == 1 %>>1</option>
             <option value="2" <%= "selected" if @review.rating == 2 %>>2</option>
             <option value="3"<%= "selected" if @review.rating == 3 %>>3</option>
@@ -102,10 +103,11 @@
         </div>
 
         <br><br>
-        <div class="input">
-          <span class="create-story-review-title">Title of your story</span>
+        <div class="form-group">
+          <label class="create-story-review-title">Title of your story</label>
           <br>
           <input
+          class="form-control"
              id="review_title"
              name="review[title]"
              type="text"
@@ -117,10 +119,11 @@
 
         <br>
 
-        <div class="input">
-          <span class="create-story-review-body">Story Body</span>
+        <div class="form-group">
+          <label class="create-story-review-body">Story Body</label>
           <br><br>
           <textarea rows="10"
+          class="form-control"
                   id="review_body"
                   name="review[body]" 
                   placeholder="Buat ceritamu sedetil mungkin. The more detail, the better."
@@ -129,10 +132,11 @@
 
         <br>
 
-        <div class="input" style="top:-280px;">
-            <span class="create-story-review-pic">Share some pic</span>
+        <div class="form-group" style="top:-280px;">
+            <label class="create-story-review-pic">Share some pic</label>
             <br>
             <input
+          class="form-control"
                 id="review_pic"
                 name="review[pic]"
                 type="file">
@@ -140,11 +144,8 @@
         </div>
 
                 
-        <button class="btn btn-default btn-wg"><%= message %></button>
+        <button type="submit" class="btn btn-default btn-wg"><%= message %></button>
         
-        <%# if method == "put" %>
-          <%#= button_to "Delete Story", review_url(@review), class:"btn btn-danger", method: :delete%>
-        <%# end %>
         <br><br><br>
       </form>
     </div>

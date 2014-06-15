@@ -34,7 +34,7 @@ class UsersController < ApplicationController
     @user = current_user
 
     if @user.update_attributes(params[:user])
-      redirect_to profile_index_url(@user)
+      redirect_to profile_show_url(@user)
     else
       render :json => @user.errors.full_messages
     end

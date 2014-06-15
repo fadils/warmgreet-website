@@ -5652,3 +5652,129 @@ LINE 1: ...ws".* FROM "reviews" LEFT OUTER JOIN merchants ON merchants....
 [06/14/14 05:28:27 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"follows", :user_id=>#<User id: 100, username: "miracle.barton717", password_digest: "$2a$10$/Nw2HjIBizUO/2QBkm/5pOqO1lFWY6fIDbAj4su1Ry1D...", email: "esta_rippin123percival.bradtke@bogan.name", biography: "Doloremque architecto nulla explicabo impedit id ex...", age: 35, gender: "M", location: "Vietnam", admin: false, session_token: "NuaQFeexwUq0YzMompTDhQ", created_at: "2014-04-25 16:45:54", updated_at: "2014-04-25 16:45:54", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, provider: nil, uid: nil, image: nil, slug: "miracle-barton717", activated: false, auth_token: "uqUNgdnktHRCjt7-OlHI1g">}
 [06/14/14 05:29:39 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"follows", :user_id=>#<User id: 103, username: "catherine.joan3", password_digest: "$2a$10$nxVI0ITgSkBjh25oMgY9uO87sf4zHP2MwXqS3llSz9mL...", email: "catherine_joan@ymail.com", biography: nil, age: nil, gender: nil, location: nil, admin: false, session_token: "4aGteLzMykmKdE_JzKn8GA", created_at: "2014-05-27 17:15:18", updated_at: "2014-05-28 12:26:51", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, provider: "facebook", uid: "1283088141", image: "http://graph.facebook.com/1283088141/picture?type=l...", slug: "catherine-joan3", activated: false, auth_token: "bx8NCOsMUGU9LrulIjczHg">}
 [06/14/14 05:29:39 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: No route matches {:action=>"destroy", :controller=>"follows", :user_id=>#<User id: 103, username: "catherine.joan3", password_digest: "$2a$10$nxVI0ITgSkBjh25oMgY9uO87sf4zHP2MwXqS3llSz9mL...", email: "catherine_joan@ymail.com", biography: nil, age: nil, gender: nil, location: nil, admin: false, session_token: "4aGteLzMykmKdE_JzKn8GA", created_at: "2014-05-27 17:15:18", updated_at: "2014-05-28 12:26:51", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, provider: "facebook", uid: "1283088141", image: "http://graph.facebook.com/1283088141/picture?type=l...", slug: "catherine-joan3", activated: false, auth_token: "bx8NCOsMUGU9LrulIjczHg">}
+[06/15/14 10:12:17 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `photo' for nil:NilClass
+[06/15/14 10:12:17 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `photo' for nil:NilClass
+[06/15/14 10:12:26 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `photo' for nil:NilClass
+[06/15/14 10:12:26 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `photo' for nil:NilClass
+[06/15/14 10:29:51 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:143: syntax error, unexpected '>'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:148: syntax error, unexpected '<'
+@output_buffer.safe_concat('        <br><br><br>
+                                         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:150: unknown regexp options - dv
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:152: syntax error, unexpected '<'
+    <div class="col-md-5">
+     ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:154: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+@output_buffer.safe_concat('        <div class="create-story-about">
+                                              ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:155: syntax error, unexpected '<'
+          <h4 style="opacity:0.35; font-...
+           ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:155: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...\'Novecento\'; "> Stories about ');@output_buffer.append= ( ...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:158: unknown regexp options - phrfr
+unmatched close parenthesis: /h4>
+');           @merchant.reviews.each_with_index do |story, i| 
+             if i < 3
+@output_buffer.safe_concat('              ');@output_buffer.append= ( render partial: "reviews/m
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:158: syntax error, unexpected tSTRING_BEG, expecting ')'
+...r partial: "reviews/pusherform", locals: {review: story} );@...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:163: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('        <div class="create-story-about">
+                                                      ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:163: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+@output_buffer.safe_concat('        <div class="create-story-about">
+                                                                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:164: syntax error, unexpected tIDENTIFIER, expecting ')'
+          <h4 style="opacity:0.35; font-family:\'Novecent...
+                            ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:164: syntax error, unexpected tLABEL
+...yle="opacity:0.35; font-family:\'Novecento\'; "> Stories abo...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:165: syntax error, unexpected keyword_do_block, expecting keyword_end
+');           review.merchant.reviews.each_with_index do |story, i| 
+                                                        ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:165: syntax error, unexpected '|', expecting '='
+');           review.merchant.reviews.each_with_index do |story, i| 
+                                                                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:171: syntax error, unexpected keyword_end, expecting end-of-input
+[06/15/14 10:29:51 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:143: syntax error, unexpected '>'
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:148: syntax error, unexpected '<'
+@output_buffer.safe_concat('        <br><br><br>
+                                         ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:150: unknown regexp options - dv
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:152: syntax error, unexpected '<'
+    <div class="col-md-5">
+     ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:154: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+@output_buffer.safe_concat('        <div class="create-story-about">
+                                              ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:155: syntax error, unexpected '<'
+          <h4 style="opacity:0.35; font-...
+           ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:155: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...\'Novecento\'; "> Stories about ');@output_buffer.append= ( ...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:158: unknown regexp options - phrfr
+unmatched close parenthesis: /h4>
+');           @merchant.reviews.each_with_index do |story, i| 
+             if i < 3
+@output_buffer.safe_concat('              ');@output_buffer.append= ( render partial: "reviews/m
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:158: syntax error, unexpected tSTRING_BEG, expecting ')'
+...r partial: "reviews/pusherform", locals: {review: story} );@...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:163: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('        <div class="create-story-about">
+                                                      ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:163: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+@output_buffer.safe_concat('        <div class="create-story-about">
+                                                                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:164: syntax error, unexpected tIDENTIFIER, expecting ')'
+          <h4 style="opacity:0.35; font-family:\'Novecent...
+                            ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:164: syntax error, unexpected tLABEL
+...yle="opacity:0.35; font-family:\'Novecento\'; "> Stories abo...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:165: syntax error, unexpected keyword_do_block, expecting keyword_end
+');           review.merchant.reviews.each_with_index do |story, i| 
+                                                        ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:165: syntax error, unexpected '|', expecting '='
+');           review.merchant.reviews.each_with_index do |story, i| 
+                                                                   ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:171: syntax error, unexpected keyword_end, expecting end-of-input
+[06/15/14 10:36:25 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `profile_index_url' for #<UsersController:0x007f949727a898>
+[06/15/14 10:36:25 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `profile_index_url' for #<UsersController:0x007f949727a898>
+[06/15/14 10:40:13 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:143: syntax error, unexpected keyword_class, expecting ')'
+...l(@review), type:"submit" class:"btn btn-default btn-wg", me...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:143: syntax error, unexpected ',', expecting :: or '[' or '.'
+...class:"btn btn-default btn-wg", method: :put );@output_buffe...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:146: syntax error, unexpected keyword_class, expecting ')'
+...l(@review), type:"submit" class:"btn btn-danger", method: :d...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:146: syntax error, unexpected ',', expecting :: or '[' or '.'
+...submit" class:"btn btn-danger", method: :delete );@output_bu...
+...                               ^
+[06/15/14 10:40:13 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:143: syntax error, unexpected keyword_class, expecting ')'
+...l(@review), type:"submit" class:"btn btn-default btn-wg", me...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:143: syntax error, unexpected ',', expecting :: or '[' or '.'
+...class:"btn btn-default btn-wg", method: :put );@output_buffe...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:146: syntax error, unexpected keyword_class, expecting ')'
+...l(@review), type:"submit" class:"btn btn-danger", method: :d...
+...                               ^
+/Users/fadilsutomo/RailsProject/warmgreet-website/app/views/reviews/_form.html.erb:146: syntax error, unexpected ',', expecting :: or '[' or '.'
+...submit" class:"btn btn-danger", method: :delete );@output_bu...
+...                               ^
+[06/15/14 10:49:23 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `reviews_url' for #<#<Class:0x007f94a9688748>:0x007f9497260790>
+[06/15/14 10:49:23 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `reviews_url' for #<#<Class:0x007f94a9688748>:0x007f9497260790>
+[06/15/14 16:57:22 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[06/15/14 16:57:22 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `username' for nil:NilClass
+[06/15/14 17:23:31 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `profile_index_url' for #<ReviewsController:0x007f94a10ae460>
+[06/15/14 17:23:31 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `profile_index_url' for #<ReviewsController:0x007f94a10ae460>
+[06/15/14 17:24:44 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Review with id=107
+[06/15/14 17:24:44 +0700 pr0ducer (67885)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find Review with id=107

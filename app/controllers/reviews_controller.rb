@@ -44,7 +44,7 @@ class ReviewsController < ApplicationController
     @review = current_user.reviews.find(params[:id])
 
     if @review.update_attributes(params[:review])
-      redirect_to user_url(@review.user)
+      redirect_to profile_show_url(@review.user)
     else
       render json: @review.errors.full_messages
     end
@@ -62,7 +62,7 @@ class ReviewsController < ApplicationController
       redirect_to merchant_url(@review.merchant)
     else
       @review.destroy
-      redirect_to profile_index_url(@review.user)
+      redirect_to profile_show_url(@review.user)
     end
   end
 end
