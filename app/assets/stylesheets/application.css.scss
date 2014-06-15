@@ -327,9 +327,143 @@ a .white ul:hover{
 /*
 Main logo, but not in the nav header. "Online story, honestly shared"
 */
-.WG-mainlogo {
-  margin-top: 150px;
+@media all and (min-device-width : 601px) {
+  .WG-mainlogo {
+    margin-top: 150px;
+  }
+
+  .random-story-container{
+    margin-left:15px;
+  }
+
+
+  /*
+  random story showed in top-nav
+  */
+
+  .random-story{
+    display: inline-block;
+    margin-left:25px;
+    color: white;
+    font-family: "Bariol";
+  }
+
+  .story-img{
+    width:100%;
+  }
+
+
+  .random-story-img{
+    display:inline-block;
+  }
+
+  .random-story-text{
+    text-align:left;
+  }
+
+  .random-story-merchant{
+    color:white;
+    opacity:1;
+  }
+
+  .random-story-merchant:hover{
+    color:white;
+    opacity:0.5;
+  }
+
+
+  .random-story-title{
+    
+    font-family: "Bariol";
+    font-size: 1.750em;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .random-story-body{
+    
+    font-family:"Bariol";
+    font-size: 1.125em;
+  }
+
+  .random-story-see-more{
+    font-family: "Bariol";
+    font-size: 1.125em;
+  }
+  /*
+  */
+
 }
+
+@media all and (max-device-width : 600px) {
+  .WG-mainlogo {
+    margin-top: 50px;
+  }
+
+  .random-story-container{
+    margin-left:0px;
+  }
+
+  
+  /*
+  random story showed in top-nav
+  */
+
+  .random-story{
+    display: inline-block;
+    margin-left:25px;
+    color: white;
+    font-family: "Bariol";
+  }
+
+  .story-img{
+    width:100%;
+  }
+
+
+  .random-story-img{
+    display:inline-block;
+  }
+
+  .random-story-text{
+    text-align:left;
+  }
+
+  .random-story-merchant{
+    color:white;
+    opacity:1;
+  }
+
+  .random-story-merchant:hover{
+    color:white;
+    opacity:0.5;
+  }
+
+
+  .random-story-title{
+    font-family: "Bariol";
+    font-size: 1em;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .random-story-body{
+    
+    font-family:"Bariol";
+    font-size: 0.625em;
+  }
+
+  .random-story-see-more{
+    font-family: "Bariol";
+    font-size: 0.625em;
+  }
+  /*
+  */
+}
+
+
 
 .version-logo{
   position: absolute;
@@ -349,22 +483,6 @@ HEader: write a story, category, etc
   height: 68px;
 }
 
-/*
-random story showed in top-nav
-*/
-
-@media all and (min-device-width : 601px) {
-  .random-story-container{
-    margin-left:15px;
-  }
-}
-
-@media all and (max-device-width : 600px) {
-  .random-story-container{
-    display:none;
-  }
-}
-
 
 .review-body-container{
 }
@@ -372,59 +490,6 @@ random story showed in top-nav
 .review-body-content{
   margin-left: 5px;
 }
-
-.random-story{
-  display: inline-block;
-  margin-left:25px;
-  color: white;
-  font-family: "Bariol";
-}
-
-.story-img{
-  width:100%;
-}
-
-
-.random-story-img{
-  display:inline-block;
-}
-
-.random-story-text{
-  text-align:left;
-}
-
-.random-story-merchant{
-  color:white;
-  opacity:0.5;
-}
-
-.random-story-merchant:hover{
-  color:white;
-  opacity:1;
-}
-
-
-.random-story-title{
-  
-  font-family: "Bariol";
-  font-size: 1.750em;
-  color: white;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.random-story-body{
-  
-  font-family:"Bariol";
-  font-size: 1.125em;
-}
-
-.random-story-see-more{
-  font-family: "Bariol";
-  font-size: 1.125em;
-}
-/*
-*/
 
 .content-main-header-root{
   position: relative;
