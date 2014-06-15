@@ -130,7 +130,6 @@ hr{
 
 @media all and (max-device-width : 600px) {
    .bg-home{
-    margin-top:-100px;
     height:375px;
     background: url("/assets/WGSlice/banner-1440-mobile.jpg") no-repeat center center; 
      -webkit-background-size: 100% 100%;
@@ -354,9 +353,18 @@ HEader: write a story, category, etc
 random story showed in top-nav
 */
 
-.random-story-container{
-  margin-left:15px;
+@media all and (min-device-width : 601px) {
+  .random-story-container{
+    margin-left:15px;
+  }
 }
+
+@media all and (max-device-width : 600px) {
+  .random-story-container{
+    display:none;
+  }
+}
+
 
 .review-body-container{
 }
