@@ -48,14 +48,17 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 2.14.1'
+  gem 'shoulda-matchers'
   gem 'factory_girl_rails'
-  gem 'faker'
-  gem 'launchy'
+  gem 'webrat'
+  gem 'capybara'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
 end
 
 group :test do
-  gem 'capybara'
   gem 'guard-rspec'
 end
 

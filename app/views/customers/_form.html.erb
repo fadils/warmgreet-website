@@ -2,7 +2,7 @@
 <% method = (customer.persisted? ? "put" : "post") %>
 <% message = (customer.persisted? ? "Update!" : "Sign up now!") %>
 
-<form class="form-signin" action="<%= action %>" method="<%= method %>" enctype="multipart/form-data">
+<form class="form-signin only" action="<%= action %>" method="<%= method %>" enctype="multipart/form-data">
 
   <input
        name="authenticity_token"

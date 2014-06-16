@@ -60,21 +60,6 @@
             <strong> Following </strong>
           </div>
 
-          <!--div class="greeters-thumbed-story col-md-6">
-             <strong class="thumbed-story-title">"<%= @thumb_stories.first.title %>"</strong>
-            <br>
-            <span>Rating: <%= @thumb_stories.first.rating %> - 
-            <% if @thumb_stories.first.created_at > Time.now.beginning_of_day %>
-                  <%="Written #{time_ago_in_words(review.created_at)} ago"%>
-              <% else %>
-                  Written on <%= @thumb_stories.first.created_at.strftime("%m/%d/%Y") %>
-              <% end %>
-            </span>
-            <br>
-            <strong class="badge-feed"><%= @thumb_stories.first.vote_tags.count %></strong>
-              <%= image_tag("WGSlice/helpfull-btn.png", :style => "display:inline;", size:"100x40") %>
-          </div-->
-
         </div>
       </li>
       <br>
