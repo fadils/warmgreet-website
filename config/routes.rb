@@ -35,7 +35,7 @@ WarmGreet::Application.routes.draw do
     get 'activate'
   end
 
-
+  
 
 
   resources :customers, :only => [:create, :new, :show, :edit, :update, :index] do

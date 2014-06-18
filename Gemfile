@@ -9,6 +9,8 @@ gem 'google-analytics-rails'
 
 gem 'pg'
 
+gem 'devise'
+
 gem 'fog'
 
 gem 'bootstrap-sass', '~> 3.1.1'

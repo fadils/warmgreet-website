@@ -3,22 +3,25 @@ class CustomersController < ApplicationController
   before_filter :require_signed_out!, :only => [:create, :new]
 
   def new
-    puts "***************************************************************"
-    
     @customer = Customer.new
   end
 
   def create
-    puts "***************************************************************"
     @customer = Customer.new(params[:customer])
 
-    if @customer.save
-      sign_in(@customer)
+    #@customer.generate_password
+
+    #@customer.merchant = Merchant.find_by_
+
+    #@customer.generate_merchant_number(get_merchant_number)
+
+    #if @customer.save
+      #sign_in(@customer)
       AuthMailer.signup_email(@customer).deliver!
       redirect_to thankyou_index_url
-    else
-      render :json => @customer.errors.full_messages
-    end
+    #else
+     # render :json => @customer.errors.full_messages
+    #end
   end
 
   def show

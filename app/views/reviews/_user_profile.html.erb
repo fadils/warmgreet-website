@@ -1,65 +1,116 @@
 
 <div class="row">
- 
-  <div style="margin-left:15px">
-    <% if @user.photo.file? %>
-      <%= image_tag @user.photo.url(:small), :class => "user-propic-profile circular" %>
-    <% elsif @user.image? %>
-      <%= image_tag @user.image, size: "150x150", :class => "user-propic-profile circular img-responsive" %>
-    <% else %>
-      <% if @user.gender=="M"%>
-        <%= image_tag "WGSlice/default-user-male.png", :class => "user-propic-profile" %>
-      <% elsif @user.gender=="F"%>
-        <%= image_tag "WGSlice/default-user-female.png", :class => "user-propic-profile"%>
+  <div class="col-md-5"> 
+    <div style="margin-left:15px">
+      <% if @user.photo.file? %>
+        <%= image_tag @user.photo.url(:small), :class => "user-propic-profile circular" %>
+      <% elsif @user.image? %>
+        <%= image_tag @user.image, size: "150x150", :class => "user-propic-profile circular img-responsive" %>
       <% else %>
-        <%= image_tag "WGSlice/default-user-male.png", :class => "user-propic-profile" %>
+        <% if @user.gender=="M"%>
+          <%= image_tag "WGSlice/default-user-male.png", :class => "user-propic-profile" %>
+        <% elsif @user.gender=="F"%>
+          <%= image_tag "WGSlice/default-user-female.png", :class => "user-propic-profile"%>
+        <% else %>
+          <%= image_tag "WGSlice/default-user-male.png", :class => "user-propic-profile" %>
+        <% end %>
       <% end %>
-    <% end %>
-    <br><br>
+      <br><br>
 
-    <% if current_user == @user %>
-      <%= link_to image_tag("WGSlice/edit-btn.png", class:"edit-story-button edit-profile-link btn-wg"), edit_user_url(@user) %>
-      <%#= link_to "Edit", edit_user_url(@user), class:"edit-profile-link btn btn-warning" %>
-    <% end %>
+      <% if current_user == @user %>
+        <%= link_to image_tag("WGSlice/edit-btn.png", class:"edit-story-button edit-profile-link btn-wg"), edit_user_url(@user) %>
+        <%#= link_to "Edit", edit_user_url(@user), class:"edit-profile-link btn btn-warning" %>
+      <% end %>
 
-    <% unless current_user == @user %>
-      <div class="foll <%="is-followed" if current_user.followed_users.include?(@user) %>">
-        <%#= button_to " ", user_follows_url(@user), class: "following-button", method: :post, form_class: "following-button", remote: true %>
-        <%#= button_to " ", user_follow_url(@user), class: "followed-button", method: :delete, form_class: "followed-button", remote: true %>
-        <%= button_to "FOLLOW", user_follows_url(@user), class:"btn btn-default", method: :post, form_class: "follow-button grad_button", remote: true %>
-        <%= button_to "UNFOLLOW", user_follow_url(@user), class:"btn btn-warning", method: :delete, form_class: "unfollow-button grad_button", remote: true %>
-      </div>
-    <% end %>
+      <% unless current_user == @user %>
+        <div class="foll <%="is-followed" if current_user.followed_users.include?(@user) %>">
+          <%#= button_to " ", user_follows_url(@user), class: "following-button", method: :post, form_class: "following-button", remote: true %>
+          <%#= button_to " ", user_follow_url(@user), class: "followed-button", method: :delete, form_class: "followed-button", remote: true %>
+          <%= button_to "FOLLOW", user_follows_url(@user), class:"btn btn-default", method: :post, form_class: "follow-button grad_button", remote: true %>
+          <%= button_to "UNFOLLOW", user_follow_url(@user), class:"btn btn-warning", method: :delete, form_class: "unfollow-button grad_button", remote: true %>
+        </div>
+      <% end %>
+    </div>
+    
+
+    <span class="attribute-container-profile">  
+        
+      <strong class="user-username"><%= @user.username %></strong>
+      <br>
+      <strong class="member-since-text">  <%="Joined #{time_ago_in_words(@user.created_at)} ago"%> </strong>
+      <br><br>
+
+      <%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge-in-profile") %>
+      <strong class="story-badge-in-profile-text"><%= @user.reviews.count %> stories </strong> 
+    
+
+      <%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "thumbs-badge-in-profile") %>
+
+      <strong class="thumbs-badge-in-profile-text"> <%= @user.count_thumbs_up%> thumbs</strong>
+      <br><br>
+      
+      <strong class="following-number"> <%= @user.followers.count %> </strong>
+      <strong class="followed-number"> <%= @user.followed_users.count %> </strong>
+      <br>
+      <% if @user.followers.count != 1 %>
+        <strong class="following-text"> Followers </strong>
+      <% else %>
+        <strong class="following-text"> Follower </strong>
+      <% end %>
+      
+      <strong class="followed-text"> Following </strong>
+    </span>
   </div>
-  
-
-  <span class="attribute-container-profile">  
+  <div class="col-md-7 badge-showcase">
       
-    <strong class="user-username"><%= @user.username %></strong>
-    <br>
-    <strong class="member-since-text">  <%="Joined #{time_ago_in_words(@user.created_at)} ago"%> </strong>
-    <br><br>
-
-        <%= image_tag("WGSlice/WGv5-icon_story.png", :class => "story-badge-in-profile") %>
-        <strong class="story-badge-in-profile-text"><%= @user.reviews.count %> stories </strong> 
-      
-
-        <%= image_tag("WGSlice/WGv5-icon_thumbs.png", :class => "thumbs-badge-in-profile") %>
-
-        <strong class="thumbs-badge-in-profile-text"> <%= @user.count_thumbs_up%> thumbs</strong>
-        <br><br>
+    <hr class = "followed-merchants-separator">
     
-    <strong class="following-number"> <%= @user.followers.count %> </strong>
-    <strong class="followed-number"> <%= @user.followed_users.count %> </strong>
-    <br>
-    <% if @user.followers.count != 1 %>
-      <strong class="following-text"> Followers </strong>
-    <% else %>
-      <strong class="following-text"> Follower </strong>
-    <% end %>
-    
-    <strong class="followed-text"> Following </strong>
-  </span>
+    <div class="row badge-list">
+      <ul class="list-inline">
+        <div class="col-md-2" style="display:inline-block;">
+          <li>
+            <%= image_tag "WGSlice/first-badge.png", class:"badge-first" %>
+            <br>
+            <span class="badge-count-first">
+              <%= @user.first %>
+            </span>
+            <br>
+            <span class="badge-text-first">
+              <% if @user.first > 1%>
+                Firsts
+              <% else %>
+                First
+              <% end %>
+            </span>
+            
+          </li>
+        </div>
+        <div class="col-md-2" style="display:inline-block;">
+          <li>
+            <%= image_tag "WGSlice/view-badge.png", class:"badge-pageview" %>
+            <br>
+            <span class="badge-count-pageview">
+              <% @pageview = Keen.count("visited", filters: [{
+                                                  :property_name => 'link', 
+                                                  :operator => 'eq', 
+                                                  :property_value => "#{@user.slug}"
+                                                  }]) %>
+              <%= @pageview+1 %>
+            </span>
+            <br>
+
+            <span class="badge-text-pageview">
+              <% if @pageview > 1%>
+                Pageviews
+              <% else %>
+                Pageview
+              <% end %>
+            </span>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <hr class = "after-profile-separator">
@@ -80,18 +131,11 @@
   <ul class="list-inline">
     <% @user.favorite_places.each do |followedmerchant| %>
       <% if followedmerchant.photo.file? %>
-          <li><%= link_to image_tag followedmerchant.photo.url(:small) %></li>
+          <li><%= link_to image_tag followedmerchant.photo.url(:small), class:"followed-merchant-list"%></li>
       <% else %>
-          <li><%= link_to (image_tag "WGSlice/default-merchant.png", size:"126x126"), merchant_url(followedmerchant)%></li>
+          <li><%= link_to (image_tag "WGSlice/default-merchant.png", class:"followed-merchant-list"), merchant_url(followedmerchant)%></li>
       <% end %>
     <% end %>
-  </ul>
-<% else %>
-  <ul class="list-inline"> 
-    <li><%= link_to (image_tag "WGSlice/default-merchant.png", size: "126x126") %></li>
-    <li><%= link_to (image_tag "WGSlice/default-merchant.png", size: "126x126") %></li>
-    <li><%= link_to (image_tag "WGSlice/default-merchant.png", size: "126x126") %></li>
-    <li><%= link_to (image_tag "WGSlice/default-merchant.png", size: "126x126") %></li>        
   </ul>
 <% end %>
 

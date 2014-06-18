@@ -4,11 +4,17 @@ class ApplicationController < ActionController::Base
   # Expose these methods to the views
    helper_method :current_user, :current_merchant, :signed_in?
 
+   
+    
    private
 
    def current_user
      return nil unless session[:token]
      @current_user ||= User.find_by_session_token(session[:token])
+   end
+
+   def get_merchant_number
+    return merchant_number
    end
 
    def current_merchant(user)

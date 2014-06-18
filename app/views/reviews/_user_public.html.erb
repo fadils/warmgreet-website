@@ -47,7 +47,7 @@
 
       <% if review.pic.file? %>
         <br><br>
-        <%= image_tag review.pic.url(:big), class:"story-img" %>
+        <%= link_to image_tag(review.pic.url(:big), class:"story-img"), user_url(review.user) %>
         <br>
       <% end %>
 

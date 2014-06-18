@@ -2,8 +2,10 @@ class User < ActiveRecord::Base
   extend FriendlyId
   friendly_id :username, :use => :slugged
 
-  attr_accessible :username, :password, :email, :biography, :age, :merchantnumber, :gender, :location, :admin, :session_token, :photo, :uid, :provider, :image, :auth_token, :activated
+  attr_accessible :username, :password, :email, :viewed_by, :biography, :age, :merchantnumber, :gender, :location, :admin, :session_token, :photo, :uid, :provider, :image, :auth_token, :activated
   attr_reader :password
+
+  
 
   before_validation :ensure_session_token
   before_validation(:ensure_auth_token, on: :create)
@@ -46,6 +48,8 @@ class User < ActiveRecord::Base
   primary_key: :id,
   dependent: :destroy
 
+  has_many :view_bys
+
   has_many :followers,
   through: :follows,
   source: :follower
@@ -60,7 +64,6 @@ class User < ActiveRecord::Base
   has_many :voted_reviews,
   through: :vote_tags,
   source: :review
-
 
   def feed
     Review.from_users_followed_by(self)
@@ -87,6 +90,17 @@ class User < ActiveRecord::Base
         end
       end
     end 
+
+    return total
+  end
+
+  def first
+    total = 0
+    self.reviews.each do |review|
+      if review == review.merchant.reviews.first
+        total += 1
+      end
+    end
 
     return total
   end
@@ -152,6 +166,10 @@ class User < ActiveRecord::Base
   def activate!
     self.activated = true
     self.save
+  end
+
+  def increment_view(view)
+    view += 1
   end
 
   private

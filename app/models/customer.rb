@@ -2,7 +2,7 @@ class Customer < ActiveRecord::Base
   extend FriendlyId
   friendly_id :username, :use => :slugged
 
-  attr_accessible :username, :password, :email, :biography, :age, :merchant_number, :gender, :location, :admin, :session_token, :photo, :uid, :provider, :image, :auth_token, :activated
+  attr_accessible :email, :password, :merchant_number, :session_token, :photo, :uid, :provider, :image, :auth_token, :activated
   attr_reader :password
 
   before_validation :ensure_session_token
@@ -11,7 +11,7 @@ class Customer < ActiveRecord::Base
   validates :email, :session_token, presence: true, uniqueness: true
   validates :password, length: { minimum: 6, :allow_nil => true }
   validates :password_digest, presence: true
-  validates :merchant_number, :email, uniqueness: true
+  validates :email, uniqueness: true
 
   has_attached_file :photo, :styles => {
     :big => "100x100#",
@@ -93,6 +93,17 @@ class Customer < ActiveRecord::Base
   def activate!
     self.activated = true
     self.save
+  end
+
+  def generate_password
+    #generated_password = Devise.friendly_token.first(8)
+    self.password = "@021103F"
+    #self.password_confirmation = generated_password
+  end
+
+  def generate_merchant_number(merchant_number)
+    self.merchant_number = merchant_number
+    #self.password_confirmation = generated_password
   end
 
   private

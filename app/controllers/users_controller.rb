@@ -21,6 +21,7 @@ class UsersController < ApplicationController
   def show
     if params.include?(:id)
       @user = User.find(params[:id])
+      Keen.publish(:visited, {:link => "#{@user.slug}", :time => "#{Time.new.inspect}" })
     else
       redirect_to user_url(current_user)
     end

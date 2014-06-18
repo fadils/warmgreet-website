@@ -33,9 +33,11 @@
           
 
           
-
+        <% if signed_in? %>
           <span class="attribute-container-merchant-show"> 
-
+        <% else %>
+          <span class="attribute-container-merchant-show-no-sign-in">
+        <% end %>
             <span class = "user-username">
               <%= @merchant.name.upcase %>
               <br>          
@@ -66,11 +68,11 @@
   <hr>
          
   <ul class="list-inline">
-    <li><%= image_tag "WGSlice/default-merchant.png" %></li>
-    <li><%= image_tag "WGSlice/default-merchant.png" %></li>
-    <li><%= image_tag "WGSlice/default-merchant.png" %></li>
-    <li><%= image_tag "WGSlice/default-merchant.png" %></li>
-    <li><%= image_tag "WGSlice/more-shoppers-photo.png" %></li>
+    <li><%= image_tag "WGSlice/default-merchant.png", class:"merchant-photo" %></li>
+    <li><%= image_tag "WGSlice/default-merchant.png", class:"merchant-photo" %></li>
+    <li><%= image_tag "WGSlice/default-merchant.png", class:"merchant-photo" %></li>
+    <li><%= image_tag "WGSlice/default-merchant.png", class:"merchant-photo" %></li>
+    <li><%= image_tag "WGSlice/more-shoppers-photo.png", class:"merchant-photo" %></li>
   </ul>
             
   <hr>

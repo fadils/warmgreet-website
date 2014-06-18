@@ -327,6 +327,11 @@ a .white ul:hover{
   margin-top: -270px;
 }
 
+.attribute-container-merchant-show-no-sign-in{
+  display: block;
+  margin-left: 154px;
+  margin-top: -200px;
+}
 
 
 /*
@@ -549,6 +554,55 @@ HEader: write a story, category, etc
   margin-top: 90px;
 }
 
+.badge-showcase{
+  display: inline-block;
+}
+
+.merchant-photo{
+  width: 100px;
+  height: 100px;
+}
+
+.badge-first {
+  width: 100px;
+  height: 100px;
+}
+
+.badge-count-first{
+  font-family:"Bariol";
+  font-size:1.25em;
+  margin-left: 48px;
+}
+
+.badge-text-first{
+  font-family:"Bariol";
+  font-size:1.25em;
+  margin-left: 35px;
+}
+
+.badge-pageview{
+  width: 80px;
+  height: 100px;
+}
+
+.badge-list{
+  margin-top:-30px;
+}
+
+.badge-count-pageview{
+  font-family:"Bariol";
+  font-size:1.25em;
+  margin-left: 35px;
+}
+
+.badge-text-pageview{
+  font-family:"Bariol";
+  font-size:1.25em;
+  margin-left: 9px;
+}
+
+
+
 .logo {
   float: left;
   left:1.5%;
@@ -731,7 +785,7 @@ nav ul {
  
 }
 
-.list-inline li img{
+.followed-merchant-list{
   width:100px;
   height: 100px;
 }
@@ -1462,16 +1516,6 @@ Start of User Profile
   margin-top: 1030px;
   /*border-left: 1px solid #E5E5E1;
   border-right: 1px solid #E5E5E1;*/
-}
-
-.followed-merchants-list{
-  float:left;
-  list-style: none;
-  display:inline-block;
-}
-
-.followed-merchants-list{
-  margin-left:15px;
 }
 
 
@@ -2561,7 +2605,7 @@ footer {
   font-family:"Bariol";
   margin-top: 45px;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-top: 1px solid #eaeaea;
   color: #000;
   background-color: #ffad4e;
