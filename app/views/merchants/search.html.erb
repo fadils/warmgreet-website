@@ -46,9 +46,10 @@
     <%= paginate @merchants %>
 
   <% else %>
-    
+   <div class="noresult">
     <h1><%= "No results found!" %></h1>
     
-    <%= button_to "Add a new online merchant", new_country_merchant_url(@country),class:"btn btn-wg", method: :get,remote: true %>
+    <%= link_to "Add a new online merchant", new_country_merchant_url(@country), class:"btn btn-wg"%>
+   </div>
   <% end %>
 </div>
