@@ -4,8 +4,6 @@ class ApplicationController < ActionController::Base
   # Expose these methods to the views
    helper_method :current_user, :current_merchant, :signed_in?
 
-   
-    
    private
 
    def current_user

@@ -18,7 +18,6 @@ class SessionsController < ApplicationController
     if user
       sign_in(user)
       Keen.publish(:sign_ins, {:username => "#{user.username}", :time => "#{Time.new.inspect}" })
-      #redirect_to "/merchants/index"
       redirect_to user_url(current_user)
     else
       render :json => "Credentials were wrong"

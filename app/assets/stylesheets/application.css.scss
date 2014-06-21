@@ -107,15 +107,47 @@ hr{
   background-color: #ffad4e;
 }
 
+.header{
+  text-align:center;
+}
+
+.header-tag{
+  color:white;
+  font-family:"Bariol";
+  font-size: 1.75em;
+}
+
+.first, .second{
+  margin-top:40px;
+}
+
+.popular-sites{
+  color:white;
+  font-family:"Bariol";
+  font-size: 1.25em;
+}
+
+.rating-1{
+
+}
+
 @media all and (min-device-width : 601px) {
   .bg-home{
-    margin-top:-100px;
-    height:800px;
+    margin-top: 50px;
+    height:700px;
     background: url("/assets/WGSlice/Banner_1440.jpg") no-repeat center center; 
      -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
+  }
+
+  .search-bar{
+    margin: 0 auto;
+    width: 47%;
+    opacity: 0.85;
+    font-family: "Bariol";
+    font-size: 1.125em;
   }
 
   .only{
@@ -148,6 +180,14 @@ hr{
     background-size: 100% 100%;
   }
 
+  .desktop-only{
+    display: none;
+  }
+
+  .search-bar{
+    margin: 0 auto;
+  }
+
   .bg-feed{
     height:375px;
     background: url("/assets/WGSlice/banner-feed-mobile.jpg") no-repeat center center; 
@@ -175,6 +215,11 @@ hr{
   background-color: #f5f5f5;
 }
 
+.orange-bg{
+  background-color: #ffad4e;
+  opacity: 0.97;
+}
+
 
 /*
 Header with the big image
@@ -191,14 +236,6 @@ Header with the big image
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;;
-}
-
-.search-bar{
-  position:absolute; 
-  z-index:9999; 
-  top: 9px;
-  left: 424px;
-  font-family:"Bariol";
 }
 
 .search-bar-home-sign-in{
@@ -348,7 +385,7 @@ Main logo, but not in the nav header. "Online story, honestly shared"
   }
 
   .random-push{
-    height:100px
+    height:100px;
   }
 
   .random-story-container{
@@ -360,14 +397,14 @@ Main logo, but not in the nav header. "Online story, honestly shared"
   random story showed in top-nav
   */
 
-  .random-user-image{
-    width:100px;
-    height:100px;
+  .random-merchant-image{
+    width:80px;
+    height:80px;
   }
 
   .random-story{
     display: inline-block;
-    margin-left:25px;
+    margin-left:50px;
     color: white;
     font-family: "Bariol";
   }
@@ -391,15 +428,15 @@ Main logo, but not in the nav header. "Online story, honestly shared"
   }
 
   .random-story-merchant:hover{
-    color:white;
-    opacity:0.5;
+    color:#ffad4e;
+    opacity:1;
   }
 
 
   .random-story-title{
     
     font-family: "Bariol";
-    font-size: 1.750em;
+    font-size: 1.5em;
     color: white;
     font-style: italic;
     font-weight: bold;
@@ -408,7 +445,7 @@ Main logo, but not in the nav header. "Online story, honestly shared"
   .random-story-body{
     
     font-family:"Bariol";
-    font-size: 1.125em;
+    font-size: 1em;
   }
 
   .random-story-see-more{
@@ -800,6 +837,17 @@ nav ul {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
+}
+
+span.stars, span.stars span {
+    display: block;
+    background: url("WGSlice/stars.png") 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
 }
 
 .info-not-sign-in{

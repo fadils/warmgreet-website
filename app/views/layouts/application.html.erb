@@ -6,168 +6,312 @@
   <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "star-rating" %>
   <%= csrf_meta_tags %>
   <%= analytics_init if Rails.env.production? %>
 </head>
 
 <body>
 <% env = Rails.env %>
-<%#puts Rails.env + "ADFADFADFA"%>
+
 <% if env == "development" %>
   <% home = "http://localhost:3000" %> 
 <% else %>
   <% home = "http://warmgreet.com"%>
-<% end %>    
+<% end %>   
 
 <%Keen.project_id = Rails.configuration.KEEN_PROJECT_ID%>
-    <%Keen.write_key = Rails.configuration.KEEN_WRITE_KEY%>
-  <%Keen.read_key = Rails.configuration.KEEN_READ_KEY%>
+<%Keen.write_key = Rails.configuration.KEEN_WRITE_KEY%>
+<%Keen.read_key = Rails.configuration.KEEN_READ_KEY%>
 <%Keen.master_key = Rails.configuration.KEEN_MASTER_KEY%>
 
-<% @review = Review.order("RANDOM()").first %>
+<% @reviews = Review.order("RANDOM()") %>
 <% @categories = Category.all %>
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">
-            <%= image_tag("wg_logo_2.png", height: '50', width: '50')%>
-            <%#= image_tag("WGSlice/alpha.png", height: '55', width: '80', style:"margin-left:-96px")%>
-          </a>
-        </div>
-        <div class="navbar-collapse collapse" style="height: 1px;">
-          <ul class="nav navbar-nav">
-              <li><a href="<%= writestory_write_url %>">Write a story</a></li>
-              <li><a href="/">Discover</a></li>
-              
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="<%= users_url%>">Find Greeters</a></li>
-                  <li><a href="<%= about_index_url%>">About Us</a></li>
-                  <li><a href="<%= guideline_index_url%>">Guideline</a></li>
-                </ul>
-              </li>
-            </ul>
-
-
-          <form class="navbar-form navbar-left" action="<%= search_url %>" method="get">
-            <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-            <div class="form-group">
-              <input type="text input-large search-query" name="query" class="form-control" placeholder="Search Online Store">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-
-          
-            <ul class="nav navbar-nav navbar-right">
-              <% if !signed_in? %>
-                <li><a href="<%= new_user_url %>">Sign Up</a></li>
-                <li><a href="<%= new_session_url %>">Sign In</a></li>
-              <% else %>
-                <li>
-                  <a class="dropdown-toggle" data-toggle="dropdown">
-                    <% if current_user.photo.file? %>
-                    <%= image_tag current_user.photo.url(:big), size: "18x18", class:"circular" %>
-                    <% elsif current_user.image? %>
-                      <%= image_tag current_user.image, size: "15x15", class:"circular" %>
-                    <% else %>
-                      <% puts "*************************#{review.user.gender}********************" %>
-                      <% if current_user.gender=="M" %>
-                        <%= image_tag "WGSlice/default-user-male.png", size: "15x15",class:"circular" %>
-                      <% elsif current_user.gender=="F" %>
-                        <%= image_tag "WGSlice/default-user-female.png", size: "15x15",class:"circular" %>
-                      <% else %>
-                        <%= image_tag "WGSlice/default-user-male.png", size: "15x15",class:"circular" %>
-                      <% end %>
-                    <% end %>
-
-                    <%=current_user.username.capitalize%> <span class="caret"></span>
-              
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="<%=profile_show_url(current_user)%>">Profile</a></li>
-                      <li><a href="<%=user_url(current_user)%>">Story Feed</a></li>
-
-                      <li class="divider"></li>
-                      <li><%= link_to "Sign Out", session_url, :method => :delete%></li>
-                    </ul>
-                  </a>
-                </li>
-              <% end %>
-            </ul>
-          
-            
-              
-          
-
-        </div><!--/.navbar-collapse -->
-      </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <%= image_tag("wg_logo_2.png", height: '50', width: '50')%>
+        <%#= image_tag("WGSlice/alpha.png", height: '55', width: '80', style:"margin-left:-96px")%>
+      </a>
     </div>
 
-    
-    <% if request.original_url == "#{home}/"%>
-      <div class="jumbotron bg-home">
-        <div class="container">
-          <%= image_tag "WGSlice/mainlogo.png", class:"img-responsive WG-mainlogo" %>
+    <div class="navbar-collapse collapse" style="height: 1px;">
+      <ul class="nav navbar-nav">
+          <li><a href="<%= writestory_write_url %>">Write a story</a></li>
+          <li><a href="/">Discover</a></li>
           
-          <div class="random-push">
-          </div>
-          
-        <div class="row random-story-container">
-          <%if @review != nil %>
-          <div class="col-md-1 random-story-img">
-            <% if @review.user.photo.file? %>
-              <%= image_tag @review.user.photo.url(:big), class:"circular random-user-image" %>
-              <% elsif @review.user.image? %>
-                <%= image_tag @review.user.image, class:"circular random-user-image" %>
-              <% else %>
-                <%# puts "*************************#{review.user.gender}********************" %>
-                <% if @review.user.gender=="M" %>
-                  <%= image_tag "WGSlice/default-user-male.png", size: "100x100", class:"circular" %>
-                <% elsif @review.user.gender=="F" %>
-                  <%= image_tag "WGSlice/default-user-female.png", size: "100x100", class:"circular" %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="<%= users_url%>">Find Greeters</a></li>
+              <li><a href="<%= about_index_url%>">About Us</a></li>
+              <li><a href="<%= guideline_index_url%>">Guideline</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <% if !signed_in? %>
+            <li><a href="<%= new_user_url %>">Sign Up</a></li>
+            <li><a href="<%= new_session_url %>">Sign In</a></li>
+          <% else %>
+            <li>
+              <a class="dropdown-toggle" data-toggle="dropdown">
+                <% if current_user.photo.file? %>
+                <%= image_tag current_user.photo.url(:big), size: "18x18", class:"circular" %>
+                <% elsif current_user.image? %>
+                  <%= image_tag current_user.image, size: "15x15", class:"circular" %>
                 <% else %>
-                  <%= image_tag "WGSlice/default-user-male.png", size: "100x100", class:"circular" %>
+                  <% if current_user.gender=="M" %>
+                    <%= image_tag "WGSlice/default-user-male.png", size: "15x15",class:"circular" %>
+                  <% elsif current_user.gender=="F" %>
+                    <%= image_tag "WGSlice/default-user-female.png", size: "15x15",class:"circular" %>
+                  <% else %>
+                    <%= image_tag "WGSlice/default-user-male.png", size: "15x15",class:"circular" %>
+                  <% end %>
                 <% end %>
+
+                <%=current_user.username.capitalize%> <span class="caret"></span>
+          
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="<%=profile_show_url(current_user)%>">Profile</a></li>
+                  <li><a href="<%=user_url(current_user)%>">Story Feed</a></li>
+
+                  <li class="divider"></li>
+                  <li><%= link_to "Sign Out", session_url, :method => :delete%></li>
+                </ul>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<% if request.original_url == "#{home}/"%>
+  <div class="jumbotron bg-home">
+    <div class="container">
+      <%#= image_tag "WGSlice/mainlogo.png", class:"img-responsive WG-mainlogo" %>
+
+    <div class="header">
+      <span class="header-tag">Mau belanja online? Cek dulu ceritanya di warmgreet</span>
+
+      <form role="form" action="<%= search_url %>" method="get">
+        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+        <div class="form-group">
+          <input type="text input-large search-query" name="query" class="form-control search-bar" placeholder="Search Online Store">
+        </div>
+      </form>
+
+    </div>
+        
+    <div class="row random-story-container">
+      <div class="row first">
+        <div class="col-md-4 left-story">
+          <div class="col-md-1 random-story-img">
+            <a href="<%= merchant_url(@reviews.first.merchant) %>">
+              <% if @reviews.first.merchant.photo.file? %>
+                <%= image_tag @reviews.first.merchant.photo.url(:big), class:"random-merchant-image" %>
+              <% else %>
+                <%= image_tag "WGSlice/default-merchant.png", size: "70x70" %>
               <% end %>
-           </div>
+            </a>
+          </div>
 
-           <div class="col-md-8 random-story">
+          <div class="col-md-9 random-story">
+            <span class="random-story-title">"<%= @reviews.first.title %>"</span>
+            <br>
+            <span class="random-story-body"> Rating: <%= @reviews.first.rating %> </span>
+            <!--span class="stars"> </span-->
+            <br>
+            
 
+            <span class="random-story-see-more"> 
+              see more shopping stories by 
              
-                <span class="random-story-title">"<%= @review.title %>"</span>
+              <br>
+                
+              <strong><%= link_to @reviews.first.user.username, user_url(@reviews.first.user), class:"random-story-merchant" %></strong>
+            </span> 
+            <br>
+          </div>
+        </div>
+
+        <div class="col-md-4 middle-story">
+          <div class="col-md-1 random-story-img">
+            <a href="<%= merchant_url(@reviews.second.merchant) %>">
+              <% if @reviews.second.merchant.photo.file? %>
+                <%= image_tag @reviews.second.merchant.photo.url(:big), class:"random-merchant-image" %>
+              <% else %>
+                <%= image_tag "WGSlice/default-merchant.png", size: "70x70" %>
+              <% end %>
+            </a>
+          </div>
+
+          <div class="col-md-9 random-story">
+            <span class="random-story-title">"<%= @reviews.second.title %>"</span>
+            <br>
+            <span class="random-story-body">
+              Rating: <%= @reviews.second.rating %> 
+            </span>
+            <br>
+
+            <span class="random-story-see-more"> 
+              see more shopping stories by 
+               
+              <br>
+        
+              <strong>
+                <%= link_to @reviews.second.user.username, user_url(@reviews.second.user), class:"random-story-merchant" %>
+              </strong>
+            </span>
+
+             <br>
+          </div>
+        </div>
+
+        <div class="col-md-4 right-story desktop-only">
+          <div class="col-md-1 random-story-img">
+            <a href="<%= merchant_url(@reviews.third.merchant) %>">
+                <% if @reviews.third.merchant.photo.file? %>
+                  <%= image_tag @reviews.third.merchant.photo.url(:big), class:"random-merchant-image" %>
+                <% else %>
+                  <%= image_tag "WGSlice/default-merchant.png", size: "70x70" %>
+                <% end %>
+              </a>
+          </div>
+
+            <div class="col-md-9 random-story">
+              <strong class="random-story-title">"<%= @reviews.third.title %>"</strong>
+              <br>
+              <span class="random-story-body">
+                Rating: <%= @reviews.third.rating %>
+              </span>
+              <br>
+
+              <span class="random-story-see-more"> 
+                see more shopping stories by
+               
+                <br>
+                <strong><%= link_to @reviews.third.user.username, user_url(@reviews.third.user), class:"random-story-merchant" %></strong>
+                </span> 
+             <br>
+            </div>
+          </div>
+        </div>
+
+        <div class="row second desktop-only">
+            <div class="col-md-4 left-story">
+
+              <div class="col-md-1 random-story-img">
+                <a href="<%= merchant_url(@reviews.fourth.merchant) %>">
+                  <% if @reviews.fourth.merchant.photo.file? %>
+                    <%= image_tag @reviews.fourth.merchant.photo.url(:big), class:"random-merchant-image" %>
+                  <% else %>
+                    <%= image_tag "WGSlice/default-merchant.png", size: "70x70" %>
+                  <% end %>
+                </a>
+              </div>
+
+              <div class="col-md-9 random-story">
+                <span class="random-story-title">"<%= @reviews.fourth.title %>"</span>
                 <br>
                 <span class="random-story-body">
-                  Rating: <%= @review.rating %> 
-                      - <%= @review.user.username%>'s shopping story 
+                  Rating: <%= @reviews.fourth.rating %>
                  </span>
-               <br>
-
-               <span class="random-story-see-more"> 
-                  see more shopping stories on 
-               
                  <br>
+
+                 <span class="random-story-see-more"> 
+                  see more shopping stories by
+                 
+                  <br>
+                   
+                  
+                  <strong><%= link_to @reviews.fourth.user.username, user_url(@reviews.fourth.user), class:"random-story-merchant" %></strong>
+                  </span> 
+               <br>
+              </div>
+            </div>
+          
+
+          <div class="col-md-4">
+            <div class="col-md-1 random-story-img">
+              <a href="<%= merchant_url(@reviews.fifth.merchant) %>">
+                <% if @reviews.fifth.merchant.photo.file? %>
+                  <%= image_tag @reviews.fifth.merchant.photo.url(:big), class:"random-merchant-image" %>
+                <% else %>
+                  <%= image_tag "WGSlice/default-merchant.png", size: "70x70" %>
+                <% end %>
+              </a>
+            </div>
+
+            <div class="col-md-9 random-story">
+              <span class="random-story-title">"<%= @reviews.fifth.title %>"</span>
+              <br>
+              <span class="random-story-body">
+                Rating: <%= @reviews.fifth.rating %>
+              </span>
+              <br>
+
+              <span class="random-story-see-more"> 
+                see more shopping stories by 
+               
+                <br>
                  
                 
-                 <strong><%= link_to @review.merchant.name, merchant_url(@review.merchant), class:"random-story-merchant" %></strong>
-                </span> 
-             
-             
+                <strong><%= link_to @reviews.fifth.user.username, user_url(@reviews.fifth.user), class:"random-story-merchant" %></strong>
+              </span> 
              <br>
-             
-             
-          <% end %>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="col-md-1 random-story-img">
+              <a href="<%= merchant_url(@reviews[6].merchant) %>">
+                <% if @reviews[6].merchant.photo.file? %>
+                  <%= image_tag @reviews[6].merchant.photo.url(:big), class:"random-merchant-image" %>
+                <% else %>
+                  <%= image_tag "WGSlice/default-merchant.png", size: "70x70" %>
+                <% end %>
+              </a>
+            </div>
+
+            <div class="col-md-9 random-story">
+              <span class="random-story-title">"<%= @reviews[6].title %>"</span>
+              <br>
+              <span class="random-story-body">
+                Rating: <%= @reviews[6].rating %>
+              </span>
+              <br>
+
+              <span class="random-story-see-more"> 
+                see more shopping stories by 
+               
+                <br>
+                 
+                
+                <strong><%= link_to @reviews[6].user.username, user_url(@reviews[6].user), class:"random-story-merchant" %></strong>
+                </span> 
+             <br>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
+      
     </div>
-    <% end %>
+    
+        
+      
+    </div>
+  </div>
+<% end %>
     
     <% if signed_in? %>
       <% if request.original_url == "#{home}/users/#{current_user.slug}" %>
@@ -181,8 +325,6 @@
   </div>
 
    <%= render "layouts/footer" %>
-  
-
  
 </body>
 </html>
