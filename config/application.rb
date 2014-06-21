@@ -22,12 +22,8 @@ module WarmGreet
 
   config.KEEN_PROJECT_ID = "5361e590ce5e4305a9000005"
 
-    config.assets.paths << "#{Rails.root}/app/assets/fonts"
+  config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
-    #Keen.project_id = Rails.configuration.KEEN_PROJECT_ID
-    #Keen.write_key = Rails.configuration.KEEN_WRITE_KEY
-    #Keen.read_key = Rails.configuration.KEEN_READ_KEY
-    #Keen.master_key = Rails.configuration.KEEN_MASTER_KEY
 
     config.generators do |g|
       g.test_framework :rspec,
