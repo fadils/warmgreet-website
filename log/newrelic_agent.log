@@ -5904,3 +5904,57 @@ unmatched close parenthesis: /h4>
 [06/21/14 11:59:37 +0700 pr0ducer (25090)] INFO : Installing Rails3 Error instrumentation
 [06/21/14 11:59:37 +0700 pr0ducer (25090)] INFO : Finished instrumentation
 [06/21/14 11:59:40 +0700 pr0ducer (25090)] INFO : Doing deferred dependency-detection before Rack startup
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Starting the New Relic agent in "development" environment.
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Reading configuration from config/newrelic.yml
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : New Relic Agent Developer Mode enabled.
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Enabling the Request Sampler.
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Environment: development
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Dispatcher: webrick
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Application: My Application
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] WARN : Agent configured not to send data in this environment.
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Installing ActiveRecord instrumentation
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Installing middleware-based Excon instrumentation
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Installing Net instrumentation
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Installing deferred Rack instrumentation
+[06/22/14 13:47:48 +0700 pr0ducer (37528)] INFO : Installing Rails 3 Controller instrumentation
+[06/22/14 13:47:49 +0700 pr0ducer (37528)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/22/14 13:47:49 +0700 pr0ducer (37528)] INFO : Installing Rails3 Error instrumentation
+[06/22/14 13:47:49 +0700 pr0ducer (37528)] INFO : Finished instrumentation
+[06/22/14 13:47:52 +0700 pr0ducer (37528)] INFO : Doing deferred dependency-detection before Rack startup
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Starting the New Relic agent in "development" environment.
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Reading configuration from config/newrelic.yml
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : New Relic Agent Developer Mode enabled.
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Enabling the Request Sampler.
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Environment: development
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Dispatcher: webrick
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Application: My Application
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] WARN : Agent configured not to send data in this environment.
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Installing ActiveRecord instrumentation
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Installing middleware-based Excon instrumentation
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Installing Net instrumentation
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Installing deferred Rack instrumentation
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Installing Rails 3 Controller instrumentation
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Installing Rails3 Error instrumentation
+[06/22/14 13:59:44 +0700 pr0ducer (37683)] INFO : Finished instrumentation
+[06/22/14 13:59:45 +0700 pr0ducer (37683)] INFO : Doing deferred dependency-detection before Rack startup
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Starting the New Relic agent in "development" environment.
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Reading configuration from config/newrelic.yml
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : New Relic Agent Developer Mode enabled.
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Enabling the Request Sampler.
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Environment: development
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Dispatcher: webrick
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Application: My Application
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] WARN : Agent configured not to send data in this environment.
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Installing ActiveRecord instrumentation
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Installing middleware-based Excon instrumentation
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Installing Net instrumentation
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Installing deferred Rack instrumentation
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Installing Rails 3 Controller instrumentation
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Installing Rails3 Error instrumentation
+[06/22/14 14:46:40 +0700 pr0ducer (38227)] INFO : Finished instrumentation
+[06/22/14 14:46:41 +0700 pr0ducer (38227)] INFO : Doing deferred dependency-detection before Rack startup

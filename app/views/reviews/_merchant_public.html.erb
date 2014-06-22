@@ -56,8 +56,9 @@
                 <br>
             <% end %>
         </div>
-      <%= review.body %>
       
+        <%= raw review.body %>
+          
 
       <% if review.pic.file? %>
         <br><br>

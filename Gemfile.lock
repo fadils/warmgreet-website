@@ -326,6 +326,8 @@ GEM
     thread_safe (0.3.4)
     tilt (1.4.1)
     timers (1.1.0)
+    tinymce-rails (4.1.0)
+      railties (>= 3.1.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -386,5 +388,6 @@ DEPENDENCIES
   shoulda-matchers
   sprockets (= 2.2.2.backport2)
   sprockets-rails (= 2.0.0.backport1)
+  tinymce-rails
   uglifier (>= 1.0.3)
   webrat

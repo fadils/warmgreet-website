@@ -20,7 +20,7 @@
           <div class="greeters-photo col-md-3">
             <a href="<%=merchant_url(merchant)%>">
               <% if merchant.photo.file? %>
-                <%= image_tag merchant.photo.url(:big) %>
+                <%= image_tag merchant.photo.url(:big), size: "100x100" %>
                 <% else %>
                   <%= image_tag "WGSlice/default-merchant.png", size: "100x100" %>
               <% end %>
